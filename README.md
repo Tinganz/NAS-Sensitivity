@@ -28,6 +28,12 @@ source .venv/bin/activate
 pip install -e packages/f110_gym
 pip install -e "packages/f110_planning[test]"
 pip install -e "packages/f110_scripts[test]"
+
+# To ensure pathing (.pth) is correct
+python -m pip install -e packages/f110_gym
+python -m pip install -e "packages/f110_planning[test]"
+python -m pip install -e "packages/f110_scripts[test]"
+python -m pip install optuna scikit-learn plotly ipywidgets nbformat
 ```
 
 ## Usage Workflow
