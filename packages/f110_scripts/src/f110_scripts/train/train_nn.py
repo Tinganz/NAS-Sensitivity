@@ -7,6 +7,7 @@ Supports YAML configuration, advanced dataloading, and automatic tuning.
 
 import argparse
 import warnings
+import logging
 from pathlib import Path
 from typing import Any, Optional
 
@@ -27,11 +28,13 @@ from torchao.quantization import Int8DynamicActivationInt8WeightConfig, quantize
 
 from f110_planning.utils.nn_models import get_architecture, save_as_torchscript
 
+
+
 # Suppress library-level deprecation warnings for cleaner output
 warnings.filterwarnings("ignore", message=".*treespec.*")
 warnings.filterwarnings("ignore", category=FutureWarning, module="lightning")
 warnings.filterwarnings("ignore", category=DeprecationWarning, module="torchao")
-
+logging.getLogger("torch.distributed.elastic.multiprocessing.redirects").setLevel(logging.ERROR)
 
 class LidarDataset(Dataset):
     """
@@ -165,6 +168,7 @@ class LidarLightningModule(L.LightningModule):
     def __init__(
         self,
         arch_id: int,
+        model_cfg: dict[str, Any] | None = None,
         **kwargs: Any,
     ) -> None:
         """
@@ -177,7 +181,7 @@ class LidarLightningModule(L.LightningModule):
         super().__init__()
         self.save_hyperparameters()
 
-        self.model = get_architecture(arch_id)
+        self.model = get_architecture(arch_id, model_cfg)
         self.criterion = nn.MSELoss()
 
         self.example_input_array = torch.randn(1, 1, 1080)
@@ -458,6 +462,7 @@ def run_single_training(config: dict[str, Any], arch_id: int) -> None:  # pylint
     # Setup Model
     module = LidarLightningModule(
         arch_id=arch_id,
+        model_cfg=config.get("model"),
         lr=float(training_cfg["lr"]),
         weight_decay=float(training_cfg["weight_decay"]),
         lr_patience=training_cfg["lr_patience"],

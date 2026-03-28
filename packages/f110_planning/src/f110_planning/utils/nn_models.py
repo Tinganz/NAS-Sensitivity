@@ -19,8 +19,73 @@ from typing import Any
 import torch
 from torch import nn
 
+def _build_dynamic_arch(model_cfg: dict[str, Any] | None = None) -> nn.Sequential:
+    """
+    Build a Conv1d→Linear network from a ``model.dynamic`` configuration.
 
-def get_architecture(arch_id: int) -> nn.Module:
+    Expected fields under ``dynamic``::
+
+        in_channels: int (default 1)
+        input_length: int (default 1080)
+        activation: "elu" or "relu" (default "elu")
+        conv_layers: list of {out_channels, kernel_size?, stride?, padding?, pool_size?}
+        fc_layers: list/int of hidden widths before the final scalar output
+    """
+    dyn = model_cfg.get("dynamic")
+    conv_layers = dyn.get("conv_layers", [])
+    in_channels = int(dyn.get("in_channels", 1))
+    feature_length = int(dyn.get("input_length", 1080))
+    activation = dyn.get("activation", "elu").lower()
+    act_cls = nn.ReLU if activation == "relu" else nn.ELU
+    layers: list[nn.Module] = []
+    curr_channels = in_channels
+
+    for idx, cfg in enumerate(conv_layers):
+        out_channels = int(cfg["out_channels"])
+        kernel_size = int(cfg.get("kernel_size", 3))
+        stride = int(cfg.get("stride", 1))
+        padding = int(cfg.get("padding", 0))
+        pool_size = int(cfg.get("pool_size", 0))
+
+        layers.append(
+            nn.Conv1d(
+                curr_channels,
+                out_channels,
+                kernel_size=kernel_size,
+                stride=stride,
+                padding=padding,
+            )
+        )
+        layers.append(act_cls())
+
+        feature_length = max(
+            1, (feature_length + 2 * padding - kernel_size) // stride + 1
+        )
+        if pool_size and pool_size > 1:
+            layers.append(nn.MaxPool1d(kernel_size=pool_size))
+            feature_length = max(1, feature_length // pool_size)
+
+        curr_channels = out_channels
+
+    layers.append(nn.Flatten())
+    flattened = feature_length * curr_channels
+
+    fc_layers = dyn.get("fc_layers", [])
+    if isinstance(fc_layers, int):
+        fc_layers = [fc_layers]
+    fc_layers = list(fc_layers)
+
+    in_features = flattened
+    for hidden in fc_layers:
+        hidden = int(hidden)
+        layers.append(nn.Linear(in_features, hidden))
+        layers.append(act_cls())
+        in_features = hidden
+
+    layers.append(nn.Linear(in_features, 1))
+    return nn.Sequential(*layers)
+
+def get_architecture(arch_id: int, model_cfg: dict[str, Any] | None = None) -> nn.Module:
     """
     Factory function for F1TENTH single-output LiDAR neural network architectures.
 
@@ -121,6 +186,7 @@ def get_architecture(arch_id: int) -> nn.Module:
             nn.ELU(),
             nn.Linear(128, 1),
         ),
+        8: lambda: _build_dynamic_arch(model_cfg), # add dropout layer after maxPooling (0-20% dropout)
     }
 
     if arch_id not in factories:
