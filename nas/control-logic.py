@@ -6,9 +6,9 @@ import logging
 import warnings
 
 def main() -> None:
-    # split set into 
+    # TODO add passing in training dataset
     study = optuna.create_study(direction="minimize")
-    study.optimize(objective, n_trials=2)
+    study.optimize(objective, n_trials=15)
 
     print(f"Best RMSE: {study.best_trial.value:.4f}")
     print("Best params:", study.best_trial.params)
@@ -22,4 +22,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

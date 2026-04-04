@@ -182,6 +182,9 @@ class LidarLightningModule(L.LightningModule):
         self.save_hyperparameters()
 
         self.model = get_architecture(arch_id, model_cfg)
+        print(f"\n[Model Init] arch_id={arch_id}")
+        print(self.model)
+
         self.criterion = nn.MSELoss()
 
         self.example_input_array = torch.randn(1, 1, 1080)

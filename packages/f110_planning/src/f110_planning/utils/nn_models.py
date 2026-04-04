@@ -82,7 +82,7 @@ def _build_dynamic_arch(model_cfg: dict[str, Any] | None = None) -> nn.Sequentia
         layers.append(act_cls())
         in_features = hidden
 
-    layers.append(nn.Linear(in_features, 1))
+    layers.append(nn.Linear(in_features, 1)) # the last layer always has a nn.Linear with a single out feature
     return nn.Sequential(*layers)
 
 def get_architecture(arch_id: int, model_cfg: dict[str, Any] | None = None) -> nn.Module:

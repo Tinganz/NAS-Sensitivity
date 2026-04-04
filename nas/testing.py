@@ -54,3 +54,6 @@ def test_cnn_arch(left_wall_dist_filepath: str = "data/models/left_wall_dist_arc
     print(f"Cross-Track RMSE: {rmse:.4f} m")
     
     return rmse
+
+if __name__ == "__main__":
+    test_cnn_arch()
