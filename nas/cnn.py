@@ -29,9 +29,12 @@ class DynamicCNN:
     Generates a dynamic architecture specification for f110's 1-D LiDAR CNNs.
     """
 
-    def __init__(self, trial: optuna.trial.Trial) -> None:
-        self.num_layers = trial.suggest_int("num_layers", 2, 4)
-        self.activation = trial.suggest_categorical("activation", ["elu", "relu"])
+    def __init__(self, trial: optuna.trial.Trial, prefix: str = "") -> None:
+        def _key(name: str) -> str:
+            return f"{prefix}_{name}" if prefix else name
+
+        self.num_layers = trial.suggest_int(_key("num_layers"), 2, 4)
+        self.activation = trial.suggest_categorical(_key("activation"), ["elu", "relu"])
         self.conv_layers: list[dict[str, int]] = []
 
         in_channels = 1  # ensures 1×1080 LiDAR input is accepted
@@ -42,8 +45,10 @@ class DynamicCNN:
         padding = 0  # intentionally set
 
         for idx in range(self.num_layers):
-            out_channels = trial.suggest_int(f"out_channels_l{idx}", 32, 128, log=True)
-            pool_size = trial.suggest_categorical(f"pool_size_l{idx}", [2, 4])
+            out_key = _key(f"out_channels_l{idx}")
+            pool_key = _key(f"pool_size_l{idx}")
+            out_channels = trial.suggest_int(out_key, 32, 128, log=True)
+            pool_size = trial.suggest_categorical(pool_key, [2, 4])
             # clamp pool_size to 1 (skip) when feature length is less than the selected pool size
             if feature_length < pool_size:
                 pool_size = 1
@@ -78,7 +83,7 @@ class DynamicCNN:
         if min_hidden == max_hidden:
             fc_hidden = min_hidden
         else:
-            fc_hidden = trial.suggest_int("fc_hidden", min_hidden, max_hidden, log=True)
+            fc_hidden = trial.suggest_int(_key("fc_hidden"), min_hidden, max_hidden, log=True)
 
         self.model_block = {
             "arch_id": 8,
@@ -171,40 +176,36 @@ def objective(
     """
     del n_epoch, seed, _unused_loader  # unused
 
-    architecture = DynamicCNN(trial)
-    model_block = architecture.to_model_block()
-    model_block["arch_id"] = 8  # ensure we always use the dynamic factory
+    model_blocks = {}
+    for target in target_cols:
+        architecture = DynamicCNN(trial, prefix=target)
+        block = architecture.to_model_block()
+        block["arch_id"] = 8
+        model_blocks[target] = block
 
-    cfgs = [_build_training_config(model_block, target, dataset_pth) for target in target_cols]
+    cfgs = [
+        _build_training_config(model_blocks[target], target, dataset_pth)
+        for target in target_cols
+    ]
 
     trained_runs: list[tuple[dict[str, any], Path]] = []
     # TODO add specific partition of resources once the specific resource constraints (running on a gpu/cpu) are known
     with ThreadPoolExecutor(max_workers=len(cfgs)) as executor:
         futures = []
         for cfg in cfgs:
-            target = cfg["data"]["target_col"]
-            print(f"[trial={trial.number}] Starting training for {target}...")
             futures.append(executor.submit(_run_training, cfg))
         for cfg, future in zip(cfgs, futures):
             target = cfg["data"]["target_col"]
             try:
                 model_path = future.result()
             except subprocess.CalledProcessError:
-                print(f"[trial={trial.number}] Training failed for {target}")
                 return float("inf")
-            print(f"[trial={trial.number}] Completed training for {target}: {model_path}")
             trained_runs.append((cfg, model_path))
 
     for cfg, model_path in trained_runs:
         target = cfg["data"]["target_col"]
         LATEST_MODEL_PATHS[target] = model_path
 
-    print(
-        f"[trial={trial.number}] Testing with checkpoints:"
-        f" left={LATEST_MODEL_PATHS['left_wall_dist']},"
-        f" track={LATEST_MODEL_PATHS['track_width']},"
-        f" heading={LATEST_MODEL_PATHS['heading_error']}"
-    )
     try:
         rmse = test_cnn_arch(
             left_wall_dist_filepath=str(LATEST_MODEL_PATHS["left_wall_dist"]),
@@ -213,7 +214,6 @@ def objective(
         )
     except TypeError as exc:
         raise RuntimeError("Missing trained checkpoints before running test_cnn_arch") from exc
-    print(f"[trial={trial.number}] test_cnn_arch RMSE: {rmse:.4f}")
 
     _log_trial_result(
         trial=trial,
