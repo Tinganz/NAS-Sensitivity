@@ -2,6 +2,8 @@ import json
 import subprocess
 import sys
 import tempfile
+from concurrent.futures import ThreadPoolExecutor
+from copy import deepcopy
 from datetime import datetime
 from pathlib import Path
 
@@ -18,6 +20,8 @@ OUTPUT_DIR = BASE_DIR / "dnn-output"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 SESSION_ID = datetime.utcnow().strftime("%Y%m%dT%H%M%S")
 LOG_PATH = OUTPUT_DIR / f"nas_trials_{SESSION_ID}.jsonl"
+DEFAULT_TARGET_COLS = ("left_wall_dist", "track_width", "heading_error")
+LATEST_MODEL_PATHS = {target: None for target in DEFAULT_TARGET_COLS}
 
 
 class DynamicCNN:
@@ -26,7 +30,7 @@ class DynamicCNN:
     """
 
     def __init__(self, trial: optuna.trial.Trial) -> None:
-        self.num_layers = trial.suggest_int("num_layers", 1, 5)
+        self.num_layers = trial.suggest_int("num_layers", 2, 4)
         self.activation = trial.suggest_categorical("activation", ["elu", "relu"])
         self.conv_layers: list[dict[str, int]] = []
 
@@ -38,8 +42,11 @@ class DynamicCNN:
         padding = 0  # intentionally set
 
         for idx in range(self.num_layers):
-            out_channels = trial.suggest_int(f"out_channels_l{idx}", 8, 128, log=True)
-            pool_size = trial.suggest_categorical(f"pool_size_l{idx}", [2, 4, 8])
+            out_channels = trial.suggest_int(f"out_channels_l{idx}", 32, 128, log=True)
+            pool_size = trial.suggest_categorical(f"pool_size_l{idx}", [2, 4])
+            # clamp pool_size to 1 (skip) when feature length is less than the selected pool size
+            if feature_length < pool_size:
+                pool_size = 1
 
             self.conv_layers.append(
                 {
@@ -56,6 +63,10 @@ class DynamicCNN:
             )
             if pool_size and pool_size > 1:
                 feature_length = max(1, feature_length // pool_size)
+            # Guards against pooling sizes that are large than the feature length/kernal size (3)
+            if feature_length < 3:
+                self.num_layers = len(self.conv_layers)
+                break
             curr_channels = out_channels
 
         flattened = max(1, feature_length * max(curr_channels, 1))
@@ -110,19 +121,14 @@ def _run_training(config: dict[str, any]) -> Path:
     return Path("data/models", f"{model_name}.pt")
 
 
-def objective(
-    trial: optuna.trial.Trial,
-    _unused_loader=None,
-    n_epoch: int = 10,
-    seed: int = 41,
-    target_col: str = "left_wall_dist"
-) -> float:
-    del n_epoch, seed, _unused_loader  # unused
+def _build_training_config(model_block: dict[str, any], target_col: str, dataset_pth: str = None) -> dict[str, any]:
 
-    architecture = DynamicCNN(trial)
+    if dataset_pth is None:
+        raise ValueError("dataset_path in _build_training_config is not specified.")
+
     cfg = {
         "data": {
-            "train_path": "data/datasets/combined_all.npz",
+            "train_path": dataset_pth,
             "target_col": target_col,
             "batch_size": 128,
             "num_workers": 8,
@@ -131,10 +137,10 @@ def objective(
             "prefetch_factor": 2,
         },
         "training": {
-            "max_epochs": 11,
+            "max_epochs": 16,
             "lr": 1e-3,
             "weight_decay": 1e-5,
-            "early_stopping_patience": 8,
+            "early_stopping_patience": 11,
             "lr_patience": 5,
             "lr_scheduler_factor": 0.5,
             "optimizer": "adam",
@@ -145,56 +151,115 @@ def objective(
             "gradient_clip_val": 1.0,
             "profiler": None,
         },
-        "model": architecture.to_model_block(),
+        "model": deepcopy(model_block),
     }
+    return cfg
 
-    cfg["model"]["arch_id"] = 8  # ensure we always use the dynamic factory
 
+def objective(
+    trial: optuna.trial.Trial,
+    _unused_loader=None,
+    n_epoch: int = 10,
+    seed: int = 41,
+    target_cols: tuple[str, ...] = DEFAULT_TARGET_COLS,
+    dataset_pth: str = "nas/datasets/combined_train.npz"
+) -> float:
+    """
+    Run one Optuna trial that samples a single arch8 config, trains the left/track/heading
+    nets in parallel, waits for all three checkpoints (.pt) to land, then evaluates the trio
+    once via test_cnn_arch and returns that combined RMSE.
+    """
+    del n_epoch, seed, _unused_loader  # unused
+
+    architecture = DynamicCNN(trial)
+    model_block = architecture.to_model_block()
+    model_block["arch_id"] = 8  # ensure we always use the dynamic factory
+
+    cfgs = [_build_training_config(model_block, target, dataset_pth) for target in target_cols]
+
+    trained_runs: list[tuple[dict[str, any], Path]] = []
+    # TODO add specific partition of resources once the specific resource constraints (running on a gpu/cpu) are known
+    with ThreadPoolExecutor(max_workers=len(cfgs)) as executor:
+        futures = []
+        for cfg in cfgs:
+            target = cfg["data"]["target_col"]
+            print(f"[trial={trial.number}] Starting training for {target}...")
+            futures.append(executor.submit(_run_training, cfg))
+        for cfg, future in zip(cfgs, futures):
+            target = cfg["data"]["target_col"]
+            try:
+                model_path = future.result()
+            except subprocess.CalledProcessError:
+                print(f"[trial={trial.number}] Training failed for {target}")
+                return float("inf")
+            print(f"[trial={trial.number}] Completed training for {target}: {model_path}")
+            trained_runs.append((cfg, model_path))
+
+    for cfg, model_path in trained_runs:
+        target = cfg["data"]["target_col"]
+        LATEST_MODEL_PATHS[target] = model_path
+
+    print(
+        f"[trial={trial.number}] Testing with checkpoints:"
+        f" left={LATEST_MODEL_PATHS['left_wall_dist']},"
+        f" track={LATEST_MODEL_PATHS['track_width']},"
+        f" heading={LATEST_MODEL_PATHS['heading_error']}"
+    )
     try:
-        left_model_path = _run_training(cfg)
-    except subprocess.CalledProcessError:
-        return float("inf")
+        rmse = test_cnn_arch(
+            left_wall_dist_filepath=str(LATEST_MODEL_PATHS["left_wall_dist"]),
+            track_width_filepath=str(LATEST_MODEL_PATHS["track_width"]),
+            heading_error_filepath=str(LATEST_MODEL_PATHS["heading_error"]),
+        )
+    except TypeError as exc:
+        raise RuntimeError("Missing trained checkpoints before running test_cnn_arch") from exc
+    print(f"[trial={trial.number}] test_cnn_arch RMSE: {rmse:.4f}")
 
-    rmse = test_cnn_arch(left_wall_dist_filepath=str(left_model_path))
     _log_trial_result(
         trial=trial,
-        cfg=cfg,
+        trained_runs=trained_runs,
         rmse=rmse,
-        model_path=left_model_path,
     )
     return rmse
 
 
 def _log_trial_result(
     trial: optuna.trial.Trial,
-    cfg: dict[str, any],
+    trained_runs: list[tuple[dict[str, any], Path]],
     rmse: float,
-    model_path: Path,
 ) -> None:
     """
     Append a structured summary for each NAS trial to ``output/nas_trials.jsonl``.
     """
-    try:
-        model = get_architecture(cfg["model"]["arch_id"], cfg["model"])
-        architecture = repr(model)
-        layers = _summarize_layers(model)
-    except Exception as exc:  # pragma: no cover - logging best effort
-        architecture = f"<error rendering architecture: {exc}>"
-        layers = []
+    target_summaries: list[dict[str, any]] = []
+    for cfg, model_path in trained_runs:
+        try:
+            model = get_architecture(cfg["model"]["arch_id"], cfg["model"])
+            architecture = repr(model)
+            layers = _summarize_layers(model)
+        except Exception as exc:  # pragma: no cover - logging best effort
+            architecture = f"<error rendering architecture: {exc}>"
+            layers = []
+
+        target_summaries.append(
+            {
+                "target_col": cfg["data"]["target_col"],
+                "arch_id": cfg["model"]["arch_id"],
+                "conv_layers": cfg["model"]["dynamic"]["conv_layers"],
+                "fc_layers": cfg["model"]["dynamic"]["fc_layers"],
+                "activation": cfg["model"]["dynamic"]["activation"],
+                "model_path": str(model_path),
+                "architecture": architecture,
+                "layers": layers,
+            }
+        )
 
     entry = {
         "timestamp": datetime.utcnow().isoformat(timespec="seconds") + "Z",
         "trial_number": trial.number,
         "rmse": rmse,
         "params": trial.params,
-        "target_col": cfg["data"]["target_col"],
-        "arch_id": cfg["model"]["arch_id"],
-        "conv_layers": cfg["model"]["dynamic"]["conv_layers"],
-        "fc_layers": cfg["model"]["dynamic"]["fc_layers"],
-        "activation": cfg["model"]["dynamic"]["activation"],
-        "model_path": str(model_path),
-        "architecture": architecture,
-        "layers": layers,
+        "targets": target_summaries,
     }
 
     with LOG_PATH.open("a", encoding="utf-8") as f:
