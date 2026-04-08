@@ -1,0 +1,1804 @@
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 114, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(114, 98, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=6468, out_features=101, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=101, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  687 K │ train │ 19.9 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 47, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(47, 60, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(60, 39, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(39, 46, kernel_size=(3,), stride=(1,))
+  (10): ELU(alpha=1.0)
+  (11): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=736, out_features=53, bias=True)
+  (14): ELU(alpha=1.0)
+  (15): Linear(in_features=53, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │ 60.3 K │ train │ 12.0 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 687 K                                                         
+Non-trainable params: 0                                                         
+Total params: 687 K                                                             
+Total estimated model params size (MB): 2                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 19.9 M                                                             
+Trainable params: 60.3 K                                                        
+Non-trainable params: 0                                                         
+Total params: 60.3 K                                                            
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 18                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 12.0 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 97, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(97, 60, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(60, 90, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=2970, out_features=116, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=116, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  378 K │ train │ 24.3 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 378 K                                                         
+Non-trainable params: 0                                                         
+Total params: 378 K                                                             
+Total estimated model params size (MB): 1                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 24.3 M                                                             
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 63.95it/s v_num: 98.000    
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/heading_error_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 74.31it/s v_num: 137.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/left_wall_dist_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 70.17it/s v_num: 98.000    
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.002            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/track_width_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 69, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(69, 88, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=5808, out_features=110, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=110, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  657 K │ train │ 11.5 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 657 K                                                         
+Non-trainable params: 0                                                         
+Total params: 657 K                                                             
+Total estimated model params size (MB): 2                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 11.5 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 95, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(95, 42, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(42, 53, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(53, 46, kernel_size=(3,), stride=(1,))
+  (10): ReLU()
+  (11): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=322, out_features=38, bias=True)
+  (14): ReLU()
+  (15): Linear(in_features=38, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃ FLOPs ┃   In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │ 38.8 K │ train │ 9.2 M │     [1, 1, │    [1, 1] │
+│   │           │            │        │       │       │      1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │     0 │          ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴───────┴────────────┴───────────┘
+Trainable params: 38.8 K                                                        
+Non-trainable params: 0                                                         
+Total params: 38.8 K                                                            
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 18                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 9.2 M                                                              
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 90, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(90, 96, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(96, 45, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(45, 102, kernel_size=(3,), stride=(1,))
+  (10): ReLU()
+  (11): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=1530, out_features=93, bias=True)
+  (14): ReLU()
+  (15): Linear(in_features=93, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  195 K │ train │ 18.9 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 195 K                                                         
+Non-trainable params: 0                                                         
+Total params: 195 K                                                             
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 18                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 18.9 M                                                             
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 66.89it/s v_num: 138.000   
+                                                               train/loss_step: 
+                                                               0.000 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/left_wall_dist_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 69.52it/s v_num: 99.000    
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/heading_error_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 65.57it/s v_num: 99.000    
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.003            
+                                                               train/loss_epoch:
+                                                               0.003            
+Saved model to data/models/track_width_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 127, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(127, 43, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=5762, out_features=99, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=99, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  587 K │ train │ 19.6 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 587 K                                                         
+Non-trainable params: 0                                                         
+Total params: 587 K                                                             
+Total estimated model params size (MB): 2                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 19.6 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 89, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(89, 117, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(117, 35, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(35, 63, kernel_size=(3,), stride=(1,))
+  (10): ELU(alpha=1.0)
+  (11): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=4095, out_features=102, bias=True)
+  (14): ELU(alpha=1.0)
+  (15): Linear(in_features=102, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  468 K │ train │ 43.2 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 468 K                                                         
+Non-trainable params: 0                                                         
+Total params: 468 K                                                             
+Total estimated model params size (MB): 1                                       
+Modules in train mode: 18                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 43.2 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 82, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(82, 35, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(35, 50, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=6650, out_features=103, bias=True)
+  (11): ELU(alpha=1.0)
+  (12): Linear(in_features=103, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  699 K │ train │ 13.9 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 699 K                                                         
+Non-trainable params: 0                                                         
+Total params: 699 K                                                             
+Total estimated model params size (MB): 2                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 13.9 M                                                             
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 62.62it/s v_num: 100.000   
+                                                               train/loss_step: 
+                                                               0.002 val/loss:  
+                                                               0.002            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/track_width_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 70.99it/s v_num: 139.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/left_wall_dist_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 73.67it/s v_num: 100.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.004            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/heading_error_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 33, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(33, 57, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(57, 34, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=1088, out_features=126, bias=True)
+  (11): ELU(alpha=1.0)
+  (12): Linear(in_features=126, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃ FLOPs ┃   In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  149 K │ train │ 5.0 M │     [1, 1, │    [1, 1] │
+│   │           │            │        │       │       │      1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │     0 │          ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴───────┴────────────┴───────────┘
+Trainable params: 149 K                                                         
+Non-trainable params: 0                                                         
+Total params: 149 K                                                             
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 5.0 M                                                              
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 95, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(95, 114, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(114, 34, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(34, 37, kernel_size=(3,), stride=(1,))
+  (10): ELU(alpha=1.0)
+  (11): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=2405, out_features=49, bias=True)
+  (14): ELU(alpha=1.0)
+  (15): Linear(in_features=49, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  166 K │ train │ 42.9 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 166 K                                                         
+Non-trainable params: 0                                                         
+Total params: 166 K                                                             
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 18                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 42.9 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 35, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(35, 62, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=8308, out_features=128, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃ FLOPs ┃   In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  1.1 M │ train │ 9.3 M │     [1, 1, │    [1, 1] │
+│   │           │            │        │       │       │      1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │     0 │          ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴───────┴────────────┴───────────┘
+Trainable params: 1.1 M                                                         
+Non-trainable params: 0                                                         
+Total params: 1.1 M                                                             
+Total estimated model params size (MB): 4                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 9.3 M                                                              
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 58.94it/s v_num: 101.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.009            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/heading_error_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 69.18it/s v_num: 101.000   
+                                                               train/loss_step: 
+                                                               0.003 val/loss:  
+                                                               0.004            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/track_width_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 73.79it/s v_num: 140.000   
+                                                               train/loss_step: 
+                                                               0.000 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/left_wall_dist_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 43, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(43, 47, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(47, 80, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=5280, out_features=124, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=124, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  672 K │ train │ 14.1 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 672 K                                                         
+Non-trainable params: 0                                                         
+Total params: 672 K                                                             
+Total estimated model params size (MB): 2                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 14.1 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 110, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(110, 32, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=2112, out_features=33, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=33, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃ FLOPs ┃   In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │ 80.8 K │ train │ 6.5 M │     [1, 1, │    [1, 1] │
+│   │           │            │        │       │       │      1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │     0 │          ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴───────┴────────────┴───────────┘
+Trainable params: 80.8 K                                                        
+Non-trainable params: 0                                                         
+Total params: 80.8 K                                                            
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 6.5 M                                                              
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 43, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(43, 65, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(65, 79, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=5214, out_features=97, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=97, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  530 K │ train │ 14.4 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 530 K                                                         
+Non-trainable params: 0                                                         
+Total params: 530 K                                                             
+Total estimated model params size (MB): 2                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 14.4 M                                                             
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 65.22it/s v_num: 141.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/left_wall_dist_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 69.85it/s v_num: 102.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.004            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/heading_error_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 74.73it/s v_num: 102.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/track_width_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 60, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(60, 44, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=5896, out_features=106, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=106, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  633 K │ train │ 10.1 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 633 K                                                         
+Non-trainable params: 0                                                         
+Total params: 633 K                                                             
+Total estimated model params size (MB): 2                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 10.1 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 43, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(43, 46, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(46, 89, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(89, 61, kernel_size=(3,), stride=(1,))
+  (10): ELU(alpha=1.0)
+  (11): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=976, out_features=50, bias=True)
+  (14): ELU(alpha=1.0)
+  (15): Linear(in_features=50, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │ 83.8 K │ train │ 15.4 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 36, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(36, 58, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=7772, out_features=128, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃ FLOPs ┃   In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  1.0 M │ train │ 9.0 M │     [1, 1, │    [1, 1] │
+│   │           │            │        │       │       │      1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │     0 │          ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴───────┴────────────┴───────────┘
+Trainable params: 83.8 K                                                        
+Non-trainable params: 0                                                         
+Total params: 83.8 K                                                            
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 18                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 15.4 M                                                             
+Trainable params: 1.0 M                                                         
+Non-trainable params: 0                                                         
+Total params: 1.0 M                                                             
+Total estimated model params size (MB): 4                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 9.0 M                                                              
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 67.37it/s v_num: 103.000   
+                                                               train/loss_step: 
+                                                               0.002 val/loss:  
+                                                               0.002            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/track_width_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 67.05it/s v_num: 142.000   
+                                                               train/loss_step: 
+                                                               0.000 val/loss:  
+                                                               0.000            
+                                                               train/loss_epoch:
+                                                               0.000            
+Saved model to data/models/left_wall_dist_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 77.91it/s v_num: 103.000   
+                                                               train/loss_step: 
+                                                               0.002 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/heading_error_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 33, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(33, 65, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=8710, out_features=128, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃ FLOPs ┃   In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  1.1 M │ train │ 9.4 M │     [1, 1, │    [1, 1] │
+│   │           │            │        │       │       │      1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │     0 │          ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴───────┴────────────┴───────────┘
+Trainable params: 1.1 M                                                         
+Non-trainable params: 0                                                         
+Total params: 1.1 M                                                             
+Total estimated model params size (MB): 4                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 9.4 M                                                              
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 89, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(89, 110, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(110, 44, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(44, 33, kernel_size=(3,), stride=(1,))
+  (10): ReLU()
+  (11): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=1056, out_features=58, bias=True)
+  (14): ReLU()
+  (15): Linear(in_features=58, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  110 K │ train │ 41.1 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 110 K                                                         
+Non-trainable params: 0                                                         
+Total params: 110 K                                                             
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 18                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 41.1 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 45, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(45, 60, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(60, 40, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=5320, out_features=90, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=90, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  494 K │ train │ 13.8 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 494 K                                                         
+Non-trainable params: 0                                                         
+Total params: 494 K                                                             
+Total estimated model params size (MB): 1                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 13.8 M                                                             
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 62.01it/s v_num: 104.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.002            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/track_width_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 65.13it/s v_num: 143.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.002            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/left_wall_dist_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 70.48it/s v_num: 104.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/heading_error_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 52, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(52, 112, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(112, 57, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=1824, out_features=44, bias=True)
+  (11): ELU(alpha=1.0)
+  (12): Linear(in_features=44, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  117 K │ train │ 12.3 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 117 K                                                         
+Non-trainable params: 0                                                         
+Total params: 117 K                                                             
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 12.3 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 121, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(121, 32, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(32, 47, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(47, 84, kernel_size=(3,), stride=(1,))
+  (10): ELU(alpha=1.0)
+  (11): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=1260, out_features=62, bias=True)
+  (14): ELU(alpha=1.0)
+  (15): Linear(in_features=62, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  106 K │ train │ 15.3 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 106 K                                                         
+Non-trainable params: 0                                                         
+Total params: 106 K                                                             
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 18                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 15.3 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 39, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(39, 92, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(92, 78, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=10374, out_features=128, bias=True)
+  (11): ELU(alpha=1.0)
+  (12): Linear(in_features=128, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  1.4 M │ train │ 25.9 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 1.4 M                                                         
+Non-trainable params: 0                                                         
+Total params: 1.4 M                                                             
+Total estimated model params size (MB): 5                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 25.9 M                                                             
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 62.43it/s v_num: 144.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/left_wall_dist_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 70.97it/s v_num: 105.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/heading_error_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 71.29it/s v_num: 105.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/track_width_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 58, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(58, 122, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(122, 84, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=2772, out_features=126, bias=True)
+  (11): ELU(alpha=1.0)
+  (12): Linear(in_features=126, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  401 K │ train │ 32.0 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 401 K                                                         
+Non-trainable params: 0                                                         
+Total params: 401 K                                                             
+Total estimated model params size (MB): 1                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 32.0 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 115, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(115, 32, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=4288, out_features=87, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=87, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  384 K │ train │ 13.3 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 384 K                                                         
+Non-trainable params: 0                                                         
+Total params: 384 K                                                             
+Total estimated model params size (MB): 1                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 13.3 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 68, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(68, 80, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(80, 83, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(83, 90, kernel_size=(3,), stride=(1,))
+  (10): ReLU()
+  (11): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=630, out_features=39, bias=True)
+  (14): ReLU()
+  (15): Linear(in_features=39, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │ 83.8 K │ train │ 15.8 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 83.8 K                                                        
+Non-trainable params: 0                                                         
+Total params: 83.8 K                                                            
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 18                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 15.8 M                                                             
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 69.04it/s v_num: 145.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/left_wall_dist_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 66.68it/s v_num: 106.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.002            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/heading_error_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 83.14it/s v_num: 106.000   
+                                                               train/loss_step: 
+                                                               0.010 val/loss:  
+                                                               0.003            
+                                                               train/loss_epoch:
+                                                               0.003            
+Saved model to data/models/track_width_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 107, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(107, 84, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=5544, out_features=123, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=123, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  709 K │ train │ 16.5 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 709 K                                                         
+Non-trainable params: 0                                                         
+Total params: 709 K                                                             
+Total estimated model params size (MB): 2                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 16.5 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 70, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(70, 91, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(91, 44, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=2904, out_features=64, bias=True)
+  (11): ELU(alpha=1.0)
+  (12): Linear(in_features=64, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  217 K │ train │ 24.5 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 217 K                                                         
+Non-trainable params: 0                                                         
+Total params: 217 K                                                             
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 24.5 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 71, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(71, 79, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(79, 71, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(71, 47, kernel_size=(3,), stride=(1,))
+  (10): ReLU()
+  (11): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=1457, out_features=43, bias=True)
+  (14): ReLU()
+  (15): Linear(in_features=43, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  106 K │ train │ 15.2 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 106 K                                                         
+Non-trainable params: 0                                                         
+Total params: 106 K                                                             
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 18                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 15.2 M                                                             
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 64.12it/s v_num: 107.000   
+                                                               train/loss_step: 
+                                                               0.002 val/loss:  
+                                                               0.003            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/track_width_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 58.16it/s v_num: 146.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/left_wall_dist_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 73.67it/s v_num: 107.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/heading_error_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 64, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(64, 32, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=4288, out_features=98, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=98, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃ FLOPs ┃   In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  426 K │ train │ 7.9 M │     [1, 1, │    [1, 1] │
+│   │           │            │        │       │       │      1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │     0 │          ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴───────┴────────────┴───────────┘
+Trainable params: 426 K                                                         
+Non-trainable params: 0                                                         
+Total params: 426 K                                                             
+Total estimated model params size (MB): 1                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 7.9 M                                                              
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 47, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(47, 39, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(39, 125, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=4000, out_features=78, bias=True)
+  (11): ELU(alpha=1.0)
+  (12): Linear(in_features=78, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃ FLOPs ┃   In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  332 K │ train │ 7.7 M │     [1, 1, │    [1, 1] │
+│   │           │            │        │       │       │      1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │     0 │          ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴───────┴────────────┴───────────┘
+Trainable params: 332 K                                                         
+Non-trainable params: 0                                                         
+Total params: 332 K                                                             
+Total estimated model params size (MB): 1                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 7.7 M                                                              
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 33, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(33, 49, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(49, 121, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(121, 128, kernel_size=(3,), stride=(1,))
+  (10): ReLU()
+  (11): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=896, out_features=70, bias=True)
+  (14): ReLU()
+  (15): Linear(in_features=70, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  132 K │ train │ 10.4 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 132 K                                                         
+Non-trainable params: 0                                                         
+Total params: 132 K                                                             
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 18                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 10.4 M                                                             
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 74.23it/s v_num: 108.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/track_width_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 68.49it/s v_num: 108.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/heading_error_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 70.96it/s v_num: 147.000   
+                                                               train/loss_step: 
+                                                               0.000 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/left_wall_dist_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 80, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(80, 36, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=4824, out_features=102, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=102, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  501 K │ train │ 10.8 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 501 K                                                         
+Non-trainable params: 0                                                         
+Total params: 501 K                                                             
+Total estimated model params size (MB): 2                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 10.8 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 65, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(65, 48, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(48, 32, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(32, 61, kernel_size=(3,), stride=(1,))
+  (10): ELU(alpha=1.0)
+  (11): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=1952, out_features=35, bias=True)
+  (14): ELU(alpha=1.0)
+  (15): Linear(in_features=35, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │ 88.6 K │ train │ 14.6 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 34, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(34, 43, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=11524, out_features=128, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃ FLOPs ┃   In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  1.5 M │ train │ 7.9 M │     [1, 1, │    [1, 1] │
+│   │           │            │        │       │       │      1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │     0 │          ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴───────┴────────────┴───────────┘
+Trainable params: 88.6 K                                                        
+Non-trainable params: 0                                                         
+Total params: 88.6 K                                                            
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 18                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 14.6 M                                                             
+Trainable params: 1.5 M                                                         
+Non-trainable params: 0                                                         
+Total params: 1.5 M                                                             
+Total estimated model params size (MB): 5                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 7.9 M                                                              
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 69.72it/s v_num: 109.000   
+                                                               train/loss_step: 
+                                                               0.003 val/loss:  
+                                                               0.002            
+                                                               train/loss_epoch:
+                                                               0.003            
+Saved model to data/models/track_width_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 82.39it/s v_num: 148.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.000            
+Saved model to data/models/left_wall_dist_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 72.40it/s v_num: 109.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.002            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/heading_error_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 79, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(79, 34, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=4556, out_features=108, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=108, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  500 K │ train │ 10.1 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 500 K                                                         
+Non-trainable params: 0                                                         
+Total params: 500 K                                                             
+Total estimated model params size (MB): 2                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 10.1 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 33, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(33, 45, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=12060, out_features=128, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃ FLOPs ┃   In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  1.5 M │ train │ 8.1 M │     [1, 1, │    [1, 1] │
+│   │           │            │        │       │       │      1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │     0 │          ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴───────┴────────────┴───────────┘
+Trainable params: 1.5 M                                                         
+Non-trainable params: 0                                                         
+Total params: 1.5 M                                                             
+Total estimated model params size (MB): 6                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 8.1 M                                                              
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 58, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(58, 46, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(46, 109, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=14497, out_features=128, bias=True)
+  (11): ELU(alpha=1.0)
+  (12): Linear(in_features=128, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  1.9 M │ train │ 20.7 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 1.9 M                                                         
+Non-trainable params: 0                                                         
+Total params: 1.9 M                                                             
+Total estimated model params size (MB): 7                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 20.7 M                                                             
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 66.12it/s v_num: 110.000   
+                                                               train/loss_step: 
+                                                               0.002 val/loss:  
+                                                               0.003            
+                                                               train/loss_epoch:
+                                                               0.003            
+Saved model to data/models/track_width_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 73.93it/s v_num: 149.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/left_wall_dist_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 81.26it/s v_num: 110.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.002            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/heading_error_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 56, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(56, 39, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=5226, out_features=108, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=108, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃ FLOPs ┃   In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  571 K │ train │ 8.5 M │     [1, 1, │    [1, 1] │
+│   │           │            │        │       │       │      1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │     0 │          ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴───────┴────────────┴───────────┘
+Trainable params: 571 K                                                         
+Non-trainable params: 0                                                         
+Total params: 571 K                                                             
+Total estimated model params size (MB): 2                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 8.5 M                                                              
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 33, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(33, 50, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(50, 59, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(59, 59, kernel_size=(3,), stride=(1,))
+  (10): ELU(alpha=1.0)
+  (11): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=944, out_features=32, bias=True)
+  (14): ELU(alpha=1.0)
+  (15): Linear(in_features=32, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │ 54.8 K │ train │ 11.6 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 43, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(43, 45, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=12060, out_features=128, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃ FLOPs ┃   In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  1.5 M │ train │ 9.6 M │     [1, 1, │    [1, 1] │
+│   │           │            │        │       │       │      1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │     0 │          ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴───────┴────────────┴───────────┘
+Trainable params: 54.8 K                                                        
+Non-trainable params: 0                                                         
+Total params: 54.8 K                                                            
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 18                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 11.6 M                                                             
+Trainable params: 1.5 M                                                         
+Non-trainable params: 0                                                         
+Total params: 1.5 M                                                             
+Total estimated model params size (MB): 6                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 9.6 M                                                              
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 68.47it/s v_num: 111.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.002            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/track_width_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 73.65it/s v_num: 111.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/heading_error_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 75.47it/s v_num: 150.000   
+                                                               train/loss_step: 
+                                                               0.000 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/left_wall_dist_arch8.pt
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 46, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(46, 52, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(52, 33, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=2178, out_features=43, bias=True)
+  (11): ELU(alpha=1.0)
+  (12): Linear(in_features=43, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  106 K │ train │ 10.9 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 106 K                                                         
+Non-trainable params: 0                                                         
+Total params: 106 K                                                             
+Total estimated model params size (MB): 0                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 10.9 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 41, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(41, 73, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=9782, out_features=128, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  1.3 M │ train │ 12.4 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 1.3 M                                                         
+Non-trainable params: 0                                                         
+Total params: 1.3 M                                                             
+Total estimated model params size (MB): 5                                       
+Modules in train mode: 12                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 12.4 M                                                             
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 81, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(81, 116, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(116, 127, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=8382, out_features=128, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=128, out_features=1, bias=True)
+)
+┏━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   ┃ Name      ┃ Type       ┃ Params ┃ Mode  ┃  FLOPs ┃  In sizes ┃ Out sizes ┃
+┡━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 0 │ model     │ Sequential │  1.1 M │ train │ 44.6 M │    [1, 1, │    [1, 1] │
+│   │           │            │        │       │        │     1080] │           │
+│ 1 │ criterion │ MSELoss    │      0 │ train │      0 │         ? │         ? │
+└───┴───────────┴────────────┴────────┴───────┴────────┴───────────┴───────────┘
+Trainable params: 1.1 M                                                         
+Non-trainable params: 0                                                         
+Total params: 1.1 M                                                             
+Total estimated model params size (MB): 4                                       
+Modules in train mode: 15                                                       
+Modules in eval mode: 0                                                         
+Total FLOPs: 44.6 M                                                             
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 73.31it/s v_num: 151.000   
+                                                               train/loss_step: 
+                                                               0.000 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.000            
+Saved model to data/models/left_wall_dist_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 61.10it/s v_num: 112.000   
+                                                               train/loss_step: 
+                                                               0.001 val/loss:  
+                                                               0.001            
+                                                               train/loss_epoch:
+                                                               0.002            
+Saved model to data/models/heading_error_arch8.pt
+Epoch 15/15 ━━━━━━━━━━━━━━━━ 87/87 0:00:01 • 0:00:00 71.63it/s v_num: 112.000   
+                                                               train/loss_step: 
+                                                               0.000 val/loss:  
+                                                               0.005            
+                                                               train/loss_epoch:
+                                                               0.001            
+Saved model to data/models/track_width_arch8.pt
+Cross-Track RMSE: 0.1310 m
+Cross-Track RMSE: 0.1232 m
+Cross-Track RMSE: 0.1132 m
+Cross-Track RMSE: 0.1317 m
+Cross-Track RMSE: 0.1246 m
+Cross-Track RMSE: 0.1075 m
+Cross-Track RMSE: 0.1194 m
+Cross-Track RMSE: 0.1233 m
+Cross-Track RMSE: 0.1139 m
+Cross-Track RMSE: 0.1326 m
+Cross-Track RMSE: 0.1241 m
+Cross-Track RMSE: 0.1084 m
+Cross-Track RMSE: 0.1254 m
+Cross-Track RMSE: 0.1108 m
+Cross-Track RMSE: 0.1162 m
+OPTUNA TRIAL RESULTS: ----------------
+Best RMSE: 0.1075
+Best params: {'left_wall_dist_num_layers': 2, 'left_wall_dist_activation': 'relu', 'left_wall_dist_out_channels_l0': 36, 'left_wall_dist_pool_size_l0': 2, 'left_wall_dist_out_channels_l1': 58, 'left_wall_dist_pool_size_l1': 4, 'left_wall_dist_fc_hidden': 128, 'track_width_num_layers': 2, 'track_width_activation': 'relu', 'track_width_out_channels_l0': 60, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 44, 'track_width_pool_size_l1': 4, 'track_width_fc_hidden': 106, 'heading_error_num_layers': 4, 'heading_error_activation': 'elu', 'heading_error_out_channels_l0': 43, 'heading_error_pool_size_l0': 2, 'heading_error_out_channels_l1': 46, 'heading_error_pool_size_l1': 2, 'heading_error_out_channels_l2': 89, 'heading_error_pool_size_l2': 4, 'heading_error_out_channels_l3': 61, 'heading_error_pool_size_l3': 4, 'heading_error_fc_hidden': 50}
+----------------

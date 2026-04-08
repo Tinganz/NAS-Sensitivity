@@ -1,0 +1,826 @@
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 68, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(68, 35, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=4690, out_features=84, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=84, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 35, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(35, 35, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(35, 94, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=3008, out_features=92, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=92, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 74, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(74, 120, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=16080, out_features=128, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 38, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(38, 38, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=10184, out_features=128, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 34, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(34, 33, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(33, 70, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=4550, out_features=100, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=100, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 33, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(33, 57, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=7638, out_features=125, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=125, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 35, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(35, 50, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=3300, out_features=78, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=78, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 109, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(109, 82, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=10988, out_features=128, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 34, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(34, 91, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(91, 112, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(112, 68, kernel_size=(3,), stride=(1,))
+  (10): ELU(alpha=1.0)
+  (11): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=1020, out_features=126, bias=True)
+  (14): ELU(alpha=1.0)
+  (15): Linear(in_features=126, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 48, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(48, 61, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(61, 98, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=1568, out_features=111, bias=True)
+  (11): ELU(alpha=1.0)
+  (12): Linear(in_features=111, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 63, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(63, 103, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=6798, out_features=121, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=121, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 70, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(70, 81, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(81, 55, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=1760, out_features=35, bias=True)
+  (11): ELU(alpha=1.0)
+  (12): Linear(in_features=35, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 103, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(103, 50, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=6650, out_features=108, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=108, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 39, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(39, 60, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(60, 127, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(127, 78, kernel_size=(3,), stride=(1,))
+  (10): ELU(alpha=1.0)
+  (11): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=2496, out_features=93, bias=True)
+  (14): ELU(alpha=1.0)
+  (15): Linear(in_features=93, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 69, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(69, 34, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(34, 57, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=912, out_features=91, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=91, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 93, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(93, 61, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(61, 35, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(35, 102, kernel_size=(3,), stride=(1,))
+  (10): ReLU()
+  (11): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=3264, out_features=97, bias=True)
+  (14): ReLU()
+  (15): Linear(in_features=97, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 42, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(42, 105, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(105, 69, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(69, 117, kernel_size=(3,), stride=(1,))
+  (10): ReLU()
+  (11): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=1872, out_features=96, bias=True)
+  (14): ReLU()
+  (15): Linear(in_features=96, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 48, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(48, 122, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=8052, out_features=127, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=127, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 43, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(43, 68, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(68, 37, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=2405, out_features=108, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=108, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 65, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(65, 79, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=21172, out_features=128, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 54, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(54, 54, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=7236, out_features=120, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=120, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 84, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(84, 53, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(53, 34, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=2210, out_features=72, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=72, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 32, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(32, 101, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(101, 72, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=9576, out_features=128, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=128, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 96, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(96, 82, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(82, 56, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=1792, out_features=35, bias=True)
+  (11): ELU(alpha=1.0)
+  (12): Linear(in_features=35, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 108, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(108, 85, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(85, 56, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(56, 58, kernel_size=(3,), stride=(1,))
+  (10): ELU(alpha=1.0)
+  (11): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=406, out_features=52, bias=True)
+  (14): ELU(alpha=1.0)
+  (15): Linear(in_features=52, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 73, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(73, 36, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(36, 69, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(69, 72, kernel_size=(3,), stride=(1,))
+  (10): ELU(alpha=1.0)
+  (11): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=504, out_features=60, bias=True)
+  (14): ELU(alpha=1.0)
+  (15): Linear(in_features=60, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 33, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(33, 67, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=8911, out_features=128, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 75, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(75, 32, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=4256, out_features=86, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=86, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 50, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(50, 104, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=6864, out_features=108, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=108, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 68, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(68, 33, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=4422, out_features=82, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=82, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 55, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(55, 127, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(127, 125, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=4000, out_features=108, bias=True)
+  (11): ELU(alpha=1.0)
+  (12): Linear(in_features=108, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 123, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(123, 48, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(48, 105, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(105, 32, kernel_size=(3,), stride=(1,))
+  (10): ReLU()
+  (11): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=1024, out_features=63, bias=True)
+  (14): ReLU()
+  (15): Linear(in_features=63, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 58, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(58, 127, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=17018, out_features=128, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 32, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(32, 41, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=5494, out_features=128, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 44, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(44, 33, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(33, 37, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=4921, out_features=90, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=90, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 128, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(128, 40, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(40, 121, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=7986, out_features=127, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=127, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 39, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(39, 42, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(42, 82, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=5412, out_features=95, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=95, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 57, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(57, 43, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(43, 51, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(51, 32, kernel_size=(3,), stride=(1,))
+  (10): ReLU()
+  (11): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=512, out_features=37, bias=True)
+  (14): ReLU()
+  (15): Linear(in_features=37, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 87, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(87, 44, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=5896, out_features=128, bias=True)
+  (8): ELU(alpha=1.0)
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 44, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(44, 32, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=8576, out_features=128, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 49, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(49, 71, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=9514, out_features=128, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=128, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 32, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(32, 48, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(48, 75, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=4950, out_features=83, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=83, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 84, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(84, 126, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(126, 32, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=1056, out_features=52, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=52, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 75, kernel_size=(3,), stride=(1,))
+  (1): ReLU()
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(75, 81, kernel_size=(3,), stride=(1,))
+  (4): ReLU()
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(81, 55, kernel_size=(3,), stride=(1,))
+  (7): ReLU()
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Flatten(start_dim=1, end_dim=-1)
+  (10): Linear(in_features=3575, out_features=78, bias=True)
+  (11): ReLU()
+  (12): Linear(in_features=78, out_features=1, bias=True)
+)
+
+--- Starting training for Architecture 8 ---
+
+[Model Init] arch_id=8
+Sequential(
+  (0): Conv1d(1, 41, kernel_size=(3,), stride=(1,))
+  (1): ELU(alpha=1.0)
+  (2): MaxPool1d(kernel_size=4, stride=4, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv1d(41, 40, kernel_size=(3,), stride=(1,))
+  (4): ELU(alpha=1.0)
+  (5): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Conv1d(40, 126, kernel_size=(3,), stride=(1,))
+  (7): ELU(alpha=1.0)
+  (8): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (9): Conv1d(126, 114, kernel_size=(3,), stride=(1,))
+  (10): ELU(alpha=1.0)
+  (11): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (12): Flatten(start_dim=1, end_dim=-1)
+  (13): Linear(in_features=3534, out_features=73, bias=True)
+  (14): ELU(alpha=1.0)
+  (15): Linear(in_features=73, out_features=1, bias=True)
+)
+OPTUNA TRIAL RESULTS: ----------------
+Best RMSE: inf
+Best params: {'left_wall_dist_num_layers': 3, 'left_wall_dist_activation': 'relu', 'left_wall_dist_out_channels_l0': 35, 'left_wall_dist_pool_size_l0': 4, 'left_wall_dist_out_channels_l1': 35, 'left_wall_dist_pool_size_l1': 2, 'left_wall_dist_out_channels_l2': 94, 'left_wall_dist_pool_size_l2': 4, 'left_wall_dist_fc_hidden': 92, 'track_width_num_layers': 2, 'track_width_activation': 'relu', 'track_width_out_channels_l0': 68, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 35, 'track_width_pool_size_l1': 4, 'track_width_fc_hidden': 84, 'heading_error_num_layers': 2, 'heading_error_activation': 'elu', 'heading_error_out_channels_l0': 74, 'heading_error_pool_size_l0': 2, 'heading_error_out_channels_l1': 120, 'heading_error_pool_size_l1': 4}
+----------------

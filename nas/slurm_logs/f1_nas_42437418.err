@@ -1,0 +1,1951 @@
+[I 2026-04-08 17:38:20,317] A new study created in memory with name: no-name-00ffce9d-fe7f-449a-a88c-eae9ff631486
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+
+The above exception was the direct cause of the following exception:
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    run_single_training(config, aid)
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    return fn(*args, **kwargs)
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    data = np.load(data_path, allow_pickle=True)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+    data = np.load(data_path, allow_pickle=True)
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:38:37,117] Trial 0 finished with value: inf and parameters: {'left_wall_dist_num_layers': 2, 'left_wall_dist_activation': 'elu', 'left_wall_dist_out_channels_l0': 53, 'left_wall_dist_pool_size_l0': 2, 'left_wall_dist_out_channels_l1': 81, 'left_wall_dist_pool_size_l1': 2, 'track_width_num_layers': 3, 'track_width_activation': 'relu', 'track_width_out_channels_l0': 53, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 89, 'track_width_pool_size_l1': 2, 'track_width_out_channels_l2': 48, 'track_width_pool_size_l2': 4, 'track_width_fc_hidden': 114, 'heading_error_num_layers': 4, 'heading_error_activation': 'relu', 'heading_error_out_channels_l0': 111, 'heading_error_pool_size_l0': 2, 'heading_error_out_channels_l1': 71, 'heading_error_pool_size_l1': 4, 'heading_error_out_channels_l2': 90, 'heading_error_pool_size_l2': 4, 'heading_error_out_channels_l3': 63, 'heading_error_pool_size_l3': 4, 'heading_error_fc_hidden': 74}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+GPU available: True (cuda), used: True
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+TPU available: False, using: 0 TPU cores
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+    return pickle.load(fid, **pickle_kwargs)
+
+Traceback (most recent call last):
+    return pickle.load(fid, **pickle_kwargs)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The above exception was the direct cause of the following exception:
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+
+Traceback (most recent call last):
+The above exception was the direct cause of the following exception:
+
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+    call._call_and_handle_interrupt(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    return fn(*args, **kwargs)
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    data = np.load(data_path, allow_pickle=True)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    data = np.load(data_path, allow_pickle=True)
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:38:51,329] Trial 1 finished with value: inf and parameters: {'left_wall_dist_num_layers': 2, 'left_wall_dist_activation': 'elu', 'left_wall_dist_out_channels_l0': 93, 'left_wall_dist_pool_size_l0': 4, 'left_wall_dist_out_channels_l1': 86, 'left_wall_dist_pool_size_l1': 2, 'track_width_num_layers': 3, 'track_width_activation': 'elu', 'track_width_out_channels_l0': 55, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 59, 'track_width_pool_size_l1': 4, 'track_width_out_channels_l2': 88, 'track_width_pool_size_l2': 2, 'track_width_fc_hidden': 119, 'heading_error_num_layers': 2, 'heading_error_activation': 'relu', 'heading_error_out_channels_l0': 73, 'heading_error_pool_size_l0': 2, 'heading_error_out_channels_l1': 32, 'heading_error_pool_size_l1': 2}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+    return pickle.load(fid, **pickle_kwargs)
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+
+The above exception was the direct cause of the following exception:
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+    call._call_and_handle_interrupt(
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    return trainer_fn(*args, **kwargs)
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    return trainer_fn(*args, **kwargs)
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    return fn(*args, **kwargs)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:39:06,479] Trial 2 finished with value: inf and parameters: {'left_wall_dist_num_layers': 4, 'left_wall_dist_activation': 'relu', 'left_wall_dist_out_channels_l0': 52, 'left_wall_dist_pool_size_l0': 2, 'left_wall_dist_out_channels_l1': 66, 'left_wall_dist_pool_size_l1': 2, 'left_wall_dist_out_channels_l2': 44, 'left_wall_dist_pool_size_l2': 2, 'left_wall_dist_out_channels_l3': 99, 'left_wall_dist_pool_size_l3': 2, 'left_wall_dist_fc_hidden': 111, 'track_width_num_layers': 2, 'track_width_activation': 'elu', 'track_width_out_channels_l0': 33, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 55, 'track_width_pool_size_l1': 2, 'heading_error_num_layers': 3, 'heading_error_activation': 'elu', 'heading_error_out_channels_l0': 93, 'heading_error_pool_size_l0': 4, 'heading_error_out_channels_l1': 83, 'heading_error_pool_size_l1': 4, 'heading_error_out_channels_l2': 59, 'heading_error_pool_size_l2': 2, 'heading_error_fc_hidden': 127}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+    main()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    call._call_and_handle_interrupt(
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:39:20,094] Trial 3 finished with value: inf and parameters: {'left_wall_dist_num_layers': 2, 'left_wall_dist_activation': 'relu', 'left_wall_dist_out_channels_l0': 56, 'left_wall_dist_pool_size_l0': 2, 'left_wall_dist_out_channels_l1': 104, 'left_wall_dist_pool_size_l1': 4, 'track_width_num_layers': 3, 'track_width_activation': 'relu', 'track_width_out_channels_l0': 37, 'track_width_pool_size_l0': 4, 'track_width_out_channels_l1': 47, 'track_width_pool_size_l1': 4, 'track_width_out_channels_l2': 56, 'track_width_pool_size_l2': 4, 'track_width_fc_hidden': 79, 'heading_error_num_layers': 4, 'heading_error_activation': 'elu', 'heading_error_out_channels_l0': 50, 'heading_error_pool_size_l0': 4, 'heading_error_out_channels_l1': 68, 'heading_error_pool_size_l1': 2, 'heading_error_out_channels_l2': 51, 'heading_error_pool_size_l2': 4, 'heading_error_out_channels_l3': 58, 'heading_error_pool_size_l3': 2, 'heading_error_fc_hidden': 36}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:39:34,725] Trial 4 finished with value: inf and parameters: {'left_wall_dist_num_layers': 3, 'left_wall_dist_activation': 'relu', 'left_wall_dist_out_channels_l0': 49, 'left_wall_dist_pool_size_l0': 2, 'left_wall_dist_out_channels_l1': 106, 'left_wall_dist_pool_size_l1': 2, 'left_wall_dist_out_channels_l2': 49, 'left_wall_dist_pool_size_l2': 2, 'left_wall_dist_fc_hidden': 125, 'track_width_num_layers': 2, 'track_width_activation': 'elu', 'track_width_out_channels_l0': 92, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 84, 'track_width_pool_size_l1': 4, 'heading_error_num_layers': 3, 'heading_error_activation': 'elu', 'heading_error_out_channels_l0': 37, 'heading_error_pool_size_l0': 4, 'heading_error_out_channels_l1': 39, 'heading_error_pool_size_l1': 2, 'heading_error_out_channels_l2': 83, 'heading_error_pool_size_l2': 4, 'heading_error_fc_hidden': 93}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+
+The above exception was the direct cause of the following exception:
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    run_single_training(config, aid)
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+    call._call_and_handle_interrupt(
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    return trainer_fn(*args, **kwargs)
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    raise pickle.UnpicklingError(
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:39:48,450] Trial 5 finished with value: inf and parameters: {'left_wall_dist_num_layers': 4, 'left_wall_dist_activation': 'elu', 'left_wall_dist_out_channels_l0': 127, 'left_wall_dist_pool_size_l0': 4, 'left_wall_dist_out_channels_l1': 36, 'left_wall_dist_pool_size_l1': 2, 'left_wall_dist_out_channels_l2': 79, 'left_wall_dist_pool_size_l2': 4, 'left_wall_dist_out_channels_l3': 64, 'left_wall_dist_pool_size_l3': 4, 'left_wall_dist_fc_hidden': 71, 'track_width_num_layers': 2, 'track_width_activation': 'relu', 'track_width_out_channels_l0': 110, 'track_width_pool_size_l0': 4, 'track_width_out_channels_l1': 69, 'track_width_pool_size_l1': 2, 'heading_error_num_layers': 4, 'heading_error_activation': 'elu', 'heading_error_out_channels_l0': 57, 'heading_error_pool_size_l0': 4, 'heading_error_out_channels_l1': 99, 'heading_error_pool_size_l1': 2, 'heading_error_out_channels_l2': 95, 'heading_error_pool_size_l2': 2, 'heading_error_out_channels_l3': 108, 'heading_error_pool_size_l3': 2, 'heading_error_fc_hidden': 79}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:40:01,865] Trial 6 finished with value: inf and parameters: {'left_wall_dist_num_layers': 2, 'left_wall_dist_activation': 'relu', 'left_wall_dist_out_channels_l0': 98, 'left_wall_dist_pool_size_l0': 2, 'left_wall_dist_out_channels_l1': 47, 'left_wall_dist_pool_size_l1': 4, 'left_wall_dist_fc_hidden': 99, 'track_width_num_layers': 3, 'track_width_activation': 'elu', 'track_width_out_channels_l0': 55, 'track_width_pool_size_l0': 4, 'track_width_out_channels_l1': 33, 'track_width_pool_size_l1': 2, 'track_width_out_channels_l2': 73, 'track_width_pool_size_l2': 4, 'track_width_fc_hidden': 37, 'heading_error_num_layers': 2, 'heading_error_activation': 'relu', 'heading_error_out_channels_l0': 64, 'heading_error_pool_size_l0': 4, 'heading_error_out_channels_l1': 50, 'heading_error_pool_size_l1': 4, 'heading_error_fc_hidden': 100}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:40:14,955] Trial 7 finished with value: inf and parameters: {'left_wall_dist_num_layers': 3, 'left_wall_dist_activation': 'relu', 'left_wall_dist_out_channels_l0': 61, 'left_wall_dist_pool_size_l0': 2, 'left_wall_dist_out_channels_l1': 101, 'left_wall_dist_pool_size_l1': 4, 'left_wall_dist_out_channels_l2': 98, 'left_wall_dist_pool_size_l2': 4, 'left_wall_dist_fc_hidden': 71, 'track_width_num_layers': 2, 'track_width_activation': 'relu', 'track_width_out_channels_l0': 41, 'track_width_pool_size_l0': 4, 'track_width_out_channels_l1': 76, 'track_width_pool_size_l1': 4, 'track_width_fc_hidden': 93, 'heading_error_num_layers': 3, 'heading_error_activation': 'relu', 'heading_error_out_channels_l0': 119, 'heading_error_pool_size_l0': 4, 'heading_error_out_channels_l1': 97, 'heading_error_pool_size_l1': 4, 'heading_error_out_channels_l2': 94, 'heading_error_pool_size_l2': 2, 'heading_error_fc_hidden': 52}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:40:28,297] Trial 8 finished with value: inf and parameters: {'left_wall_dist_num_layers': 2, 'left_wall_dist_activation': 'relu', 'left_wall_dist_out_channels_l0': 33, 'left_wall_dist_pool_size_l0': 4, 'left_wall_dist_out_channels_l1': 33, 'left_wall_dist_pool_size_l1': 2, 'left_wall_dist_fc_hidden': 110, 'track_width_num_layers': 3, 'track_width_activation': 'relu', 'track_width_out_channels_l0': 50, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 64, 'track_width_pool_size_l1': 4, 'track_width_out_channels_l2': 91, 'track_width_pool_size_l2': 4, 'track_width_fc_hidden': 49, 'heading_error_num_layers': 2, 'heading_error_activation': 'elu', 'heading_error_out_channels_l0': 113, 'heading_error_pool_size_l0': 2, 'heading_error_out_channels_l1': 97, 'heading_error_pool_size_l1': 4}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    main()
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:40:41,574] Trial 9 finished with value: inf and parameters: {'left_wall_dist_num_layers': 2, 'left_wall_dist_activation': 'elu', 'left_wall_dist_out_channels_l0': 67, 'left_wall_dist_pool_size_l0': 4, 'left_wall_dist_out_channels_l1': 41, 'left_wall_dist_pool_size_l1': 4, 'left_wall_dist_fc_hidden': 114, 'track_width_num_layers': 2, 'track_width_activation': 'relu', 'track_width_out_channels_l0': 39, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 107, 'track_width_pool_size_l1': 2, 'heading_error_num_layers': 2, 'heading_error_activation': 'relu', 'heading_error_out_channels_l0': 61, 'heading_error_pool_size_l0': 2, 'heading_error_out_channels_l1': 38, 'heading_error_pool_size_l1': 4, 'heading_error_fc_hidden': 116}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:40:54,605] Trial 10 finished with value: inf and parameters: {'left_wall_dist_num_layers': 3, 'left_wall_dist_activation': 'elu', 'left_wall_dist_out_channels_l0': 36, 'left_wall_dist_pool_size_l0': 2, 'left_wall_dist_out_channels_l1': 65, 'left_wall_dist_pool_size_l1': 2, 'left_wall_dist_out_channels_l2': 32, 'left_wall_dist_pool_size_l2': 4, 'left_wall_dist_fc_hidden': 33, 'track_width_num_layers': 4, 'track_width_activation': 'relu', 'track_width_out_channels_l0': 77, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 121, 'track_width_pool_size_l1': 2, 'track_width_out_channels_l2': 34, 'track_width_pool_size_l2': 2, 'track_width_out_channels_l3': 69, 'track_width_pool_size_l3': 2, 'track_width_fc_hidden': 128, 'heading_error_num_layers': 4, 'heading_error_activation': 'relu', 'heading_error_out_channels_l0': 94, 'heading_error_pool_size_l0': 2, 'heading_error_out_channels_l1': 62, 'heading_error_pool_size_l1': 4, 'heading_error_out_channels_l2': 32, 'heading_error_pool_size_l2': 4, 'heading_error_out_channels_l3': 32, 'heading_error_pool_size_l3': 4, 'heading_error_fc_hidden': 47}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    return pickle.load(fid, **pickle_kwargs)
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:41:08,304] Trial 11 finished with value: inf and parameters: {'left_wall_dist_num_layers': 2, 'left_wall_dist_activation': 'elu', 'left_wall_dist_out_channels_l0': 81, 'left_wall_dist_pool_size_l0': 4, 'left_wall_dist_out_channels_l1': 82, 'left_wall_dist_pool_size_l1': 2, 'track_width_num_layers': 4, 'track_width_activation': 'elu', 'track_width_out_channels_l0': 69, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 93, 'track_width_pool_size_l1': 4, 'track_width_out_channels_l2': 127, 'track_width_pool_size_l2': 2, 'track_width_out_channels_l3': 40, 'track_width_pool_size_l3': 4, 'track_width_fc_hidden': 127, 'heading_error_num_layers': 3, 'heading_error_activation': 'relu', 'heading_error_out_channels_l0': 85, 'heading_error_pool_size_l0': 2, 'heading_error_out_channels_l1': 33, 'heading_error_pool_size_l1': 2, 'heading_error_out_channels_l2': 120, 'heading_error_pool_size_l2': 4, 'heading_error_fc_hidden': 127}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:41:21,501] Trial 12 finished with value: inf and parameters: {'left_wall_dist_num_layers': 2, 'left_wall_dist_activation': 'elu', 'left_wall_dist_out_channels_l0': 91, 'left_wall_dist_pool_size_l0': 4, 'left_wall_dist_out_channels_l1': 79, 'left_wall_dist_pool_size_l1': 2, 'track_width_num_layers': 3, 'track_width_activation': 'elu', 'track_width_out_channels_l0': 54, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 46, 'track_width_pool_size_l1': 4, 'track_width_out_channels_l2': 44, 'track_width_pool_size_l2': 2, 'track_width_fc_hidden': 102, 'heading_error_num_layers': 2, 'heading_error_activation': 'relu', 'heading_error_out_channels_l0': 73, 'heading_error_pool_size_l0': 2, 'heading_error_out_channels_l1': 124, 'heading_error_pool_size_l1': 2}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:41:34,634] Trial 13 finished with value: inf and parameters: {'left_wall_dist_num_layers': 3, 'left_wall_dist_activation': 'elu', 'left_wall_dist_out_channels_l0': 42, 'left_wall_dist_pool_size_l0': 4, 'left_wall_dist_out_channels_l1': 128, 'left_wall_dist_pool_size_l1': 2, 'left_wall_dist_out_channels_l2': 113, 'left_wall_dist_pool_size_l2': 2, 'left_wall_dist_fc_hidden': 128, 'track_width_num_layers': 3, 'track_width_activation': 'elu', 'track_width_out_channels_l0': 49, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 53, 'track_width_pool_size_l1': 2, 'track_width_out_channels_l2': 88, 'track_width_pool_size_l2': 4, 'track_width_fc_hidden': 117, 'heading_error_num_layers': 4, 'heading_error_activation': 'relu', 'heading_error_out_channels_l0': 45, 'heading_error_pool_size_l0': 2, 'heading_error_out_channels_l1': 55, 'heading_error_pool_size_l1': 2, 'heading_error_out_channels_l2': 45, 'heading_error_pool_size_l2': 4, 'heading_error_out_channels_l3': 65, 'heading_error_pool_size_l3': 4, 'heading_error_fc_hidden': 69}. Best is trial 0 with value: inf.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 494, in load
+    return pickle.load(fid, **pickle_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, 'v'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 584, in <module>
+    main()
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 580, in main
+    run_single_training(config, aid)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 553, in run_single_training
+    trainer.fit(module, datamodule=dm, ckpt_path=ckpt_path)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 584, in fit
+    call._call_and_handle_interrupt(
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 630, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1039, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 118, in setup
+    full_dataset = LidarDataset(self.train_path, self.target_col)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/packages/f110_scripts/src/f110_scripts/train/train_nn.py", line 58, in __init__
+    data = np.load(data_path, allow_pickle=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 496, in load
+    raise pickle.UnpicklingError(
+_pickle.UnpicklingError: Failed to interpret file 'nas/datasets/combined_train.npz' as a pickle
+[I 2026-04-08 17:41:47,746] Trial 14 finished with value: inf and parameters: {'left_wall_dist_num_layers': 3, 'left_wall_dist_activation': 'elu', 'left_wall_dist_out_channels_l0': 70, 'left_wall_dist_pool_size_l0': 2, 'left_wall_dist_out_channels_l1': 53, 'left_wall_dist_pool_size_l1': 2, 'left_wall_dist_out_channels_l2': 66, 'left_wall_dist_pool_size_l2': 4, 'left_wall_dist_fc_hidden': 80, 'track_width_num_layers': 4, 'track_width_activation': 'relu', 'track_width_out_channels_l0': 64, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 37, 'track_width_pool_size_l1': 2, 'track_width_out_channels_l2': 53, 'track_width_pool_size_l2': 2, 'track_width_out_channels_l3': 123, 'track_width_pool_size_l3': 2, 'track_width_fc_hidden': 125, 'heading_error_num_layers': 3, 'heading_error_activation': 'relu', 'heading_error_out_channels_l0': 128, 'heading_error_pool_size_l0': 2, 'heading_error_out_channels_l1': 47, 'heading_error_pool_size_l1': 4, 'heading_error_out_channels_l2': 78, 'heading_error_pool_size_l2': 4, 'heading_error_fc_hidden': 65}. Best is trial 0 with value: inf.
