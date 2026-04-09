@@ -15,7 +15,7 @@ def main() -> None:
     training_data: str = "f1tenth_ng_zc/nas/datasets/combined_train.npz"
 
     study = optuna.create_study(direction="minimize")
-    study.optimize(objective, n_trials=15)
+    study.optimize(objective, n_trials=100)
 
     _print_info(study.best_trial.value, study.best_trial.params)
 

@@ -3,9 +3,7 @@ import re
 import subprocess
 import sys
 
-def test_cnn_arch(left_wall_dist_filepath: str = "data/models/left_wall_dist_arch1.pt",
-                track_width_filepath: str = "data/models/track_width_arch1.pt", 
-                heading_error_filepath: str = "data/models/heading_error_arch1.pt") -> float:
+def test_cnn_arch(left_wall_dist_filepath: str, track_width_filepath: str, heading_error_filepath: str) -> float:
     """returns RMSE using .pt weights as input"""
     
     CMD = [

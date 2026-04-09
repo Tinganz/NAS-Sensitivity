@@ -142,7 +142,7 @@ def _build_training_config(model_block: dict[str, any], target_col: str, dataset
             "prefetch_factor": 2,
         },
         "training": {
-            "max_epochs": 16,
+            "max_epochs": 21,
             "lr": 1e-3,
             "weight_decay": 1e-5,
             "early_stopping_patience": 11,

@@ -1,6 +1,6 @@
 ## Repository specific
 packages/f110_scripts/src/f110_scripts/train/slurm_logs/
-data/datasets/combined_all.npz
+data/datasets/
 data/models/checkpoints
 nas/datasets
 
