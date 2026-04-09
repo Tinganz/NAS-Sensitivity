@@ -149,3 +149,77 @@ SLURM auto-requeueing enabled. Setting signal handlers.
 `Trainer.fit` stopped: `max_epochs=21` reached.
 `Trainer.fit` stopped: `max_epochs=21` reached.
 [I 2026-04-09 13:39:58,210] Trial 2 finished with value: 0.1345 and parameters: {'left_wall_dist_num_layers': 3, 'left_wall_dist_activation': 'elu', 'left_wall_dist_out_channels_l0': 129, 'left_wall_dist_pool_size_l0': 4, 'left_wall_dist_out_channels_l1': 47, 'left_wall_dist_pool_size_l1': 8, 'left_wall_dist_out_channels_l2': 54, 'left_wall_dist_pool_size_l2': 2, 'left_wall_dist_fc_hidden': 124, 'track_width_num_layers': 5, 'track_width_activation': 'relu', 'track_width_out_channels_l0': 48, 'track_width_pool_size_l0': 4, 'track_width_out_channels_l1': 47, 'track_width_pool_size_l1': 2, 'track_width_out_channels_l2': 48, 'track_width_pool_size_l2': 8, 'track_width_out_channels_l3': 111, 'track_width_pool_size_l3': 8, 'heading_error_num_layers': 5, 'heading_error_activation': 'relu', 'heading_error_out_channels_l0': 37, 'heading_error_pool_size_l0': 4, 'heading_error_out_channels_l1': 68, 'heading_error_pool_size_l1': 2, 'heading_error_out_channels_l2': 197, 'heading_error_pool_size_l2': 8, 'heading_error_out_channels_l3': 141, 'heading_error_pool_size_l3': 8, 'heading_error_fc_hidden': 45}. Best is trial 1 with value: 0.1176.
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:881: Checkpoint directory /nas/longleaf/home/zayah/f1tenth_ng_zc/data/models/checkpoints/track_width_arch8 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:881: Checkpoint directory /nas/longleaf/home/zayah/f1tenth_ng_zc/data/models/checkpoints/left_wall_dist_arch8 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:881: Checkpoint directory /nas/longleaf/home/zayah/f1tenth_ng_zc/data/models/checkpoints/heading_error_arch8 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+`Trainer.fit` stopped: `max_epochs=21` reached.
+`Trainer.fit` stopped: `max_epochs=21` reached.
+`Trainer.fit` stopped: `max_epochs=21` reached.
+[I 2026-04-09 13:42:50,480] Trial 3 finished with value: 0.1256 and parameters: {'left_wall_dist_num_layers': 3, 'left_wall_dist_activation': 'relu', 'left_wall_dist_out_channels_l0': 87, 'left_wall_dist_pool_size_l0': 8, 'left_wall_dist_out_channels_l1': 61, 'left_wall_dist_pool_size_l1': 2, 'left_wall_dist_out_channels_l2': 123, 'left_wall_dist_pool_size_l2': 8, 'left_wall_dist_fc_hidden': 112, 'track_width_num_layers': 3, 'track_width_activation': 'elu', 'track_width_out_channels_l0': 121, 'track_width_pool_size_l0': 8, 'track_width_out_channels_l1': 59, 'track_width_pool_size_l1': 4, 'track_width_out_channels_l2': 40, 'track_width_pool_size_l2': 4, 'track_width_fc_hidden': 40, 'heading_error_num_layers': 4, 'heading_error_activation': 'elu', 'heading_error_out_channels_l0': 143, 'heading_error_pool_size_l0': 2, 'heading_error_out_channels_l1': 95, 'heading_error_pool_size_l1': 8, 'heading_error_out_channels_l2': 35, 'heading_error_pool_size_l2': 2, 'heading_error_out_channels_l3': 241, 'heading_error_pool_size_l3': 8, 'heading_error_fc_hidden': 67}. Best is trial 1 with value: 0.1176.
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:881: Checkpoint directory /nas/longleaf/home/zayah/f1tenth_ng_zc/data/models/checkpoints/heading_error_arch8 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:881: Checkpoint directory /nas/longleaf/home/zayah/f1tenth_ng_zc/data/models/checkpoints/left_wall_dist_arch8 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:881: Checkpoint directory /nas/longleaf/home/zayah/f1tenth_ng_zc/data/models/checkpoints/track_width_arch8 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+`Trainer.fit` stopped: `max_epochs=21` reached.
+`Trainer.fit` stopped: `max_epochs=21` reached.
+`Trainer.fit` stopped: `max_epochs=21` reached.
+[I 2026-04-09 13:46:31,221] Trial 4 finished with value: 0.1225 and parameters: {'left_wall_dist_num_layers': 5, 'left_wall_dist_activation': 'relu', 'left_wall_dist_out_channels_l0': 38, 'left_wall_dist_pool_size_l0': 2, 'left_wall_dist_out_channels_l1': 54, 'left_wall_dist_pool_size_l1': 2, 'left_wall_dist_out_channels_l2': 96, 'left_wall_dist_pool_size_l2': 8, 'left_wall_dist_out_channels_l3': 255, 'left_wall_dist_pool_size_l3': 2, 'left_wall_dist_out_channels_l4': 55, 'left_wall_dist_pool_size_l4': 4, 'left_wall_dist_fc_hidden': 37, 'track_width_num_layers': 5, 'track_width_activation': 'relu', 'track_width_out_channels_l0': 48, 'track_width_pool_size_l0': 2, 'track_width_out_channels_l1': 35, 'track_width_pool_size_l1': 4, 'track_width_out_channels_l2': 46, 'track_width_pool_size_l2': 4, 'track_width_out_channels_l3': 208, 'track_width_pool_size_l3': 8, 'track_width_out_channels_l4': 89, 'track_width_pool_size_l4': 8, 'track_width_fc_hidden': 52, 'heading_error_num_layers': 3, 'heading_error_activation': 'elu', 'heading_error_out_channels_l0': 140, 'heading_error_pool_size_l0': 2, 'heading_error_out_channels_l1': 71, 'heading_error_pool_size_l1': 2, 'heading_error_out_channels_l2': 215, 'heading_error_pool_size_l2': 4}. Best is trial 1 with value: 0.1176.
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:881: Checkpoint directory /nas/longleaf/home/zayah/f1tenth_ng_zc/data/models/checkpoints/heading_error_arch8 exists and is not empty.
+/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:881: Checkpoint directory /nas/longleaf/home/zayah/f1tenth_ng_zc/data/models/checkpoints/left_wall_dist_arch8 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:881: Checkpoint directory /nas/longleaf/home/zayah/f1tenth_ng_zc/data/models/checkpoints/track_width_arch8 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+`Trainer.fit` stopped: `max_epochs=21` reached.
+`Trainer.fit` stopped: `max_epochs=21` reached.
+`Trainer.fit` stopped: `max_epochs=21` reached.
