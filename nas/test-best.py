@@ -23,6 +23,9 @@ CONFIG_OUTPUT_DIR: Path | None = None
 # Set an integer to clamp training.max_epochs in every exported YAML.
 MAX_EPOCHS: int | None = 400
 
+# Override training.early_stopping_patience (set None to keep NAS defaults).
+EARLY_STOPPING_PATIENCE: int | None = 350
+
 # Choose "train" to retrain + evaluate or "test" to evaluate existing .pt files.
 MODE = "train"  # valid values: "train", "test"
 
@@ -59,6 +62,7 @@ def main() -> None:
         dataset_path=DATASET_PATH,
         output_dir=CONFIG_OUTPUT_DIR,
         max_epochs=MAX_EPOCHS,
+        early_stopping_patience=EARLY_STOPPING_PATIENCE,
     )
 
     mode = MODE.lower()

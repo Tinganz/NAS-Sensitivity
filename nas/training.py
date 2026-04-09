@@ -49,6 +49,7 @@ def export_trial_configs(
     output_dir: str | Path,
     dataset_path: str = DEFAULT_DATASET,
     max_epochs: int | None = None,
+    early_stopping_patience: int | None = None,
 ) -> list[Path]:
     """
     Materialise Lightning YAML configs for each target in a NAS trial entry.
@@ -68,6 +69,8 @@ def export_trial_configs(
         cfg = _build_training_config(model_block, target_col, dataset_path)
         if max_epochs is not None:
             cfg["training"]["max_epochs"] = int(max_epochs)
+        if early_stopping_patience is not None:
+            cfg["training"]["early_stopping_patience"] = int(early_stopping_patience)
 
         cfg_name = f"{target_col}_arch{target['arch_id']}_trial{trial_id}.yaml"
         cfg_path = output_dir / cfg_name
@@ -174,6 +177,7 @@ def orchestrate_best_trial(
     dataset_path: str = DEFAULT_DATASET,
     output_dir: str | Path | None = None,
     max_epochs: int | None = None,
+    early_stopping_patience: int | None = None,
 ) -> tuple[dict[str, Any], list[Path]]:
     """
     High-level helper to export configs for the top NAS trial.
@@ -192,6 +196,7 @@ def orchestrate_best_trial(
         export_dir,
         dataset_path=dataset_path,
         max_epochs=max_epochs,
+        early_stopping_patience=early_stopping_patience,
     )
     return best_trial, generated_configs
 
@@ -221,6 +226,11 @@ def _build_arg_parser() -> argparse.ArgumentParser:
         help="Override training.max_epochs in the exported configs.",
     )
     parser.add_argument(
+        "--early-stopping-patience",
+        type=int,
+        help="Override training.early_stopping_patience in the exported configs.",
+    )
+    parser.add_argument(
         "--train",
         action="store_true",
         help="Run training immediately after generating the configs.",
@@ -237,6 +247,7 @@ def main(argv: Sequence[str] | None = None) -> None:
         dataset_path=args.dataset,
         output_dir=args.output_dir,
         max_epochs=args.max_epochs,
+        early_stopping_patience=args.early_stopping_patience,
     )
 
     trained_models: list[Path] = []
@@ -251,6 +262,8 @@ def main(argv: Sequence[str] | None = None) -> None:
         print(f"[config] {cfg}")
     if args.max_epochs:
         print(f"[config] max_epochs={args.max_epochs}")
+    if args.early_stopping_patience:
+        print(f"[config] early_stopping_patience={args.early_stopping_patience}")
     if args.train:
         for model_path in trained_models:
             print(f"[checkpoint] {model_path}")

@@ -54,4 +54,6 @@ def test_cnn_arch(left_wall_dist_filepath: str, track_width_filepath: str, headi
     return rmse
 
 if __name__ == "__main__":
-    test_cnn_arch()
+    test_cnn_arch("data/models/left_wall_dist_arch4.pt", 
+                "data/models/track_width_arch4.pt", 
+                "data/models/heading_error_arch4.pt")
