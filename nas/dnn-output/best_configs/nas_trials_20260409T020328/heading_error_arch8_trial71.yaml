@@ -7,10 +7,10 @@ data:
   pin_memory: true
   prefetch_factor: 2
 training:
-  max_epochs: 400
+  max_epochs: 7
   lr: 0.001
   weight_decay: 1.0e-05
-  early_stopping_patience: 350
+  early_stopping_patience: 6
   lr_patience: 5
   lr_scheduler_factor: 0.5
   optimizer: adam
