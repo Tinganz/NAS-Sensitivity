@@ -3,6 +3,7 @@ packages/f110_scripts/src/f110_scripts/train/slurm_logs/
 data/datasets/
 data/models/checkpoints
 nas/datasets
+data/models/lightning_logs/
 
 ## https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
 # General
