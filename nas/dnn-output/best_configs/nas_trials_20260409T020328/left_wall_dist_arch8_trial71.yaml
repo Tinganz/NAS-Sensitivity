@@ -10,7 +10,7 @@ training:
   max_epochs: 400
   lr: 0.001
   weight_decay: 1.0e-05
-  early_stopping_patience: 11
+  early_stopping_patience: 350
   lr_patience: 5
   lr_scheduler_factor: 0.5
   optimizer: adam

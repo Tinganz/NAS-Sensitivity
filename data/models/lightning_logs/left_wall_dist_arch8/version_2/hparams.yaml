@@ -2,24 +2,34 @@ arch_id: 8
 lr: 0.001
 lr_patience: 5
 lr_scheduler_factor: 0.5
-max_epochs: 2
+max_epochs: 21
 model_cfg:
   arch_id: 8
   dynamic:
     activation: elu
     conv_layers:
     - kernel_size: 3
-      out_channels: 90
+      out_channels: 38
       padding: 0
-      pool_size: 0
+      pool_size: 2
       stride: 1
     - kernel_size: 3
-      out_channels: 78
+      out_channels: 38
       padding: 0
-      pool_size: 0
+      pool_size: 8
+      stride: 1
+    - kernel_size: 3
+      out_channels: 36
+      padding: 0
+      pool_size: 2
+      stride: 1
+    - kernel_size: 3
+      out_channels: 57
+      padding: 0
+      pool_size: 2
       stride: 1
     fc_layers:
-    - 60
+    - 45
     in_channels: 1
     input_length: 1080
 optimizer: adam

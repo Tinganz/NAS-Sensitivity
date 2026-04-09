@@ -33,7 +33,7 @@ class DynamicCNN:
         def _key(name: str) -> str:
             return f"{prefix}_{name}" if prefix else name
 
-        self.num_layers = trial.suggest_int(_key("num_layers"), 2, 4)
+        self.num_layers = trial.suggest_int(_key("num_layers"), 3, 5)
         self.activation = trial.suggest_categorical(_key("activation"), ["elu", "relu"])
         self.conv_layers: list[dict[str, int]] = []
 
@@ -47,8 +47,8 @@ class DynamicCNN:
         for idx in range(self.num_layers):
             out_key = _key(f"out_channels_l{idx}")
             pool_key = _key(f"pool_size_l{idx}")
-            out_channels = trial.suggest_int(out_key, 32, 128, log=True)
-            pool_size = trial.suggest_categorical(pool_key, [2, 4])
+            out_channels = trial.suggest_int(out_key, 32, 256, log=True)
+            pool_size = trial.suggest_categorical(pool_key, [2, 4, 8])
             # clamp pool_size to 1 (skip) when feature length is less than the selected pool size
             if feature_length < pool_size:
                 pool_size = 1
