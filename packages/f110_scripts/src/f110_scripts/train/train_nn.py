@@ -55,7 +55,7 @@ class LidarDataset(Dataset):
                 derive track width on-the-fly as
                 ``left_wall_dist + right_wall_dist`` when the key is absent.
         """
-        data = np.load(data_path)
+        data = np.load(data_path, allow_pickle=True)
         self.x = data["scans"].astype(np.float32)
 
         # Derive track_width on-the-fly when the column is absent from the file
