@@ -71,9 +71,9 @@ DEFAULT_RUNS = [
     ),
     (
         "arch8",
-        "data/models/left_wall_dist_arch8.pt",
-        "data/models/track_width_arch8.pt",
-        "data/models/heading_error_arch8.pt",
+        "nas/dnn-output/best_configs/nas_trials_20260409T020328/heading_error_arch8_trial71.pt",
+        "nas/dnn-output/best_configs/nas_trials_20260409T020328/left_wall_dist_arch8_trial71.pt",
+        "nas/dnn-output/best_configs/nas_trials_20260409T020328/track_width_arch8_trial71.pt",
     ),
 ]
 DEFAULT_OUTPUT_DIR = Path(__file__).with_name("compare-map")

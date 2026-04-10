@@ -13,11 +13,11 @@ from nas.testing import test_cnn_arch
 from nas.training import orchestrate_best_trial, train_from_configs
 
 # Leave as None to automatically use the newest JSONL under nas/dnn-output/.
-TRIALS_FILE: Path | None = None
+TRIALS_FILE: Path | str | None = None
 DATASET_PATH = "nas/datasets/combined_train.npz"
 
 # Override where configs land. Defaults to nas/dnn-output/best_configs/<stem>.
-CONFIG_OUTPUT_DIR: Path | None = None
+CONFIG_OUTPUT_DIR: Path | None = "nas/dnn-output/nas_trials_20260409T020328.jsonl"
 
 # Set an integer to clamp training.max_epochs in every exported YAML.
 MAX_EPOCHS: int | None = 400
@@ -120,9 +120,22 @@ def evaluate_models(model_paths: list[Path]) -> float | None:
     return rmse
 
 
+def _resolve_trials_file(trials_file: Path | str | None) -> Path | None:
+    if trials_file is None:
+        return None
+    path = Path(trials_file).expanduser()
+    if not path.is_absolute():
+        path = (REPO_ROOT / path).resolve()
+    else:
+        path = path.resolve()
+    if not path.exists():
+        raise FileNotFoundError(f"TRIALS_FILE {path} does not exist.")
+    return path
+
+
 def main() -> None:
     best_trial, config_paths = orchestrate_best_trial(
-        trials_path=TRIALS_FILE,
+        trials_path=_resolve_trials_file(TRIALS_FILE),
         dataset_path=DATASET_PATH,
         output_dir=CONFIG_OUTPUT_DIR,
         max_epochs=MAX_EPOCHS,
