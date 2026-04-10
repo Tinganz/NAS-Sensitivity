@@ -33,7 +33,7 @@ class DynamicCNN:
         def _key(name: str) -> str:
             return f"{prefix}_{name}" if prefix else name
 
-        self.num_layers = trial.suggest_int(_key("num_layers"), 3, 5)
+        self.num_layers = trial.suggest_int(_key("num_layers"), 2, 5)
         self.activation = trial.suggest_categorical(_key("activation"), ["elu", "relu"])
         self.conv_layers: list[dict[str, int]] = []
 
