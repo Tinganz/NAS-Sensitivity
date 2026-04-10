@@ -1,0 +1,6648 @@
+{
+  "Lap Time": {
+    "lap_time_s": 106.35,
+    "steps": 10635.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1108,
+    "crosstrack_mean_m": 0.0735,
+    "crosstrack_max_m": 0.5175,
+    "crosstrack_std_m": 0.0828
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.178,
+    "heading_error_rmse_deg": 5.2275,
+    "heading_error_std_deg": 5.2263,
+    "heading_error_max_deg": 30.2468
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.5411,
+    "wall_mean_distance_m": 0.9557,
+    "wall_std_distance_m": 0.0745
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4503,
+    "steering_rate_max_rad_s": 18.3192,
+    "steering_rate_std_rad_s": 0.8515
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9207,
+    "speed_max_m_s": 4.9173,
+    "speed_std_m_s": 0.8214
+  }
+}
+F1/Austin/Austin: arch1 lap RMSE=0.1108 m  steps=10635
+{
+  "Lap Time": {
+    "lap_time_s": 115.67,
+    "steps": 11567.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0934,
+    "crosstrack_mean_m": 0.0665,
+    "crosstrack_max_m": 0.3318,
+    "crosstrack_std_m": 0.0656
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.0253,
+    "heading_error_rmse_deg": 5.5726,
+    "heading_error_std_deg": 5.5663,
+    "heading_error_max_deg": 41.4872
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6605,
+    "wall_mean_distance_m": 0.9631,
+    "wall_std_distance_m": 0.0655
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4921,
+    "steering_rate_max_rad_s": 28.7838,
+    "steering_rate_std_rad_s": 0.8345
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.6307,
+    "speed_max_m_s": 4.7634,
+    "speed_std_m_s": 0.8409
+  }
+}
+F1/Austin/Austin: arch2 lap RMSE=0.0934 m  steps=11567
+{
+  "Lap Time": {
+    "lap_time_s": 109.55,
+    "steps": 10955.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0929,
+    "crosstrack_mean_m": 0.0517,
+    "crosstrack_max_m": 0.4665,
+    "crosstrack_std_m": 0.0772
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.0745,
+    "heading_error_rmse_deg": 6.2487,
+    "heading_error_std_deg": 6.2413,
+    "heading_error_max_deg": 48.5192
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.514,
+    "wall_mean_distance_m": 0.9753,
+    "wall_std_distance_m": 0.0742
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.6166,
+    "steering_rate_max_rad_s": 17.7441,
+    "steering_rate_std_rad_s": 0.8521
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8556,
+    "speed_max_m_s": 4.8632,
+    "speed_std_m_s": 0.8786
+  }
+}
+F1/Austin/Austin: arch3 lap RMSE=0.0929 m  steps=10955
+{
+  "Lap Time": {
+    "lap_time_s": 107.64,
+    "steps": 10764.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0963,
+    "crosstrack_mean_m": 0.0611,
+    "crosstrack_max_m": 0.374,
+    "crosstrack_std_m": 0.0744
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.4738,
+    "heading_error_rmse_deg": 4.8963,
+    "heading_error_std_deg": 4.8903,
+    "heading_error_max_deg": 42.987
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6158,
+    "wall_mean_distance_m": 0.9636,
+    "wall_std_distance_m": 0.0722
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5027,
+    "steering_rate_max_rad_s": 8.397,
+    "steering_rate_std_rad_s": 0.5684
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.936,
+    "speed_max_m_s": 4.8707,
+    "speed_std_m_s": 0.8566
+  }
+}
+F1/Austin/Austin: arch4 lap RMSE=0.0963 m  steps=10764
+{
+  "Lap Time": {
+    "lap_time_s": 109.05,
+    "steps": 10905.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1045,
+    "crosstrack_mean_m": 0.0709,
+    "crosstrack_max_m": 0.3387,
+    "crosstrack_std_m": 0.0767
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.0776,
+    "heading_error_rmse_deg": 3.5853,
+    "heading_error_std_deg": 3.5792,
+    "heading_error_max_deg": 28.1568
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6559,
+    "wall_mean_distance_m": 0.9526,
+    "wall_std_distance_m": 0.0753
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5758,
+    "steering_rate_max_rad_s": 66.4794,
+    "steering_rate_std_rad_s": 1.356
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9051,
+    "speed_max_m_s": 4.8468,
+    "speed_std_m_s": 0.807
+  }
+}
+F1/Austin/Austin: arch5 lap RMSE=0.1045 m  steps=10905
+{
+  "Lap Time": {
+    "lap_time_s": 108.38,
+    "steps": 10838.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1001,
+    "crosstrack_mean_m": 0.0671,
+    "crosstrack_max_m": 0.3279,
+    "crosstrack_std_m": 0.0743
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9557,
+    "heading_error_rmse_deg": 3.3357,
+    "heading_error_std_deg": 3.3296,
+    "heading_error_max_deg": 28.8205
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.663,
+    "wall_mean_distance_m": 0.9555,
+    "wall_std_distance_m": 0.0727
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.6386,
+    "steering_rate_max_rad_s": 18.6785,
+    "steering_rate_std_rad_s": 1.0087
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9284,
+    "speed_max_m_s": 4.8479,
+    "speed_std_m_s": 0.8283
+  }
+}
+F1/Austin/Austin: arch6 lap RMSE=0.1001 m  steps=10838
+{
+  "Lap Time": {
+    "lap_time_s": 109.53,
+    "steps": 10953.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0969,
+    "crosstrack_mean_m": 0.0654,
+    "crosstrack_max_m": 0.3468,
+    "crosstrack_std_m": 0.0715
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.1902,
+    "heading_error_rmse_deg": 4.0124,
+    "heading_error_std_deg": 4.0017,
+    "heading_error_max_deg": 31.6979
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6598,
+    "wall_mean_distance_m": 0.9581,
+    "wall_std_distance_m": 0.0697
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.7594,
+    "steering_rate_max_rad_s": 23.2037,
+    "steering_rate_std_rad_s": 1.249
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8807,
+    "speed_max_m_s": 4.8198,
+    "speed_std_m_s": 0.8271
+  }
+}
+F1/Austin/Austin: arch7 lap RMSE=0.0969 m  steps=10953
+{
+  "Lap Time": {
+    "lap_time_s": 108.91,
+    "steps": 10891.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0889,
+    "crosstrack_mean_m": 0.0607,
+    "crosstrack_max_m": 0.298,
+    "crosstrack_std_m": 0.065
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.3075,
+    "heading_error_rmse_deg": 4.2543,
+    "heading_error_std_deg": 4.2441,
+    "heading_error_max_deg": 35.4879
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6744,
+    "wall_mean_distance_m": 0.964,
+    "wall_std_distance_m": 0.0645
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.54,
+    "steering_rate_max_rad_s": 15.4258,
+    "steering_rate_std_rad_s": 0.6501
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8933,
+    "speed_max_m_s": 4.8299,
+    "speed_std_m_s": 0.8488
+  }
+}
+F1/Austin/Austin: arch8 lap RMSE=0.0889 m  steps=10891
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Austin_Austin_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 86.77,
+    "steps": 8677.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.106,
+    "crosstrack_mean_m": 0.0822,
+    "crosstrack_max_m": 0.3757,
+    "crosstrack_std_m": 0.067
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.7643,
+    "heading_error_rmse_deg": 2.7088,
+    "heading_error_std_deg": 2.7085,
+    "heading_error_max_deg": 13.1468
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.904,
+    "wall_mean_distance_m": 1.2051,
+    "wall_std_distance_m": 0.0671
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2724,
+    "steering_rate_max_rad_s": 9.4009,
+    "steering_rate_std_rad_s": 0.5287
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0778,
+    "speed_max_m_s": 4.8916,
+    "speed_std_m_s": 0.6805
+  }
+}
+F1/BrandsHatch/BrandsHatch: arch1 lap RMSE=0.1060 m  steps=8677
+{
+  "Lap Time": {
+    "lap_time_s": 93.71,
+    "steps": 9371.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0978,
+    "crosstrack_mean_m": 0.0775,
+    "crosstrack_max_m": 0.2995,
+    "crosstrack_std_m": 0.0596
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.6701,
+    "heading_error_rmse_deg": 2.5752,
+    "heading_error_std_deg": 2.5751,
+    "heading_error_max_deg": 16.8565
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9802,
+    "wall_mean_distance_m": 1.2096,
+    "wall_std_distance_m": 0.0599
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2631,
+    "steering_rate_max_rad_s": 6.3716,
+    "steering_rate_std_rad_s": 0.4574
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.786,
+    "speed_max_m_s": 4.7725,
+    "speed_std_m_s": 0.7205
+  }
+}
+F1/BrandsHatch/BrandsHatch: arch2 lap RMSE=0.0978 m  steps=9371
+{
+  "Lap Time": {
+    "lap_time_s": 86.71,
+    "steps": 8671.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0604,
+    "crosstrack_mean_m": 0.0389,
+    "crosstrack_max_m": 0.2639,
+    "crosstrack_std_m": 0.0462
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4903,
+    "heading_error_rmse_deg": 2.366,
+    "heading_error_std_deg": 2.3648,
+    "heading_error_max_deg": 11.8238
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 1.0103,
+    "wall_mean_distance_m": 1.2464,
+    "wall_std_distance_m": 0.0462
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3675,
+    "steering_rate_max_rad_s": 7.0998,
+    "steering_rate_std_rad_s": 0.494
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1076,
+    "speed_max_m_s": 4.8854,
+    "speed_std_m_s": 0.6623
+  }
+}
+F1/BrandsHatch/BrandsHatch: arch3 lap RMSE=0.0604 m  steps=8671
+{
+  "Lap Time": {
+    "lap_time_s": 85.2,
+    "steps": 8520.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0922,
+    "crosstrack_mean_m": 0.0624,
+    "crosstrack_max_m": 0.3634,
+    "crosstrack_std_m": 0.0679
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3426,
+    "heading_error_rmse_deg": 2.1169,
+    "heading_error_std_deg": 2.1143,
+    "heading_error_max_deg": 13.5086
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8988,
+    "wall_mean_distance_m": 1.2223,
+    "wall_std_distance_m": 0.0675
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2761,
+    "steering_rate_max_rad_s": 4.1586,
+    "steering_rate_std_rad_s": 0.3064
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.2068,
+    "speed_max_m_s": 4.9168,
+    "speed_std_m_s": 0.6506
+  }
+}
+F1/BrandsHatch/BrandsHatch: arch4 lap RMSE=0.0922 m  steps=8520
+{
+  "Lap Time": {
+    "lap_time_s": 84.44,
+    "steps": 8444.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0834,
+    "crosstrack_mean_m": 0.0543,
+    "crosstrack_max_m": 0.2642,
+    "crosstrack_std_m": 0.0633
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.2211,
+    "heading_error_rmse_deg": 1.874,
+    "heading_error_std_deg": 1.8714,
+    "heading_error_max_deg": 10.8282
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 1.0027,
+    "wall_mean_distance_m": 1.2284,
+    "wall_std_distance_m": 0.0615
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2523,
+    "steering_rate_max_rad_s": 2.4851,
+    "steering_rate_std_rad_s": 0.2243
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.2432,
+    "speed_max_m_s": 4.9151,
+    "speed_std_m_s": 0.6208
+  }
+}
+F1/BrandsHatch/BrandsHatch: arch5 lap RMSE=0.0834 m  steps=8444
+{
+  "Lap Time": {
+    "lap_time_s": 84.61,
+    "steps": 8461.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0835,
+    "crosstrack_mean_m": 0.0567,
+    "crosstrack_max_m": 0.2751,
+    "crosstrack_std_m": 0.0613
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.2185,
+    "heading_error_rmse_deg": 1.8566,
+    "heading_error_std_deg": 1.8536,
+    "heading_error_max_deg": 9.3635
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9881,
+    "wall_mean_distance_m": 1.2269,
+    "wall_std_distance_m": 0.0603
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2599,
+    "steering_rate_max_rad_s": 2.4805,
+    "steering_rate_std_rad_s": 0.2289
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.2351,
+    "speed_max_m_s": 4.9016,
+    "speed_std_m_s": 0.6215
+  }
+}
+F1/BrandsHatch/BrandsHatch: arch6 lap RMSE=0.0835 m  steps=8461
+{
+  "Lap Time": {
+    "lap_time_s": 84.71,
+    "steps": 8471.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0844,
+    "crosstrack_mean_m": 0.0562,
+    "crosstrack_max_m": 0.2838,
+    "crosstrack_std_m": 0.063
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.2522,
+    "heading_error_rmse_deg": 2.0168,
+    "heading_error_std_deg": 2.0141,
+    "heading_error_max_deg": 14.9025
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9867,
+    "wall_mean_distance_m": 1.2268,
+    "wall_std_distance_m": 0.0616
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3408,
+    "steering_rate_max_rad_s": 5.9789,
+    "steering_rate_std_rad_s": 0.3762
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.2296,
+    "speed_max_m_s": 4.9039,
+    "speed_std_m_s": 0.6302
+  }
+}
+F1/BrandsHatch/BrandsHatch: arch7 lap RMSE=0.0844 m  steps=8471
+{
+  "Lap Time": {
+    "lap_time_s": 86.71,
+    "steps": 8671.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0707,
+    "crosstrack_mean_m": 0.0515,
+    "crosstrack_max_m": 0.2131,
+    "crosstrack_std_m": 0.0484
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3339,
+    "heading_error_rmse_deg": 2.0693,
+    "heading_error_std_deg": 2.0677,
+    "heading_error_max_deg": 15.4947
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 1.0544,
+    "wall_mean_distance_m": 1.2341,
+    "wall_std_distance_m": 0.0492
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2387,
+    "steering_rate_max_rad_s": 3.623,
+    "steering_rate_std_rad_s": 0.2403
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.128,
+    "speed_max_m_s": 4.8105,
+    "speed_std_m_s": 0.5818
+  }
+}
+F1/BrandsHatch/BrandsHatch: arch8 lap RMSE=0.0707 m  steps=8671
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_BrandsHatch_BrandsHatch_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 100.26,
+    "steps": 10026.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1173,
+    "crosstrack_mean_m": 0.0906,
+    "crosstrack_max_m": 0.5224,
+    "crosstrack_std_m": 0.0746
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.3192,
+    "heading_error_rmse_deg": 3.9142,
+    "heading_error_std_deg": 3.9141,
+    "heading_error_max_deg": 26.5424
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7312,
+    "wall_mean_distance_m": 1.1917,
+    "wall_std_distance_m": 0.0739
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3208,
+    "steering_rate_max_rad_s": 11.4286,
+    "steering_rate_std_rad_s": 0.5998
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9812,
+    "speed_max_m_s": 4.8596,
+    "speed_std_m_s": 0.7417
+  }
+}
+F1/Budapest/Budapest: arch1 lap RMSE=0.1173 m  steps=10026
+{
+  "Lap Time": {
+    "lap_time_s": 108.79,
+    "steps": 10879.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0986,
+    "crosstrack_mean_m": 0.0772,
+    "crosstrack_max_m": 0.3826,
+    "crosstrack_std_m": 0.0614
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.1085,
+    "heading_error_rmse_deg": 3.7419,
+    "heading_error_std_deg": 3.7414,
+    "heading_error_max_deg": 30.1897
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8904,
+    "wall_mean_distance_m": 1.2054,
+    "wall_std_distance_m": 0.0616
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3512,
+    "steering_rate_max_rad_s": 10.331,
+    "steering_rate_std_rad_s": 0.6042
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.6802,
+    "speed_max_m_s": 4.7239,
+    "speed_std_m_s": 0.8026
+  }
+}
+F1/Budapest/Budapest: arch2 lap RMSE=0.0986 m  steps=10879
+{
+  "Lap Time": {
+    "lap_time_s": 100.62,
+    "steps": 10062.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.078,
+    "crosstrack_mean_m": 0.0445,
+    "crosstrack_max_m": 0.4084,
+    "crosstrack_std_m": 0.0641
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.8504,
+    "heading_error_rmse_deg": 3.3638,
+    "heading_error_std_deg": 3.3634,
+    "heading_error_max_deg": 28.8813
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8385,
+    "wall_mean_distance_m": 1.2329,
+    "wall_std_distance_m": 0.062
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4981,
+    "steering_rate_max_rad_s": 14.0032,
+    "steering_rate_std_rad_s": 0.6966
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0042,
+    "speed_max_m_s": 4.8736,
+    "speed_std_m_s": 0.7769
+  }
+}
+F1/Budapest/Budapest: arch3 lap RMSE=0.0780 m  steps=10062
+{
+  "Lap Time": {
+    "lap_time_s": 99.52,
+    "steps": 9952.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1111,
+    "crosstrack_mean_m": 0.0735,
+    "crosstrack_max_m": 0.3838,
+    "crosstrack_std_m": 0.0834
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.6817,
+    "heading_error_rmse_deg": 2.961,
+    "heading_error_std_deg": 2.9606,
+    "heading_error_max_deg": 24.6614
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8685,
+    "wall_mean_distance_m": 1.2031,
+    "wall_std_distance_m": 0.0816
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3723,
+    "steering_rate_max_rad_s": 9.149,
+    "steering_rate_std_rad_s": 0.4423
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0825,
+    "speed_max_m_s": 4.9108,
+    "speed_std_m_s": 0.7623
+  }
+}
+F1/Budapest/Budapest: arch4 lap RMSE=0.1111 m  steps=9952
+{
+  "Lap Time": {
+    "lap_time_s": 98.65,
+    "steps": 9865.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0988,
+    "crosstrack_mean_m": 0.0655,
+    "crosstrack_max_m": 0.2735,
+    "crosstrack_std_m": 0.0739
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5305,
+    "heading_error_rmse_deg": 2.543,
+    "heading_error_std_deg": 2.5413,
+    "heading_error_max_deg": 24.5526
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9763,
+    "wall_mean_distance_m": 1.2096,
+    "wall_std_distance_m": 0.0715
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3538,
+    "steering_rate_max_rad_s": 6.0098,
+    "steering_rate_std_rad_s": 0.3311
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1177,
+    "speed_max_m_s": 4.89,
+    "speed_std_m_s": 0.7208
+  }
+}
+F1/Budapest/Budapest: arch5 lap RMSE=0.0988 m  steps=9865
+{
+  "Lap Time": {
+    "lap_time_s": 98.58,
+    "steps": 9858.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0968,
+    "crosstrack_mean_m": 0.066,
+    "crosstrack_max_m": 0.2835,
+    "crosstrack_std_m": 0.0708
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5103,
+    "heading_error_rmse_deg": 2.4886,
+    "heading_error_std_deg": 2.4869,
+    "heading_error_max_deg": 22.6015
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.973,
+    "wall_mean_distance_m": 1.2102,
+    "wall_std_distance_m": 0.0692
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3749,
+    "steering_rate_max_rad_s": 6.9279,
+    "steering_rate_std_rad_s": 0.369
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1201,
+    "speed_max_m_s": 4.905,
+    "speed_std_m_s": 0.7193
+  }
+}
+F1/Budapest/Budapest: arch6 lap RMSE=0.0968 m  steps=9858
+{
+  "Lap Time": {
+    "lap_time_s": 99.23,
+    "steps": 9923.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1011,
+    "crosstrack_mean_m": 0.0682,
+    "crosstrack_max_m": 0.3011,
+    "crosstrack_std_m": 0.0747
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.6038,
+    "heading_error_rmse_deg": 2.6622,
+    "heading_error_std_deg": 2.6611,
+    "heading_error_max_deg": 23.2879
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9531,
+    "wall_mean_distance_m": 1.2075,
+    "wall_std_distance_m": 0.073
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4729,
+    "steering_rate_max_rad_s": 6.245,
+    "steering_rate_std_rad_s": 0.501
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0934,
+    "speed_max_m_s": 4.8862,
+    "speed_std_m_s": 0.7209
+  }
+}
+F1/Budapest/Budapest: arch7 lap RMSE=0.1011 m  steps=9923
+{
+  "Lap Time": {
+    "lap_time_s": 100.96,
+    "steps": 10096.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0834,
+    "crosstrack_mean_m": 0.0594,
+    "crosstrack_max_m": 0.2597,
+    "crosstrack_std_m": 0.0585
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5393,
+    "heading_error_rmse_deg": 2.4969,
+    "heading_error_std_deg": 2.496,
+    "heading_error_max_deg": 22.1801
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9972,
+    "wall_mean_distance_m": 1.2179,
+    "wall_std_distance_m": 0.0583
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3096,
+    "steering_rate_max_rad_s": 11.8124,
+    "steering_rate_std_rad_s": 0.3477
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0171,
+    "speed_max_m_s": 4.8435,
+    "speed_std_m_s": 0.6822
+  }
+}
+F1/Budapest/Budapest: arch8 lap RMSE=0.0834 m  steps=10096
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Budapest_Budapest_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 104.01,
+    "steps": 10401.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1197,
+    "crosstrack_mean_m": 0.0887,
+    "crosstrack_max_m": 0.5771,
+    "crosstrack_std_m": 0.0804
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.3823,
+    "heading_error_rmse_deg": 4.9588,
+    "heading_error_std_deg": 4.9582,
+    "heading_error_max_deg": 38.7905
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7025,
+    "wall_mean_distance_m": 1.1632,
+    "wall_std_distance_m": 0.0758
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.372,
+    "steering_rate_max_rad_s": 15.3701,
+    "steering_rate_std_rad_s": 0.7773
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9678,
+    "speed_max_m_s": 4.8589,
+    "speed_std_m_s": 0.7415
+  }
+}
+F1/Catalunya/Catalunya: arch1 lap RMSE=0.1197 m  steps=10401
+{
+  "Lap Time": {
+    "lap_time_s": 114.34,
+    "steps": 11434.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1036,
+    "crosstrack_mean_m": 0.0837,
+    "crosstrack_max_m": 0.4147,
+    "crosstrack_std_m": 0.061
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.0086,
+    "heading_error_rmse_deg": 3.8195,
+    "heading_error_std_deg": 3.8194,
+    "heading_error_max_deg": 33.9215
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8729,
+    "wall_mean_distance_m": 1.1684,
+    "wall_std_distance_m": 0.061
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3468,
+    "steering_rate_max_rad_s": 18.9013,
+    "steering_rate_std_rad_s": 0.6642
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.6203,
+    "speed_max_m_s": 4.7943,
+    "speed_std_m_s": 0.7868
+  }
+}
+F1/Catalunya/Catalunya: arch2 lap RMSE=0.1036 m  steps=11434
+{
+  "Lap Time": {
+    "lap_time_s": 105.44,
+    "steps": 10544.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.087,
+    "crosstrack_mean_m": 0.0477,
+    "crosstrack_max_m": 0.5233,
+    "crosstrack_std_m": 0.0728
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.0521,
+    "heading_error_rmse_deg": 4.3343,
+    "heading_error_std_deg": 4.3326,
+    "heading_error_max_deg": 38.9379
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7058,
+    "wall_mean_distance_m": 1.2014,
+    "wall_std_distance_m": 0.0692
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5256,
+    "steering_rate_max_rad_s": 23.6365,
+    "steering_rate_std_rad_s": 0.877
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9537,
+    "speed_max_m_s": 4.8869,
+    "speed_std_m_s": 0.7759
+  }
+}
+F1/Catalunya/Catalunya: arch3 lap RMSE=0.0870 m  steps=10544
+{
+  "Lap Time": {
+    "lap_time_s": 103.92,
+    "steps": 10392.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1078,
+    "crosstrack_mean_m": 0.0738,
+    "crosstrack_max_m": 0.4066,
+    "crosstrack_std_m": 0.0786
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9107,
+    "heading_error_rmse_deg": 4.273,
+    "heading_error_std_deg": 4.273,
+    "heading_error_max_deg": 40.3471
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8166,
+    "wall_mean_distance_m": 1.1741,
+    "wall_std_distance_m": 0.0771
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3804,
+    "steering_rate_max_rad_s": 6.9413,
+    "steering_rate_std_rad_s": 0.4888
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0459,
+    "speed_max_m_s": 4.9135,
+    "speed_std_m_s": 0.7753
+  }
+}
+F1/Catalunya/Catalunya: arch4 lap RMSE=0.1078 m  steps=10392
+{
+  "Lap Time": {
+    "lap_time_s": 102.61,
+    "steps": 10261.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0991,
+    "crosstrack_mean_m": 0.0674,
+    "crosstrack_max_m": 0.3005,
+    "crosstrack_std_m": 0.0727
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5353,
+    "heading_error_rmse_deg": 2.7959,
+    "heading_error_std_deg": 2.7946,
+    "heading_error_max_deg": 28.2365
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9224,
+    "wall_mean_distance_m": 1.1775,
+    "wall_std_distance_m": 0.07
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.355,
+    "steering_rate_max_rad_s": 7.4353,
+    "steering_rate_std_rad_s": 0.37
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0977,
+    "speed_max_m_s": 4.8933,
+    "speed_std_m_s": 0.7282
+  }
+}
+F1/Catalunya/Catalunya: arch5 lap RMSE=0.0991 m  steps=10261
+{
+  "Lap Time": {
+    "lap_time_s": 102.4,
+    "steps": 10240.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0944,
+    "crosstrack_mean_m": 0.0663,
+    "crosstrack_max_m": 0.2495,
+    "crosstrack_std_m": 0.0672
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4631,
+    "heading_error_rmse_deg": 2.5533,
+    "heading_error_std_deg": 2.5507,
+    "heading_error_max_deg": 24.5435
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9807,
+    "wall_mean_distance_m": 1.1795,
+    "wall_std_distance_m": 0.0652
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3834,
+    "steering_rate_max_rad_s": 10.2636,
+    "steering_rate_std_rad_s": 0.4553
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1045,
+    "speed_max_m_s": 4.9168,
+    "speed_std_m_s": 0.7232
+  }
+}
+F1/Catalunya/Catalunya: arch6 lap RMSE=0.0944 m  steps=10240
+{
+  "Lap Time": {
+    "lap_time_s": 103.11,
+    "steps": 10311.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1012,
+    "crosstrack_mean_m": 0.0689,
+    "crosstrack_max_m": 0.3802,
+    "crosstrack_std_m": 0.0742
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.6227,
+    "heading_error_rmse_deg": 3.1137,
+    "heading_error_std_deg": 3.1128,
+    "heading_error_max_deg": 32.8067
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8428,
+    "wall_mean_distance_m": 1.1771,
+    "wall_std_distance_m": 0.0722
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4924,
+    "steering_rate_max_rad_s": 12.5252,
+    "steering_rate_std_rad_s": 0.6875
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0765,
+    "speed_max_m_s": 4.9018,
+    "speed_std_m_s": 0.7338
+  }
+}
+F1/Catalunya/Catalunya: arch7 lap RMSE=0.1012 m  steps=10311
+{
+  "Lap Time": {
+    "lap_time_s": 105.09,
+    "steps": 10509.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0864,
+    "crosstrack_mean_m": 0.0639,
+    "crosstrack_max_m": 0.255,
+    "crosstrack_std_m": 0.0581
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.6769,
+    "heading_error_rmse_deg": 3.2328,
+    "heading_error_std_deg": 3.2309,
+    "heading_error_max_deg": 30.7233
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.972,
+    "wall_mean_distance_m": 1.1839,
+    "wall_std_distance_m": 0.058
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3163,
+    "steering_rate_max_rad_s": 11.5699,
+    "steering_rate_std_rad_s": 0.4136
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9926,
+    "speed_max_m_s": 4.8135,
+    "speed_std_m_s": 0.692
+  }
+}
+F1/Catalunya/Catalunya: arch8 lap RMSE=0.0864 m  steps=10509
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Catalunya_Catalunya_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 88.03,
+    "steps": 8803.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0881,
+    "crosstrack_mean_m": 0.058,
+    "crosstrack_max_m": 0.4999,
+    "crosstrack_std_m": 0.0664
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.3738,
+    "heading_error_rmse_deg": 4.2774,
+    "heading_error_std_deg": 4.2766,
+    "heading_error_max_deg": 35.7459
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.5944,
+    "wall_mean_distance_m": 1.0214,
+    "wall_std_distance_m": 0.0606
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3628,
+    "steering_rate_max_rad_s": 15.082,
+    "steering_rate_std_rad_s": 0.7684
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0663,
+    "speed_max_m_s": 4.9073,
+    "speed_std_m_s": 0.7781
+  }
+}
+F1/Hockenheim/Hockenheim: arch1 lap RMSE=0.0881 m  steps=8803
+{
+  "Lap Time": {
+    "lap_time_s": 95.1,
+    "steps": 9510.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0791,
+    "crosstrack_mean_m": 0.0576,
+    "crosstrack_max_m": 0.3298,
+    "crosstrack_std_m": 0.0542
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.1197,
+    "heading_error_rmse_deg": 3.8936,
+    "heading_error_std_deg": 3.8886,
+    "heading_error_max_deg": 34.1927
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7331,
+    "wall_mean_distance_m": 1.0232,
+    "wall_std_distance_m": 0.0544
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3844,
+    "steering_rate_max_rad_s": 20.1259,
+    "steering_rate_std_rad_s": 0.6448
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.7712,
+    "speed_max_m_s": 4.8267,
+    "speed_std_m_s": 0.7769
+  }
+}
+F1/Hockenheim/Hockenheim: arch2 lap RMSE=0.0791 m  steps=9510
+{
+  "Lap Time": {
+    "lap_time_s": 89.75,
+    "steps": 8975.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0777,
+    "crosstrack_mean_m": 0.0435,
+    "crosstrack_max_m": 0.4743,
+    "crosstrack_std_m": 0.0643
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.1777,
+    "heading_error_rmse_deg": 4.1727,
+    "heading_error_std_deg": 4.1704,
+    "heading_error_max_deg": 37.1875
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.5852,
+    "wall_mean_distance_m": 1.0326,
+    "wall_std_distance_m": 0.0629
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.544,
+    "steering_rate_max_rad_s": 21.5607,
+    "steering_rate_std_rad_s": 0.9543
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0189,
+    "speed_max_m_s": 4.8674,
+    "speed_std_m_s": 0.8002
+  }
+}
+F1/Hockenheim/Hockenheim: arch3 lap RMSE=0.0777 m  steps=8975
+{
+  "Lap Time": {
+    "lap_time_s": 88.65,
+    "steps": 8865.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0896,
+    "crosstrack_mean_m": 0.0555,
+    "crosstrack_max_m": 0.352,
+    "crosstrack_std_m": 0.0704
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.8759,
+    "heading_error_rmse_deg": 3.9994,
+    "heading_error_std_deg": 3.9986,
+    "heading_error_max_deg": 47.334
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.726,
+    "wall_mean_distance_m": 1.0209,
+    "wall_std_distance_m": 0.0674
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4165,
+    "steering_rate_max_rad_s": 14.8553,
+    "steering_rate_std_rad_s": 0.5802
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0796,
+    "speed_max_m_s": 4.8702,
+    "speed_std_m_s": 0.7968
+  }
+}
+F1/Hockenheim/Hockenheim: arch4 lap RMSE=0.0896 m  steps=8865
+{
+  "Lap Time": {
+    "lap_time_s": 88.73,
+    "steps": 8873.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0934,
+    "crosstrack_mean_m": 0.0592,
+    "crosstrack_max_m": 0.3068,
+    "crosstrack_std_m": 0.0722
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5913,
+    "heading_error_rmse_deg": 2.7395,
+    "heading_error_std_deg": 2.7382,
+    "heading_error_max_deg": 21.9386
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7378,
+    "wall_mean_distance_m": 1.015,
+    "wall_std_distance_m": 0.0703
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4123,
+    "steering_rate_max_rad_s": 14.0626,
+    "steering_rate_std_rad_s": 0.4983
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0903,
+    "speed_max_m_s": 4.892,
+    "speed_std_m_s": 0.7865
+  }
+}
+F1/Hockenheim/Hockenheim: arch5 lap RMSE=0.0934 m  steps=8873
+{
+  "Lap Time": {
+    "lap_time_s": 88.92,
+    "steps": 8892.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0917,
+    "crosstrack_mean_m": 0.061,
+    "crosstrack_max_m": 0.27,
+    "crosstrack_std_m": 0.0685
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5585,
+    "heading_error_rmse_deg": 2.5887,
+    "heading_error_std_deg": 2.5874,
+    "heading_error_max_deg": 16.8975
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7741,
+    "wall_mean_distance_m": 1.0143,
+    "wall_std_distance_m": 0.0675
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4393,
+    "steering_rate_max_rad_s": 14.8987,
+    "steering_rate_std_rad_s": 0.5482
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0813,
+    "speed_max_m_s": 4.8952,
+    "speed_std_m_s": 0.769
+  }
+}
+F1/Hockenheim/Hockenheim: arch6 lap RMSE=0.0917 m  steps=8892
+{
+  "Lap Time": {
+    "lap_time_s": 88.55,
+    "steps": 8855.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0901,
+    "crosstrack_mean_m": 0.0554,
+    "crosstrack_max_m": 0.3063,
+    "crosstrack_std_m": 0.0711
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5932,
+    "heading_error_rmse_deg": 2.7933,
+    "heading_error_std_deg": 2.7922,
+    "heading_error_max_deg": 22.5413
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7375,
+    "wall_mean_distance_m": 1.0174,
+    "wall_std_distance_m": 0.0682
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5132,
+    "steering_rate_max_rad_s": 16.0507,
+    "steering_rate_std_rad_s": 0.6917
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0954,
+    "speed_max_m_s": 4.8873,
+    "speed_std_m_s": 0.7991
+  }
+}
+F1/Hockenheim/Hockenheim: arch7 lap RMSE=0.0901 m  steps=8855
+{
+  "Lap Time": {
+    "lap_time_s": 88.96,
+    "steps": 8896.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0852,
+    "crosstrack_mean_m": 0.0544,
+    "crosstrack_max_m": 0.3394,
+    "crosstrack_std_m": 0.0655
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.8238,
+    "heading_error_rmse_deg": 3.7065,
+    "heading_error_std_deg": 3.7054,
+    "heading_error_max_deg": 40.7349
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7772,
+    "wall_mean_distance_m": 1.0208,
+    "wall_std_distance_m": 0.0624
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3885,
+    "steering_rate_max_rad_s": 8.1258,
+    "steering_rate_std_rad_s": 0.4372
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0678,
+    "speed_max_m_s": 4.9022,
+    "speed_std_m_s": 0.786
+  }
+}
+F1/Hockenheim/Hockenheim: arch8 lap RMSE=0.0852 m  steps=8896
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Hockenheim_Hockenheim_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 65.03,
+    "steps": 6503.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0483,
+    "crosstrack_mean_m": 0.0346,
+    "crosstrack_max_m": 0.141,
+    "crosstrack_std_m": 0.0337
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 0.7982,
+    "heading_error_rmse_deg": 1.0395,
+    "heading_error_std_deg": 1.0272,
+    "heading_error_max_deg": 4.0484
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8225,
+    "wall_mean_distance_m": 0.9671,
+    "wall_std_distance_m": 0.0398
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.1728,
+    "steering_rate_max_rad_s": 3.2401,
+    "steering_rate_std_rad_s": 0.2699
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.4979,
+    "speed_max_m_s": 4.9125,
+    "speed_std_m_s": 0.4222
+  }
+}
+F1/IMS/IMS: arch1 lap RMSE=0.0483 m  steps=6503
+{
+  "Lap Time": {
+    "lap_time_s": 68.78,
+    "steps": 6878.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0139,
+    "crosstrack_mean_m": 0.0102,
+    "crosstrack_max_m": 0.0776,
+    "crosstrack_std_m": 0.0095
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 0.5971,
+    "heading_error_rmse_deg": 0.7255,
+    "heading_error_std_deg": 0.7118,
+    "heading_error_max_deg": 2.2517
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9138,
+    "wall_mean_distance_m": 0.9859,
+    "wall_std_distance_m": 0.0151
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.1708,
+    "steering_rate_max_rad_s": 1.6169,
+    "steering_rate_std_rad_s": 0.16
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.2573,
+    "speed_max_m_s": 4.6403,
+    "speed_std_m_s": 0.2887
+  }
+}
+F1/IMS/IMS: arch2 lap RMSE=0.0139 m  steps=6878
+{
+  "Lap Time": {
+    "lap_time_s": 65.28,
+    "steps": 6528.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0137,
+    "crosstrack_mean_m": 0.0107,
+    "crosstrack_max_m": 0.0615,
+    "crosstrack_std_m": 0.0087
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 0.5704,
+    "heading_error_rmse_deg": 0.7232,
+    "heading_error_std_deg": 0.7002,
+    "heading_error_max_deg": 2.8568
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9216,
+    "wall_mean_distance_m": 0.9856,
+    "wall_std_distance_m": 0.0154
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2685,
+    "steering_rate_max_rad_s": 2.5121,
+    "steering_rate_std_rad_s": 0.2812
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.487,
+    "speed_max_m_s": 4.8646,
+    "speed_std_m_s": 0.3373
+  }
+}
+F1/IMS/IMS: arch3 lap RMSE=0.0137 m  steps=6528
+{
+  "Lap Time": {
+    "lap_time_s": 66.29,
+    "steps": 6629.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0367,
+    "crosstrack_mean_m": 0.0277,
+    "crosstrack_max_m": 0.0802,
+    "crosstrack_std_m": 0.0241
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 0.5802,
+    "heading_error_rmse_deg": 0.7308,
+    "heading_error_std_deg": 0.709,
+    "heading_error_max_deg": 2.7734
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8793,
+    "wall_mean_distance_m": 0.9719,
+    "wall_std_distance_m": 0.0307
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2329,
+    "steering_rate_max_rad_s": 1.7528,
+    "steering_rate_std_rad_s": 0.219
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.4223,
+    "speed_max_m_s": 4.865,
+    "speed_std_m_s": 0.3496
+  }
+}
+F1/IMS/IMS: arch4 lap RMSE=0.0367 m  steps=6629
+{
+  "Lap Time": {
+    "lap_time_s": 66.55,
+    "steps": 6655.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0445,
+    "crosstrack_mean_m": 0.0317,
+    "crosstrack_max_m": 0.0908,
+    "crosstrack_std_m": 0.0312
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 0.5443,
+    "heading_error_rmse_deg": 0.6972,
+    "heading_error_std_deg": 0.6743,
+    "heading_error_max_deg": 3.0207
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8639,
+    "wall_mean_distance_m": 0.9665,
+    "wall_std_distance_m": 0.036
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2447,
+    "steering_rate_max_rad_s": 1.7607,
+    "steering_rate_std_rad_s": 0.242
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.4065,
+    "speed_max_m_s": 4.8648,
+    "speed_std_m_s": 0.3839
+  }
+}
+F1/IMS/IMS: arch5 lap RMSE=0.0445 m  steps=6655
+{
+  "Lap Time": {
+    "lap_time_s": 66.63,
+    "steps": 6663.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0438,
+    "crosstrack_mean_m": 0.0316,
+    "crosstrack_max_m": 0.0888,
+    "crosstrack_std_m": 0.0304
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 0.6395,
+    "heading_error_rmse_deg": 0.7944,
+    "heading_error_std_deg": 0.7764,
+    "heading_error_max_deg": 3.2686
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8642,
+    "wall_mean_distance_m": 0.9674,
+    "wall_std_distance_m": 0.0352
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2392,
+    "steering_rate_max_rad_s": 1.7603,
+    "steering_rate_std_rad_s": 0.2357
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.4007,
+    "speed_max_m_s": 4.8648,
+    "speed_std_m_s": 0.3878
+  }
+}
+F1/IMS/IMS: arch6 lap RMSE=0.0438 m  steps=6663
+{
+  "Lap Time": {
+    "lap_time_s": 66.62,
+    "steps": 6662.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0458,
+    "crosstrack_mean_m": 0.0321,
+    "crosstrack_max_m": 0.0894,
+    "crosstrack_std_m": 0.0326
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 0.5424,
+    "heading_error_rmse_deg": 0.687,
+    "heading_error_std_deg": 0.6659,
+    "heading_error_max_deg": 2.9923
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8706,
+    "wall_mean_distance_m": 0.965,
+    "wall_std_distance_m": 0.0367
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2738,
+    "steering_rate_max_rad_s": 2.1802,
+    "steering_rate_std_rad_s": 0.2697
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.4019,
+    "speed_max_m_s": 4.8227,
+    "speed_std_m_s": 0.3854
+  }
+}
+F1/IMS/IMS: arch7 lap RMSE=0.0458 m  steps=6662
+{
+  "Lap Time": {
+    "lap_time_s": 67.03,
+    "steps": 6703.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0403,
+    "crosstrack_mean_m": 0.029,
+    "crosstrack_max_m": 0.0863,
+    "crosstrack_std_m": 0.0281
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 0.582,
+    "heading_error_rmse_deg": 0.7494,
+    "heading_error_std_deg": 0.7269,
+    "heading_error_max_deg": 3.3787
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.871,
+    "wall_mean_distance_m": 0.9688,
+    "wall_std_distance_m": 0.0329
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.254,
+    "steering_rate_max_rad_s": 1.7761,
+    "steering_rate_std_rad_s": 0.2348
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.3741,
+    "speed_max_m_s": 4.862,
+    "speed_std_m_s": 0.3435
+  }
+}
+F1/IMS/IMS: arch8 lap RMSE=0.0403 m  steps=6703
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_IMS_IMS_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 114.0,
+    "steps": 11400.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1018,
+    "crosstrack_mean_m": 0.0727,
+    "crosstrack_max_m": 0.4553,
+    "crosstrack_std_m": 0.0713
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.5334,
+    "heading_error_rmse_deg": 5.1669,
+    "heading_error_std_deg": 5.1665,
+    "heading_error_max_deg": 36.9998
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.814,
+    "wall_mean_distance_m": 1.1442,
+    "wall_std_distance_m": 0.0679
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3466,
+    "steering_rate_max_rad_s": 9.887,
+    "steering_rate_std_rad_s": 0.5536
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1307,
+    "speed_max_m_s": 4.892,
+    "speed_std_m_s": 0.7115
+  }
+}
+F1/Melbourne/Melbourne: arch1 lap RMSE=0.1018 m  steps=11400
+{
+  "Lap Time": {
+    "lap_time_s": 123.35,
+    "steps": 12335.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0944,
+    "crosstrack_mean_m": 0.0694,
+    "crosstrack_max_m": 0.3666,
+    "crosstrack_std_m": 0.0639
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.3611,
+    "heading_error_rmse_deg": 4.7819,
+    "heading_error_std_deg": 4.781,
+    "heading_error_max_deg": 38.0062
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8225,
+    "wall_mean_distance_m": 1.1472,
+    "wall_std_distance_m": 0.064
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4104,
+    "steering_rate_max_rad_s": 18.7053,
+    "steering_rate_std_rad_s": 0.6669
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8272,
+    "speed_max_m_s": 4.8213,
+    "speed_std_m_s": 0.7573
+  }
+}
+F1/Melbourne/Melbourne: arch2 lap RMSE=0.0944 m  steps=12335
+{
+  "Lap Time": {
+    "lap_time_s": 117.24,
+    "steps": 11724.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0878,
+    "crosstrack_mean_m": 0.0438,
+    "crosstrack_max_m": 0.4379,
+    "crosstrack_std_m": 0.0762
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.505,
+    "heading_error_rmse_deg": 5.2511,
+    "heading_error_std_deg": 5.251,
+    "heading_error_max_deg": 38.4548
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7287,
+    "wall_mean_distance_m": 1.1647,
+    "wall_std_distance_m": 0.0713
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5332,
+    "steering_rate_max_rad_s": 14.6006,
+    "steering_rate_std_rad_s": 0.6819
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0426,
+    "speed_max_m_s": 4.8551,
+    "speed_std_m_s": 0.7862
+  }
+}
+F1/Melbourne/Melbourne: arch3 lap RMSE=0.0878 m  steps=11724
+{
+  "Lap Time": {
+    "lap_time_s": 114.75,
+    "steps": 11475.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0887,
+    "crosstrack_mean_m": 0.0532,
+    "crosstrack_max_m": 0.3506,
+    "crosstrack_std_m": 0.071
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.8393,
+    "heading_error_rmse_deg": 3.5591,
+    "heading_error_std_deg": 3.5584,
+    "heading_error_max_deg": 34.793
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8186,
+    "wall_mean_distance_m": 1.1531,
+    "wall_std_distance_m": 0.0683
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4423,
+    "steering_rate_max_rad_s": 7.7357,
+    "steering_rate_std_rad_s": 0.5184
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1555,
+    "speed_max_m_s": 4.8901,
+    "speed_std_m_s": 0.7361
+  }
+}
+F1/Melbourne/Melbourne: arch4 lap RMSE=0.0887 m  steps=11475
+{
+  "Lap Time": {
+    "lap_time_s": 114.48,
+    "steps": 11448.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0818,
+    "crosstrack_mean_m": 0.0496,
+    "crosstrack_max_m": 0.2869,
+    "crosstrack_std_m": 0.0651
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.6274,
+    "heading_error_rmse_deg": 2.9709,
+    "heading_error_std_deg": 2.9706,
+    "heading_error_max_deg": 27.7788
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8731,
+    "wall_mean_distance_m": 1.1558,
+    "wall_std_distance_m": 0.0624
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4554,
+    "steering_rate_max_rad_s": 10.1331,
+    "steering_rate_std_rad_s": 0.4536
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1684,
+    "speed_max_m_s": 4.8528,
+    "speed_std_m_s": 0.6988
+  }
+}
+F1/Melbourne/Melbourne: arch5 lap RMSE=0.0818 m  steps=11448
+{
+  "Lap Time": {
+    "lap_time_s": 114.52,
+    "steps": 11452.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0784,
+    "crosstrack_mean_m": 0.0489,
+    "crosstrack_max_m": 0.2725,
+    "crosstrack_std_m": 0.0613
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5629,
+    "heading_error_rmse_deg": 2.8474,
+    "heading_error_std_deg": 2.8472,
+    "heading_error_max_deg": 27.5122
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8783,
+    "wall_mean_distance_m": 1.1567,
+    "wall_std_distance_m": 0.0593
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5109,
+    "steering_rate_max_rad_s": 12.2763,
+    "steering_rate_std_rad_s": 0.5527
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1663,
+    "speed_max_m_s": 4.8293,
+    "speed_std_m_s": 0.6865
+  }
+}
+F1/Melbourne/Melbourne: arch6 lap RMSE=0.0784 m  steps=11452
+{
+  "Lap Time": {
+    "lap_time_s": 115.16,
+    "steps": 11516.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0826,
+    "crosstrack_mean_m": 0.0504,
+    "crosstrack_max_m": 0.3011,
+    "crosstrack_std_m": 0.0654
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.6883,
+    "heading_error_rmse_deg": 3.1604,
+    "heading_error_std_deg": 3.1604,
+    "heading_error_max_deg": 28.8241
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8613,
+    "wall_mean_distance_m": 1.1552,
+    "wall_std_distance_m": 0.0631
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5773,
+    "steering_rate_max_rad_s": 19.7075,
+    "steering_rate_std_rad_s": 0.7276
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1423,
+    "speed_max_m_s": 4.8664,
+    "speed_std_m_s": 0.7
+  }
+}
+F1/Melbourne/Melbourne: arch7 lap RMSE=0.0826 m  steps=11516
+{
+  "Lap Time": {
+    "lap_time_s": 116.63,
+    "steps": 11663.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0705,
+    "crosstrack_mean_m": 0.0452,
+    "crosstrack_max_m": 0.2376,
+    "crosstrack_std_m": 0.0541
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.6828,
+    "heading_error_rmse_deg": 3.0903,
+    "heading_error_std_deg": 3.09,
+    "heading_error_max_deg": 29.8234
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9342,
+    "wall_mean_distance_m": 1.1612,
+    "wall_std_distance_m": 0.0528
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4185,
+    "steering_rate_max_rad_s": 6.4804,
+    "steering_rate_std_rad_s": 0.4492
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0861,
+    "speed_max_m_s": 4.8263,
+    "speed_std_m_s": 0.6732
+  }
+}
+F1/Melbourne/Melbourne: arch8 lap RMSE=0.0705 m  steps=11663
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Melbourne_Melbourne_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 88.32,
+    "steps": 8832.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1136,
+    "crosstrack_mean_m": 0.0793,
+    "crosstrack_max_m": 0.426,
+    "crosstrack_std_m": 0.0814
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.3711,
+    "heading_error_rmse_deg": 6.7383,
+    "heading_error_std_deg": 6.7377,
+    "heading_error_max_deg": 41.5238
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6928,
+    "wall_mean_distance_m": 1.0637,
+    "wall_std_distance_m": 0.0757
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4183,
+    "steering_rate_max_rad_s": 15.4287,
+    "steering_rate_std_rad_s": 0.8418
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0008,
+    "speed_max_m_s": 4.9109,
+    "speed_std_m_s": 0.8493
+  }
+}
+F1/MexicoCity/MexicoCity: arch1 lap RMSE=0.1136 m  steps=8832
+{
+  "Lap Time": {
+    "lap_time_s": 95.95,
+    "steps": 9595.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1007,
+    "crosstrack_mean_m": 0.0718,
+    "crosstrack_max_m": 0.4009,
+    "crosstrack_std_m": 0.0706
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.298,
+    "heading_error_rmse_deg": 6.4163,
+    "heading_error_std_deg": 6.4162,
+    "heading_error_max_deg": 38.7905
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.713,
+    "wall_mean_distance_m": 1.0707,
+    "wall_std_distance_m": 0.0686
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4638,
+    "steering_rate_max_rad_s": 15.9919,
+    "steering_rate_std_rad_s": 0.8529
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.7049,
+    "speed_max_m_s": 4.8255,
+    "speed_std_m_s": 0.8279
+  }
+}
+F1/MexicoCity/MexicoCity: arch2 lap RMSE=0.1007 m  steps=9595
+{
+  "Lap Time": {
+    "lap_time_s": 91.66,
+    "steps": 9166.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1127,
+    "crosstrack_mean_m": 0.0601,
+    "crosstrack_max_m": 0.489,
+    "crosstrack_std_m": 0.0953
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.5861,
+    "heading_error_rmse_deg": 7.0707,
+    "heading_error_std_deg": 7.0701,
+    "heading_error_max_deg": 40.643
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6288,
+    "wall_mean_distance_m": 1.0767,
+    "wall_std_distance_m": 0.0883
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5629,
+    "steering_rate_max_rad_s": 14.8326,
+    "steering_rate_std_rad_s": 0.8199
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8951,
+    "speed_max_m_s": 4.8496,
+    "speed_std_m_s": 0.9519
+  }
+}
+F1/MexicoCity/MexicoCity: arch3 lap RMSE=0.1127 m  steps=9166
+{
+  "Lap Time": {
+    "lap_time_s": 90.52,
+    "steps": 9052.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1056,
+    "crosstrack_mean_m": 0.0635,
+    "crosstrack_max_m": 0.3762,
+    "crosstrack_std_m": 0.0844
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.7966,
+    "heading_error_rmse_deg": 5.4155,
+    "heading_error_std_deg": 5.413,
+    "heading_error_max_deg": 37.5333
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7375,
+    "wall_mean_distance_m": 1.0712,
+    "wall_std_distance_m": 0.0813
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.485,
+    "steering_rate_max_rad_s": 8.4007,
+    "steering_rate_std_rad_s": 0.6504
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9654,
+    "speed_max_m_s": 4.9113,
+    "speed_std_m_s": 0.904
+  }
+}
+F1/MexicoCity/MexicoCity: arch4 lap RMSE=0.1056 m  steps=9052
+{
+  "Lap Time": {
+    "lap_time_s": 89.56,
+    "steps": 8956.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0998,
+    "crosstrack_mean_m": 0.0601,
+    "crosstrack_max_m": 0.3221,
+    "crosstrack_std_m": 0.0798
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.2475,
+    "heading_error_rmse_deg": 4.1254,
+    "heading_error_std_deg": 4.1247,
+    "heading_error_max_deg": 24.7837
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8121,
+    "wall_mean_distance_m": 1.0708,
+    "wall_std_distance_m": 0.0745
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4754,
+    "steering_rate_max_rad_s": 25.2446,
+    "steering_rate_std_rad_s": 0.6571
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0216,
+    "speed_max_m_s": 4.8682,
+    "speed_std_m_s": 0.8798
+  }
+}
+F1/MexicoCity/MexicoCity: arch5 lap RMSE=0.0998 m  steps=8956
+{
+  "Lap Time": {
+    "lap_time_s": 89.3,
+    "steps": 8930.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0944,
+    "crosstrack_mean_m": 0.0589,
+    "crosstrack_max_m": 0.3105,
+    "crosstrack_std_m": 0.0739
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.0594,
+    "heading_error_rmse_deg": 3.6908,
+    "heading_error_std_deg": 3.6905,
+    "heading_error_max_deg": 23.7569
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7946,
+    "wall_mean_distance_m": 1.0722,
+    "wall_std_distance_m": 0.0691
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5111,
+    "steering_rate_max_rad_s": 27.9299,
+    "steering_rate_std_rad_s": 0.8219
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.033,
+    "speed_max_m_s": 4.8834,
+    "speed_std_m_s": 0.8678
+  }
+}
+F1/MexicoCity/MexicoCity: arch6 lap RMSE=0.0944 m  steps=8930
+{
+  "Lap Time": {
+    "lap_time_s": 90.36,
+    "steps": 9036.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0996,
+    "crosstrack_mean_m": 0.0597,
+    "crosstrack_max_m": 0.3259,
+    "crosstrack_std_m": 0.0798
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.4753,
+    "heading_error_rmse_deg": 4.5587,
+    "heading_error_std_deg": 4.558,
+    "heading_error_max_deg": 28.9843
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7904,
+    "wall_mean_distance_m": 1.0718,
+    "wall_std_distance_m": 0.0748
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.6189,
+    "steering_rate_max_rad_s": 27.1271,
+    "steering_rate_std_rad_s": 0.9481
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9809,
+    "speed_max_m_s": 4.8601,
+    "speed_std_m_s": 0.8892
+  }
+}
+F1/MexicoCity/MexicoCity: arch7 lap RMSE=0.0996 m  steps=9036
+{
+  "Lap Time": {
+    "lap_time_s": 91.46,
+    "steps": 9146.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0849,
+    "crosstrack_mean_m": 0.054,
+    "crosstrack_max_m": 0.276,
+    "crosstrack_std_m": 0.0654
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.4142,
+    "heading_error_rmse_deg": 4.4761,
+    "heading_error_std_deg": 4.4757,
+    "heading_error_max_deg": 32.2263
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8394,
+    "wall_mean_distance_m": 1.0795,
+    "wall_std_distance_m": 0.062
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4755,
+    "steering_rate_max_rad_s": 12.8369,
+    "steering_rate_std_rad_s": 0.6257
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9254,
+    "speed_max_m_s": 4.8561,
+    "speed_std_m_s": 0.8336
+  }
+}
+F1/MexicoCity/MexicoCity: arch8 lap RMSE=0.0849 m  steps=9146
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_MexicoCity_MexicoCity_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 66.69,
+    "steps": 6669.0,
+    "collision": 1.0,
+    "laps_completed": 0.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1295,
+    "crosstrack_mean_m": 0.102,
+    "crosstrack_max_m": 0.5092,
+    "crosstrack_std_m": 0.0797
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.1459,
+    "heading_error_rmse_deg": 5.7067,
+    "heading_error_std_deg": 5.7004,
+    "heading_error_max_deg": 148.9676
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.1738,
+    "wall_mean_distance_m": 0.612,
+    "wall_std_distance_m": 0.0812
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4422,
+    "steering_rate_max_rad_s": 12.1344,
+    "steering_rate_std_rad_s": 0.7807
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.881,
+    "speed_max_m_s": 4.9064,
+    "speed_std_m_s": 0.874
+  }
+}
+F1/Montreal/Montreal: arch1 lap RMSE=0.1295 m  steps=6669
+{
+  "Lap Time": {
+    "lap_time_s": 80.66,
+    "steps": 8066.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0959,
+    "crosstrack_mean_m": 0.0776,
+    "crosstrack_max_m": 0.309,
+    "crosstrack_std_m": 0.0565
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.7672,
+    "heading_error_rmse_deg": 5.6415,
+    "heading_error_std_deg": 5.6411,
+    "heading_error_max_deg": 39.0584
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.3722,
+    "wall_mean_distance_m": 0.6392,
+    "wall_std_distance_m": 0.0616
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4984,
+    "steering_rate_max_rad_s": 36.6279,
+    "steering_rate_std_rad_s": 0.8144
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.541,
+    "speed_max_m_s": 4.7483,
+    "speed_std_m_s": 0.8478
+  }
+}
+F1/Montreal/Montreal: arch2 lap RMSE=0.0959 m  steps=8066
+{
+  "Lap Time": {
+    "lap_time_s": 75.39,
+    "steps": 7539.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0961,
+    "crosstrack_mean_m": 0.0564,
+    "crosstrack_max_m": 0.3982,
+    "crosstrack_std_m": 0.0778
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.229,
+    "heading_error_rmse_deg": 6.2248,
+    "heading_error_std_deg": 6.2248,
+    "heading_error_max_deg": 46.5546
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.2802,
+    "wall_mean_distance_m": 0.6541,
+    "wall_std_distance_m": 0.0767
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.6002,
+    "steering_rate_max_rad_s": 17.4758,
+    "steering_rate_std_rad_s": 0.9279
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8106,
+    "speed_max_m_s": 4.8601,
+    "speed_std_m_s": 0.9576
+  }
+}
+F1/Montreal/Montreal: arch3 lap RMSE=0.0961 m  steps=7539
+{
+  "Lap Time": {
+    "lap_time_s": 72.99,
+    "steps": 7299.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0713,
+    "crosstrack_mean_m": 0.049,
+    "crosstrack_max_m": 0.2785,
+    "crosstrack_std_m": 0.0518
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.1024,
+    "heading_error_rmse_deg": 4.0392,
+    "heading_error_std_deg": 4.0386,
+    "heading_error_max_deg": 28.733
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.3864,
+    "wall_mean_distance_m": 0.6618,
+    "wall_std_distance_m": 0.054
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5138,
+    "steering_rate_max_rad_s": 12.1287,
+    "steering_rate_std_rad_s": 0.6349
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9226,
+    "speed_max_m_s": 4.845,
+    "speed_std_m_s": 0.9369
+  }
+}
+F1/Montreal/Montreal: arch4 lap RMSE=0.0713 m  steps=7299
+{
+  "Lap Time": {
+    "lap_time_s": 75.05,
+    "steps": 7505.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0935,
+    "crosstrack_mean_m": 0.0592,
+    "crosstrack_max_m": 0.3358,
+    "crosstrack_std_m": 0.0723
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.318,
+    "heading_error_rmse_deg": 4.4023,
+    "heading_error_std_deg": 4.4019,
+    "heading_error_max_deg": 32.413
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.3305,
+    "wall_mean_distance_m": 0.6499,
+    "wall_std_distance_m": 0.0714
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5196,
+    "steering_rate_max_rad_s": 8.3514,
+    "steering_rate_std_rad_s": 0.5477
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8325,
+    "speed_max_m_s": 4.8803,
+    "speed_std_m_s": 0.9493
+  }
+}
+F1/Montreal/Montreal: arch5 lap RMSE=0.0935 m  steps=7505
+{
+  "Lap Time": {
+    "lap_time_s": 75.45,
+    "steps": 7545.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0993,
+    "crosstrack_mean_m": 0.0625,
+    "crosstrack_max_m": 0.3534,
+    "crosstrack_std_m": 0.0772
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.4521,
+    "heading_error_rmse_deg": 4.6834,
+    "heading_error_std_deg": 4.6834,
+    "heading_error_max_deg": 39.7583
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.3224,
+    "wall_mean_distance_m": 0.6469,
+    "wall_std_distance_m": 0.076
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5604,
+    "steering_rate_max_rad_s": 12.7343,
+    "steering_rate_std_rad_s": 0.6363
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8167,
+    "speed_max_m_s": 4.8809,
+    "speed_std_m_s": 0.9633
+  }
+}
+F1/Montreal/Montreal: arch6 lap RMSE=0.0993 m  steps=7545
+{
+  "Lap Time": {
+    "lap_time_s": 74.96,
+    "steps": 7496.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0912,
+    "crosstrack_mean_m": 0.057,
+    "crosstrack_max_m": 0.2994,
+    "crosstrack_std_m": 0.0712
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.457,
+    "heading_error_rmse_deg": 4.8303,
+    "heading_error_std_deg": 4.8299,
+    "heading_error_max_deg": 38.1863
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.3691,
+    "wall_mean_distance_m": 0.6528,
+    "wall_std_distance_m": 0.0706
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.587,
+    "steering_rate_max_rad_s": 7.9001,
+    "steering_rate_std_rad_s": 0.6648
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8333,
+    "speed_max_m_s": 4.8527,
+    "speed_std_m_s": 0.9601
+  }
+}
+F1/Montreal/Montreal: arch7 lap RMSE=0.0912 m  steps=7496
+{
+  "Lap Time": {
+    "lap_time_s": 76.67,
+    "steps": 7667.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0755,
+    "crosstrack_mean_m": 0.0507,
+    "crosstrack_max_m": 0.256,
+    "crosstrack_std_m": 0.056
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.0609,
+    "heading_error_rmse_deg": 3.9097,
+    "heading_error_std_deg": 3.9088,
+    "heading_error_max_deg": 26.9713
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.4148,
+    "wall_mean_distance_m": 0.6597,
+    "wall_std_distance_m": 0.0572
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.8122,
+    "steering_rate_max_rad_s": 26.1065,
+    "steering_rate_std_rad_s": 0.9154
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.74,
+    "speed_max_m_s": 4.6724,
+    "speed_std_m_s": 0.7891
+  }
+}
+F1/Montreal/Montreal: arch8 lap RMSE=0.0755 m  steps=7667
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Montreal_Montreal_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 104.46,
+    "steps": 10446.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0846,
+    "crosstrack_mean_m": 0.0484,
+    "crosstrack_max_m": 0.5984,
+    "crosstrack_std_m": 0.0693
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.8342,
+    "heading_error_rmse_deg": 4.4549,
+    "heading_error_std_deg": 4.4532,
+    "heading_error_max_deg": 41.6617
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.4476,
+    "wall_mean_distance_m": 0.9762,
+    "wall_std_distance_m": 0.0694
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3302,
+    "steering_rate_max_rad_s": 10.3132,
+    "steering_rate_std_rad_s": 0.5646
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.2503,
+    "speed_max_m_s": 4.9006,
+    "speed_std_m_s": 0.6607
+  }
+}
+F1/Monza/Monza: arch1 lap RMSE=0.0846 m  steps=10446
+{
+  "Lap Time": {
+    "lap_time_s": 114.78,
+    "steps": 11478.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0828,
+    "crosstrack_mean_m": 0.0542,
+    "crosstrack_max_m": 0.5848,
+    "crosstrack_std_m": 0.0625
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.7716,
+    "heading_error_rmse_deg": 4.5871,
+    "heading_error_std_deg": 4.5847,
+    "heading_error_max_deg": 44.4756
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.4465,
+    "wall_mean_distance_m": 0.9736,
+    "wall_std_distance_m": 0.0689
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4151,
+    "steering_rate_max_rad_s": 31.9542,
+    "steering_rate_std_rad_s": 0.6811
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8722,
+    "speed_max_m_s": 4.7474,
+    "speed_std_m_s": 0.753
+  }
+}
+F1/Monza/Monza: arch2 lap RMSE=0.0828 m  steps=11478
+{
+  "Lap Time": {
+    "lap_time_s": 105.42,
+    "steps": 10542.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.072,
+    "crosstrack_mean_m": 0.0322,
+    "crosstrack_max_m": 0.5515,
+    "crosstrack_std_m": 0.0644
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.8103,
+    "heading_error_rmse_deg": 4.7546,
+    "heading_error_std_deg": 4.7529,
+    "heading_error_max_deg": 41.7411
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.4548,
+    "wall_mean_distance_m": 0.9905,
+    "wall_std_distance_m": 0.0627
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4459,
+    "steering_rate_max_rad_s": 18.6574,
+    "steering_rate_std_rad_s": 0.6756
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.2263,
+    "speed_max_m_s": 4.8618,
+    "speed_std_m_s": 0.7102
+  }
+}
+F1/Monza/Monza: arch3 lap RMSE=0.0720 m  steps=10542
+{
+  "Lap Time": {
+    "lap_time_s": 104.95,
+    "steps": 10495.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0659,
+    "crosstrack_mean_m": 0.0418,
+    "crosstrack_max_m": 0.2968,
+    "crosstrack_std_m": 0.051
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4132,
+    "heading_error_rmse_deg": 3.4725,
+    "heading_error_std_deg": 3.4714,
+    "heading_error_max_deg": 33.5341
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7095,
+    "wall_mean_distance_m": 0.981,
+    "wall_std_distance_m": 0.057
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3988,
+    "steering_rate_max_rad_s": 7.0749,
+    "steering_rate_std_rad_s": 0.4597
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.2569,
+    "speed_max_m_s": 4.8689,
+    "speed_std_m_s": 0.6697
+  }
+}
+F1/Monza/Monza: arch4 lap RMSE=0.0659 m  steps=10495
+{
+  "Lap Time": {
+    "lap_time_s": 105.82,
+    "steps": 10582.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0693,
+    "crosstrack_mean_m": 0.0432,
+    "crosstrack_max_m": 0.308,
+    "crosstrack_std_m": 0.0541
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.367,
+    "heading_error_rmse_deg": 3.2391,
+    "heading_error_std_deg": 3.2369,
+    "heading_error_max_deg": 34.0565
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6501,
+    "wall_mean_distance_m": 0.9787,
+    "wall_std_distance_m": 0.0591
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4513,
+    "steering_rate_max_rad_s": 49.8895,
+    "steering_rate_std_rad_s": 0.8659
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.2309,
+    "speed_max_m_s": 4.8383,
+    "speed_std_m_s": 0.6814
+  }
+}
+F1/Monza/Monza: arch5 lap RMSE=0.0693 m  steps=10582
+{
+  "Lap Time": {
+    "lap_time_s": 105.93,
+    "steps": 10593.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0679,
+    "crosstrack_mean_m": 0.0434,
+    "crosstrack_max_m": 0.253,
+    "crosstrack_std_m": 0.0522
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.2671,
+    "heading_error_rmse_deg": 2.9522,
+    "heading_error_std_deg": 2.9496,
+    "heading_error_max_deg": 32.2757
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7366,
+    "wall_mean_distance_m": 0.9779,
+    "wall_std_distance_m": 0.0575
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4678,
+    "steering_rate_max_rad_s": 18.1867,
+    "steering_rate_std_rad_s": 0.6137
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.227,
+    "speed_max_m_s": 4.8576,
+    "speed_std_m_s": 0.6785
+  }
+}
+F1/Monza/Monza: arch6 lap RMSE=0.0679 m  steps=10593
+{
+  "Lap Time": {
+    "lap_time_s": 105.91,
+    "steps": 10591.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0697,
+    "crosstrack_mean_m": 0.0415,
+    "crosstrack_max_m": 0.3195,
+    "crosstrack_std_m": 0.0559
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.432,
+    "heading_error_rmse_deg": 3.594,
+    "heading_error_std_deg": 3.592,
+    "heading_error_max_deg": 32.4922
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6514,
+    "wall_mean_distance_m": 0.9801,
+    "wall_std_distance_m": 0.0603
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5083,
+    "steering_rate_max_rad_s": 17.7627,
+    "steering_rate_std_rad_s": 0.7067
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.2242,
+    "speed_max_m_s": 4.9092,
+    "speed_std_m_s": 0.6987
+  }
+}
+F1/Monza/Monza: arch7 lap RMSE=0.0697 m  steps=10591
+{
+  "Lap Time": {
+    "lap_time_s": 106.1,
+    "steps": 10610.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0655,
+    "crosstrack_mean_m": 0.039,
+    "crosstrack_max_m": 0.2689,
+    "crosstrack_std_m": 0.0526
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3491,
+    "heading_error_rmse_deg": 3.1917,
+    "heading_error_std_deg": 3.1892,
+    "heading_error_max_deg": 30.9068
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7359,
+    "wall_mean_distance_m": 0.982,
+    "wall_std_distance_m": 0.0561
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4769,
+    "steering_rate_max_rad_s": 8.3587,
+    "steering_rate_std_rad_s": 0.4746
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.2156,
+    "speed_max_m_s": 4.8568,
+    "speed_std_m_s": 0.6685
+  }
+}
+F1/Monza/Monza: arch8 lap RMSE=0.0655 m  steps=10610
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Monza_Monza_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 83.16,
+    "steps": 8316.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1131,
+    "crosstrack_mean_m": 0.0806,
+    "crosstrack_max_m": 0.6119,
+    "crosstrack_std_m": 0.0793
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.7791,
+    "heading_error_rmse_deg": 6.5689,
+    "heading_error_std_deg": 6.5672,
+    "heading_error_max_deg": 40.4051
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.5435,
+    "wall_mean_distance_m": 1.0268,
+    "wall_std_distance_m": 0.0725
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4315,
+    "steering_rate_max_rad_s": 14.0945,
+    "steering_rate_std_rad_s": 0.9144
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.847,
+    "speed_max_m_s": 4.8965,
+    "speed_std_m_s": 0.826
+  }
+}
+F1/MoscowRaceway/MoscowRaceway: arch1 lap RMSE=0.1131 m  steps=8316
+{
+  "Lap Time": {
+    "lap_time_s": 90.13,
+    "steps": 9013.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0947,
+    "crosstrack_mean_m": 0.0689,
+    "crosstrack_max_m": 0.3447,
+    "crosstrack_std_m": 0.0649
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.6328,
+    "heading_error_rmse_deg": 6.2485,
+    "heading_error_std_deg": 6.2393,
+    "heading_error_max_deg": 47.8034
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7526,
+    "wall_mean_distance_m": 1.0389,
+    "wall_std_distance_m": 0.0637
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3767,
+    "steering_rate_max_rad_s": 21.5506,
+    "steering_rate_std_rad_s": 0.7102
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.5653,
+    "speed_max_m_s": 4.7651,
+    "speed_std_m_s": 0.8459
+  }
+}
+F1/MoscowRaceway/MoscowRaceway: arch2 lap RMSE=0.0947 m  steps=9013
+{
+  "Lap Time": {
+    "lap_time_s": 87.32,
+    "steps": 8732.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1135,
+    "crosstrack_mean_m": 0.0697,
+    "crosstrack_max_m": 0.4841,
+    "crosstrack_std_m": 0.0897
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 4.0097,
+    "heading_error_rmse_deg": 6.9999,
+    "heading_error_std_deg": 6.9953,
+    "heading_error_max_deg": 57.2885
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6238,
+    "wall_mean_distance_m": 1.0361,
+    "wall_std_distance_m": 0.0872
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.6234,
+    "steering_rate_max_rad_s": 21.5091,
+    "steering_rate_std_rad_s": 0.9337
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.7134,
+    "speed_max_m_s": 4.8525,
+    "speed_std_m_s": 0.9194
+  }
+}
+F1/MoscowRaceway/MoscowRaceway: arch3 lap RMSE=0.1135 m  steps=8732
+{
+  "Lap Time": {
+    "lap_time_s": 85.38,
+    "steps": 8538.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1103,
+    "crosstrack_mean_m": 0.072,
+    "crosstrack_max_m": 0.3763,
+    "crosstrack_std_m": 0.0836
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.8744,
+    "heading_error_rmse_deg": 5.025,
+    "heading_error_std_deg": 5.0231,
+    "heading_error_max_deg": 44.4803
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7029,
+    "wall_mean_distance_m": 1.03,
+    "wall_std_distance_m": 0.0815
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4392,
+    "steering_rate_max_rad_s": 8.0144,
+    "steering_rate_std_rad_s": 0.519
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8153,
+    "speed_max_m_s": 4.9001,
+    "speed_std_m_s": 0.8773
+  }
+}
+F1/MoscowRaceway/MoscowRaceway: arch4 lap RMSE=0.1103 m  steps=8538
+{
+  "Lap Time": {
+    "lap_time_s": 85.18,
+    "steps": 8518.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1175,
+    "crosstrack_mean_m": 0.0788,
+    "crosstrack_max_m": 0.364,
+    "crosstrack_std_m": 0.0871
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.471,
+    "heading_error_rmse_deg": 3.9461,
+    "heading_error_std_deg": 3.9449,
+    "heading_error_max_deg": 26.1254
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7243,
+    "wall_mean_distance_m": 1.0211,
+    "wall_std_distance_m": 0.0844
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.438,
+    "steering_rate_max_rad_s": 68.7261,
+    "steering_rate_std_rad_s": 0.9992
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.843,
+    "speed_max_m_s": 4.8968,
+    "speed_std_m_s": 0.8735
+  }
+}
+F1/MoscowRaceway/MoscowRaceway: arch5 lap RMSE=0.1175 m  steps=8518
+{
+  "Lap Time": {
+    "lap_time_s": 84.92,
+    "steps": 8492.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.112,
+    "crosstrack_mean_m": 0.0772,
+    "crosstrack_max_m": 0.3556,
+    "crosstrack_std_m": 0.0811
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.3783,
+    "heading_error_rmse_deg": 3.7161,
+    "heading_error_std_deg": 3.715,
+    "heading_error_max_deg": 22.9774
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7339,
+    "wall_mean_distance_m": 1.0235,
+    "wall_std_distance_m": 0.0795
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4801,
+    "steering_rate_max_rad_s": 28.8251,
+    "steering_rate_std_rad_s": 0.8421
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8528,
+    "speed_max_m_s": 4.905,
+    "speed_std_m_s": 0.869
+  }
+}
+F1/MoscowRaceway/MoscowRaceway: arch6 lap RMSE=0.1120 m  steps=8492
+{
+  "Lap Time": {
+    "lap_time_s": 85.6,
+    "steps": 8560.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1125,
+    "crosstrack_mean_m": 0.076,
+    "crosstrack_max_m": 0.3207,
+    "crosstrack_std_m": 0.083
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.6132,
+    "heading_error_rmse_deg": 4.3526,
+    "heading_error_std_deg": 4.3499,
+    "heading_error_max_deg": 37.5145
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.747,
+    "wall_mean_distance_m": 1.0243,
+    "wall_std_distance_m": 0.0806
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.635,
+    "steering_rate_max_rad_s": 18.0333,
+    "steering_rate_std_rad_s": 1.0443
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8176,
+    "speed_max_m_s": 4.8777,
+    "speed_std_m_s": 0.8811
+  }
+}
+F1/MoscowRaceway/MoscowRaceway: arch7 lap RMSE=0.1125 m  steps=8560
+{
+  "Lap Time": {
+    "lap_time_s": 85.69,
+    "steps": 8569.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0989,
+    "crosstrack_mean_m": 0.0682,
+    "crosstrack_max_m": 0.3079,
+    "crosstrack_std_m": 0.0715
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.6408,
+    "heading_error_rmse_deg": 4.4227,
+    "heading_error_std_deg": 4.4189,
+    "heading_error_max_deg": 30.0248
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.776,
+    "wall_mean_distance_m": 1.0335,
+    "wall_std_distance_m": 0.0705
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4022,
+    "steering_rate_max_rad_s": 12.4911,
+    "steering_rate_std_rad_s": 0.5176
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8047,
+    "speed_max_m_s": 4.8912,
+    "speed_std_m_s": 0.8679
+  }
+}
+F1/MoscowRaceway/MoscowRaceway: arch8 lap RMSE=0.0989 m  steps=8569
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_MoscowRaceway_MoscowRaceway_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 109.22,
+    "steps": 10922.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0803,
+    "crosstrack_mean_m": 0.0615,
+    "crosstrack_max_m": 0.2866,
+    "crosstrack_std_m": 0.0516
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9269,
+    "heading_error_rmse_deg": 3.1702,
+    "heading_error_std_deg": 3.1699,
+    "heading_error_max_deg": 25.3609
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8619,
+    "wall_mean_distance_m": 1.128,
+    "wall_std_distance_m": 0.0541
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3605,
+    "steering_rate_max_rad_s": 9.852,
+    "steering_rate_std_rad_s": 0.6652
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0664,
+    "speed_max_m_s": 4.8806,
+    "speed_std_m_s": 0.7299
+  }
+}
+F1/Nuerburgring/Nuerburgring: arch1 lap RMSE=0.0803 m  steps=10922
+{
+  "Lap Time": {
+    "lap_time_s": 117.51,
+    "steps": 11751.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0798,
+    "crosstrack_mean_m": 0.0627,
+    "crosstrack_max_m": 0.334,
+    "crosstrack_std_m": 0.0494
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9264,
+    "heading_error_rmse_deg": 3.2945,
+    "heading_error_std_deg": 3.2921,
+    "heading_error_max_deg": 31.5853
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8109,
+    "wall_mean_distance_m": 1.1272,
+    "wall_std_distance_m": 0.0528
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3878,
+    "steering_rate_max_rad_s": 11.8266,
+    "steering_rate_std_rad_s": 0.5958
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.7876,
+    "speed_max_m_s": 4.8292,
+    "speed_std_m_s": 0.7444
+  }
+}
+F1/Nuerburgring/Nuerburgring: arch2 lap RMSE=0.0798 m  steps=11751
+{
+  "Lap Time": {
+    "lap_time_s": 110.8,
+    "steps": 11080.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0775,
+    "crosstrack_mean_m": 0.0448,
+    "crosstrack_max_m": 0.3672,
+    "crosstrack_std_m": 0.0632
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.8202,
+    "heading_error_rmse_deg": 3.2463,
+    "heading_error_std_deg": 3.2449,
+    "heading_error_max_deg": 27.1564
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7814,
+    "wall_mean_distance_m": 1.1409,
+    "wall_std_distance_m": 0.0638
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.536,
+    "steering_rate_max_rad_s": 18.8327,
+    "steering_rate_std_rad_s": 0.755
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0393,
+    "speed_max_m_s": 4.8476,
+    "speed_std_m_s": 0.7467
+  }
+}
+F1/Nuerburgring/Nuerburgring: arch3 lap RMSE=0.0775 m  steps=11080
+{
+  "Lap Time": {
+    "lap_time_s": 109.45,
+    "steps": 10945.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0997,
+    "crosstrack_mean_m": 0.0635,
+    "crosstrack_max_m": 0.3236,
+    "crosstrack_std_m": 0.0769
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.55,
+    "heading_error_rmse_deg": 2.6587,
+    "heading_error_std_deg": 2.657,
+    "heading_error_max_deg": 24.5334
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8377,
+    "wall_mean_distance_m": 1.1201,
+    "wall_std_distance_m": 0.0756
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4129,
+    "steering_rate_max_rad_s": 5.3504,
+    "steering_rate_std_rad_s": 0.4342
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1088,
+    "speed_max_m_s": 4.8908,
+    "speed_std_m_s": 0.7483
+  }
+}
+F1/Nuerburgring/Nuerburgring: arch4 lap RMSE=0.0997 m  steps=10945
+{
+  "Lap Time": {
+    "lap_time_s": 109.02,
+    "steps": 10902.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0985,
+    "crosstrack_mean_m": 0.0624,
+    "crosstrack_max_m": 0.3338,
+    "crosstrack_std_m": 0.0762
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4068,
+    "heading_error_rmse_deg": 2.2982,
+    "heading_error_std_deg": 2.2977,
+    "heading_error_max_deg": 16.7039
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8275,
+    "wall_mean_distance_m": 1.1199,
+    "wall_std_distance_m": 0.0745
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4254,
+    "steering_rate_max_rad_s": 6.7832,
+    "steering_rate_std_rad_s": 0.3894
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1299,
+    "speed_max_m_s": 4.8731,
+    "speed_std_m_s": 0.7303
+  }
+}
+F1/Nuerburgring/Nuerburgring: arch5 lap RMSE=0.0985 m  steps=10902
+{
+  "Lap Time": {
+    "lap_time_s": 109.14,
+    "steps": 10914.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0983,
+    "crosstrack_mean_m": 0.0637,
+    "crosstrack_max_m": 0.3566,
+    "crosstrack_std_m": 0.0748
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4052,
+    "heading_error_rmse_deg": 2.2914,
+    "heading_error_std_deg": 2.2911,
+    "heading_error_max_deg": 18.7294
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7972,
+    "wall_mean_distance_m": 1.1201,
+    "wall_std_distance_m": 0.0738
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4499,
+    "steering_rate_max_rad_s": 6.5244,
+    "steering_rate_std_rad_s": 0.4331
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1255,
+    "speed_max_m_s": 4.8884,
+    "speed_std_m_s": 0.728
+  }
+}
+F1/Nuerburgring/Nuerburgring: arch6 lap RMSE=0.0983 m  steps=10914
+{
+  "Lap Time": {
+    "lap_time_s": 109.8,
+    "steps": 10980.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0995,
+    "crosstrack_mean_m": 0.0642,
+    "crosstrack_max_m": 0.3495,
+    "crosstrack_std_m": 0.0761
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4598,
+    "heading_error_rmse_deg": 2.4259,
+    "heading_error_std_deg": 2.4254,
+    "heading_error_max_deg": 20.9754
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8216,
+    "wall_mean_distance_m": 1.1191,
+    "wall_std_distance_m": 0.0747
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5372,
+    "steering_rate_max_rad_s": 10.1667,
+    "steering_rate_std_rad_s": 0.5476
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1003,
+    "speed_max_m_s": 4.8611,
+    "speed_std_m_s": 0.729
+  }
+}
+F1/Nuerburgring/Nuerburgring: arch7 lap RMSE=0.0995 m  steps=10980
+{
+  "Lap Time": {
+    "lap_time_s": 110.54,
+    "steps": 11054.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0805,
+    "crosstrack_mean_m": 0.0538,
+    "crosstrack_max_m": 0.2378,
+    "crosstrack_std_m": 0.0599
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4783,
+    "heading_error_rmse_deg": 2.4254,
+    "heading_error_std_deg": 2.4246,
+    "heading_error_max_deg": 21.9812
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9197,
+    "wall_mean_distance_m": 1.1297,
+    "wall_std_distance_m": 0.0593
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.387,
+    "steering_rate_max_rad_s": 13.9983,
+    "steering_rate_std_rad_s": 0.424
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0637,
+    "speed_max_m_s": 4.8636,
+    "speed_std_m_s": 0.7116
+  }
+}
+F1/Nuerburgring/Nuerburgring: arch8 lap RMSE=0.0805 m  steps=11054
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Nuerburgring_Nuerburgring_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 67.02,
+    "steps": 6702.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0942,
+    "crosstrack_mean_m": 0.0668,
+    "crosstrack_max_m": 0.397,
+    "crosstrack_std_m": 0.0664
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.7435,
+    "heading_error_rmse_deg": 4.6203,
+    "heading_error_std_deg": 4.6201,
+    "heading_error_max_deg": 25.6824
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.5747,
+    "wall_mean_distance_m": 0.9193,
+    "wall_std_distance_m": 0.0659
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.332,
+    "steering_rate_max_rad_s": 9.1456,
+    "steering_rate_std_rad_s": 0.6653
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8801,
+    "speed_max_m_s": 4.9461,
+    "speed_std_m_s": 0.8235
+  }
+}
+F1/Oschersleben/Oschersleben: arch1 lap RMSE=0.0942 m  steps=6702
+{
+  "Lap Time": {
+    "lap_time_s": 73.7,
+    "steps": 7370.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0857,
+    "crosstrack_mean_m": 0.0591,
+    "crosstrack_max_m": 0.3106,
+    "crosstrack_std_m": 0.0621
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.4687,
+    "heading_error_rmse_deg": 4.2727,
+    "heading_error_std_deg": 4.2704,
+    "heading_error_max_deg": 29.2744
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6557,
+    "wall_mean_distance_m": 0.9273,
+    "wall_std_distance_m": 0.0611
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2972,
+    "steering_rate_max_rad_s": 6.5741,
+    "steering_rate_std_rad_s": 0.4379
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.5229,
+    "speed_max_m_s": 4.8187,
+    "speed_std_m_s": 0.8731
+  }
+}
+F1/Oschersleben/Oschersleben: arch2 lap RMSE=0.0857 m  steps=7370
+{
+  "Lap Time": {
+    "lap_time_s": 68.76,
+    "steps": 6876.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.075,
+    "crosstrack_mean_m": 0.0517,
+    "crosstrack_max_m": 0.2561,
+    "crosstrack_std_m": 0.0544
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.2148,
+    "heading_error_rmse_deg": 3.7358,
+    "heading_error_std_deg": 3.7357,
+    "heading_error_max_deg": 21.1823
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7146,
+    "wall_mean_distance_m": 0.933,
+    "wall_std_distance_m": 0.0534
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5041,
+    "steering_rate_max_rad_s": 11.3699,
+    "steering_rate_std_rad_s": 0.7036
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8071,
+    "speed_max_m_s": 4.8474,
+    "speed_std_m_s": 0.8389
+  }
+}
+F1/Oschersleben/Oschersleben: arch3 lap RMSE=0.0750 m  steps=6876
+{
+  "Lap Time": {
+    "lap_time_s": 67.95,
+    "steps": 6795.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0923,
+    "crosstrack_mean_m": 0.0646,
+    "crosstrack_max_m": 0.2591,
+    "crosstrack_std_m": 0.066
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.7665,
+    "heading_error_rmse_deg": 2.7797,
+    "heading_error_std_deg": 2.7797,
+    "heading_error_max_deg": 14.9238
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7057,
+    "wall_mean_distance_m": 0.9189,
+    "wall_std_distance_m": 0.0646
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.369,
+    "steering_rate_max_rad_s": 5.0487,
+    "steering_rate_std_rad_s": 0.4282
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.871,
+    "speed_max_m_s": 4.926,
+    "speed_std_m_s": 0.8452
+  }
+}
+F1/Oschersleben/Oschersleben: arch4 lap RMSE=0.0923 m  steps=6795
+{
+  "Lap Time": {
+    "lap_time_s": 68.31,
+    "steps": 6831.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1102,
+    "crosstrack_mean_m": 0.0765,
+    "crosstrack_max_m": 0.2442,
+    "crosstrack_std_m": 0.0794
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9962,
+    "heading_error_rmse_deg": 3.2066,
+    "heading_error_std_deg": 3.2066,
+    "heading_error_max_deg": 20.1717
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7284,
+    "wall_mean_distance_m": 0.9062,
+    "wall_std_distance_m": 0.0769
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3268,
+    "steering_rate_max_rad_s": 3.7333,
+    "steering_rate_std_rad_s": 0.3311
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.865,
+    "speed_max_m_s": 4.9151,
+    "speed_std_m_s": 0.8747
+  }
+}
+F1/Oschersleben/Oschersleben: arch5 lap RMSE=0.1102 m  steps=6831
+{
+  "Lap Time": {
+    "lap_time_s": 68.34,
+    "steps": 6834.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1125,
+    "crosstrack_mean_m": 0.0788,
+    "crosstrack_max_m": 0.2333,
+    "crosstrack_std_m": 0.0803
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9368,
+    "heading_error_rmse_deg": 3.0976,
+    "heading_error_std_deg": 3.0976,
+    "heading_error_max_deg": 19.5615
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7295,
+    "wall_mean_distance_m": 0.9042,
+    "wall_std_distance_m": 0.078
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3466,
+    "steering_rate_max_rad_s": 6.2157,
+    "steering_rate_std_rad_s": 0.3523
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8653,
+    "speed_max_m_s": 4.8975,
+    "speed_std_m_s": 0.8761
+  }
+}
+F1/Oschersleben/Oschersleben: arch6 lap RMSE=0.1125 m  steps=6834
+{
+  "Lap Time": {
+    "lap_time_s": 68.56,
+    "steps": 6856.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1065,
+    "crosstrack_mean_m": 0.0737,
+    "crosstrack_max_m": 0.261,
+    "crosstrack_std_m": 0.0768
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9489,
+    "heading_error_rmse_deg": 3.1404,
+    "heading_error_std_deg": 3.1404,
+    "heading_error_max_deg": 17.154
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.703,
+    "wall_mean_distance_m": 0.909,
+    "wall_std_distance_m": 0.0742
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4561,
+    "steering_rate_max_rad_s": 6.2298,
+    "steering_rate_std_rad_s": 0.5161
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8471,
+    "speed_max_m_s": 4.8926,
+    "speed_std_m_s": 0.8604
+  }
+}
+F1/Oschersleben/Oschersleben: arch7 lap RMSE=0.1065 m  steps=6856
+{
+  "Lap Time": {
+    "lap_time_s": 68.39,
+    "steps": 6839.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1091,
+    "crosstrack_mean_m": 0.0754,
+    "crosstrack_max_m": 0.2238,
+    "crosstrack_std_m": 0.0788
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9746,
+    "heading_error_rmse_deg": 3.1674,
+    "heading_error_std_deg": 3.1674,
+    "heading_error_max_deg": 18.4438
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7425,
+    "wall_mean_distance_m": 0.907,
+    "wall_std_distance_m": 0.0763
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3316,
+    "steering_rate_max_rad_s": 3.4555,
+    "steering_rate_std_rad_s": 0.3166
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8603,
+    "speed_max_m_s": 4.9077,
+    "speed_std_m_s": 0.8646
+  }
+}
+F1/Oschersleben/Oschersleben: arch8 lap RMSE=0.1091 m  steps=6839
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Oschersleben_Oschersleben_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 106.62,
+    "steps": 10662.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0961,
+    "crosstrack_mean_m": 0.068,
+    "crosstrack_max_m": 0.6015,
+    "crosstrack_std_m": 0.0679
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.5144,
+    "heading_error_rmse_deg": 5.3132,
+    "heading_error_std_deg": 5.3118,
+    "heading_error_max_deg": 41.2391
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6523,
+    "wall_mean_distance_m": 1.0732,
+    "wall_std_distance_m": 0.0611
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3126,
+    "steering_rate_max_rad_s": 17.6015,
+    "steering_rate_std_rad_s": 0.7111
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1191,
+    "speed_max_m_s": 4.8737,
+    "speed_std_m_s": 0.7541
+  }
+}
+F1/Sakhir/Sakhir: arch1 lap RMSE=0.0961 m  steps=10662
+{
+  "Lap Time": {
+    "lap_time_s": 114.77,
+    "steps": 11477.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0882,
+    "crosstrack_mean_m": 0.06,
+    "crosstrack_max_m": 0.4262,
+    "crosstrack_std_m": 0.0646
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.4959,
+    "heading_error_rmse_deg": 5.4154,
+    "heading_error_std_deg": 5.4144,
+    "heading_error_max_deg": 47.3176
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7436,
+    "wall_mean_distance_m": 1.0804,
+    "wall_std_distance_m": 0.0614
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3374,
+    "steering_rate_max_rad_s": 19.2844,
+    "steering_rate_std_rad_s": 0.7111
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8379,
+    "speed_max_m_s": 4.8235,
+    "speed_std_m_s": 0.7781
+  }
+}
+F1/Sakhir/Sakhir: arch2 lap RMSE=0.0882 m  steps=11477
+{
+  "Lap Time": {
+    "lap_time_s": 109.44,
+    "steps": 10944.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0862,
+    "crosstrack_mean_m": 0.0484,
+    "crosstrack_max_m": 0.4312,
+    "crosstrack_std_m": 0.0713
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.5194,
+    "heading_error_rmse_deg": 5.5411,
+    "heading_error_std_deg": 5.5402,
+    "heading_error_max_deg": 49.9497
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6726,
+    "wall_mean_distance_m": 1.0892,
+    "wall_std_distance_m": 0.0695
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4783,
+    "steering_rate_max_rad_s": 26.3089,
+    "steering_rate_std_rad_s": 0.9574
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0427,
+    "speed_max_m_s": 4.8916,
+    "speed_std_m_s": 0.8028
+  }
+}
+F1/Sakhir/Sakhir: arch3 lap RMSE=0.0862 m  steps=10944
+{
+  "Lap Time": {
+    "lap_time_s": 106.65,
+    "steps": 10665.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0918,
+    "crosstrack_mean_m": 0.0521,
+    "crosstrack_max_m": 0.3889,
+    "crosstrack_std_m": 0.0755
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.0287,
+    "heading_error_rmse_deg": 4.3575,
+    "heading_error_std_deg": 4.3561,
+    "heading_error_max_deg": 38.7124
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7208,
+    "wall_mean_distance_m": 1.0805,
+    "wall_std_distance_m": 0.0713
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.373,
+    "steering_rate_max_rad_s": 9.7139,
+    "steering_rate_std_rad_s": 0.5335
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1616,
+    "speed_max_m_s": 4.91,
+    "speed_std_m_s": 0.8061
+  }
+}
+F1/Sakhir/Sakhir: arch4 lap RMSE=0.0918 m  steps=10665
+{
+  "Lap Time": {
+    "lap_time_s": 107.16,
+    "steps": 10716.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0868,
+    "crosstrack_mean_m": 0.0525,
+    "crosstrack_max_m": 0.2993,
+    "crosstrack_std_m": 0.0691
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.6424,
+    "heading_error_rmse_deg": 3.2821,
+    "heading_error_std_deg": 3.2811,
+    "heading_error_max_deg": 27.1366
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8145,
+    "wall_mean_distance_m": 1.0791,
+    "wall_std_distance_m": 0.0665
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3911,
+    "steering_rate_max_rad_s": 67.7964,
+    "steering_rate_std_rad_s": 1.4429
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1521,
+    "speed_max_m_s": 4.9023,
+    "speed_std_m_s": 0.7749
+  }
+}
+F1/Sakhir/Sakhir: arch5 lap RMSE=0.0868 m  steps=10716
+{
+  "Lap Time": {
+    "lap_time_s": 107.11,
+    "steps": 10711.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0859,
+    "crosstrack_mean_m": 0.0532,
+    "crosstrack_max_m": 0.2987,
+    "crosstrack_std_m": 0.0675
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.571,
+    "heading_error_rmse_deg": 3.0451,
+    "heading_error_std_deg": 3.0444,
+    "heading_error_max_deg": 29.6927
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8204,
+    "wall_mean_distance_m": 1.0788,
+    "wall_std_distance_m": 0.0654
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.392,
+    "steering_rate_max_rad_s": 48.2637,
+    "steering_rate_std_rad_s": 1.0637
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1555,
+    "speed_max_m_s": 4.8857,
+    "speed_std_m_s": 0.7716
+  }
+}
+F1/Sakhir/Sakhir: arch6 lap RMSE=0.0859 m  steps=10711
+{
+  "Lap Time": {
+    "lap_time_s": 108.09,
+    "steps": 10809.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0881,
+    "crosstrack_mean_m": 0.0563,
+    "crosstrack_max_m": 0.3002,
+    "crosstrack_std_m": 0.0678
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.7266,
+    "heading_error_rmse_deg": 3.5689,
+    "heading_error_std_deg": 3.568,
+    "heading_error_max_deg": 32.6953
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8145,
+    "wall_mean_distance_m": 1.0779,
+    "wall_std_distance_m": 0.0669
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4852,
+    "steering_rate_max_rad_s": 71.685,
+    "steering_rate_std_rad_s": 1.3256
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1143,
+    "speed_max_m_s": 4.8319,
+    "speed_std_m_s": 0.7659
+  }
+}
+F1/Sakhir/Sakhir: arch7 lap RMSE=0.0881 m  steps=10809
+{
+  "Lap Time": {
+    "lap_time_s": 108.96,
+    "steps": 10896.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0757,
+    "crosstrack_mean_m": 0.0488,
+    "crosstrack_max_m": 0.293,
+    "crosstrack_std_m": 0.0579
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.8913,
+    "heading_error_rmse_deg": 3.7868,
+    "heading_error_std_deg": 3.7861,
+    "heading_error_max_deg": 35.4569
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8129,
+    "wall_mean_distance_m": 1.0862,
+    "wall_std_distance_m": 0.0574
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3427,
+    "steering_rate_max_rad_s": 13.2919,
+    "steering_rate_std_rad_s": 0.5249
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0733,
+    "speed_max_m_s": 4.8623,
+    "speed_std_m_s": 0.7465
+  }
+}
+F1/Sakhir/Sakhir: arch8 lap RMSE=0.0757 m  steps=10896
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Sakhir_Sakhir_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 86.29,
+    "steps": 8629.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.086,
+    "crosstrack_mean_m": 0.0657,
+    "crosstrack_max_m": 0.3287,
+    "crosstrack_std_m": 0.0555
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.3117,
+    "heading_error_rmse_deg": 3.7845,
+    "heading_error_std_deg": 3.7842,
+    "heading_error_max_deg": 24.0643
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7817,
+    "wall_mean_distance_m": 1.0556,
+    "wall_std_distance_m": 0.0552
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.313,
+    "steering_rate_max_rad_s": 12.8772,
+    "steering_rate_std_rad_s": 0.6878
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9796,
+    "speed_max_m_s": 4.9161,
+    "speed_std_m_s": 0.7096
+  }
+}
+F1/SaoPaulo/SaoPaulo: arch1 lap RMSE=0.0860 m  steps=8629
+{
+  "Lap Time": {
+    "lap_time_s": 92.46,
+    "steps": 9246.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0749,
+    "crosstrack_mean_m": 0.0554,
+    "crosstrack_max_m": 0.3148,
+    "crosstrack_std_m": 0.0504
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9477,
+    "heading_error_rmse_deg": 3.3402,
+    "heading_error_std_deg": 3.3392,
+    "heading_error_max_deg": 23.7131
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7778,
+    "wall_mean_distance_m": 1.0653,
+    "wall_std_distance_m": 0.0507
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2886,
+    "steering_rate_max_rad_s": 11.0124,
+    "steering_rate_std_rad_s": 0.4484
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.7193,
+    "speed_max_m_s": 4.8079,
+    "speed_std_m_s": 0.6979
+  }
+}
+F1/SaoPaulo/SaoPaulo: arch2 lap RMSE=0.0749 m  steps=9246
+{
+  "Lap Time": {
+    "lap_time_s": 88.17,
+    "steps": 8817.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0846,
+    "crosstrack_mean_m": 0.0472,
+    "crosstrack_max_m": 0.4147,
+    "crosstrack_std_m": 0.0702
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.3359,
+    "heading_error_rmse_deg": 4.1137,
+    "heading_error_std_deg": 4.1132,
+    "heading_error_max_deg": 25.8012
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.697,
+    "wall_mean_distance_m": 1.0717,
+    "wall_std_distance_m": 0.0694
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4847,
+    "steering_rate_max_rad_s": 7.9697,
+    "steering_rate_std_rad_s": 0.6692
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9211,
+    "speed_max_m_s": 4.8749,
+    "speed_std_m_s": 0.7433
+  }
+}
+F1/SaoPaulo/SaoPaulo: arch3 lap RMSE=0.0846 m  steps=8817
+{
+  "Lap Time": {
+    "lap_time_s": 86.76,
+    "steps": 8676.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.098,
+    "crosstrack_mean_m": 0.0684,
+    "crosstrack_max_m": 0.297,
+    "crosstrack_std_m": 0.0701
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.6041,
+    "heading_error_rmse_deg": 2.5835,
+    "heading_error_std_deg": 2.5809,
+    "heading_error_max_deg": 18.4837
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8008,
+    "wall_mean_distance_m": 1.0493,
+    "wall_std_distance_m": 0.0687
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3611,
+    "steering_rate_max_rad_s": 5.9351,
+    "steering_rate_std_rad_s": 0.4143
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0056,
+    "speed_max_m_s": 4.9048,
+    "speed_std_m_s": 0.7408
+  }
+}
+F1/SaoPaulo/SaoPaulo: arch4 lap RMSE=0.0980 m  steps=8676
+{
+  "Lap Time": {
+    "lap_time_s": 86.44,
+    "steps": 8644.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0991,
+    "crosstrack_mean_m": 0.0693,
+    "crosstrack_max_m": 0.2684,
+    "crosstrack_std_m": 0.0708
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5469,
+    "heading_error_rmse_deg": 2.4651,
+    "heading_error_std_deg": 2.4611,
+    "heading_error_max_deg": 16.373
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8308,
+    "wall_mean_distance_m": 1.0479,
+    "wall_std_distance_m": 0.0689
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3171,
+    "steering_rate_max_rad_s": 4.7712,
+    "steering_rate_std_rad_s": 0.3106
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0254,
+    "speed_max_m_s": 4.9098,
+    "speed_std_m_s": 0.7237
+  }
+}
+F1/SaoPaulo/SaoPaulo: arch5 lap RMSE=0.0991 m  steps=8644
+{
+  "Lap Time": {
+    "lap_time_s": 86.47,
+    "steps": 8647.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0977,
+    "crosstrack_mean_m": 0.0691,
+    "crosstrack_max_m": 0.2792,
+    "crosstrack_std_m": 0.0691
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5448,
+    "heading_error_rmse_deg": 2.407,
+    "heading_error_std_deg": 2.4039,
+    "heading_error_max_deg": 15.1006
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8199,
+    "wall_mean_distance_m": 1.0481,
+    "wall_std_distance_m": 0.0675
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3293,
+    "steering_rate_max_rad_s": 3.3158,
+    "steering_rate_std_rad_s": 0.3276
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0238,
+    "speed_max_m_s": 4.9205,
+    "speed_std_m_s": 0.725
+  }
+}
+F1/SaoPaulo/SaoPaulo: arch6 lap RMSE=0.0977 m  steps=8647
+{
+  "Lap Time": {
+    "lap_time_s": 86.95,
+    "steps": 8695.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0991,
+    "crosstrack_mean_m": 0.0715,
+    "crosstrack_max_m": 0.2876,
+    "crosstrack_std_m": 0.0685
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5777,
+    "heading_error_rmse_deg": 2.5538,
+    "heading_error_std_deg": 2.5506,
+    "heading_error_max_deg": 17.2762
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8026,
+    "wall_mean_distance_m": 1.0459,
+    "wall_std_distance_m": 0.0669
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4438,
+    "steering_rate_max_rad_s": 6.328,
+    "steering_rate_std_rad_s": 0.506
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0007,
+    "speed_max_m_s": 4.9058,
+    "speed_std_m_s": 0.722
+  }
+}
+F1/SaoPaulo/SaoPaulo: arch7 lap RMSE=0.0991 m  steps=8695
+{
+  "Lap Time": {
+    "lap_time_s": 87.24,
+    "steps": 8724.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0873,
+    "crosstrack_mean_m": 0.0635,
+    "crosstrack_max_m": 0.2638,
+    "crosstrack_std_m": 0.06
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5577,
+    "heading_error_rmse_deg": 2.4954,
+    "heading_error_std_deg": 2.4926,
+    "heading_error_max_deg": 16.373
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8389,
+    "wall_mean_distance_m": 1.0542,
+    "wall_std_distance_m": 0.0588
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.31,
+    "steering_rate_max_rad_s": 2.8955,
+    "steering_rate_std_rad_s": 0.2927
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.983,
+    "speed_max_m_s": 4.8949,
+    "speed_std_m_s": 0.718
+  }
+}
+F1/SaoPaulo/SaoPaulo: arch8 lap RMSE=0.0873 m  steps=8724
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_SaoPaulo_SaoPaulo_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 119.79,
+    "steps": 11979.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1033,
+    "crosstrack_mean_m": 0.0774,
+    "crosstrack_max_m": 0.6522,
+    "crosstrack_std_m": 0.0684
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.2369,
+    "heading_error_rmse_deg": 4.1454,
+    "heading_error_std_deg": 4.1454,
+    "heading_error_max_deg": 35.1745
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.5692,
+    "wall_mean_distance_m": 1.1502,
+    "wall_std_distance_m": 0.0665
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3448,
+    "steering_rate_max_rad_s": 13.7868,
+    "steering_rate_std_rad_s": 0.7222
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0381,
+    "speed_max_m_s": 4.9151,
+    "speed_std_m_s": 0.74
+  }
+}
+F1/Sepang/Sepang: arch1 lap RMSE=0.1033 m  steps=11979
+{
+  "Lap Time": {
+    "lap_time_s": 129.33,
+    "steps": 12933.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0912,
+    "crosstrack_mean_m": 0.0718,
+    "crosstrack_max_m": 0.3257,
+    "crosstrack_std_m": 0.0562
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.8507,
+    "heading_error_rmse_deg": 3.3803,
+    "heading_error_std_deg": 3.3803,
+    "heading_error_max_deg": 25.7195
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8863,
+    "wall_mean_distance_m": 1.1554,
+    "wall_std_distance_m": 0.0584
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3321,
+    "steering_rate_max_rad_s": 14.3361,
+    "steering_rate_std_rad_s": 0.5609
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.7569,
+    "speed_max_m_s": 4.7682,
+    "speed_std_m_s": 0.733
+  }
+}
+F1/Sepang/Sepang: arch2 lap RMSE=0.0912 m  steps=12933
+{
+  "Lap Time": {
+    "lap_time_s": 122.1,
+    "steps": 12210.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0911,
+    "crosstrack_mean_m": 0.0513,
+    "crosstrack_max_m": 0.4468,
+    "crosstrack_std_m": 0.0752
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9969,
+    "heading_error_rmse_deg": 3.6986,
+    "heading_error_std_deg": 3.6983,
+    "heading_error_max_deg": 23.0744
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7821,
+    "wall_mean_distance_m": 1.1735,
+    "wall_std_distance_m": 0.0748
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4713,
+    "steering_rate_max_rad_s": 14.1777,
+    "steering_rate_std_rad_s": 0.7441
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0021,
+    "speed_max_m_s": 4.9072,
+    "speed_std_m_s": 0.7773
+  }
+}
+F1/Sepang/Sepang: arch3 lap RMSE=0.0911 m  steps=12210
+{
+  "Lap Time": {
+    "lap_time_s": 119.22,
+    "steps": 11922.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1043,
+    "crosstrack_mean_m": 0.0668,
+    "crosstrack_max_m": 0.408,
+    "crosstrack_std_m": 0.0801
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.6142,
+    "heading_error_rmse_deg": 2.9175,
+    "heading_error_std_deg": 2.9168,
+    "heading_error_max_deg": 22.1835
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7884,
+    "wall_mean_distance_m": 1.1565,
+    "wall_std_distance_m": 0.0791
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3606,
+    "steering_rate_max_rad_s": 6.3913,
+    "steering_rate_std_rad_s": 0.4472
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1194,
+    "speed_max_m_s": 4.9254,
+    "speed_std_m_s": 0.7819
+  }
+}
+F1/Sepang/Sepang: arch4 lap RMSE=0.1043 m  steps=11922
+{
+  "Lap Time": {
+    "lap_time_s": 118.02,
+    "steps": 11802.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0994,
+    "crosstrack_mean_m": 0.0627,
+    "crosstrack_max_m": 0.3785,
+    "crosstrack_std_m": 0.0771
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.439,
+    "heading_error_rmse_deg": 2.5974,
+    "heading_error_std_deg": 2.5968,
+    "heading_error_max_deg": 25.0147
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8201,
+    "wall_mean_distance_m": 1.1591,
+    "wall_std_distance_m": 0.0755
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.324,
+    "steering_rate_max_rad_s": 6.7244,
+    "steering_rate_std_rad_s": 0.3588
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1639,
+    "speed_max_m_s": 4.9121,
+    "speed_std_m_s": 0.7426
+  }
+}
+F1/Sepang/Sepang: arch5 lap RMSE=0.0994 m  steps=11802
+{
+  "Lap Time": {
+    "lap_time_s": 117.86,
+    "steps": 11786.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0962,
+    "crosstrack_mean_m": 0.0631,
+    "crosstrack_max_m": 0.2837,
+    "crosstrack_std_m": 0.0726
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3971,
+    "heading_error_rmse_deg": 2.4679,
+    "heading_error_std_deg": 2.4669,
+    "heading_error_max_deg": 21.6091
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9168,
+    "wall_mean_distance_m": 1.1592,
+    "wall_std_distance_m": 0.0716
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.343,
+    "steering_rate_max_rad_s": 6.907,
+    "steering_rate_std_rad_s": 0.3938
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1684,
+    "speed_max_m_s": 4.9133,
+    "speed_std_m_s": 0.7402
+  }
+}
+F1/Sepang/Sepang: arch6 lap RMSE=0.0962 m  steps=11786
+{
+  "Lap Time": {
+    "lap_time_s": 119.1,
+    "steps": 11910.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1021,
+    "crosstrack_mean_m": 0.0665,
+    "crosstrack_max_m": 0.4928,
+    "crosstrack_std_m": 0.0774
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5919,
+    "heading_error_rmse_deg": 3.0007,
+    "heading_error_std_deg": 2.9998,
+    "heading_error_max_deg": 27.4983
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7132,
+    "wall_mean_distance_m": 1.1565,
+    "wall_std_distance_m": 0.0766
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4815,
+    "steering_rate_max_rad_s": 20.4132,
+    "steering_rate_std_rad_s": 0.7829
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1258,
+    "speed_max_m_s": 4.9054,
+    "speed_std_m_s": 0.7484
+  }
+}
+F1/Sepang/Sepang: arch7 lap RMSE=0.1021 m  steps=11910
+{
+  "Lap Time": {
+    "lap_time_s": 121.74,
+    "steps": 12174.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0788,
+    "crosstrack_mean_m": 0.0584,
+    "crosstrack_max_m": 0.2566,
+    "crosstrack_std_m": 0.0529
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5634,
+    "heading_error_rmse_deg": 2.8532,
+    "heading_error_std_deg": 2.852,
+    "heading_error_max_deg": 24.4255
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9412,
+    "wall_mean_distance_m": 1.1668,
+    "wall_std_distance_m": 0.0549
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3215,
+    "steering_rate_max_rad_s": 14.5547,
+    "steering_rate_std_rad_s": 0.4282
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0259,
+    "speed_max_m_s": 4.8219,
+    "speed_std_m_s": 0.6855
+  }
+}
+F1/Sepang/Sepang: arch8 lap RMSE=0.0788 m  steps=12174
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Sepang_Sepang_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 121.43,
+    "steps": 12143.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1261,
+    "crosstrack_mean_m": 0.0892,
+    "crosstrack_max_m": 1.1084,
+    "crosstrack_std_m": 0.0891
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.6269,
+    "heading_error_rmse_deg": 6.6727,
+    "heading_error_std_deg": 6.6725,
+    "heading_error_max_deg": 77.2104
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7986,
+    "wall_mean_distance_m": 1.1872,
+    "wall_std_distance_m": 0.0654
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3619,
+    "steering_rate_max_rad_s": 13.9736,
+    "steering_rate_std_rad_s": 0.7092
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0386,
+    "speed_max_m_s": 4.8578,
+    "speed_std_m_s": 0.7664
+  }
+}
+F1/Shanghai/Shanghai: arch1 lap RMSE=0.1261 m  steps=12143
+{
+  "Lap Time": {
+    "lap_time_s": 134.1,
+    "steps": 13410.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1272,
+    "crosstrack_mean_m": 0.0883,
+    "crosstrack_max_m": 1.0514,
+    "crosstrack_std_m": 0.0915
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.9163,
+    "heading_error_rmse_deg": 8.4463,
+    "heading_error_std_deg": 8.4462,
+    "heading_error_max_deg": 100.093
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.5295,
+    "wall_mean_distance_m": 1.1982,
+    "wall_std_distance_m": 0.1457
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3667,
+    "steering_rate_max_rad_s": 24.8542,
+    "steering_rate_std_rad_s": 0.6566
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.6786,
+    "speed_max_m_s": 4.8203,
+    "speed_std_m_s": 0.8202
+  }
+}
+F1/Shanghai/Shanghai: arch2 lap RMSE=0.1272 m  steps=13410
+{
+  "Lap Time": {
+    "lap_time_s": 111.58,
+    "steps": 11158.0,
+    "collision": 1.0,
+    "laps_completed": 0.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1321,
+    "crosstrack_mean_m": 0.0614,
+    "crosstrack_max_m": 1.0586,
+    "crosstrack_std_m": 0.117
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.446,
+    "heading_error_rmse_deg": 10.7304,
+    "heading_error_std_deg": 10.7284,
+    "heading_error_max_deg": 149.8083
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.2395,
+    "wall_mean_distance_m": 1.2364,
+    "wall_std_distance_m": 0.2113
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.6053,
+    "steering_rate_max_rad_s": 39.3331,
+    "steering_rate_std_rad_s": 1.2631
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9656,
+    "speed_max_m_s": 4.8878,
+    "speed_std_m_s": 0.8814
+  }
+}
+F1/Shanghai/Shanghai: arch3 lap RMSE=0.1321 m  steps=11158
+{
+  "Lap Time": {
+    "lap_time_s": 122.42,
+    "steps": 12242.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1333,
+    "crosstrack_mean_m": 0.0794,
+    "crosstrack_max_m": 1.0237,
+    "crosstrack_std_m": 0.1071
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.6121,
+    "heading_error_rmse_deg": 7.6627,
+    "heading_error_std_deg": 7.6626,
+    "heading_error_max_deg": 93.083
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.5324,
+    "wall_mean_distance_m": 1.1985,
+    "wall_std_distance_m": 0.1129
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4192,
+    "steering_rate_max_rad_s": 14.0169,
+    "steering_rate_std_rad_s": 0.6125
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0739,
+    "speed_max_m_s": 4.9189,
+    "speed_std_m_s": 0.8625
+  }
+}
+F1/Shanghai/Shanghai: arch4 lap RMSE=0.1333 m  steps=12242
+{
+  "Lap Time": {
+    "lap_time_s": 122.24,
+    "steps": 12224.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1373,
+    "crosstrack_mean_m": 0.0747,
+    "crosstrack_max_m": 0.9656,
+    "crosstrack_std_m": 0.1152
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.7262,
+    "heading_error_rmse_deg": 8.7997,
+    "heading_error_std_deg": 8.7996,
+    "heading_error_max_deg": 92.7972
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.3869,
+    "wall_mean_distance_m": 1.2145,
+    "wall_std_distance_m": 0.1731
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4491,
+    "steering_rate_max_rad_s": 95.3649,
+    "steering_rate_std_rad_s": 1.4533
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0883,
+    "speed_max_m_s": 4.907,
+    "speed_std_m_s": 0.8692
+  }
+}
+F1/Shanghai/Shanghai: arch5 lap RMSE=0.1373 m  steps=12224
+{
+  "Lap Time": {
+    "lap_time_s": 121.77,
+    "steps": 12177.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1256,
+    "crosstrack_mean_m": 0.0708,
+    "crosstrack_max_m": 0.9706,
+    "crosstrack_std_m": 0.1037
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.6306,
+    "heading_error_rmse_deg": 8.8397,
+    "heading_error_std_deg": 8.8395,
+    "heading_error_max_deg": 97.3251
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.5191,
+    "wall_mean_distance_m": 1.2169,
+    "wall_std_distance_m": 0.1568
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4927,
+    "steering_rate_max_rad_s": 88.213,
+    "steering_rate_std_rad_s": 1.5099
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1001,
+    "speed_max_m_s": 4.8967,
+    "speed_std_m_s": 0.8635
+  }
+}
+F1/Shanghai/Shanghai: arch6 lap RMSE=0.1256 m  steps=12177
+{
+  "Lap Time": {
+    "lap_time_s": 123.48,
+    "steps": 12348.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1515,
+    "crosstrack_mean_m": 0.0803,
+    "crosstrack_max_m": 1.047,
+    "crosstrack_std_m": 0.1285
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.9154,
+    "heading_error_rmse_deg": 9.1418,
+    "heading_error_std_deg": 9.1416,
+    "heading_error_max_deg": 93.693
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.2051,
+    "wall_mean_distance_m": 1.21,
+    "wall_std_distance_m": 0.1886
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5836,
+    "steering_rate_max_rad_s": 105.5687,
+    "steering_rate_std_rad_s": 1.5566
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0479,
+    "speed_max_m_s": 4.8919,
+    "speed_std_m_s": 0.8935
+  }
+}
+F1/Shanghai/Shanghai: arch7 lap RMSE=0.1515 m  steps=12348
+{
+  "Lap Time": {
+    "lap_time_s": 124.32,
+    "steps": 12432.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0969,
+    "crosstrack_mean_m": 0.0625,
+    "crosstrack_max_m": 0.9704,
+    "crosstrack_std_m": 0.0741
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.0169,
+    "heading_error_rmse_deg": 6.1668,
+    "heading_error_std_deg": 6.1668,
+    "heading_error_max_deg": 93.4874
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.9895,
+    "wall_mean_distance_m": 1.2155,
+    "wall_std_distance_m": 0.0919
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.36,
+    "steering_rate_max_rad_s": 35.2283,
+    "steering_rate_std_rad_s": 0.7395
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0027,
+    "speed_max_m_s": 4.829,
+    "speed_std_m_s": 0.7131
+  }
+}
+F1/Shanghai/Shanghai: arch8 lap RMSE=0.0969 m  steps=12432
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Shanghai_Shanghai_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 113.31,
+    "steps": 11331.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0813,
+    "crosstrack_mean_m": 0.0602,
+    "crosstrack_max_m": 0.295,
+    "crosstrack_std_m": 0.0547
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.0044,
+    "heading_error_rmse_deg": 3.1808,
+    "heading_error_std_deg": 3.1806,
+    "heading_error_max_deg": 18.8986
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7118,
+    "wall_mean_distance_m": 0.9927,
+    "wall_std_distance_m": 0.0542
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3375,
+    "steering_rate_max_rad_s": 14.3633,
+    "steering_rate_std_rad_s": 0.6143
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0257,
+    "speed_max_m_s": 4.9323,
+    "speed_std_m_s": 0.686
+  }
+}
+F1/Silverstone/Silverstone: arch1 lap RMSE=0.0813 m  steps=11331
+{
+  "Lap Time": {
+    "lap_time_s": 122.35,
+    "steps": 12235.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0828,
+    "crosstrack_mean_m": 0.0591,
+    "crosstrack_max_m": 0.3073,
+    "crosstrack_std_m": 0.0579
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.8256,
+    "heading_error_rmse_deg": 3.2286,
+    "heading_error_std_deg": 3.228,
+    "heading_error_max_deg": 30.5673
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6931,
+    "wall_mean_distance_m": 0.9939,
+    "wall_std_distance_m": 0.059
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4053,
+    "steering_rate_max_rad_s": 14.0898,
+    "steering_rate_std_rad_s": 0.6171
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.7312,
+    "speed_max_m_s": 4.8071,
+    "speed_std_m_s": 0.7823
+  }
+}
+F1/Silverstone/Silverstone: arch2 lap RMSE=0.0828 m  steps=12235
+{
+  "Lap Time": {
+    "lap_time_s": 113.44,
+    "steps": 11344.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0711,
+    "crosstrack_mean_m": 0.0365,
+    "crosstrack_max_m": 0.5495,
+    "crosstrack_std_m": 0.061
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.814,
+    "heading_error_rmse_deg": 3.7586,
+    "heading_error_std_deg": 3.7586,
+    "heading_error_max_deg": 35.4949
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.4706,
+    "wall_mean_distance_m": 1.0138,
+    "wall_std_distance_m": 0.0606
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4811,
+    "steering_rate_max_rad_s": 14.1234,
+    "steering_rate_std_rad_s": 0.5904
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0445,
+    "speed_max_m_s": 4.8733,
+    "speed_std_m_s": 0.6963
+  }
+}
+F1/Silverstone/Silverstone: arch3 lap RMSE=0.0711 m  steps=11344
+{
+  "Lap Time": {
+    "lap_time_s": 111.7,
+    "steps": 11170.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0846,
+    "crosstrack_mean_m": 0.0553,
+    "crosstrack_max_m": 0.3849,
+    "crosstrack_std_m": 0.064
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4484,
+    "heading_error_rmse_deg": 2.7152,
+    "heading_error_std_deg": 2.7148,
+    "heading_error_max_deg": 30.0677
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6283,
+    "wall_mean_distance_m": 0.9937,
+    "wall_std_distance_m": 0.0633
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4,
+    "steering_rate_max_rad_s": 7.4162,
+    "steering_rate_std_rad_s": 0.4256
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1248,
+    "speed_max_m_s": 4.8928,
+    "speed_std_m_s": 0.7147
+  }
+}
+F1/Silverstone/Silverstone: arch4 lap RMSE=0.0846 m  steps=11170
+{
+  "Lap Time": {
+    "lap_time_s": 112.48,
+    "steps": 11248.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.092,
+    "crosstrack_mean_m": 0.0607,
+    "crosstrack_max_m": 0.3585,
+    "crosstrack_std_m": 0.0692
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3767,
+    "heading_error_rmse_deg": 2.3453,
+    "heading_error_std_deg": 2.3448,
+    "heading_error_max_deg": 23.7831
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6648,
+    "wall_mean_distance_m": 0.9878,
+    "wall_std_distance_m": 0.0684
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4243,
+    "steering_rate_max_rad_s": 17.9814,
+    "steering_rate_std_rad_s": 0.4628
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.103,
+    "speed_max_m_s": 4.8962,
+    "speed_std_m_s": 0.71
+  }
+}
+F1/Silverstone/Silverstone: arch5 lap RMSE=0.0920 m  steps=11248
+{
+  "Lap Time": {
+    "lap_time_s": 112.89,
+    "steps": 11289.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.093,
+    "crosstrack_mean_m": 0.0629,
+    "crosstrack_max_m": 0.351,
+    "crosstrack_std_m": 0.0685
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4277,
+    "heading_error_rmse_deg": 2.3612,
+    "heading_error_std_deg": 2.3608,
+    "heading_error_max_deg": 19.3101
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6712,
+    "wall_mean_distance_m": 0.9865,
+    "wall_std_distance_m": 0.0684
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4669,
+    "steering_rate_max_rad_s": 10.2173,
+    "steering_rate_std_rad_s": 0.4903
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0889,
+    "speed_max_m_s": 4.8917,
+    "speed_std_m_s": 0.7114
+  }
+}
+F1/Silverstone/Silverstone: arch6 lap RMSE=0.0930 m  steps=11289
+{
+  "Lap Time": {
+    "lap_time_s": 112.84,
+    "steps": 11284.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.09,
+    "crosstrack_mean_m": 0.0597,
+    "crosstrack_max_m": 0.3958,
+    "crosstrack_std_m": 0.0673
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4432,
+    "heading_error_rmse_deg": 2.6556,
+    "heading_error_std_deg": 2.655,
+    "heading_error_max_deg": 30.6346
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6325,
+    "wall_mean_distance_m": 0.9892,
+    "wall_std_distance_m": 0.0665
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5329,
+    "steering_rate_max_rad_s": 12.0927,
+    "steering_rate_std_rad_s": 0.5852
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0884,
+    "speed_max_m_s": 4.8667,
+    "speed_std_m_s": 0.7081
+  }
+}
+F1/Silverstone/Silverstone: arch7 lap RMSE=0.0900 m  steps=11284
+{
+  "Lap Time": {
+    "lap_time_s": 114.19,
+    "steps": 11419.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0849,
+    "crosstrack_mean_m": 0.0613,
+    "crosstrack_max_m": 0.227,
+    "crosstrack_std_m": 0.0586
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4226,
+    "heading_error_rmse_deg": 2.3824,
+    "heading_error_std_deg": 2.3812,
+    "heading_error_max_deg": 21.0576
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7856,
+    "wall_mean_distance_m": 0.9895,
+    "wall_std_distance_m": 0.06
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4366,
+    "steering_rate_max_rad_s": 10.8102,
+    "steering_rate_std_rad_s": 0.4584
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0382,
+    "speed_max_m_s": 4.865,
+    "speed_std_m_s": 0.6765
+  }
+}
+F1/Silverstone/Silverstone: arch8 lap RMSE=0.0849 m  steps=11419
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Silverstone_Silverstone_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 112.55,
+    "steps": 11255.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0851,
+    "crosstrack_mean_m": 0.0574,
+    "crosstrack_max_m": 0.3665,
+    "crosstrack_std_m": 0.0629
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.5732,
+    "heading_error_rmse_deg": 4.6113,
+    "heading_error_std_deg": 4.6098,
+    "heading_error_max_deg": 35.1394
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6771,
+    "wall_mean_distance_m": 1.0075,
+    "wall_std_distance_m": 0.0606
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3866,
+    "steering_rate_max_rad_s": 15.833,
+    "steering_rate_std_rad_s": 0.7364
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1008,
+    "speed_max_m_s": 4.9199,
+    "speed_std_m_s": 0.7392
+  }
+}
+F1/Sochi/Sochi: arch1 lap RMSE=0.0851 m  steps=11255
+{
+  "Lap Time": {
+    "lap_time_s": 120.94,
+    "steps": 12094.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0679,
+    "crosstrack_mean_m": 0.0497,
+    "crosstrack_max_m": 0.3309,
+    "crosstrack_std_m": 0.0464
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.3204,
+    "heading_error_rmse_deg": 4.3049,
+    "heading_error_std_deg": 4.3031,
+    "heading_error_max_deg": 40.9193
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7444,
+    "wall_mean_distance_m": 1.0168,
+    "wall_std_distance_m": 0.0476
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.454,
+    "steering_rate_max_rad_s": 13.3295,
+    "steering_rate_std_rad_s": 0.7301
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8286,
+    "speed_max_m_s": 4.8044,
+    "speed_std_m_s": 0.7221
+  }
+}
+F1/Sochi/Sochi: arch2 lap RMSE=0.0679 m  steps=12094
+{
+  "Lap Time": {
+    "lap_time_s": 116.86,
+    "steps": 11686.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0919,
+    "crosstrack_mean_m": 0.0493,
+    "crosstrack_max_m": 0.4344,
+    "crosstrack_std_m": 0.0775
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.8553,
+    "heading_error_rmse_deg": 5.2865,
+    "heading_error_std_deg": 5.285,
+    "heading_error_max_deg": 40.7132
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.5902,
+    "wall_mean_distance_m": 1.0139,
+    "wall_std_distance_m": 0.0754
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5811,
+    "steering_rate_max_rad_s": 14.2813,
+    "steering_rate_std_rad_s": 0.7843
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9774,
+    "speed_max_m_s": 4.8574,
+    "speed_std_m_s": 0.8315
+  }
+}
+F1/Sochi/Sochi: arch3 lap RMSE=0.0919 m  steps=11686
+{
+  "Lap Time": {
+    "lap_time_s": 114.48,
+    "steps": 11448.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0875,
+    "crosstrack_mean_m": 0.0533,
+    "crosstrack_max_m": 0.3284,
+    "crosstrack_std_m": 0.0695
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.1571,
+    "heading_error_rmse_deg": 3.9943,
+    "heading_error_std_deg": 3.9907,
+    "heading_error_max_deg": 37.7848
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7323,
+    "wall_mean_distance_m": 1.0085,
+    "wall_std_distance_m": 0.0672
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4708,
+    "steering_rate_max_rad_s": 6.8389,
+    "steering_rate_std_rad_s": 0.5375
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0744,
+    "speed_max_m_s": 4.8743,
+    "speed_std_m_s": 0.7759
+  }
+}
+F1/Sochi/Sochi: arch4 lap RMSE=0.0875 m  steps=11448
+{
+  "Lap Time": {
+    "lap_time_s": 114.09,
+    "steps": 11409.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0876,
+    "crosstrack_mean_m": 0.0533,
+    "crosstrack_max_m": 0.2861,
+    "crosstrack_std_m": 0.0695
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9031,
+    "heading_error_rmse_deg": 3.378,
+    "heading_error_std_deg": 3.3756,
+    "heading_error_max_deg": 31.6399
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7486,
+    "wall_mean_distance_m": 1.0071,
+    "wall_std_distance_m": 0.0664
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4858,
+    "steering_rate_max_rad_s": 9.3277,
+    "steering_rate_std_rad_s": 0.4774
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0955,
+    "speed_max_m_s": 4.8646,
+    "speed_std_m_s": 0.7638
+  }
+}
+F1/Sochi/Sochi: arch5 lap RMSE=0.0876 m  steps=11409
+{
+  "Lap Time": {
+    "lap_time_s": 114.93,
+    "steps": 11493.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0881,
+    "crosstrack_mean_m": 0.0553,
+    "crosstrack_max_m": 0.308,
+    "crosstrack_std_m": 0.0685
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9039,
+    "heading_error_rmse_deg": 3.2776,
+    "heading_error_std_deg": 3.2751,
+    "heading_error_max_deg": 30.8139
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7358,
+    "wall_mean_distance_m": 1.0059,
+    "wall_std_distance_m": 0.0658
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5309,
+    "steering_rate_max_rad_s": 14.8705,
+    "steering_rate_std_rad_s": 0.5356
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0664,
+    "speed_max_m_s": 4.8831,
+    "speed_std_m_s": 0.7468
+  }
+}
+F1/Sochi/Sochi: arch6 lap RMSE=0.0881 m  steps=11493
+{
+  "Lap Time": {
+    "lap_time_s": 114.6,
+    "steps": 11460.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0863,
+    "crosstrack_mean_m": 0.0529,
+    "crosstrack_max_m": 0.3008,
+    "crosstrack_std_m": 0.0682
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9571,
+    "heading_error_rmse_deg": 3.5801,
+    "heading_error_std_deg": 3.5776,
+    "heading_error_max_deg": 35.1703
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7318,
+    "wall_mean_distance_m": 1.0076,
+    "wall_std_distance_m": 0.0649
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5725,
+    "steering_rate_max_rad_s": 7.4599,
+    "steering_rate_std_rad_s": 0.6167
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0748,
+    "speed_max_m_s": 4.8472,
+    "speed_std_m_s": 0.762
+  }
+}
+F1/Sochi/Sochi: arch7 lap RMSE=0.0863 m  steps=11460
+{
+  "Lap Time": {
+    "lap_time_s": 115.0,
+    "steps": 11500.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0793,
+    "crosstrack_mean_m": 0.0503,
+    "crosstrack_max_m": 0.2646,
+    "crosstrack_std_m": 0.0613
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.978,
+    "heading_error_rmse_deg": 3.5092,
+    "heading_error_std_deg": 3.5062,
+    "heading_error_max_deg": 34.7493
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7562,
+    "wall_mean_distance_m": 1.0108,
+    "wall_std_distance_m": 0.0589
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4894,
+    "steering_rate_max_rad_s": 9.1364,
+    "steering_rate_std_rad_s": 0.4974
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0578,
+    "speed_max_m_s": 4.8181,
+    "speed_std_m_s": 0.7539
+  }
+}
+F1/Sochi/Sochi: arch8 lap RMSE=0.0793 m  steps=11500
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Sochi_Sochi_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 132.8,
+    "steps": 13280.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0805,
+    "crosstrack_mean_m": 0.0499,
+    "crosstrack_max_m": 0.4475,
+    "crosstrack_std_m": 0.0632
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.7898,
+    "heading_error_rmse_deg": 3.5301,
+    "heading_error_std_deg": 3.5301,
+    "heading_error_max_deg": 32.6519
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6071,
+    "wall_mean_distance_m": 1.001,
+    "wall_std_distance_m": 0.0586
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3474,
+    "steering_rate_max_rad_s": 13.7484,
+    "steering_rate_std_rad_s": 0.555
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1597,
+    "speed_max_m_s": 4.9114,
+    "speed_std_m_s": 0.7161
+  }
+}
+F1/Spa/Spa: arch1 lap RMSE=0.0805 m  steps=13280
+{
+  "Lap Time": {
+    "lap_time_s": 144.84,
+    "steps": 14484.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0773,
+    "crosstrack_mean_m": 0.0534,
+    "crosstrack_max_m": 0.444,
+    "crosstrack_std_m": 0.0559
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.8204,
+    "heading_error_rmse_deg": 3.6881,
+    "heading_error_std_deg": 3.6874,
+    "heading_error_max_deg": 37.6
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6156,
+    "wall_mean_distance_m": 1.0012,
+    "wall_std_distance_m": 0.0541
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4474,
+    "steering_rate_max_rad_s": 18.0381,
+    "steering_rate_std_rad_s": 0.6289
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8175,
+    "speed_max_m_s": 4.81,
+    "speed_std_m_s": 0.7447
+  }
+}
+F1/Spa/Spa: arch2 lap RMSE=0.0773 m  steps=14484
+{
+  "Lap Time": {
+    "lap_time_s": 134.01,
+    "steps": 13401.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0564,
+    "crosstrack_mean_m": 0.0288,
+    "crosstrack_max_m": 0.4933,
+    "crosstrack_std_m": 0.0484
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4879,
+    "heading_error_rmse_deg": 3.208,
+    "heading_error_std_deg": 3.2079,
+    "heading_error_max_deg": 36.9062
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6156,
+    "wall_mean_distance_m": 1.0185,
+    "wall_std_distance_m": 0.046
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5432,
+    "steering_rate_max_rad_s": 14.0574,
+    "steering_rate_std_rad_s": 0.7263
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1421,
+    "speed_max_m_s": 4.8713,
+    "speed_std_m_s": 0.6903
+  }
+}
+F1/Spa/Spa: arch3 lap RMSE=0.0564 m  steps=13401
+{
+  "Lap Time": {
+    "lap_time_s": 134.86,
+    "steps": 13486.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0765,
+    "crosstrack_mean_m": 0.0537,
+    "crosstrack_max_m": 0.3417,
+    "crosstrack_std_m": 0.0545
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3634,
+    "heading_error_rmse_deg": 2.8337,
+    "heading_error_std_deg": 2.8337,
+    "heading_error_max_deg": 35.0623
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6856,
+    "wall_mean_distance_m": 0.9977,
+    "wall_std_distance_m": 0.0547
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4391,
+    "steering_rate_max_rad_s": 15.0797,
+    "steering_rate_std_rad_s": 0.461
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1295,
+    "speed_max_m_s": 4.8821,
+    "speed_std_m_s": 0.6483
+  }
+}
+F1/Spa/Spa: arch4 lap RMSE=0.0765 m  steps=13486
+{
+  "Lap Time": {
+    "lap_time_s": 133.98,
+    "steps": 13398.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0834,
+    "crosstrack_mean_m": 0.0524,
+    "crosstrack_max_m": 0.321,
+    "crosstrack_std_m": 0.0649
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3424,
+    "heading_error_rmse_deg": 2.6046,
+    "heading_error_std_deg": 2.6043,
+    "heading_error_max_deg": 31.2914
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6912,
+    "wall_mean_distance_m": 0.9946,
+    "wall_std_distance_m": 0.061
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5156,
+    "steering_rate_max_rad_s": 8.9237,
+    "steering_rate_std_rad_s": 0.4628
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1654,
+    "speed_max_m_s": 4.8304,
+    "speed_std_m_s": 0.6836
+  }
+}
+F1/Spa/Spa: arch5 lap RMSE=0.0834 m  steps=13398
+{
+  "Lap Time": {
+    "lap_time_s": 134.67,
+    "steps": 13467.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0834,
+    "crosstrack_mean_m": 0.0532,
+    "crosstrack_max_m": 0.3217,
+    "crosstrack_std_m": 0.0643
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3297,
+    "heading_error_rmse_deg": 2.5152,
+    "heading_error_std_deg": 2.515,
+    "heading_error_max_deg": 28.9216
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6958,
+    "wall_mean_distance_m": 0.9942,
+    "wall_std_distance_m": 0.0612
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5692,
+    "steering_rate_max_rad_s": 8.2928,
+    "steering_rate_std_rad_s": 0.521
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1445,
+    "speed_max_m_s": 4.8303,
+    "speed_std_m_s": 0.6724
+  }
+}
+F1/Spa/Spa: arch6 lap RMSE=0.0834 m  steps=13467
+{
+  "Lap Time": {
+    "lap_time_s": 134.28,
+    "steps": 13428.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0813,
+    "crosstrack_mean_m": 0.0511,
+    "crosstrack_max_m": 0.3419,
+    "crosstrack_std_m": 0.0632
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3533,
+    "heading_error_rmse_deg": 2.6706,
+    "heading_error_std_deg": 2.6703,
+    "heading_error_max_deg": 27.2157
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6778,
+    "wall_mean_distance_m": 0.9962,
+    "wall_std_distance_m": 0.0597
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.6097,
+    "steering_rate_max_rad_s": 16.5844,
+    "steering_rate_std_rad_s": 0.6711
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1538,
+    "speed_max_m_s": 4.8231,
+    "speed_std_m_s": 0.6822
+  }
+}
+F1/Spa/Spa: arch7 lap RMSE=0.0813 m  steps=13428
+{
+  "Lap Time": {
+    "lap_time_s": 136.08,
+    "steps": 13608.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0756,
+    "crosstrack_mean_m": 0.0527,
+    "crosstrack_max_m": 0.2576,
+    "crosstrack_std_m": 0.0542
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4068,
+    "heading_error_rmse_deg": 2.8342,
+    "heading_error_std_deg": 2.834,
+    "heading_error_max_deg": 31.9217
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7415,
+    "wall_mean_distance_m": 0.9975,
+    "wall_std_distance_m": 0.0536
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5153,
+    "steering_rate_max_rad_s": 30.5298,
+    "steering_rate_std_rad_s": 0.7236
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0947,
+    "speed_max_m_s": 4.8354,
+    "speed_std_m_s": 0.662
+  }
+}
+F1/Spa/Spa: arch8 lap RMSE=0.0756 m  steps=13608
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Spa_Spa_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 81.14,
+    "steps": 8114.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0808,
+    "crosstrack_mean_m": 0.0546,
+    "crosstrack_max_m": 0.4722,
+    "crosstrack_std_m": 0.0595
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.0747,
+    "heading_error_rmse_deg": 4.6471,
+    "heading_error_std_deg": 4.6449,
+    "heading_error_max_deg": 53.2487
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8,
+    "wall_mean_distance_m": 1.0503,
+    "wall_std_distance_m": 0.0566
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2797,
+    "steering_rate_max_rad_s": 12.2147,
+    "steering_rate_std_rad_s": 0.5866
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.209,
+    "speed_max_m_s": 4.9228,
+    "speed_std_m_s": 0.7232
+  }
+}
+F1/Spielberg/Spielberg: arch1 lap RMSE=0.0808 m  steps=8114
+{
+  "Lap Time": {
+    "lap_time_s": 87.59,
+    "steps": 8759.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0761,
+    "crosstrack_mean_m": 0.0515,
+    "crosstrack_max_m": 0.4237,
+    "crosstrack_std_m": 0.056
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9024,
+    "heading_error_rmse_deg": 4.8114,
+    "heading_error_std_deg": 4.8049,
+    "heading_error_max_deg": 57.1177
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6774,
+    "wall_mean_distance_m": 1.0536,
+    "wall_std_distance_m": 0.0551
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3156,
+    "steering_rate_max_rad_s": 11.9778,
+    "steering_rate_std_rad_s": 0.6192
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9087,
+    "speed_max_m_s": 4.8074,
+    "speed_std_m_s": 0.6917
+  }
+}
+F1/Spielberg/Spielberg: arch2 lap RMSE=0.0761 m  steps=8759
+{
+  "Lap Time": {
+    "lap_time_s": 82.91,
+    "steps": 8291.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0689,
+    "crosstrack_mean_m": 0.0367,
+    "crosstrack_max_m": 0.3905,
+    "crosstrack_std_m": 0.0583
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9107,
+    "heading_error_rmse_deg": 4.3478,
+    "heading_error_std_deg": 4.3449,
+    "heading_error_max_deg": 51.159
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6999,
+    "wall_mean_distance_m": 1.0655,
+    "wall_std_distance_m": 0.058
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4108,
+    "steering_rate_max_rad_s": 13.9284,
+    "steering_rate_std_rad_s": 0.7585
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.143,
+    "speed_max_m_s": 4.8821,
+    "speed_std_m_s": 0.7165
+  }
+}
+F1/Spielberg/Spielberg: arch3 lap RMSE=0.0689 m  steps=8291
+{
+  "Lap Time": {
+    "lap_time_s": 82.12,
+    "steps": 8212.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.08,
+    "crosstrack_mean_m": 0.0488,
+    "crosstrack_max_m": 0.3368,
+    "crosstrack_std_m": 0.0634
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.6099,
+    "heading_error_rmse_deg": 3.837,
+    "heading_error_std_deg": 3.8332,
+    "heading_error_max_deg": 51.2523
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7485,
+    "wall_mean_distance_m": 1.0525,
+    "wall_std_distance_m": 0.0635
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.334,
+    "steering_rate_max_rad_s": 8.0447,
+    "steering_rate_std_rad_s": 0.4526
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.196,
+    "speed_max_m_s": 4.8932,
+    "speed_std_m_s": 0.7072
+  }
+}
+F1/Spielberg/Spielberg: arch4 lap RMSE=0.0800 m  steps=8212
+{
+  "Lap Time": {
+    "lap_time_s": 82.21,
+    "steps": 8221.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0766,
+    "crosstrack_mean_m": 0.05,
+    "crosstrack_max_m": 0.2618,
+    "crosstrack_std_m": 0.058
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3277,
+    "heading_error_rmse_deg": 2.5947,
+    "heading_error_std_deg": 2.5923,
+    "heading_error_max_deg": 32.7481
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8136,
+    "wall_mean_distance_m": 1.05,
+    "wall_std_distance_m": 0.0583
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3352,
+    "steering_rate_max_rad_s": 63.1748,
+    "steering_rate_std_rad_s": 1.0989
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1969,
+    "speed_max_m_s": 4.9122,
+    "speed_std_m_s": 0.6753
+  }
+}
+F1/Spielberg/Spielberg: arch5 lap RMSE=0.0766 m  steps=8221
+{
+  "Lap Time": {
+    "lap_time_s": 81.65,
+    "steps": 8165.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0788,
+    "crosstrack_mean_m": 0.0485,
+    "crosstrack_max_m": 0.3034,
+    "crosstrack_std_m": 0.0621
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3364,
+    "heading_error_rmse_deg": 2.5176,
+    "heading_error_std_deg": 2.5162,
+    "heading_error_max_deg": 29.6632
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7787,
+    "wall_mean_distance_m": 1.0497,
+    "wall_std_distance_m": 0.0613
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3552,
+    "steering_rate_max_rad_s": 57.8059,
+    "steering_rate_std_rad_s": 1.0337
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.228,
+    "speed_max_m_s": 4.8973,
+    "speed_std_m_s": 0.7103
+  }
+}
+F1/Spielberg/Spielberg: arch6 lap RMSE=0.0788 m  steps=8165
+{
+  "Lap Time": {
+    "lap_time_s": 82.32,
+    "steps": 8232.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0782,
+    "crosstrack_mean_m": 0.0502,
+    "crosstrack_max_m": 0.2908,
+    "crosstrack_std_m": 0.0599
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3556,
+    "heading_error_rmse_deg": 2.6869,
+    "heading_error_std_deg": 2.685,
+    "heading_error_max_deg": 33.5997
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7907,
+    "wall_mean_distance_m": 1.0496,
+    "wall_std_distance_m": 0.0597
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.409,
+    "steering_rate_max_rad_s": 54.9546,
+    "steering_rate_std_rad_s": 0.9811
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1911,
+    "speed_max_m_s": 4.8692,
+    "speed_std_m_s": 0.6805
+  }
+}
+F1/Spielberg/Spielberg: arch7 lap RMSE=0.0782 m  steps=8232
+{
+  "Lap Time": {
+    "lap_time_s": 82.61,
+    "steps": 8261.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.071,
+    "crosstrack_mean_m": 0.0474,
+    "crosstrack_max_m": 0.2684,
+    "crosstrack_std_m": 0.0528
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.5271,
+    "heading_error_rmse_deg": 3.2661,
+    "heading_error_std_deg": 3.2636,
+    "heading_error_max_deg": 39.7355
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.8122,
+    "wall_mean_distance_m": 1.0545,
+    "wall_std_distance_m": 0.0523
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3056,
+    "steering_rate_max_rad_s": 5.5869,
+    "steering_rate_std_rad_s": 0.3601
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.1693,
+    "speed_max_m_s": 4.8987,
+    "speed_std_m_s": 0.6689
+  }
+}
+F1/Spielberg/Spielberg: arch8 lap RMSE=0.0710 m  steps=8261
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Spielberg_Spielberg_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 100.74,
+    "steps": 10074.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1115,
+    "crosstrack_mean_m": 0.0732,
+    "crosstrack_max_m": 0.5752,
+    "crosstrack_std_m": 0.0842
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 4.2397,
+    "heading_error_rmse_deg": 8.2166,
+    "heading_error_std_deg": 8.2149,
+    "heading_error_max_deg": 50.8234
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.462,
+    "wall_mean_distance_m": 0.9001,
+    "wall_std_distance_m": 0.077
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4767,
+    "steering_rate_max_rad_s": 20.0963,
+    "steering_rate_std_rad_s": 1.0254
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.918,
+    "speed_max_m_s": 4.9155,
+    "speed_std_m_s": 0.8726
+  }
+}
+F1/YasMarina/YasMarina: arch1 lap RMSE=0.1115 m  steps=10074
+{
+  "Lap Time": {
+    "lap_time_s": 109.01,
+    "steps": 10901.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0971,
+    "crosstrack_mean_m": 0.0605,
+    "crosstrack_max_m": 0.3673,
+    "crosstrack_std_m": 0.0759
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.8017,
+    "heading_error_rmse_deg": 7.3479,
+    "heading_error_std_deg": 7.3406,
+    "heading_error_max_deg": 48.6204
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.5716,
+    "wall_mean_distance_m": 0.9099,
+    "wall_std_distance_m": 0.072
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5114,
+    "steering_rate_max_rad_s": 23.3074,
+    "steering_rate_std_rad_s": 1.0105
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.6434,
+    "speed_max_m_s": 4.8073,
+    "speed_std_m_s": 0.9206
+  }
+}
+F1/YasMarina/YasMarina: arch2 lap RMSE=0.0971 m  steps=10901
+{
+  "Lap Time": {
+    "lap_time_s": 105.73,
+    "steps": 10573.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.12,
+    "crosstrack_mean_m": 0.0656,
+    "crosstrack_max_m": 0.4971,
+    "crosstrack_std_m": 0.1005
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 4.4492,
+    "heading_error_rmse_deg": 8.7573,
+    "heading_error_std_deg": 8.7558,
+    "heading_error_max_deg": 53.07
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.4405,
+    "wall_mean_distance_m": 0.9053,
+    "wall_std_distance_m": 0.095
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.6529,
+    "steering_rate_max_rad_s": 19.2318,
+    "steering_rate_std_rad_s": 1.0209
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.7746,
+    "speed_max_m_s": 4.8758,
+    "speed_std_m_s": 0.9879
+  }
+}
+F1/YasMarina/YasMarina: arch3 lap RMSE=0.1200 m  steps=10573
+{
+  "Lap Time": {
+    "lap_time_s": 102.85,
+    "steps": 10285.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1005,
+    "crosstrack_mean_m": 0.0591,
+    "crosstrack_max_m": 0.3388,
+    "crosstrack_std_m": 0.0812
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.2743,
+    "heading_error_rmse_deg": 6.6127,
+    "heading_error_std_deg": 6.6111,
+    "heading_error_max_deg": 45.2769
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6049,
+    "wall_mean_distance_m": 0.9079,
+    "wall_std_distance_m": 0.078
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5393,
+    "steering_rate_max_rad_s": 10.639,
+    "steering_rate_std_rad_s": 0.7478
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8847,
+    "speed_max_m_s": 4.8791,
+    "speed_std_m_s": 0.9775
+  }
+}
+F1/YasMarina/YasMarina: arch4 lap RMSE=0.1005 m  steps=10285
+{
+  "Lap Time": {
+    "lap_time_s": 104.1,
+    "steps": 10410.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1056,
+    "crosstrack_mean_m": 0.0675,
+    "crosstrack_max_m": 0.3078,
+    "crosstrack_std_m": 0.0812
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.7039,
+    "heading_error_rmse_deg": 5.2367,
+    "heading_error_std_deg": 5.2339,
+    "heading_error_max_deg": 39.1167
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6305,
+    "wall_mean_distance_m": 0.8989,
+    "wall_std_distance_m": 0.0802
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5622,
+    "steering_rate_max_rad_s": 28.5263,
+    "steering_rate_std_rad_s": 0.8992
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8656,
+    "speed_max_m_s": 4.8365,
+    "speed_std_m_s": 0.9238
+  }
+}
+F1/YasMarina/YasMarina: arch5 lap RMSE=0.1056 m  steps=10410
+{
+  "Lap Time": {
+    "lap_time_s": 103.25,
+    "steps": 10325.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0974,
+    "crosstrack_mean_m": 0.0614,
+    "crosstrack_max_m": 0.2819,
+    "crosstrack_std_m": 0.0756
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.6206,
+    "heading_error_rmse_deg": 4.884,
+    "heading_error_std_deg": 4.8793,
+    "heading_error_max_deg": 35.9398
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.651,
+    "wall_mean_distance_m": 0.903,
+    "wall_std_distance_m": 0.0741
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.6228,
+    "steering_rate_max_rad_s": 36.7319,
+    "steering_rate_std_rad_s": 1.0925
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8965,
+    "speed_max_m_s": 4.8757,
+    "speed_std_m_s": 0.9499
+  }
+}
+F1/YasMarina/YasMarina: arch6 lap RMSE=0.0974 m  steps=10325
+{
+  "Lap Time": {
+    "lap_time_s": 104.83,
+    "steps": 10483.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.1035,
+    "crosstrack_mean_m": 0.064,
+    "crosstrack_max_m": 0.3259,
+    "crosstrack_std_m": 0.0814
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 3.0659,
+    "heading_error_rmse_deg": 6.0423,
+    "heading_error_std_deg": 6.0376,
+    "heading_error_max_deg": 42.3442
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6132,
+    "wall_mean_distance_m": 0.902,
+    "wall_std_distance_m": 0.0795
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.7095,
+    "steering_rate_max_rad_s": 14.9366,
+    "steering_rate_std_rad_s": 1.0758
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8291,
+    "speed_max_m_s": 4.856,
+    "speed_std_m_s": 0.9561
+  }
+}
+F1/YasMarina/YasMarina: arch7 lap RMSE=0.1035 m  steps=10483
+{
+  "Lap Time": {
+    "lap_time_s": 104.2,
+    "steps": 10420.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0921,
+    "crosstrack_mean_m": 0.057,
+    "crosstrack_max_m": 0.3419,
+    "crosstrack_std_m": 0.0724
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 2.9675,
+    "heading_error_rmse_deg": 5.7605,
+    "heading_error_std_deg": 5.7544,
+    "heading_error_max_deg": 41.3496
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6056,
+    "wall_mean_distance_m": 0.9092,
+    "wall_std_distance_m": 0.0706
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.5924,
+    "steering_rate_max_rad_s": 15.3452,
+    "steering_rate_std_rad_s": 0.668
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.8428,
+    "speed_max_m_s": 4.8461,
+    "speed_std_m_s": 0.9313
+  }
+}
+F1/YasMarina/YasMarina: arch8 lap RMSE=0.0921 m  steps=10420
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_YasMarina_YasMarina_compare_20260410T133741.png
+{
+  "Lap Time": {
+    "lap_time_s": 96.76,
+    "steps": 9676.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0728,
+    "crosstrack_mean_m": 0.0527,
+    "crosstrack_max_m": 0.3602,
+    "crosstrack_std_m": 0.0503
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.9113,
+    "heading_error_rmse_deg": 3.0448,
+    "heading_error_std_deg": 3.0447,
+    "heading_error_max_deg": 27.2716
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6585,
+    "wall_mean_distance_m": 0.9866,
+    "wall_std_distance_m": 0.0486
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3102,
+    "steering_rate_max_rad_s": 10.3566,
+    "steering_rate_std_rad_s": 0.639
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0006,
+    "speed_max_m_s": 4.9445,
+    "speed_std_m_s": 0.682
+  }
+}
+F1/Zandvoort/Zandvoort: arch1 lap RMSE=0.0728 m  steps=9676
+{
+  "Lap Time": {
+    "lap_time_s": 106.27,
+    "steps": 10627.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0816,
+    "crosstrack_mean_m": 0.0628,
+    "crosstrack_max_m": 0.3328,
+    "crosstrack_std_m": 0.0521
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.7664,
+    "heading_error_rmse_deg": 3.0552,
+    "heading_error_std_deg": 3.0535,
+    "heading_error_max_deg": 26.7459
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.6856,
+    "wall_mean_distance_m": 0.9774,
+    "wall_std_distance_m": 0.0524
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.2925,
+    "steering_rate_max_rad_s": 8.9091,
+    "steering_rate_std_rad_s": 0.4277
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.6383,
+    "speed_max_m_s": 4.8959,
+    "speed_std_m_s": 0.712
+  }
+}
+F1/Zandvoort/Zandvoort: arch2 lap RMSE=0.0816 m  steps=10627
+{
+  "Lap Time": {
+    "lap_time_s": 97.67,
+    "steps": 9767.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.078,
+    "crosstrack_mean_m": 0.0445,
+    "crosstrack_max_m": 0.4306,
+    "crosstrack_std_m": 0.0641
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.7429,
+    "heading_error_rmse_deg": 3.2478,
+    "heading_error_std_deg": 3.2478,
+    "heading_error_max_deg": 29.0457
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.5943,
+    "wall_mean_distance_m": 0.9943,
+    "wall_std_distance_m": 0.0631
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.4161,
+    "steering_rate_max_rad_s": 11.6906,
+    "steering_rate_std_rad_s": 0.6127
+  },
+  "Speed": {
+    "speed_mean_m_s": 3.9873,
+    "speed_max_m_s": 4.8847,
+    "speed_std_m_s": 0.6924
+  }
+}
+F1/Zandvoort/Zandvoort: arch3 lap RMSE=0.0780 m  steps=9767
+{
+  "Lap Time": {
+    "lap_time_s": 96.42,
+    "steps": 9642.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0882,
+    "crosstrack_mean_m": 0.0627,
+    "crosstrack_max_m": 0.271,
+    "crosstrack_std_m": 0.062
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3837,
+    "heading_error_rmse_deg": 2.3027,
+    "heading_error_std_deg": 2.3023,
+    "heading_error_max_deg": 23.6522
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7331,
+    "wall_mean_distance_m": 0.9754,
+    "wall_std_distance_m": 0.0612
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3267,
+    "steering_rate_max_rad_s": 5.079,
+    "steering_rate_std_rad_s": 0.3781
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0532,
+    "speed_max_m_s": 4.9178,
+    "speed_std_m_s": 0.7079
+  }
+}
+F1/Zandvoort/Zandvoort: arch4 lap RMSE=0.0882 m  steps=9642
+{
+  "Lap Time": {
+    "lap_time_s": 97.0,
+    "steps": 9700.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0981,
+    "crosstrack_mean_m": 0.0696,
+    "crosstrack_max_m": 0.2626,
+    "crosstrack_std_m": 0.0691
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3815,
+    "heading_error_rmse_deg": 2.2347,
+    "heading_error_std_deg": 2.2339,
+    "heading_error_max_deg": 20.1099
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7744,
+    "wall_mean_distance_m": 0.9679,
+    "wall_std_distance_m": 0.0675
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3202,
+    "steering_rate_max_rad_s": 3.3743,
+    "steering_rate_std_rad_s": 0.2972
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0369,
+    "speed_max_m_s": 4.8924,
+    "speed_std_m_s": 0.7023
+  }
+}
+F1/Zandvoort/Zandvoort: arch5 lap RMSE=0.0981 m  steps=9700
+{
+  "Lap Time": {
+    "lap_time_s": 97.52,
+    "steps": 9752.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0983,
+    "crosstrack_mean_m": 0.0719,
+    "crosstrack_max_m": 0.2655,
+    "crosstrack_std_m": 0.067
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.3814,
+    "heading_error_rmse_deg": 2.1978,
+    "heading_error_std_deg": 2.1971,
+    "heading_error_max_deg": 18.9055
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7731,
+    "wall_mean_distance_m": 0.9662,
+    "wall_std_distance_m": 0.0659
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3343,
+    "steering_rate_max_rad_s": 5.3377,
+    "steering_rate_std_rad_s": 0.3311
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0155,
+    "speed_max_m_s": 4.8967,
+    "speed_std_m_s": 0.6914
+  }
+}
+F1/Zandvoort/Zandvoort: arch6 lap RMSE=0.0983 m  steps=9752
+{
+  "Lap Time": {
+    "lap_time_s": 97.48,
+    "steps": 9748.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0972,
+    "crosstrack_mean_m": 0.0692,
+    "crosstrack_max_m": 0.2631,
+    "crosstrack_std_m": 0.0682
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4177,
+    "heading_error_rmse_deg": 2.3492,
+    "heading_error_std_deg": 2.3486,
+    "heading_error_max_deg": 22.5256
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7679,
+    "wall_mean_distance_m": 0.9685,
+    "wall_std_distance_m": 0.0668
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.417,
+    "steering_rate_max_rad_s": 5.4745,
+    "steering_rate_std_rad_s": 0.4409
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0152,
+    "speed_max_m_s": 4.896,
+    "speed_std_m_s": 0.7116
+  }
+}
+F1/Zandvoort/Zandvoort: arch7 lap RMSE=0.0972 m  steps=9748
+{
+  "Lap Time": {
+    "lap_time_s": 97.72,
+    "steps": 9772.0,
+    "collision": 0.0,
+    "laps_completed": 1.0
+  },
+  "Cross-Track Error": {
+    "crosstrack_rmse_m": 0.0938,
+    "crosstrack_mean_m": 0.0681,
+    "crosstrack_max_m": 0.2305,
+    "crosstrack_std_m": 0.0645
+  },
+  "Heading Error": {
+    "heading_error_mean_deg": 1.4266,
+    "heading_error_rmse_deg": 2.2801,
+    "heading_error_std_deg": 2.2797,
+    "heading_error_max_deg": 21.9364
+  },
+  "Wall Proximity": {
+    "wall_min_distance_m": 0.7855,
+    "wall_mean_distance_m": 0.9693,
+    "wall_std_distance_m": 0.0631
+  },
+  "Smoothness": {
+    "steering_rate_mean_rad_s": 0.3151,
+    "steering_rate_max_rad_s": 4.4826,
+    "steering_rate_std_rad_s": 0.302
+  },
+  "Speed": {
+    "speed_mean_m_s": 4.0044,
+    "speed_max_m_s": 4.8938,
+    "speed_std_m_s": 0.701
+  }
+}
+F1/Zandvoort/Zandvoort: arch8 lap RMSE=0.0938 m  steps=9772
+Saved comparison plot to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/F1_Zandvoort_Zandvoort_compare_20260410T133741.png
+Wrote RMSE summaries to /nas/longleaf/home/zayah/f1tenth_ng_zc/nas/compare-map/compare_20260410T133741/metrics.jsonl
