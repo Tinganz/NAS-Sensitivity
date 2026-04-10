@@ -26,7 +26,7 @@ MAX_EPOCHS: int | None = 400
 EARLY_STOPPING_PATIENCE: int | None = 350
 
 # Choose "train" to retrain + evaluate or "test" to evaluate existing .pt files.
-MODE = "test"  # valid values: "train", "test"
+MODE = "train"  # valid values: "train", "test"
 
 LEGACY_MODEL_DIRS = (
     (REPO_ROOT / "nas/models").resolve(),
