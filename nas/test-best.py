@@ -20,10 +20,10 @@ DATASET_PATH = "nas/datasets/combined_train.npz"
 CONFIG_OUTPUT_DIR: Path | None = None
 
 # Set an integer to clamp training.max_epochs in every exported YAML.
-MAX_EPOCHS: int | None = 7
+MAX_EPOCHS: int | None = 400
 
 # Override training.early_stopping_patience (set None to keep NAS defaults).
-EARLY_STOPPING_PATIENCE: int | None = 6
+EARLY_STOPPING_PATIENCE: int | None = 350
 
 # Choose "train" to retrain + evaluate or "test" to evaluate existing .pt files.
 MODE = "test"  # valid values: "train", "test"
