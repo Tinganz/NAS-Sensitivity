@@ -97,7 +97,16 @@ def _load_trials(trials_path: Path) -> list[dict[str, Any]]:
 
 def _pick_best_trial(records: list[dict[str, Any]]) -> dict[str, Any]:
     """Return the trial dict with the lowest RMSE."""
-    return min(records, key=lambda rec: rec["rmse"])
+    return min(records, key=_average_rmse)
+
+
+def _average_rmse(record: dict[str, Any]) -> float:
+    """Extract the averaged RMSE from a NAS record."""
+    rmse_entries = record.get("rmse", [])
+    if not rmse_entries:
+        raise ValueError("NAS record is missing RMSE entries.")
+    average_entry = rmse_entries[0]
+    return average_entry.get("value", float("inf"))
 
 
 def _resolve_trials_path(path_arg: str | Path | None) -> Path:
@@ -254,9 +263,10 @@ def main(argv: Sequence[str] | None = None) -> None:
     if args.train:
         trained_models = train_from_configs(config_paths)
 
+    best_trial_rmse = _average_rmse(best_trial)
     print(
         f"[best] trial #{best_trial['trial_number']} "
-        f"rmse={best_trial['rmse']:.4f}"
+        f"rmse={best_trial_rmse:.4f}"
     )
     for cfg in config_paths:
         print(f"[config] {cfg}")

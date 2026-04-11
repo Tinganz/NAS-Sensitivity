@@ -1,17 +1,21 @@
+import subprocess
+import sys
+from pathlib import Path
+
 import optuna
-# import optuna.visualization as vis
+
 from cnn import objective
 
-import logging
-import warnings
+BASE_DIR = Path(__file__).resolve().parent
+
 
 def main() -> None:
-    training_data: str = "f1tenth_ng_zc/nas/datasets/combined_train.npz"
-
     study = optuna.create_study(direction="minimize")
-    study.optimize(objective, n_trials=75)
+    study.optimize(objective, n_trials=120)
 
-    # TODO fix figure output & following creation
+    # subprocess.run([sys.executable, str(BASE_DIR / "test-best.py")], check=True)
+    # subprocess.run([sys.executable, str(BASE_DIR / "compare-track.py")], check=True)
+
 
 if __name__ == "__main__":
     main()

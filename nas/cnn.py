@@ -5,6 +5,7 @@ import tempfile
 from concurrent.futures import ThreadPoolExecutor
 from copy import deepcopy
 from datetime import datetime
+from enum import Enum
 from pathlib import Path
 
 import optuna
@@ -22,6 +23,46 @@ SESSION_ID = datetime.utcnow().strftime("%Y%m%dT%H%M%S")
 LOG_PATH = OUTPUT_DIR / f"nas_trials_{SESSION_ID}.jsonl"
 DEFAULT_TARGET_COLS = ("left_wall_dist", "track_width", "heading_error")
 LATEST_MODEL_PATHS = {target: None for target in DEFAULT_TARGET_COLS}
+
+
+class EvaluationTrack(Enum):
+    SEPANG = (
+        "data/maps/F1/Sepang/Sepang_map",
+        "data/maps/F1/Sepang/Sepang_centerline.tsv",
+    )
+    YAS_MARINA = (
+        "data/maps/F1/YasMarina/YasMarina_map",
+        "data/maps/F1/YasMarina/YasMarina_centerline.tsv",
+    )
+    AUSTIN = (
+        "data/maps/F1/Austin/Austin_map",
+        "data/maps/F1/Austin/Austin_centerline.tsv",
+    )
+    SAKHIR = (
+        "data/maps/F1/Sakhir/Sakhir_map",
+        "data/maps/F1/Sakhir/Sakhir_centerline.tsv",
+    )
+    MELBOURNE = (
+        "data/maps/F1/Melbourne/Melbourne_map",
+        "data/maps/F1/Melbourne/Melbourne_centerline.tsv",
+    )
+
+    @property
+    def map_path(self) -> str:
+        return self.value[0]
+
+    @property
+    def waypoints_path(self) -> str:
+        return self.value[1]
+
+
+TRAIN_EVAL_TRACKS = [
+    EvaluationTrack.SEPANG,
+    EvaluationTrack.YAS_MARINA,
+    EvaluationTrack.AUSTIN,
+    EvaluationTrack.SAKHIR,
+    EvaluationTrack.MELBOURNE,
+]
 
 
 class DynamicCNN:
@@ -142,10 +183,10 @@ def _build_training_config(model_block: dict[str, any], target_col: str, dataset
             "prefetch_factor": 2,
         },
         "training": {
-            "max_epochs": 21,
+            "max_epochs": 20,
             "lr": 1e-3,
             "weight_decay": 1e-5,
-            "early_stopping_patience": 11,
+            "early_stopping_patience": 15,
             "lr_patience": 5,
             "lr_scheduler_factor": 0.5,
             "optimizer": "adam",
@@ -206,11 +247,14 @@ def objective(
         target = cfg["data"]["target_col"]
         LATEST_MODEL_PATHS[target] = model_path
 
+    track_configs = [(track.map_path, track.waypoints_path) for track in TRAIN_EVAL_TRACKS]
+
     try:
-        rmse = test_cnn_arch(
+        average_rmse, track_rmses = test_cnn_arch(
             left_wall_dist_filepath=str(LATEST_MODEL_PATHS["left_wall_dist"]),
             track_width_filepath=str(LATEST_MODEL_PATHS["track_width"]),
             heading_error_filepath=str(LATEST_MODEL_PATHS["heading_error"]),
+            track_configs=track_configs,
         )
     except TypeError as exc:
         raise RuntimeError("Missing trained checkpoints before running test_cnn_arch") from exc
@@ -218,15 +262,17 @@ def objective(
     _log_trial_result(
         trial=trial,
         trained_runs=trained_runs,
-        rmse=rmse,
+        average_rmse=average_rmse,
+        track_rmses=track_rmses,
     )
-    return rmse
+    return average_rmse
 
 
 def _log_trial_result(
     trial: optuna.trial.Trial,
     trained_runs: list[tuple[dict[str, any], Path]],
-    rmse: float,
+    average_rmse: float,
+    track_rmses: list[float],
 ) -> None:
     """
     Append a structured summary for each NAS trial to ``output/nas_trials.jsonl``.
@@ -254,10 +300,26 @@ def _log_trial_result(
             }
         )
 
+    rmse_entries: list[dict[str, any]] = [
+        {
+            "type": "average",
+            "value": average_rmse,
+        }
+    ]
+    for track, rmse in zip(TRAIN_EVAL_TRACKS, track_rmses):
+        rmse_entries.append(
+            {
+                "track": track.name,
+                "map_path": track.map_path,
+                "waypoints_path": track.waypoints_path,
+                "value": rmse,
+            }
+        )
+
     entry = {
         "timestamp": datetime.utcnow().isoformat(timespec="seconds") + "Z",
         "trial_number": trial.number,
-        "rmse": rmse,
+        "rmse": rmse_entries,
         "params": trial.params,
         "targets": target_summaries,
     }

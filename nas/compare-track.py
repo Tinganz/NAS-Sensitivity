@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import argparse
 import json
 import sys
 from dataclasses import dataclass
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import Sequence
+from types import SimpleNamespace
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -25,6 +24,7 @@ from f110_scripts.sim import reactive_planners as sim  # noqa: E402
 
 
 DEFAULT_MAP = "data/maps/F1/Nuerburgring/Nuerburgring_map"
+DEFAULT_MAP_EXT = ".png"
 DEFAULT_WAYPOINTS = "data/maps/F1/Nuerburgring/Nuerburgring_centerline.tsv"
 DEFAULT_RUNS = [
     (
@@ -98,94 +98,26 @@ class MapSpec:
     waypoints: str
 
 
-def _parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Run DNN planners on a track and compare their traces."
-    )
-    parser.add_argument(
-        "--map",
-        default=DEFAULT_MAP,
-        help="Base path (without extension) to the map YAML/image.",
-    )
-    parser.add_argument(
-        "--map-ext",
-        default=".png",
-        help="Extension for the map image (e.g. .png, .pgm).",
-    )
-    parser.add_argument(
-        "--waypoints",
-        default=DEFAULT_WAYPOINTS,
-        help="Waypoint TSV/CSV used for reference poses.",
-    )
-    parser.add_argument(
-        "--laps",
-        type=int,
-        default=1,
-        help="Number of laps to complete before terminating each run.",
-    )
-    parser.add_argument(
-        "--render-mode",
-        default="None",
-        choices=["human", "human_fast", "None"],
-        help="Optional pyglet visualization mode.",
-    )
-    parser.add_argument(
-        "--lookahead",
-        type=float,
-        default=1.0,
-        help="Lookahead gain used by the planner.",
-    )
-    parser.add_argument(
-        "--lateral-gain",
-        type=float,
-        default=1.0,
-        help="Lateral centering gain for the planner.",
-    )
-    parser.add_argument(
-        "--speed",
-        type=float,
-        default=5.0,
-        help="Maximum planner speed (m/s).",
-    )
-    parser.add_argument(
-        "--output",
-        default=None,
-        help="Optional explicit PNG path (single-map mode only).",
-    )
-    parser.add_argument(
-        "--output-dir",
-        default=DEFAULT_OUTPUT_DIR.as_posix(),
-        help="Directory where compare-map outputs (figures + metrics) are stored.",
-    )
-    parser.add_argument(
-        "--run-id",
-        default=DEFAULT_RUN_ID,
-        help="Override the auto-generated identifier for this compare-track batch.",
-    )
-    parser.add_argument(
-        "--all-maps",
-        action="store_true",
-        default=DEFAULT_ALL_MAPS,
-        help="Iterate over every map with waypoints under --maps-root.",
-    )
-    parser.add_argument(
-        "--maps-root",
-        default=DEFAULT_MAP_ROOT,
-        help="Root directory to scan for maps when --all-maps is set.",
-    )
-    parser.add_argument(
-        "--show",
-        action="store_true",
-        help="Display the figure interactively after saving.",
-    )
-    parser.add_argument(
-        "--run",
-        nargs=4,
-        action="append",
-        metavar=("LABEL", "LEFT_PT", "TRACK_PT", "HEADING_PT"),
-        help="Add a labelled planner run. Pass three .pt files per label.",
-    )
-    return parser.parse_args(argv)
+@dataclass
+class CompareArgs:
+    map: str = DEFAULT_MAP
+    map_ext: str = DEFAULT_MAP_EXT
+    waypoints: str = DEFAULT_WAYPOINTS
+    laps: int = 1
+    render_mode: str = "None"
+    lookahead: float = 1.0
+    lateral_gain: float = 1.0
+    speed: float = 5.0
+    output: str | None = None
+    output_dir: str = DEFAULT_OUTPUT_DIR.as_posix()
+    run_id: str | None = DEFAULT_RUN_ID
+    all_maps: bool = DEFAULT_ALL_MAPS
+    maps_root: str = DEFAULT_MAP_ROOT
+    show: bool = False
+    run: list[tuple[str, str, str, str]] | None = None
+
+
+ARGS = CompareArgs()
 
 
 def _load_map_background(map_path: str, map_ext: str) -> tuple[np.ndarray, tuple[float, float, float, float]]:
@@ -214,12 +146,12 @@ def _load_map_background(map_path: str, map_ext: str) -> tuple[np.ndarray, tuple
 
 
 def _simulate_run(
-    base_args: argparse.Namespace,
+    base_args: CompareArgs,
     run: ModelRun,
     waypoints: np.ndarray,
     map_spec: MapSpec,
 ) -> tuple[SimTrace, dict]:
-    args = argparse.Namespace(
+    args = SimpleNamespace(
         planner="dnn",
         left_wall_model=str(run.left),
         track_width_model=str(run.track),
@@ -258,7 +190,7 @@ def _simulate_run(
     return trace, metrics
 
 
-def _build_runs(run_args: list[list[str]] | None) -> list[ModelRun]:
+def _build_runs(run_args: list[tuple[str, str, str, str]] | None) -> list[ModelRun]:
     if not run_args:
         run_args = DEFAULT_RUNS
     runs: list[ModelRun] = []
@@ -335,7 +267,7 @@ def _prepare_run_directory(
     return run_dir, identifier
 
 
-def _build_map_list(args: argparse.Namespace) -> list[MapSpec]:
+def _build_map_list(args: CompareArgs) -> list[MapSpec]:
     if args.all_maps:
         specs = _discover_map_specs(args.maps_root)
         if not specs:
@@ -353,7 +285,7 @@ def _build_map_list(args: argparse.Namespace) -> list[MapSpec]:
 
 
 def _run_map_comparison(
-    args: argparse.Namespace,
+    args: CompareArgs,
     runs: list[ModelRun],
     map_spec: MapSpec,
     run_dir: Path,
@@ -459,8 +391,8 @@ def _run_map_comparison(
     }
 
 
-def main(argv: Sequence[str] | None = None) -> None:
-    args = _parse_args(argv)
+def main() -> None:
+    args = ARGS
     runs = _build_runs(args.run)
     map_specs = _build_map_list(args)
     run_dir, run_identifier = _prepare_run_directory(args.output_dir, args.run_id)

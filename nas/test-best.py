@@ -9,6 +9,7 @@ REPO_ROOT = BASE_DIR.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
+from nas.cnn import TRAIN_EVAL_TRACKS
 from nas.testing import test_cnn_arch
 from nas.training import orchestrate_best_trial, train_from_configs
 
@@ -17,7 +18,7 @@ TRIALS_FILE: Path | str | None = None
 DATASET_PATH = "nas/datasets/combined_train.npz"
 
 # Override where configs land. Defaults to nas/dnn-output/best_configs/<stem>.
-CONFIG_OUTPUT_DIR: Path | None = "nas/dnn-output/nas_trials_20260409T020328.jsonl"
+CONFIG_OUTPUT_DIR: Path | None = None
 
 # Set an integer to clamp training.max_epochs in every exported YAML.
 MAX_EPOCHS: int | None = 400
@@ -111,13 +112,15 @@ def evaluate_models(model_paths: list[Path]) -> float | None:
     if missing:
         print(f"[warn] missing checkpoints for: {', '.join(missing)}")
         return None
-    rmse = test_cnn_arch(
+    track_configs = [(track.map_path, track.waypoints_path) for track in TRAIN_EVAL_TRACKS]
+    average_rmse, _ = test_cnn_arch(
         left_wall_dist_filepath=str(lookup["left_wall_dist"]),
         track_width_filepath=str(lookup["track_width"]),
         heading_error_filepath=str(lookup["heading_error"]),
+        track_configs=track_configs,
     )
-    print(f"[rmse] {rmse:.4f}")
-    return rmse
+    print(f"[rmse] {average_rmse:.4f}")
+    return average_rmse
 
 
 def _resolve_trials_file(trials_file: Path | str | None) -> Path | None:
@@ -172,7 +175,8 @@ def main() -> None:
     else:
         raise ValueError("MODE must be 'train' or 'test'")
 
-    print(f"[best] trial #{best_trial['trial_number']} rmse={best_trial['rmse']:.4f}")
+    best_trial_rmse = best_trial["rmse"][0]["value"]
+    print(f"[best] trial #{best_trial['trial_number']} rmse={best_trial_rmse:.4f}")
     for tgt in best_trial["targets"]:
         print(f"[arch] {tgt['target_col']} arch{tgt['arch_id']}")
     for cfg in config_paths:
