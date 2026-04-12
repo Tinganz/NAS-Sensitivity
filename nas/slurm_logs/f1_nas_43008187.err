@@ -1698,3 +1698,29 @@ SLURM auto-requeueing enabled. Setting signal handlers.
 `Trainer.fit` stopped: `max_epochs=20` reached.
 `Trainer.fit` stopped: `max_epochs=20` reached.
 `Trainer.fit` stopped: `max_epochs=20` reached.
+[I 2026-04-11 20:47:59,533] Trial 46 finished with value: 0.14632 and parameters: {'left_wall_dist_num_layers': 2, 'left_wall_dist_activation': 'elu', 'left_wall_dist_out_channels_l0': 91, 'left_wall_dist_pool_size_l0': 4, 'left_wall_dist_out_channels_l1': 194, 'left_wall_dist_pool_size_l1': 8, 'left_wall_dist_fc_hidden': 116, 'track_width_num_layers': 5, 'track_width_activation': 'elu', 'track_width_out_channels_l0': 99, 'track_width_pool_size_l0': 4, 'track_width_out_channels_l1': 191, 'track_width_pool_size_l1': 4, 'track_width_out_channels_l2': 65, 'track_width_pool_size_l2': 4, 'track_width_out_channels_l3': 67, 'track_width_pool_size_l3': 4, 'track_width_out_channels_l4': 34, 'track_width_pool_size_l4': 8, 'heading_error_num_layers': 2, 'heading_error_activation': 'elu', 'heading_error_out_channels_l0': 77, 'heading_error_pool_size_l0': 4, 'heading_error_out_channels_l1': 65, 'heading_error_pool_size_l1': 4, 'heading_error_fc_hidden': 83}. Best is trial 14 with value: 0.10136.
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+[rank: 0] Seed set to 42
+GPU available: True (cuda), used: True
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:881: Checkpoint directory /nas/longleaf/home/zayah/f1tenth_ng_zc/data/models/checkpoints/track_width_arch8 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:881: Checkpoint directory /nas/longleaf/home/zayah/f1tenth_ng_zc/data/models/checkpoints/left_wall_dist_arch8 exists and is not empty.
+/nas/longleaf/home/zayah/f1tenth_ng_zc/.venv/lib/python3.12/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:881: Checkpoint directory /nas/longleaf/home/zayah/f1tenth_ng_zc/data/models/checkpoints/heading_error_arch8 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+`Trainer.fit` stopped: `max_epochs=20` reached.
+`Trainer.fit` stopped: `max_epochs=20` reached.
+`Trainer.fit` stopped: `max_epochs=20` reached.
+[2026-04-11T20:51:02.804] error: *** JOB 43008187 ON g141607 CANCELLED AT 2026-04-11T20:51:02 DUE to SIGNAL Terminated ***
