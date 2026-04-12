@@ -372,8 +372,10 @@ def _save_model(
     not TorchScript-serialisable).  The FP32 ``state_dict`` is also embedded
     so that the quantized module can be faithfully reconstructed at load time.
     """
-    out_path = Path("data/models")
+    artifacts_cfg = config.get("artifacts", {})
+    out_path = Path(artifacts_cfg.get("model_dir", "data/models"))
     out_path.mkdir(parents=True, exist_ok=True)
+    out_file = out_path / f"{model_name}.pt"
 
     is_quantized = config.get("quantization", {}).get("enabled", False)
     metadata: dict[str, Any] = {
@@ -397,16 +399,16 @@ def _save_model(
         # inference code rebuilds a fresh module, re-applies quantize_(), and
         # then loads the quantized state_dict — no dequantisation required.
         quantize_(model, Int8DynamicActivationInt8WeightConfig())
-        save_as_torchscript(model, out_path / f"{model_name}.pt", metadata)
-        print(f"Saved quantized model to data/models/{model_name}.pt")
+        save_as_torchscript(model, out_file, metadata)
+        print(f"Saved quantized model to {out_file}")
     else:
-        save_as_torchscript(model, out_path / f"{model_name}.pt", metadata)
-        print(f"Saved model to data/models/{model_name}.pt")
+        save_as_torchscript(model, out_file, metadata)
+        print(f"Saved model to {out_file}")
 
 
-def _find_last_checkpoint(model_name: str) -> Path | None:
+def _find_last_checkpoint(model_name: str, checkpoint_root: Path) -> Path | None:
     """Return the path to last.ckpt if it exists, else None."""
-    last_ckpt = Path(f"data/models/checkpoints/{model_name}/last.ckpt")
+    last_ckpt = checkpoint_root / model_name / "last.ckpt"
     return last_ckpt if last_ckpt.exists() else None
 
 
@@ -459,6 +461,13 @@ def run_single_training(config: dict[str, Any], arch_id: int) -> None:  # pylint
     L.seed_everything(42)
 
     training_cfg = config["training"]
+    artifacts_cfg = config.get("artifacts", {})
+    model_dir = Path(artifacts_cfg.get("model_dir", "data/models"))
+    checkpoint_root = Path(artifacts_cfg.get("checkpoint_dir", "data/models/checkpoints"))
+    log_root = Path(artifacts_cfg.get("log_dir", "data/models/lightning_logs"))
+    model_dir.mkdir(parents=True, exist_ok=True)
+    checkpoint_root.mkdir(parents=True, exist_ok=True)
+    log_root.mkdir(parents=True, exist_ok=True)
     do_resume = training_cfg.get("resume", True)
     do_weights_only = training_cfg.get("resume_weights_only", False)
 
@@ -476,7 +485,7 @@ def run_single_training(config: dict[str, Any], arch_id: int) -> None:  # pylint
     )
 
     model_name = f"{config['data']['target_col']}_arch{arch_id}"
-    existing_ckpt = _find_last_checkpoint(model_name)
+    existing_ckpt = _find_last_checkpoint(model_name, checkpoint_root)
 
     if not do_resume:
         # resume=false → always random init; resume_weights_only is irrelevant.
@@ -503,12 +512,14 @@ def run_single_training(config: dict[str, Any], arch_id: int) -> None:  # pylint
         ckpt_path = None
 
     # Logger
-    logger = TensorBoardLogger("data/models/lightning_logs", name=model_name)
+    logger = TensorBoardLogger(str(log_root), name=model_name)
 
     # Callbacks
+    checkpoint_dir = checkpoint_root / model_name
+    checkpoint_dir.mkdir(parents=True, exist_ok=True)
     callbacks = [
         ModelCheckpoint(
-            dirpath=f"data/models/checkpoints/{model_name}",
+            dirpath=str(checkpoint_dir),
             filename="best-{epoch:02d}",
             monitor="val/loss",
             mode="min",

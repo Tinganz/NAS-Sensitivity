@@ -1,21 +1,25 @@
-import subprocess
-import sys
-from pathlib import Path
+import argparse
 
 import optuna
 
-from cnn import objective
-
-BASE_DIR = Path(__file__).resolve().parent
+from cnn import EvaluationTrack, objective
 
 
-def main() -> None:
+def main(track: str | None = None, n_trials: int = 10) -> None:
+    track_names = None
+    if track:
+        track_names = [EvaluationTrack[track.strip().upper()]]
+
     study = optuna.create_study(direction="minimize")
-    study.optimize(objective, n_trials=120)
-
-    # subprocess.run([sys.executable, str(BASE_DIR / "test-best.py")], check=True)
-    # subprocess.run([sys.executable, str(BASE_DIR / "compare-track.py")], check=True)
+    if track_names:
+        study.optimize(lambda t: objective(t, track_names=track_names), n_trials=n_trials)
+    else:
+        study.optimize(objective, n_trials=n_trials)
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--track", type=str, default=None)
+    parser.add_argument("--n-trials", type=int, default=120)
+    args = parser.parse_args()
+    main(track=args.track, n_trials=args.n_trials)

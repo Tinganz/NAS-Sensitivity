@@ -7,6 +7,7 @@ from copy import deepcopy
 from datetime import datetime
 from enum import Enum
 from pathlib import Path
+from typing import Sequence
 
 import optuna
 import yaml
@@ -55,14 +56,33 @@ class EvaluationTrack(Enum):
     def waypoints_path(self) -> str:
         return self.value[1]
 
-
+# Default evaluation tracks if none are specified.
 TRAIN_EVAL_TRACKS = [
     EvaluationTrack.SEPANG,
-    EvaluationTrack.YAS_MARINA,
-    EvaluationTrack.AUSTIN,
-    EvaluationTrack.SAKHIR,
-    EvaluationTrack.MELBOURNE,
 ]
+
+
+def _select_evaluation_tracks(selected: Sequence[object] | None) -> list[EvaluationTrack]:
+    """
+    Normalise optional user-provided selectors (enum instances or strings) into a track list.
+    """
+    if not selected:
+        return list(TRAIN_EVAL_TRACKS)
+
+    resolved: list[EvaluationTrack] = []
+    for entry in selected:
+        if isinstance(entry, EvaluationTrack):
+            resolved.append(entry)
+            continue
+        normalized = str(entry).strip().upper()
+        try:
+            resolved.append(EvaluationTrack[normalized])
+        except KeyError as exc:
+            valid = ", ".join(track.name for track in EvaluationTrack)
+            raise ValueError(
+                f"Unknown evaluation track '{entry}'. Valid options: {valid}"
+            ) from exc
+    return resolved
 
 
 class DynamicCNN:
@@ -163,16 +183,22 @@ def _run_training(config: dict[str, any]) -> Path:
     finally:
         cfg_path.unlink(missing_ok=True)
 
+    artifacts_cfg = config.get("artifacts", {})
+    model_dir = Path(artifacts_cfg.get("model_dir", "data/models"))
     model_name = f"{config['data']['target_col']}_arch{config['model']['arch_id']}"
-    return Path("data/models", f"{model_name}.pt")
+    return model_dir / f"{model_name}.pt"
 
 
-def _build_training_config(model_block: dict[str, any], target_col: str, dataset_pth: str = None) -> dict[str, any]:
-
+def _build_training_config(
+    model_block: dict[str, any],
+    target_col: str,
+    dataset_pth: str | None = None,
+    artifact_root: Path | None = None,
+) -> dict[str, any]:
     if dataset_pth is None:
         raise ValueError("dataset_path in _build_training_config is not specified.")
 
-    cfg = {
+    cfg: dict[str, any] = {
         "data": {
             "train_path": dataset_pth,
             "target_col": target_col,
@@ -199,6 +225,13 @@ def _build_training_config(model_block: dict[str, any], target_col: str, dataset
         },
         "model": deepcopy(model_block),
     }
+    if artifact_root is not None:
+        artifact_root = Path(artifact_root)
+        cfg["artifacts"] = {
+            "model_dir": str(artifact_root / "models"),
+            "checkpoint_dir": str(artifact_root / "checkpoints"),
+            "log_dir": str(artifact_root / "lightning_logs"),
+        }
     return cfg
 
 
@@ -208,12 +241,17 @@ def objective(
     n_epoch: int = 10,
     seed: int = 41,
     target_cols: tuple[str, ...] = DEFAULT_TARGET_COLS,
-    dataset_pth: str = "nas/datasets/combined_train.npz"
+    dataset_pth: str = "nas/datasets/combined_train.npz",
+    track_names: Sequence[object] | None = None,
 ) -> float:
     """
     Run one Optuna trial that samples a single arch8 config, trains the left/track/heading
     nets in parallel, waits for all three checkpoints (.pt) to land, then evaluates the trio
     once via test_cnn_arch and returns that combined RMSE.
+
+    Args:
+        track_names: Optional iterable of track names (matching EvaluationTrack enums) or
+            EvaluationTrack instances to restrict which maps are evaluated.
     """
     del n_epoch, seed, _unused_loader  # unused
 
@@ -224,10 +262,20 @@ def objective(
         block["arch_id"] = 8
         model_blocks[target] = block
 
-    cfgs = [
-        _build_training_config(model_blocks[target], target, dataset_pth)
-        for target in target_cols
-    ]
+    evaluation_tracks = _select_evaluation_tracks(track_names)
+    trial_artifact_root = OUTPUT_DIR / "trial_artifacts" / f"{SESSION_ID}_trial{trial.number:05d}"
+    cfgs = []
+    for target in target_cols:
+        target_artifact_root = trial_artifact_root / target
+        target_artifact_root.mkdir(parents=True, exist_ok=True)
+        cfgs.append(
+            _build_training_config(
+                model_blocks[target],
+                target,
+                dataset_pth,
+                artifact_root=target_artifact_root,
+            )
+        )
 
     trained_runs: list[tuple[dict[str, any], Path]] = []
     # TODO add specific partition of resources once the specific resource constraints (running on a gpu/cpu) are known
@@ -247,7 +295,7 @@ def objective(
         target = cfg["data"]["target_col"]
         LATEST_MODEL_PATHS[target] = model_path
 
-    track_configs = [(track.map_path, track.waypoints_path) for track in TRAIN_EVAL_TRACKS]
+    track_configs = [(track.map_path, track.waypoints_path) for track in evaluation_tracks]
 
     try:
         average_rmse, track_rmses = test_cnn_arch(
@@ -258,12 +306,16 @@ def objective(
         )
     except TypeError as exc:
         raise RuntimeError("Missing trained checkpoints before running test_cnn_arch") from exc
+    finally:
+        for target in LATEST_MODEL_PATHS:
+            LATEST_MODEL_PATHS[target] = None
 
     _log_trial_result(
         trial=trial,
         trained_runs=trained_runs,
         average_rmse=average_rmse,
         track_rmses=track_rmses,
+        evaluation_tracks=evaluation_tracks,
     )
     return average_rmse
 
@@ -273,6 +325,7 @@ def _log_trial_result(
     trained_runs: list[tuple[dict[str, any], Path]],
     average_rmse: float,
     track_rmses: list[float],
+    evaluation_tracks: Sequence[EvaluationTrack],
 ) -> None:
     """
     Append a structured summary for each NAS trial to ``output/nas_trials.jsonl``.
@@ -306,7 +359,7 @@ def _log_trial_result(
             "value": average_rmse,
         }
     ]
-    for track, rmse in zip(TRAIN_EVAL_TRACKS, track_rmses):
+    for track, rmse in zip(evaluation_tracks, track_rmses):
         rmse_entries.append(
             {
                 "track": track.name,

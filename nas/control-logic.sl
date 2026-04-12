@@ -19,4 +19,4 @@ if command -v module &>/dev/null; then
     module load cuda/12.4
 fi
 source .venv/bin/activate
-python nas/control-logic.py
+python nas/control-logic.py "$@"
