@@ -1,7 +1,9 @@
 import json
+import os
 import subprocess
 import sys
 import tempfile
+import uuid
 from concurrent.futures import ThreadPoolExecutor
 from copy import deepcopy
 from datetime import datetime
@@ -20,7 +22,7 @@ from testing import test_cnn_arch
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "dnn-output"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-SESSION_ID = datetime.utcnow().strftime("%Y%m%dT%H%M%S")
+SESSION_ID = os.getenv("F1_SESSION_ID") or f"{datetime.utcnow():%Y%m%dT%H%M%S}_{os.getpid()}_{uuid.uuid4().hex[:6]}"
 LOG_PATH = OUTPUT_DIR / f"nas_trials_{SESSION_ID}.jsonl"
 DEFAULT_TARGET_COLS = ("left_wall_dist", "track_width", "heading_error")
 LATEST_MODEL_PATHS = {target: None for target in DEFAULT_TARGET_COLS}
