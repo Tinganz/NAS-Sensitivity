@@ -22,6 +22,14 @@ from f110_planning.utils.waypoint_utils import load_waypoints  # noqa: E402
 from f110_planning.visualization.svg_trace import SimTrace  # noqa: E402
 from f110_scripts.sim import reactive_planners as sim  # noqa: E402
 
+# ----------
+
+# Input filepaths to .pt files
+ARCH_8_LEFT_WALL_DIST_PT = "nas/dnn-output/best_configs/nas_trials_20260412T172212_1866709_e8b287/left_wall_dist_arch8_trial46.pt"
+ARCH_8_HEADING_ERROR_PT = "nas/dnn-output/best_configs/nas_trials_20260412T172212_1866709_e8b287/heading_error_arch8_trial46.pt"
+ARCH_8_TRACK_WIDTH_PT = "nas/dnn-output/best_configs/nas_trials_20260412T172212_1866709_e8b287/track_width_arch8_trial46.pt"
+
+
 
 DEFAULT_MAP = "data/maps/F1/Nuerburgring/Nuerburgring_map"
 DEFAULT_MAP_EXT = ".png"
@@ -71,15 +79,25 @@ DEFAULT_RUNS = [
     ),
     (
         "arch8",
-        "nas/dnn-output/best_configs/nas_trials_20260409T020328/heading_error_arch8_trial71.pt",
-        "nas/dnn-output/best_configs/nas_trials_20260409T020328/left_wall_dist_arch8_trial71.pt",
-        "nas/dnn-output/best_configs/nas_trials_20260409T020328/track_width_arch8_trial71.pt",
+        ARCH_8_LEFT_WALL_DIST_PT,
+        ARCH_8_TRACK_WIDTH_PT,
+        ARCH_8_HEADING_ERROR_PT,
     ),
 ]
 DEFAULT_OUTPUT_DIR = Path(__file__).with_name("compare-map")
 DEFAULT_MAP_ROOT = "data/maps"
 DEFAULT_RUN_ID = None
 DEFAULT_ALL_MAPS = True
+# Only run comparisons on this curated set when all_maps is True.
+SELECTED_TRACKS = {
+    "shanghai",
+    "silverstone",
+    "sochi",
+    "spa",
+    "nuerburgring",
+    "monza",
+    "mexicocity",
+}
 
 
 @dataclass
@@ -215,6 +233,11 @@ def _normalize_map_name(map_path: str) -> str:
     return stem[:-4] if stem.endswith("_map") else stem
 
 
+def _is_selected_map(map_spec: MapSpec) -> bool:
+    name = _normalize_map_name(map_spec.map_base).lower()
+    return name in SELECTED_TRACKS
+
+
 def _discover_map_specs(root: str | Path) -> list[MapSpec]:
     root_path = Path(root).expanduser().resolve()
     if not root_path.exists():
@@ -270,8 +293,11 @@ def _prepare_run_directory(
 def _build_map_list(args: CompareArgs) -> list[MapSpec]:
     if args.all_maps:
         specs = _discover_map_specs(args.maps_root)
+        specs = [spec for spec in specs if _is_selected_map(spec)]
         if not specs:
-            raise RuntimeError(f"No maps with waypoints found under {args.maps_root}")
+            raise RuntimeError(
+                f"No selected maps ({', '.join(sorted(SELECTED_TRACKS))}) found under {args.maps_root}"
+            )
         return specs
     single_name = _normalize_map_name(args.map)
     return [

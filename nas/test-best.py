@@ -14,17 +14,13 @@ from nas.testing import test_cnn_arch
 from nas.training import orchestrate_best_trial, train_from_configs
 
 # Leave as None to automatically use the newest JSONL under nas/dnn-output/.
-TRIALS_FILE: Path | str | None = None
+TRIALS_FILE: Path | str | None = "nas/dnn-output/nas_trials_20260412T172212_1866709_e8b287.jsonl"
 DATASET_PATH = "nas/datasets/combined_train.npz"
+MAX_EPOCHS: int | None = 400
+EARLY_STOPPING_PATIENCE: int | None = 350
 
 # Override where configs land. Defaults to nas/dnn-output/best_configs/<stem>.
 CONFIG_OUTPUT_DIR: Path | None = None
-
-# Set an integer to clamp training.max_epochs in every exported YAML.
-MAX_EPOCHS: int | None = 400
-
-# Override training.early_stopping_patience (set None to keep NAS defaults).
-EARLY_STOPPING_PATIENCE: int | None = 350
 
 # Choose "train" to retrain + evaluate or "test" to evaluate existing .pt files.
 MODE = "train"  # valid values: "train", "test"
