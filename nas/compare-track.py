@@ -25,9 +25,9 @@ from f110_scripts.sim import reactive_planners as sim  # noqa: E402
 # ----------
 
 # Input filepaths to .pt files
-ARCH_8_LEFT_WALL_DIST_PT = "nas/dnn-output/best_configs/nas_trials_20260412T172212_1866709_e8b287/left_wall_dist_arch8_trial46.pt"
-ARCH_8_HEADING_ERROR_PT = "nas/dnn-output/best_configs/nas_trials_20260412T172212_1866709_e8b287/heading_error_arch8_trial46.pt"
-ARCH_8_TRACK_WIDTH_PT = "nas/dnn-output/best_configs/nas_trials_20260412T172212_1866709_e8b287/track_width_arch8_trial46.pt"
+ARCH_8_LEFT_WALL_DIST_PT = "nas/dnn-output/best_configs/nas_trials_20260412T173157_3695507_679b1e/left_wall_dist_arch8_trial99.pt"
+ARCH_8_HEADING_ERROR_PT = "nas/dnn-output/best_configs/nas_trials_20260412T173157_3695507_679b1e/heading_error_arch8_trial99.pt"
+ARCH_8_TRACK_WIDTH_PT = "nas/dnn-output/best_configs/nas_trials_20260412T173157_3695507_679b1e/track_width_arch8_trial99.pt"
 
 
 
@@ -90,6 +90,7 @@ DEFAULT_RUN_ID = None
 DEFAULT_ALL_MAPS = True
 # Only run comparisons on this curated set when all_maps is True.
 SELECTED_TRACKS = {
+    "melbourne",
     "shanghai",
     "silverstone",
     "sochi",
@@ -121,11 +122,11 @@ class CompareArgs:
     map: str = DEFAULT_MAP
     map_ext: str = DEFAULT_MAP_EXT
     waypoints: str = DEFAULT_WAYPOINTS
-    laps: int = 1
+    laps: int = 2
     render_mode: str = "None"
-    lookahead: float = 1.0
+    lookahead: float = 1.5
     lateral_gain: float = 1.0
-    speed: float = 5.0
+    speed: float | None = None
     output: str | None = None
     output_dir: str = DEFAULT_OUTPUT_DIR.as_posix()
     run_id: str | None = DEFAULT_RUN_ID
@@ -133,6 +134,8 @@ class CompareArgs:
     maps_root: str = DEFAULT_MAP_ROOT
     show: bool = False
     run: list[tuple[str, str, str, str]] | None = None
+    save_plot: bool = False
+    save_trace_npz: bool = True
 
 
 ARGS = CompareArgs()
@@ -206,6 +209,29 @@ def _simulate_run(
     )
     env.close()
     return trace, metrics
+
+
+def _write_trace_npz(
+    map_slug: str,
+    run_identifier: str,
+    traces: list[tuple[ModelRun, SimTrace]],
+    run_dir: Path,
+) -> Path | None:
+    """Persist trace positions for a map's runs."""
+    if not traces:
+        return None
+
+    payload: dict[str, np.ndarray] = {}
+    for run, trace in traces:
+        payload[f"{run.label}_positions"] = np.asarray(trace.positions, dtype=np.float32)
+
+    if not payload:
+        return None
+
+    npz_path = run_dir / f"{map_slug}_{run_identifier}.npz"
+    np.savez(npz_path, **payload)
+    print(f"Saved trace data to {npz_path}")
+    return npz_path
 
 
 def _build_runs(run_args: list[tuple[str, str, str, str]] | None) -> list[ModelRun]:
@@ -347,73 +373,80 @@ def _run_map_comparison(
             }
         )
 
-    img, extent = _load_map_background(map_spec.map_base, map_spec.map_ext)
-    fig, ax = plt.subplots(figsize=(14, 14), dpi=320)
-    ax.imshow(
-        img,
-        cmap="gray_r",
-        extent=extent,
-        origin="lower",
-        alpha=0.35,
-        zorder=0,
-    )
-
-    if waypoints.size > 0:
-        ax.plot(
-            waypoints[:, 0],
-            waypoints[:, 1],
-            color="#444",
-            linewidth=0.5,
-            linestyle="--",
-            label="reference",
-            zorder=1,
-        )
-
-    for run, trace in traces:
-        pts = np.asarray(trace.positions)
-        if pts.size == 0:
-            continue
-        ax.plot(
-            pts[:, 0],
-            pts[:, 1],
-            linewidth=0.25,
-            label=run.label,
-            zorder=3,
-        )
-
-    ax.set_xlim(extent[0], extent[1])
-    ax.set_ylim(extent[2], extent[3])
-    ax.set_aspect("equal", adjustable="box")
-    run_labels = ", ".join(run.label for run in runs)
-    ax.set_title(f"{map_spec.name} ({run_labels})", fontsize=16)
-    if traces:
-        ax.legend(loc="upper right")
-    ax.axis("off")
-
     map_slug = _slugify(map_spec.name.replace("/", "_"))
-    image_name = f"{map_slug}_{run_identifier}.png"
-    image_path = run_dir / image_name
-    fig.savefig(image_path, dpi=600, bbox_inches="tight")
-    print(f"Saved comparison plot to {image_path}")
+    image_name: str | None = None
+    if args.save_plot:
+        img, extent = _load_map_background(map_spec.map_base, map_spec.map_ext)
+        fig, ax = plt.subplots(figsize=(14, 14), dpi=320)
+        ax.imshow(
+            img,
+            cmap="gray_r",
+            extent=extent,
+            origin="lower",
+            alpha=0.35,
+            zorder=0,
+        )
 
-    if args.output and not args.all_maps:
-        mirror_path = Path(args.output).expanduser()
-        if not mirror_path.is_absolute():
-            mirror_path = Path(__file__).resolve().parent / mirror_path
-        mirror_path = mirror_path.resolve()
-        mirror_path.parent.mkdir(parents=True, exist_ok=True)
-        fig.savefig(mirror_path, dpi=600, bbox_inches="tight")
-        print(f"Saved comparison plot to {mirror_path}")
+        if waypoints.size > 0:
+            ax.plot(
+                waypoints[:, 0],
+                waypoints[:, 1],
+                color="#444",
+                linewidth=0.5,
+                linestyle="--",
+                label="reference",
+                zorder=1,
+            )
 
-    if args.show:
-        plt.show()
-    plt.close(fig)
+        for run, trace in traces:
+            pts = np.asarray(trace.positions)
+            if pts.size == 0:
+                continue
+            ax.plot(
+                pts[:, 0],
+                pts[:, 1],
+                linewidth=0.25,
+                label=run.label,
+                zorder=3,
+            )
+
+        ax.set_xlim(extent[0], extent[1])
+        ax.set_ylim(extent[2], extent[3])
+        ax.set_aspect("equal", adjustable="box")
+        run_labels = ", ".join(run.label for run in runs)
+        ax.set_title(f"{map_spec.name} ({run_labels})", fontsize=16)
+        if traces:
+            ax.legend(loc="upper right")
+        ax.axis("off")
+
+        image_name = f"{map_slug}_{run_identifier}.png"
+        image_path = run_dir / image_name
+        fig.savefig(image_path, dpi=600, bbox_inches="tight")
+        print(f"Saved comparison plot to {image_path}")
+
+        if args.output and not args.all_maps:
+            mirror_path = Path(args.output).expanduser()
+            if not mirror_path.is_absolute():
+                mirror_path = Path(__file__).resolve().parent / mirror_path
+            mirror_path = mirror_path.resolve()
+            mirror_path.parent.mkdir(parents=True, exist_ok=True)
+            fig.savefig(mirror_path, dpi=600, bbox_inches="tight")
+            print(f"Saved comparison plot to {mirror_path}")
+
+        if args.show:
+            plt.show()
+        plt.close(fig)
+
+    trace_path = None
+    if args.save_trace_npz:
+        trace_path = _write_trace_npz(map_slug, run_identifier, traces, run_dir)
 
     return {
         "map": map_spec.name,
         "waypoints": map_spec.waypoints,
         "runs": run_summaries,
         "image": image_name,
+        "trace_file": trace_path.name if trace_path else None,
     }
 
 
