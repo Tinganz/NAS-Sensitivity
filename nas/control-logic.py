@@ -5,7 +5,7 @@ import optuna
 from cnn import EvaluationTrack, objective
 
 
-def main(track: str | None = None, n_trials: int = 10) -> None:
+def main(track: str | None = None, n_trials: int = 120) -> None:
     track_names = None
     if track:
         track_names = [EvaluationTrack[track.strip().upper()]]

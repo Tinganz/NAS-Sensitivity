@@ -211,11 +211,11 @@ def _build_training_config(
             "prefetch_factor": 2,
         },
         "training": {
-            "max_epochs": 20,
-            "lr": 1e-3,
-            "weight_decay": 1e-5,
+            "max_epochs": 30,
+            "lr": 5e-5,
+            "weight_decay": 1e-4,
             "early_stopping_patience": 15,
-            "lr_patience": 5,
+            "lr_patience": 20,
             "lr_scheduler_factor": 0.5,
             "optimizer": "adam",
             "scheduler": "reduce_on_plateau",
@@ -243,7 +243,7 @@ def objective(
     n_epoch: int = 10,
     seed: int = 41,
     target_cols: tuple[str, ...] = DEFAULT_TARGET_COLS,
-    dataset_pth: str = "nas/datasets/combined_train.npz",
+    dataset_pth: str = "nas/datasets/combined_all.npz",
     track_names: Sequence[object] | None = None,
 ) -> float:
     """

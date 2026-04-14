@@ -20,7 +20,7 @@ except ModuleNotFoundError:  # pragma: no cover - fallback for script usage
 BASE_DIR = Path(__file__).resolve().parent
 REPO_ROOT = BASE_DIR.parent
 TRAIN_SCRIPT = (REPO_ROOT / "packages/f110_scripts/src/f110_scripts/train/train_nn.py").resolve()
-DEFAULT_DATASET = "nas/datasets/combined_train.npz"
+DEFAULT_DATASET = "nas/datasets/combined_all.npz"
 DEFAULT_CONFIGS = [
     (REPO_ROOT / "packages/f110_scripts/src/f110_scripts/train/config_heading_8.yaml").resolve(),
     (REPO_ROOT / "packages/f110_scripts/src/f110_scripts/train/config_left_wall_8.yaml").resolve(),
