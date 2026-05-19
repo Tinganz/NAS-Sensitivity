@@ -267,6 +267,6 @@ def main() -> None:
     for trials_file in trials_files:
         _run_trials_file(trials_file)
 
-
-if __name__ == "__main__":
-    main()
+# Example usage (with default parameters)
+# if __name__ == "__main__":
+#     main()

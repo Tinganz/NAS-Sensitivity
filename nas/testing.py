@@ -121,32 +121,40 @@ def test_cnn_arch(
     print(f"Average Cross-Track RMSE ({len(track_configs)} tracks): {average_rmse:.4f} m")
     return average_rmse, rmses, average_metrics, metrics_by_track
 
-
-if __name__ == "__main__":
-    test_cnn_arch(
-        "data/models/left_wall_dist_arch8.pt",
-        "data/models/track_width_arch8.pt",
-        "data/models/heading_error_arch8.pt",
-        [
-            (
-                "data/maps/F1/Sepang/Sepang_map",
-                "data/maps/F1/Sepang/Sepang_centerline.tsv",
-            ),
-            (
-                "data/maps/F1/YasMarina/YasMarina_map",
-                "data/maps/F1/YasMarina/YasMarina_centerline.tsv",
-            ),
-            (
-                "data/maps/F1/Austin/Austin_map",
-                "data/maps/F1/Austin/Austin_centerline.tsv",
-            ),
-            (
-                "data/maps/F1/Sakhir/Sakhir_map",
-                "data/maps/F1/Sakhir/Sakhir_centerline.tsv",
-            ),
-            (
-                "data/maps/F1/Melbourne/Melbourne_map",
-                "data/maps/F1/Melbourne/Melbourne_centerline.tsv",
-            ),
-        ],
-    )
+# Example usage
+# if __name__ == "__main__":
+#     test_cnn_arch(
+#         "nas/dnn-output/test-best-runs-150/1b391f/left_wall_dist_arch8_trial115.pt",
+#         "nas/dnn-output/test-best-runs-150/1b391f/track_width_arch8_trial115.pt",
+#         "nas/dnn-output/test-best-runs-150/1b391f/heading_error_arch8_trial115.pt",
+#         [
+#             (
+#                 "data/maps/F1/Shanghai/Shanghai_map",
+#                 "data/maps/F1/Shanghai/Shanghai_centerline.tsv",
+#             ),
+#             (
+#                 "data/maps/F1/Silverstone/Silverstone_map",
+#                 "data/maps/F1/Silverstone/Silverstone_centerline.tsv",
+#             ),
+#             (
+#                 "data/maps/F1/Sochi/Sochi_map",
+#                 "data/maps/F1/Sochi/Sochi_centerline.tsv",
+#             ),
+#             (
+#                 "data/maps/F1/Spa/Spa_map",
+#                 "data/maps/F1/Spa/Spa_centerline.tsv",
+#             ),
+#             (
+#                 "data/maps/F1/Nuerburgring/Nuerburgring_map",
+#                 "data/maps/F1/Nuerburgring/Nuerburgring_centerline.tsv",
+#             ),
+#             (
+#                 "data/maps/F1/Monza/Monza_map",
+#                 "data/maps/F1/Monza/Monza_centerline.tsv",
+#             ),
+#             (
+#                 "data/maps/F1/MexicoCity/MexicoCity_map",
+#                 "data/maps/F1/MexicoCity/MexicoCity_centerline.tsv",
+#             ),
+#         ],
+#     )

@@ -104,7 +104,7 @@ class EvaluationTrack(Enum):
 
 # Default evaluation tracks if none are specified.
 TRAIN_EVAL_TRACKS = [
-    EvaluationTrack.MELBOURNE,
+    EvaluationTrack.SEPANG,
 ]
 
 

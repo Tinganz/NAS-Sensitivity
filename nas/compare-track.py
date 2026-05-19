@@ -28,76 +28,20 @@ from f110_scripts.sim import reactive_planners as sim  # noqa: E402
 
 # Input filepaths to .pt files
 ARCH_8_CHECKPOINT_TRIPLES = [
+    # Example usage (note: order)
     (
         "nas/dnn-output/test-best-runs-150/017f7c/left_wall_dist_arch8_trial106.pt",
         "nas/dnn-output/test-best-runs-150/017f7c/track_width_arch8_trial106.pt",
         "nas/dnn-output/test-best-runs-150/017f7c/heading_error_arch8_trial106.pt",
     ),
-    (
-        "nas/dnn-output/test-best-runs-150/08e72b/left_wall_dist_arch8_trial95.pt",
-        "nas/dnn-output/test-best-runs-150/08e72b/track_width_arch8_trial95.pt",
-        "nas/dnn-output/test-best-runs-150/08e72b/heading_error_arch8_trial95.pt",
-    ),
-    (
-        "nas/dnn-output/test-best-runs-150/1b391f/left_wall_dist_arch8_trial115.pt",
-        "nas/dnn-output/test-best-runs-150/1b391f/track_width_arch8_trial115.pt",
-        "nas/dnn-output/test-best-runs-150/1b391f/heading_error_arch8_trial115.pt",
-    ),
-    (
-        "nas/dnn-output/test-best-runs-150/3cd867/left_wall_dist_arch8_trial51.pt",
-        "nas/dnn-output/test-best-runs-150/3cd867/track_width_arch8_trial51.pt",
-        "nas/dnn-output/test-best-runs-150/3cd867/heading_error_arch8_trial51.pt",
-    ),
-    (
-        "nas/dnn-output/test-best-runs-150/3d2630/left_wall_dist_arch8_trial52.pt",
-        "nas/dnn-output/test-best-runs-150/3d2630/track_width_arch8_trial52.pt",
-        "nas/dnn-output/test-best-runs-150/3d2630/heading_error_arch8_trial52.pt",
-    ),
-    (
-        "nas/dnn-output/test-best-runs-150/4ec05d/left_wall_dist_arch8_trial87.pt",
-        "nas/dnn-output/test-best-runs-150/4ec05d/track_width_arch8_trial87.pt",
-        "nas/dnn-output/test-best-runs-150/4ec05d/heading_error_arch8_trial87.pt",
-    ),
-    (
-        "nas/dnn-output/test-best-runs-150/60de23/left_wall_dist_arch8_trial106.pt",
-        "nas/dnn-output/test-best-runs-150/60de23/track_width_arch8_trial106.pt",
-        "nas/dnn-output/test-best-runs-150/60de23/heading_error_arch8_trial106.pt",
-    ),
-    (
-        "nas/dnn-output/test-best-runs-150/782a1c/left_wall_dist_arch8_trial111.pt",
-        "nas/dnn-output/test-best-runs-150/782a1c/track_width_arch8_trial111.pt",
-        "nas/dnn-output/test-best-runs-150/782a1c/heading_error_arch8_trial111.pt",
-    ),
-    (
-        "nas/dnn-output/test-best-runs-150/a8b20f/left_wall_dist_arch8_trial116.pt",
-        "nas/dnn-output/test-best-runs-150/a8b20f/track_width_arch8_trial116.pt",
-        "nas/dnn-output/test-best-runs-150/a8b20f/heading_error_arch8_trial116.pt",
-    ),
-    (
-        "nas/dnn-output/test-best-runs-150/d24a66/left_wall_dist_arch8_trial108.pt",
-        "nas/dnn-output/test-best-runs-150/d24a66/track_width_arch8_trial108.pt",
-        "nas/dnn-output/test-best-runs-150/d24a66/heading_error_arch8_trial108.pt",
-    ),
-    (
-        "nas/dnn-output/test-best-runs-150/dc559d/left_wall_dist_arch8_trial78.pt",
-        "nas/dnn-output/test-best-runs-150/dc559d/track_width_arch8_trial78.pt",
-        "nas/dnn-output/test-best-runs-150/dc559d/heading_error_arch8_trial78.pt",
-    ),
-    (
-        "nas/dnn-output/test-best-runs-150/e6278a/left_wall_dist_arch8_trial92.pt",
-        "nas/dnn-output/test-best-runs-150/e6278a/track_width_arch8_trial92.pt",
-        "nas/dnn-output/test-best-runs-150/e6278a/heading_error_arch8_trial92.pt",
-    ),
-    (
-        "nas/dnn-output/test-best-runs-150/f847ab/left_wall_dist_arch8_trial16.pt",
-        "nas/dnn-output/test-best-runs-150/f847ab/track_width_arch8_trial16.pt",
-        "nas/dnn-output/test-best-runs-150/f847ab/heading_error_arch8_trial16.pt",
-    ),
 ]
-DEFAULT_MAP = None # "data/maps/F1/Nuerburgring/Nuerburgring_map"
+DEFAULT_MAP = None # Ex. "data/maps/F1/Nuerburgring/Nuerburgring_map"
+DEFAULT_WAYPOINTS = None # Ex. "data/maps/F1/Nuerburgring/Nuerburgring_centerline.tsv"
 DEFAULT_MAP_EXT = ".png"
-DEFAULT_WAYPOINTS = None # "data/maps/F1/Nuerburgring/Nuerburgring_centerline.tsv"
-DEFAULT_OUTPUT_DIR = Path(__file__).with_name("compare-map-150")
+
+# Change to modify output directory title
+DEFAULT_OUTPUT_DIR = Path(__file__).with_name("output-dir")
+
 DEFAULT_MAP_ROOT = "data/maps"
 DEFAULT_RUN_ID = None
 DEFAULT_ALL_MAPS = True
@@ -607,6 +551,6 @@ def main() -> None:
         print(f"[batch] running {label}")
         _run_comparison_batch(args, runs, map_specs, label)
 
-
-if __name__ == "__main__":
-    main()
+# Example usage (with default parameters)
+# if __name__ == "__main__":
+#     main()

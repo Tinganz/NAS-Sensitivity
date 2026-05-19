@@ -303,6 +303,6 @@ def main(argv: Sequence[str] | None = None) -> None:
     else:
         print("[info] re-run with --train to start training.")
 
-
-if __name__ == "__main__":
-    main()
+# Example usage (with default parameters)
+# if __name__ == "__main__":
+#     main()
