@@ -1,12 +1,3 @@
-## Repository specific
-packages/f110_scripts/src/f110_scripts/train/slurm_logs/
-data/datasets/
-data/models/checkpoints
-nas/datasets
-nas/dnn-output/trial_artifacts
-data/models/lightning_logs/
-nas/dnn-output/test-best-runs*/
-
 ## https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
 # General
 .DS_Store
