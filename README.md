@@ -1,178 +1,130 @@
-# F1TENTH Next Gen (f1tenth_ng)
+# Safety NAS
 
-This repository is a modernized version of the F1TENTH Gym environment and planning algorithms, updated to support **Gymnasium** and **Pyglet 2.x**.
+Neural architecture search experiments for LiDAR-based F1TENTH reactive planners.
+The NAS code trains three small 1D CNNs that estimate:
 
-## Repository Structure
+- `left_wall_dist`
+- `track_width`
+- `heading_error`
 
-- `packages/f110_gym/`: The core F1TENTH Gymnasium environment.
-- `packages/f110_planning/`: A library of planning and tracking algorithms (Pure Pursuit, LQR, etc.).
-- `packages/f110_scripts/`: Example scripts and simulation utilities.
-- `data/`: Maps and waypoint files.
+Those checkpoints are evaluated together in the F1TENTH simulator through the
+DNN reactive planner.
 
-## Installation
+## Repository Layout
 
-**Important Note for Cloning:** This repository uses Git LFS for large files. You **must** install Git LFS to clone the repository seamlessly. Please see the [official installation instructions](https://github.com/git-lfs/git-lfs?tab=readme-ov-file#installing) (e.g. `brew install git-lfs` on macOS, or via your package manager such as `apt` on Linux). Once installed, run `git lfs install` to set it up before cloning.
+- `nas/`: Optuna search, best-trial retraining, evaluation, and comparison scripts.
+- `packages/f110_gym/`: local Gymnasium F1TENTH simulator package.
+- `packages/f110_planning/`: planners, metrics, model utilities, and simulation helpers.
+- `packages/f110_scripts/`: data generation, training, RL, and simulator entry scripts.
+- `data/maps/`: map images, YAML metadata, and centerline waypoint files.
+- `data/models/`: baseline trained checkpoint files.
 
-We recommend using a virtual environment and installing both packages in editable mode.
+## Setup
+
+Use Python 3.12. Large maps and checkpoints may require Git LFS when cloning.
 
 ```bash
-# Clone the repository
-git clone <repo-url>
-cd f1tenth_ng
-
-# Create and activate a virtual environment
-python3 -m venv .venv
+git lfs install
+python3.12 -m venv .venv
 source .venv/bin/activate
-
-# Install the gym, planning, and scripts packages
-pip install -e packages/f110_gym
-pip install -e "packages/f110_planning[test]"
-pip install -e "packages/f110_scripts[test]"
-
-# To ensure pathing (.pth) is correct
-python -m pip install -e packages/f110_gym
-python -m pip install -e "packages/f110_planning[test]"
-python -m pip install -e "packages/f110_scripts[test]"
-python -m pip install optuna scikit-learn plotly ipywidgets nbformat
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
-## Usage Workflow
+If `python3.12` is not available on your system, install Python 3.12 first or use
+your environment manager of choice. The root `.python-version` file is included
+for tools such as `pyenv`.
 
-The repository supports a complete research workflow from data generation to model evaluation:
+## NAS Workflow
 
-### 1. Data Generation
-
-Generate datasets of LiDAR scans and ground truth labels (heading error, wall distances) using a waypoint follower with added noise.
+Run an Optuna architecture search:
 
 ```bash
-python packages/f110_scripts/src/f110_scripts/datagen/waypoint_datagen.py --map data/maps/F1/Oschersleben/Oschersleben_map --max-steps 10000
+python nas/control-logic.py --track MELBOURNE --n-trials 120
 ```
 
-### 2. Combine Datasets
+The search writes JSONL results to:
 
-Merge multiple `.npz` files into a single training dataset with optional deduplication.
+```text
+nas/dnn-output/nas_trials_*.jsonl
+```
+
+Pick the best trial from a NAS run and export training configs:
 
 ```bash
-python packages/f110_scripts/src/f110_scripts/datagen/combine_datasets.py data/datasets/file1.npz data/datasets/file2.npz --output data/datasets/combined.npz --dedup
+python nas/training.py --trials-file nas/dnn-output/nas_trials_<run>.jsonl
 ```
 
-### 3. Training
-
-Train LiDAR-based neural networks (e.g., for heading error prediction or wall distance estimation) using PyTorch Lightning.
+Export configs and retrain the best trial:
 
 ```bash
-python packages/f110_scripts/src/f110_scripts/train/train_nn.py --config packages/f110_scripts/src/f110_scripts/train/config_heading_1.yaml
+python nas/training.py --trials-file nas/dnn-output/nas_trials_<run>.jsonl --train
 ```
 
-You can monitor the training progress using TensorBoard:
+Evaluate the default checkpoint triple:
 
 ```bash
-tensorboard --logdir data/models/lightning_logs
+python nas/testing.py
 ```
 
-### 4. Simulation & Evaluation
-
-Test your planners (classic or DNN-based) in the simulation environment.
-
-**Tracking Planners (Pure Pursuit, LQR, Stanley):**
+Retrain or evaluate the configured best trials in `nas/test-best.py`:
 
 ```bash
-python packages/f110_scripts/src/f110_scripts/sim/tracking_planners.py --map data/maps/F1/Oschersleben/Oschersleben_map
+python nas/test-best.py
 ```
 
-**Reactive Planners (Gap Follower, Disparity Extender, LiDAR DNN):**
+Compare checkpoint triples across selected maps:
 
 ```bash
-python packages/f110_scripts/src/f110_scripts/sim/reactive_planners.py --planner dnn --map data/maps/F1/Oschersleben/Oschersleben_map
+python nas/compare-track.py
 ```
 
-## Quickstart: Waypoint Following
+## Data And Artifacts
 
-This example demonstrates how to use `f110_gym` with a planner from `f110_planning` to follow a pre-defined raceline.
+Expected input dataset path for NAS training:
 
-```python
-import gymnasium as gym
-import numpy as np
-import f110_gym
-from f110_planning.tracking import PurePursuitPlanner
-from f110_planning.utils import load_waypoints
-
-# 1. Create the environment
-env = gym.make('f110-v0', 
-               map='data/maps/F1/Oschersleben/Oschersleben_map', 
-               render_mode='human', 
-               num_agents=1)
-
-# 2. Load waypoints using the utility function
-waypoints = load_waypoints('data/maps/F1/Oschersleben/Oschersleben_centerline.tsv')
-
-# 3. Initialize the planner
-planner = PurePursuitPlanner(waypoints=waypoints)
-
-# 4. Reset and run the simulation loop
-obs, info = env.reset(options={'poses': np.array([[0.0, 0.0, 2.85]])})
-done = False
-
-while not done:
-    # Plan next action
-    action = planner.plan(obs)
-    
-    # Step the environment
-    obs, reward, terminated, truncated, info = env.step(np.array([[action.steer, action.speed]]))
-    done = terminated or truncated
-    
-    env.render()
+```text
+nas/datasets/combined_all.npz
 ```
 
-## Reinforcement Learning: Cloud Scheduler
+Common generated outputs:
 
-A new Gym environment (`f110-cloud-scheduler-v0`) lets an RL agent learn when to
-call a cloud inference in the edge-cloud planner.  The action space is
-``Discrete(2)`` (0 = no call, 1 = issue call) and observations include the usual
-simulator state plus ``latest_cloud_action`` and
-``cloud_request_pending``.  The default reward is the negative squared
-cross-track error, but you can pass a custom ``reward_fn`` when creating the
-environment.
+- `nas/dnn-output/`
+- `nas/dnn-output/trial_artifacts/`
+- `nas/dnn-output/test-best-runs*/`
+- `data/models/lightning_logs/`
+- `data/models/checkpoints/`
 
-Example training script using Stable Baselines3::
+These generated directories are intentionally ignored by Git. Keep important
+trial JSONL files, final checkpoints, and datasets in a backed-up artifact store
+or Git LFS if another machine needs to reproduce the same run.
 
-```python
-import gymnasium as gym
-from stable_baselines3 import PPO
-from f110_planning.utils import load_waypoints
+## Quick Verification
 
-waypoints = load_waypoints("data/maps/F1/Oschersleben/Oschersleben_centerline.tsv")
-env = gym.make(
-    "f110_gym:f110-cloud-scheduler-v0",
-    map="data/maps/F1/Oschersleben/Oschersleben_map",
-    waypoints=waypoints,
-    cloud_latency=10,
-    render_mode=None,
-)
-model = PPO("MultiInputPolicy", env, verbose=1)
-model.learn(total_timesteps=1000000)
+After setup, this should parse the project metadata and import the local packages:
+
+```bash
+python -c "import tomllib; tomllib.load(open('pyproject.toml','rb')); import f110_gym, f110_planning, f110_scripts"
 ```
 
-You can provide a custom reward function by passing ``reward_fn`` to
-``gym.make``:
+To run tests:
 
-```python
-from typing import Dict, Any
-
-def my_reward(obs: Dict[str, Any], action: int) -> float:
-    # negative RMSE + small penalty for taking cloud
-    return -obs["crosstrack_rmse_m"] - 0.1 * action
-
-env = gym.make(
-    "f110_gym:f110-cloud-scheduler-v0",
-    map=..., waypoints=waypoints,
-    reward_fn=my_reward,
-)
+```bash
+pytest packages/f110_gym/tests packages/f110_planning/tests packages/f110_scripts/tests
 ```
 
-The new environment is fully tested and included in the automated test suite.
+## Notes
 
-## Documentation
+- The NAS search is computationally expensive because each trial trains three
+  models and evaluates them in simulation.
+- `nas/control-logic.sl`, `nas/test-best.sl`, and `nas/compare-track.sl` are
+  Slurm wrappers for cluster runs.
+- Some scripts contain experiment configuration directly in Python constants.
+  Check the top of `nas/test-best.py` and `nas/compare-track.py` before running
+  large batches.
 
-- [f110_gym README](packages/f110_gym/README.md)
-- [f110_planning README](packages/f110_planning/README.md)
+## Attribution
+
+The NAS work in this repository was created by Zayah Cortright in collaboration
+with the Design Automation to X Lab at the University of North Carolina at
+Chapel Hill Department of Computer Science.

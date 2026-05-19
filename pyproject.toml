@@ -1,15 +1,22 @@
 [project]
-name = "f1tenth-ng"
+name = "safety-nas"
 version = "0.1.0"
-requires-python = ">=3.10"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "f110-gym",
+  "f110-planning",
+  "f110-scripts",
+  "ipython>=8.0.0",
+  "matplotlib>=3.7.0",
+  "numpy>=1.23.5",
+  "optuna>=3.0.0",
+  "pandas>=1.5.3",
+  "Pillow>=9.4.0",
+  "pyyaml>=6.0",
+  "torch>=2.0.0",
+]
 
 [project.optional-dependencies]
-docs = [
-  "sphinx>=7",
-  "myst-parser>=2.0",
-  "sphinx-markdown-builder",
-  "furo",
-]
 test = [
   "pytest",
   "pytest-mock",
