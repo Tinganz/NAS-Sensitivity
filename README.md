@@ -1,4 +1,4 @@
-# Safety NAS
+# NAS-in-the-Loop
 
 Neural architecture search experiments for LiDAR-based F1TENTH reactive planners.
 The NAS code trains three small 1D CNNs that estimate:
