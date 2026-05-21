@@ -16,7 +16,10 @@ import yaml
 from torch import nn
 
 from f110_planning.utils.nn_models import get_architecture
-from testing import test_cnn_arch
+try:  # supports imports from the standard search scripts
+    from nas.testing import test_cnn_arch
+except ModuleNotFoundError:  # pragma: no cover - script path
+    from testing import test_cnn_arch
 
 # sending output to ./dnn-output
 BASE_DIR = Path(__file__).resolve().parent
