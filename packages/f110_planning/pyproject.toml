@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "f110-planning"
 version = "0.1.1"
 description = "Planning algorithms for F1TENTH gym environment"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 dependencies = [
   "numpy>=1.23.5",
   "pandas>=1.5.3",

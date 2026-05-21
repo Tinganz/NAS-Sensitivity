@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "f110-scripts"
 version = "0.1.0"
 description = "Scripts for F1TENTH gym and planners"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 dependencies = [
   "f110-gym",
   "f110-planning",

@@ -8,7 +8,7 @@ version = "0.3.1"
 description = "F1TENTH gymnasium environment"
 readme = "README.md"
 license = { file = "LICENSE" }
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 dependencies = [
   "gymnasium>=0.29.1",
   "numpy>=1.23.5",
