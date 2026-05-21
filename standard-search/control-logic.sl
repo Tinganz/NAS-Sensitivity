@@ -11,8 +11,8 @@
 #SBATCH --error=slurm_logs/%x_%j.err
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=zayah@unc.edu
-cd "$SLURM_SUBMIT_DIR" || exit 1
-export PYTHONPATH="$PWD:$PYTHONPATH"
+cd /nas/longleaf/home/zayah/NAS-in-the-Loop || exit 1
+export PYTHONPATH="/nas/longleaf/home/zayah/NAS-in-the-Loop:$PYTHONPATH"
 if command -v module &>/dev/null; then
     module purge
     module load python/3.12.4
