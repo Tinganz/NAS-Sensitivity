@@ -11,8 +11,8 @@
 #SBATCH --error=slurm_logs/%x_%j.err
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=zayah@unc.edu
-cd ~/f1tenth_ng_zc || exit 1
-export PYTHONPATH="$HOME/f1tenth_ng_zc:$PYTHONPATH"
+cd "$SLURM_SUBMIT_DIR" || exit 1
+export PYTHONPATH="$PWD:$PYTHONPATH"
 if command -v module &>/dev/null; then
     module purge
     module load python/3.12.4
