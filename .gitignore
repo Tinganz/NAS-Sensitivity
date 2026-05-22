@@ -1,3 +1,6 @@
+# Repo specific
+/standard-search/dnn-output/trial_artifacts
+
 ## https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
 # General
 .DS_Store
