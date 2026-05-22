@@ -552,5 +552,5 @@ def main() -> None:
         _run_comparison_batch(args, runs, map_specs, label)
 
 # Example usage (with default parameters)
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
