@@ -124,9 +124,9 @@ def test_cnn_arch(
 # Example usage
 # if __name__ == "__main__":
 #     test_cnn_arch(
-#         "nas/dnn-output/test-best-runs-150/1b391f/left_wall_dist_arch8_trial115.pt",
-#         "nas/dnn-output/test-best-runs-150/1b391f/track_width_arch8_trial115.pt",
-#         "nas/dnn-output/test-best-runs-150/1b391f/heading_error_arch8_trial115.pt",
+#         "safety-nas/dnn-output/test-best-runs-150/1b391f/left_wall_dist_arch8_trial115.pt",
+#         "safety-nas/dnn-output/test-best-runs-150/1b391f/track_width_arch8_trial115.pt",
+#         "safety-nas/dnn-output/test-best-runs-150/1b391f/heading_error_arch8_trial115.pt",
 #         [
 #             (
 #                 "data/maps/F1/Shanghai/Shanghai_map",

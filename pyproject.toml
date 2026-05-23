@@ -4,8 +4,8 @@ version = "0.1.0"
 requires-python = ">=3.9,<3.13"
 dependencies = [
   "f110-gym",
-  "f110-planning",
-  "f110-scripts",
+  ""packages/f110_planning[test]"",
+  ""packages/f110_scripts[test]"",
   "ipython>=8.0.0",
   "matplotlib>=3.7.0",
   "numpy>=1.23.5",

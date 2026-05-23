@@ -7,8 +7,8 @@ from pathlib import Path
 
 import numpy as np
 
-INPUT_PATH = "nas/datasets/combined_all.npz"
-OUTPUT_DIR = "standard-search/datasets"
+INPUT_PATH = "safety-nas/datasets/combined_all.npz"
+OUTPUT_DIR = "accuracy-nas/datasets"
 TRAIN_RATIO = 0.7
 VALIDATION_RATIO = 0.15
 SEED = 41

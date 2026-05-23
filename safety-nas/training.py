@@ -11,16 +11,14 @@ from typing import Any, Sequence
 
 import yaml
 
-try:  # Allows both ``python -m nas.training`` and ``python nas/training.py``
-    from nas.cnn import _build_training_config
-except ModuleNotFoundError:  # pragma: no cover - fallback for script usage
-    from nas.testing import test_cnn_arch  # ensure nested import works
-    from nas.cnn import _build_training_config
-
 BASE_DIR = Path(__file__).resolve().parent
 REPO_ROOT = BASE_DIR.parent
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
+
+from cnn import _build_training_config  # noqa: E402
 TRAIN_SCRIPT = (REPO_ROOT / "packages/f110_scripts/src/f110_scripts/train/train_nn.py").resolve()
-DEFAULT_DATASET = "nas/datasets/combined_all.npz"
+DEFAULT_DATASET = "safety-nas/datasets/combined_all.npz"
 TRIALS_DIR = BASE_DIR / "dnn-output"
 DEFAULT_CONFIG_OUTPUT_ROOT = TRIALS_DIR / "best_configs"
 
@@ -238,7 +236,7 @@ def _build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--trials-file",
         type=str,
-        help="Path to nas_trials_*.jsonl. Defaults to the newest file under nas/dnn-output.",
+        help="Path to nas_trials_*.jsonl. Defaults to the newest file under safety-nas/dnn-output.",
     )
     parser.add_argument(
         "--dataset",
@@ -250,7 +248,7 @@ def _build_arg_parser() -> argparse.ArgumentParser:
         "--output-dir",
         type=str,
         help="Directory to place generated YAML configs. "
-        "Defaults to nas/dnn-output/best_configs/<trials stem>/",
+        "Defaults to safety-nas/dnn-output/best_configs/<trials stem>/",
     )
     parser.add_argument(
         "--max-epochs",

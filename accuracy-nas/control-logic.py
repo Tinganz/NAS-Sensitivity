@@ -11,8 +11,8 @@ from cnn import objective
 
 TARGETS = ("left_wall_dist", "track_width", "heading_error")
 N_TRIALS = 120
-TRAIN_PATH = "standard-search/datasets/train.npz"
-VALIDATION_PATH = "standard-search/datasets/validation.npz"
+TRAIN_PATH = "accuracy-nas/datasets/train.npz"
+VALIDATION_PATH = "accuracy-nas/datasets/validation.npz"
 
 
 def _run_search(target: str) -> None:

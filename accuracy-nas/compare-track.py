@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the NAS track comparison for a standard-search checkpoint triplet."""
+"""Run the Safety-NAS track comparison for an accuracy-nas checkpoint triplet."""
 
 from __future__ import annotations
 
@@ -11,23 +11,23 @@ from pathlib import Path
 # ---------- INPUT ----------
 #
 
-LEFT_WALL_MODEL = "standard-search/dnn-output/test-best-150/262e4c/left_wall_dist_arch8_trial9.pt"
-TRACK_WIDTH_MODEL = "standard-search/dnn-output/test-best-150/262e4c/track_width_arch8_trial110.pt"
-HEADING_ERROR_MODEL = "standard-search/dnn-output/test-best-150/262e4c/heading_error_arch8_trial114.pt"
-OUTPUT_DIR = "standard-search/compare-map-150"
+LEFT_WALL_MODEL = "accuracy-nas/dnn-output/test-best-150/262e4c/left_wall_dist_arch8_trial9.pt"
+TRACK_WIDTH_MODEL = "accuracy-nas/dnn-output/test-best-150/262e4c/track_width_arch8_trial110.pt"
+HEADING_ERROR_MODEL = "accuracy-nas/dnn-output/test-best-150/262e4c/heading_error_arch8_trial114.pt"
+OUTPUT_DIR = "accuracy-nas/compare-map-150"
 
 #
 # ---------- END INPUT ----------
 #
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-NAS_COMPARE_PATH = REPO_ROOT / "nas" / "compare-track.py"
+SAFETY_NAS_COMPARE_PATH = REPO_ROOT / "safety-nas" / "compare-track.py"
 
 
-def _load_nas_compare():
-    spec = importlib.util.spec_from_file_location("nas_compare_track", NAS_COMPARE_PATH)
+def _load_safety_nas_compare():
+    spec = importlib.util.spec_from_file_location("safety_nas_compare_track", SAFETY_NAS_COMPARE_PATH)
     if spec is None or spec.loader is None:
-        raise ImportError(f"Could not load NAS comparison module from {NAS_COMPARE_PATH}.")
+        raise ImportError(f"Could not load Safety-NAS comparison module from {SAFETY_NAS_COMPARE_PATH}.")
 
     module = importlib.util.module_from_spec(spec)
     sys.modules[spec.name] = module
@@ -46,7 +46,7 @@ def _checkpoint_triplet_id() -> str:
         )
 
     composite_id = next(iter(parents)).name
-    if composite_id in {"", ".", "dnn-output", "standard-search", "test-best"}:
+    if composite_id in {"", ".", "dnn-output", "accuracy-nas", "test-best"}:
         raise ValueError(
             "Model paths must live under test-best/<composite-id>/ so compare-map "
             "can keep runs separate."
@@ -55,7 +55,7 @@ def _checkpoint_triplet_id() -> str:
 
 
 def main() -> None:
-    compare = _load_nas_compare()
+    compare = _load_safety_nas_compare()
     compare.ARGS.run = [
         *compare.BASELINE_RUNS,
         (

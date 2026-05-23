@@ -13,10 +13,13 @@ BASE_DIR = Path(__file__).resolve().parent
 REPO_ROOT = BASE_DIR.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
+SAFETY_NAS_DIR = REPO_ROOT / "safety-nas"
+if str(SAFETY_NAS_DIR) not in sys.path:
+    sys.path.insert(0, str(SAFETY_NAS_DIR))
 
-from nas.cnn import TRAIN_EVAL_TRACKS
-from nas.testing import test_cnn_arch
-from nas.training import export_trial_configs, train_from_configs
+from cnn import TRAIN_EVAL_TRACKS
+from testing import test_cnn_arch
+from training import export_trial_configs, train_from_configs
 
 TRAINING_PROFILES = {
     0: {
@@ -58,13 +61,13 @@ TRAINING_PROFILES = {
 }
 
 TARGET_FILES = {
-    "left_wall_dist": "standard-search/dnn-output/standard_trials_left_wall_dist_20260522T041610_2631784_262e4c.jsonl",
-    "track_width": "standard-search/dnn-output/standard_trials_track_width_20260522T041610_2631784_262e4c.jsonl",
-    "heading_error": "standard-search/dnn-output/standard_trials_heading_error_20260522T041610_2631784_262e4c.jsonl",
+    "left_wall_dist": "accuracy-nas/dnn-output/standard_trials_left_wall_dist_20260522T041610_2631784_262e4c.jsonl",
+    "track_width": "accuracy-nas/dnn-output/standard_trials_track_width_20260522T041610_2631784_262e4c.jsonl",
+    "heading_error": "accuracy-nas/dnn-output/standard_trials_heading_error_20260522T041610_2631784_262e4c.jsonl",
 }
 TRAINING_PROFILE = 0  # 0: arch1-2, 1: arch3-4, 2: arch5, 3: arch6-7
-TRAIN_PATH = "nas/datasets/combined_all.npz"
-OUTPUT_DIR = "standard-search/dnn-output/compare-map-150"
+TRAIN_PATH = "safety-nas/datasets/combined_all.npz"
+OUTPUT_DIR = "accuracy-nas/dnn-output/compare-map-150"
 SKIP_EVAL = False
 
 

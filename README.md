@@ -1,7 +1,7 @@
-# NAS-in-the-Loop
+# Safety-NAS-in-the-Loop
 
 Neural architecture search experiments for LiDAR-based F1TENTH reactive planners.
-The NAS code trains three small 1D CNNs that estimate:
+The Safety-NAS code trains three small 1D CNNs that estimate:
 
 - `left_wall_dist`
 - `track_width`
@@ -12,7 +12,7 @@ DNN reactive planner.
 
 ## Repository Layout
 
-- `nas/`: Optuna search, best-trial retraining, evaluation, and comparison scripts.
+- `safety-nas/`: Optuna search, best-trial retraining, evaluation, and comparison scripts.
 - `packages/f110_gym/`: local Gymnasium F1TENTH simulator package.
 - `packages/f110_planning/`: planners, metrics, model utilities, and simulation helpers.
 - `packages/f110_scripts/`: data generation, training, RL, and simulator entry scripts.
@@ -21,77 +21,85 @@ DNN reactive planner.
 
 ## Setup
 
-Use Python 3.12. Large maps and checkpoints may require Git LFS when cloning.
+Use Python 3.12 or newer. Large maps and checkpoints may require Git LFS when cloning.
 
 ```bash
-git lfs install
-python3.12 -m venv .venv
+# Clone the repository 
+git clone <repo-url>
+cd NAS-in-the-Loop
+
+# Create & activate python environment
+python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+
+# Install packages for simulation & optuna for Safety-NAS
+python -m pip install -e packages/f110_gym
+python -m pip install -e "packages/f110_planning[test]"
+python -m pip install -e "packages/f110_scripts[test]"
+python -m pip install optuna
 ```
 
 If `python3.12` is not available on your system, install Python 3.12 first or use
 your environment manager of choice. The root `.python-version` file is included
 for tools such as `pyenv`.
 
-## NAS Workflow
+## Safety-NAS Workflow
 
 Run an Optuna architecture search:
 
 ```bash
-python nas/control-logic.py --track MELBOURNE --n-trials 120
+python safety-nas/control-logic.py --track MELBOURNE --n-trials 120
 ```
 
 The search writes JSONL results to:
 
 ```text
-nas/dnn-output/nas_trials_*.jsonl
+safety-nas/dnn-output/nas_trials_*.jsonl
 ```
 
-Pick the best trial from a NAS run and export training configs:
+Pick the best trial from a Safety-NAS run and export training configs:
 
 ```bash
-python nas/training.py --trials-file nas/dnn-output/nas_trials_<run>.jsonl
+python safety-nas/training.py --trials-file safety-nas/dnn-output/nas_trials_<run>.jsonl
 ```
 
 Export configs and retrain the best trial:
 
 ```bash
-python nas/training.py --trials-file nas/dnn-output/nas_trials_<run>.jsonl --train
+python safety-nas/training.py --trials-file safety-nas/dnn-output/nas_trials_<run>.jsonl --train
 ```
 
 Evaluate the default checkpoint triple:
 
 ```bash
-python nas/testing.py
+python safety-nas/testing.py
 ```
 
-Retrain or evaluate the configured best trials in `nas/test-best.py`:
+Retrain or evaluate the configured best trials in `safety-nas/test-best.py`:
 
 ```bash
-python nas/test-best.py
+python safety-nas/test-best.py
 ```
 
 Compare checkpoint triples across selected maps:
 
 ```bash
-python nas/compare-track.py
+python safety-nas/compare-track.py
 ```
 
 ## Data And Artifacts
 
-Expected input dataset path for NAS training:
+Expected input dataset path for Safety-NAS training:
 
 ```text
-nas/datasets/combined_all.npz
+safety-nas/datasets/combined_all.npz
 ```
 
 Common generated outputs:
 
-- `nas/dnn-output/`
-- `nas/dnn-output/trial_artifacts/`
-- `nas/dnn-output/test-best-runs*/`
+- `safety-nas/dnn-output/`
+- `safety-nas/dnn-output/trial_artifacts/`
+- `safety-nas/dnn-output/test-best-runs*/`
 - `data/models/lightning_logs/`
 - `data/models/checkpoints/`
 
@@ -115,16 +123,16 @@ pytest packages/f110_gym/tests packages/f110_planning/tests packages/f110_script
 
 ## Notes
 
-- The NAS search is computationally expensive because each trial trains three
+- The Safety-NAS search is computationally expensive because each trial trains three
   models and evaluates them in simulation.
-- `nas/control-logic.sl`, `nas/test-best.sl`, and `nas/compare-track.sl` are
+- `safety-nas/control-logic.sl`, `safety-nas/test-best.sl`, and `safety-nas/compare-track.sl` are
   Slurm wrappers for cluster runs.
 - Some scripts contain experiment configuration directly in Python constants.
-  Check the top of `nas/test-best.py` and `nas/compare-track.py` before running
+  Check the top of `safety-nas/test-best.py` and `safety-nas/compare-track.py` before running
   large batches.
 
 ## Attribution
 
-The NAS work in this repository was created by Zayah Cortright in collaboration
+The Safety-NAS work in this repository was created by Zayah Cortright in collaboration
 with the Design Automation to X Lab at the University of North Carolina at
 Chapel Hill Department of Computer Science.

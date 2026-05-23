@@ -14,10 +14,12 @@ BASE_DIR = Path(__file__).resolve().parent
 REPO_ROOT = BASE_DIR.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
 
-from nas.cnn import TRAIN_EVAL_TRACKS
-from nas.testing import test_cnn_arch
-from nas.training import orchestrate_best_trial, train_from_configs
+from cnn import TRAIN_EVAL_TRACKS
+from testing import test_cnn_arch
+from training import orchestrate_best_trial, train_from_configs
 
 TRAINING_PROFILES = {
     0: {
@@ -60,23 +62,23 @@ TRAINING_PROFILES = {
 
 # Configuration (edit as needed)
 TRIALS_FILES = [
-    "nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828022_a8b20f.jsonl",
-    "nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828023_3d2630.jsonl",
-    "nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828025_f847ab.jsonl",
-    "nas/dnn-output/all-nas-runs/nas_trials_20260508T184238_1357002_017f7c.jsonl",
-    "nas/dnn-output/all-nas-runs/nas_trials_20260508T193527_1776610_4ec05d.jsonl",
-    "nas/dnn-output/all-nas-runs/nas_trials_20260508T193845_2985264_dc559d.jsonl",
-    "nas/dnn-output/all-nas-runs/nas_trials_20260508T203158_3307492_60de23.jsonl",
-    "nas/dnn-output/all-nas-runs/nas_trials_20260508T203833_1888159_1b391f.jsonl",
-    "nas/dnn-output/all-nas-runs/nas_trials_20260508T210412_3311456_e6278a.jsonl",
-    "nas/dnn-output/all-nas-runs/nas_trials_20260508T212320_1900172_3cd867.jsonl",
-    "nas/dnn-output/all-nas-runs/nas_trials_20260508T213142_3317205_782a1c.jsonl",
-    "nas/dnn-output/all-nas-runs/nas_trials_20260508T213240_1902398_08e72b.jsonl",
-    "nas/dnn-output/all-nas-runs/nas_trials_20260508T220850_3400979_d24a66.jsonl",
+    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828022_a8b20f.jsonl",
+    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828023_3d2630.jsonl",
+    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828025_f847ab.jsonl",
+    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T184238_1357002_017f7c.jsonl",
+    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T193527_1776610_4ec05d.jsonl",
+    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T193845_2985264_dc559d.jsonl",
+    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T203158_3307492_60de23.jsonl",
+    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T203833_1888159_1b391f.jsonl",
+    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T210412_3311456_e6278a.jsonl",
+    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T212320_1900172_3cd867.jsonl",
+    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T213142_3317205_782a1c.jsonl",
+    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T213240_1902398_08e72b.jsonl",
+    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T220850_3400979_d24a66.jsonl",
 ]
 TRAINING_PROFILE = 0  # 0: arch1-2, 1: arch3-4, 2: arch5, 3: arch6-7
-DATASET_PATH = "nas/datasets/combined_all.npz"
-OUTPUT_DIR: str | None = "nas/dnn-output/test-best-runs-150"
+DATASET_PATH = "safety-nas/datasets/combined_all.npz"
+OUTPUT_DIR: str | None = "safety-nas/dnn-output/test-best-runs-150"
 
 MODE = "train"  # "train" or "test"
 SKIP_EVAL = False
@@ -121,7 +123,7 @@ def _default_output_dir(trials_file: str | None) -> Path:
     if trials_file is None:
         raise ValueError("trials_file must be resolved before deriving output_dir.")
     trial_id = Path(trials_file).stem.rsplit("_", 1)[-1]
-    return (REPO_ROOT / "nas/dnn-output/test-best-runs" / trial_id).resolve()
+    return (REPO_ROOT / "safety-nas/dnn-output/test-best-runs" / trial_id).resolve()
 
 
 def _target_name(config_path: Path) -> str:

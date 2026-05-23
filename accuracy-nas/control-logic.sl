@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=f1_std_nas
+#SBATCH --job-name=f1_accuracy_nas
 #SBATCH --partition=a100-gpu
 #SBATCH --qos=gpu_access
 #SBATCH --gres=gpu:1
@@ -19,4 +19,4 @@ if command -v module &>/dev/null; then
     module load cuda/12.4
 fi
 source .venv/bin/activate
-python standard-search/control-logic.py
+python accuracy-nas/control-logic.py

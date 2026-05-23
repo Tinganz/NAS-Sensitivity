@@ -7,6 +7,7 @@ import os
 import subprocess
 import sys
 import uuid
+import importlib.util
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -19,7 +20,21 @@ REPO_ROOT = BASE_DIR.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from nas.cnn import DynamicCNN, _build_training_config, _run_training, _summarize_layers
+SAFETY_NAS_DIR = REPO_ROOT / "safety-nas"
+if str(SAFETY_NAS_DIR) not in sys.path:
+    sys.path.insert(0, str(SAFETY_NAS_DIR))
+
+spec = importlib.util.spec_from_file_location("safety_nas_cnn", SAFETY_NAS_DIR / "cnn.py")
+if spec is None or spec.loader is None:
+    raise ImportError(f"Could not load Safety-NAS CNN module from {SAFETY_NAS_DIR / 'cnn.py'}.")
+safety_nas_cnn = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = safety_nas_cnn
+spec.loader.exec_module(safety_nas_cnn)
+
+DynamicCNN = safety_nas_cnn.DynamicCNN
+_build_training_config = safety_nas_cnn._build_training_config
+_run_training = safety_nas_cnn._run_training
+_summarize_layers = safety_nas_cnn._summarize_layers
 
 from evaluation import evaluate_model
 
@@ -34,8 +49,8 @@ SESSION_ID = os.getenv("F1_SESSION_ID") or (
 def objective(
     trial: optuna.trial.Trial,
     target_col: str,
-    train_path: str = "standard-search/datasets/train.npz",
-    validation_path: str = "standard-search/datasets/validation.npz",
+    train_path: str = "accuracy-nas/datasets/train.npz",
+    validation_path: str = "accuracy-nas/datasets/validation.npz",
 ) -> float:
     """Train one candidate and score its validation RMSE."""
     if target_col not in TARGETS:

@@ -1,4 +1,4 @@
 -e packages/f110_gym
--e packages/f110_planning
--e packages/f110_scripts
+-e "packages/f110_planning[test]"
+-e "packages/f110_scripts[test]"
 -e .

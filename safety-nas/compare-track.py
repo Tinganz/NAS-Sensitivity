@@ -30,9 +30,9 @@ from f110_scripts.sim import reactive_planners as sim  # noqa: E402
 ARCH_8_CHECKPOINT_TRIPLES = [
     # Example usage (note: order)
     (
-        "nas/dnn-output/test-best-runs-150/017f7c/left_wall_dist_arch8_trial106.pt",
-        "nas/dnn-output/test-best-runs-150/017f7c/track_width_arch8_trial106.pt",
-        "nas/dnn-output/test-best-runs-150/017f7c/heading_error_arch8_trial106.pt",
+        "safety-nas/dnn-output/test-best-runs-150/017f7c/left_wall_dist_arch8_trial106.pt",
+        "safety-nas/dnn-output/test-best-runs-150/017f7c/track_width_arch8_trial106.pt",
+        "safety-nas/dnn-output/test-best-runs-150/017f7c/heading_error_arch8_trial106.pt",
     ),
 ]
 DEFAULT_MAP = None # Ex. "data/maps/F1/Nuerburgring/Nuerburgring_map"
@@ -169,7 +169,7 @@ def _label_for_checkpoint_triple(
 ) -> str:
     common_parts = set(Path(left_path).parts) & set(Path(track_path).parts) & set(Path(heading_path).parts)
     for part in reversed(Path(left_path).parts):
-        if part in common_parts and part not in {"", ".", "nas", "dnn-output", "test-best-runs"}:
+        if part in common_parts and part not in {"", ".", "safety-nas", "dnn-output", "test-best-runs"}:
             return _slugify(part)
     return _slugify(Path(left_path).stem)
 

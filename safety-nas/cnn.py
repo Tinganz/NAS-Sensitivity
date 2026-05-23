@@ -15,14 +15,14 @@ import optuna
 import yaml
 from torch import nn
 
+BASE_DIR = Path(__file__).resolve().parent
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
+
 from f110_planning.utils.nn_models import get_architecture
-try:  # supports imports from the standard search scripts
-    from nas.testing import test_cnn_arch
-except ModuleNotFoundError:  # pragma: no cover - script path
-    from testing import test_cnn_arch
+from testing import test_cnn_arch
 
 # sending output to ./dnn-output
-BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "dnn-output"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 SESSION_ID = os.getenv("F1_SESSION_ID") or f"{datetime.utcnow():%Y%m%dT%H%M%S}_{os.getpid()}_{uuid.uuid4().hex[:6]}"
@@ -307,7 +307,7 @@ def objective(
     n_epoch: int = 10,
     seed: int = 41,
     target_cols: tuple[str, ...] = DEFAULT_TARGET_COLS,
-    dataset_pth: str = "nas/datasets/combined_all.npz",
+    dataset_pth: str = "safety-nas/datasets/combined_all.npz",
     track_names: Sequence[object] | None = None,
 ) -> float:
     """
