@@ -61,13 +61,13 @@ TRAINING_PROFILES = {
 }
 
 TARGET_FILES = {
-    "left_wall_dist": "accuracy-nas/dnn-output/standard_trials_left_wall_dist_20260522T041610_2631784_262e4c.jsonl",
-    "track_width": "accuracy-nas/dnn-output/standard_trials_track_width_20260522T041610_2631784_262e4c.jsonl",
-    "heading_error": "accuracy-nas/dnn-output/standard_trials_heading_error_20260522T041610_2631784_262e4c.jsonl",
+    "left_wall_dist": "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_left_wall_dist_20260524T041713_62533_7307d4.jsonl",
+    "track_width": "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_track_width_20260524T041713_62533_7307d4.jsonl",
+    "heading_error": "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_heading_error_20260524T041713_62533_7307d4.jsonl",
 }
 TRAINING_PROFILE = 0  # 0: arch1-2, 1: arch3-4, 2: arch5, 3: arch6-7
-TRAIN_PATH = "accuracy-nas/datasets/test.npz"
-OUTPUT_DIR = "accuracy-nas/dnn-output/test-best-150-testonly"
+TRAIN_PATH = "accuracy-nas/datasets/combined_all.npz"
+OUTPUT_DIR = "accuracy-nas/dnn-output/test-best-150-combinedall-8020"
 SKIP_EVAL = False
 
 
