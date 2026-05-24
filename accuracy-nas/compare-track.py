@@ -14,7 +14,7 @@ from pathlib import Path
 LEFT_WALL_MODEL = "accuracy-nas/dnn-output/test-best-150/262e4c/left_wall_dist_arch8_trial9.pt"
 TRACK_WIDTH_MODEL = "accuracy-nas/dnn-output/test-best-150/262e4c/track_width_arch8_trial110.pt"
 HEADING_ERROR_MODEL = "accuracy-nas/dnn-output/test-best-150/262e4c/heading_error_arch8_trial114.pt"
-OUTPUT_DIR = "accuracy-nas/compare-map-150"
+OUTPUT_DIR = "accuracy-nas/compare-map-150-testonly"
 
 #
 # ---------- END INPUT ----------

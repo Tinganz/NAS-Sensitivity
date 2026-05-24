@@ -7,10 +7,9 @@ from pathlib import Path
 
 import numpy as np
 
-INPUT_PATH = "safety-nas/datasets/combined_all.npz"
+INPUT_PATH = "accuracy-nas/datasets/combined_all.npz"
 OUTPUT_DIR = "accuracy-nas/datasets"
-TRAIN_RATIO = 0.7
-VALIDATION_RATIO = 0.15
+TRAIN_RATIO = 0.8
 SEED = 41
 
 
@@ -22,13 +21,12 @@ def _write_split(path: Path, arrays: dict[str, np.ndarray], indices: np.ndarray)
 def split_dataset(
     input_path: str | Path,
     output_dir: str | Path,
-    train_ratio: float = 0.7,
-    validation_ratio: float = 0.15,
+    train_ratio: float = 0.8,
     seed: int = 41,
 ) -> dict[str, Path]:
-    """Write fixed row splits plus a train-validation retraining split."""
-    if train_ratio <= 0 or validation_ratio <= 0 or train_ratio + validation_ratio >= 1:
-        raise ValueError("train and validation ratios must leave a non-empty test split.")
+    """Write fixed train/test row splits."""
+    if train_ratio <= 0 or train_ratio >= 1:
+        raise ValueError("train ratio must leave non-empty train and test splits.")
 
     with np.load(input_path) as data:
         arrays = {key: data[key] for key in data.files}
@@ -42,12 +40,9 @@ def split_dataset(
 
     indices = np.random.default_rng(seed).permutation(total)
     train_end = int(total * train_ratio)
-    validation_end = train_end + int(total * validation_ratio)
     split_indices = {
         "train": indices[:train_end],
-        "validation": indices[train_end:validation_end],
-        "test": indices[validation_end:],
-        "train_validation": indices[:validation_end],
+        "test": indices[train_end:],
     }
 
     output_root = Path(output_dir)
@@ -62,7 +57,6 @@ def main() -> None:
         INPUT_PATH,
         OUTPUT_DIR,
         train_ratio=TRAIN_RATIO,
-        validation_ratio=VALIDATION_RATIO,
         seed=SEED,
     )
     for name, path in paths.items():

@@ -12,7 +12,7 @@ from cnn import objective
 TARGETS = ("left_wall_dist", "track_width", "heading_error")
 N_TRIALS = 120
 TRAIN_PATH = "accuracy-nas/datasets/train.npz"
-VALIDATION_PATH = "accuracy-nas/datasets/validation.npz"
+TEST_PATH = "accuracy-nas/datasets/test.npz"
 
 
 def _run_search(target: str) -> None:
@@ -22,7 +22,7 @@ def _run_search(target: str) -> None:
             trial,
             target_col=target,
             train_path=TRAIN_PATH,
-            validation_path=VALIDATION_PATH,
+            validation_path=TEST_PATH,
         ),
         n_trials=N_TRIALS,
     )

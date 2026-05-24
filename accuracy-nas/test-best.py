@@ -66,8 +66,8 @@ TARGET_FILES = {
     "heading_error": "accuracy-nas/dnn-output/standard_trials_heading_error_20260522T041610_2631784_262e4c.jsonl",
 }
 TRAINING_PROFILE = 0  # 0: arch1-2, 1: arch3-4, 2: arch5, 3: arch6-7
-TRAIN_PATH = "safety-nas/datasets/combined_all.npz"
-OUTPUT_DIR = "accuracy-nas/dnn-output/compare-map-150"
+TRAIN_PATH = "accuracy-nas/datasets/test.npz"
+OUTPUT_DIR = "accuracy-nas/dnn-output/test-best-150-testonly"
 SKIP_EVAL = False
 
 
