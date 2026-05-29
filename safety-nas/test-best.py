@@ -60,28 +60,27 @@ TRAINING_PROFILES = {
     },
 }
 
+#
+# ---------- START INPUT ----------
+#
+
 # Configuration (edit as needed)
 TRIALS_FILES = [
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828022_a8b20f.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828023_3d2630.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828025_f847ab.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T184238_1357002_017f7c.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T193527_1776610_4ec05d.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T193845_2985264_dc559d.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T203158_3307492_60de23.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T203833_1888159_1b391f.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T210412_3311456_e6278a.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T212320_1900172_3cd867.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T213142_3317205_782a1c.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T213240_1902398_08e72b.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T220850_3400979_d24a66.jsonl",
+    # "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828022_a8b20f.jsonl",
+    # "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828023_3d2630.jsonl",
 ]
+
+# Update output_dir according to the training profile
 TRAINING_PROFILE = 0  # 0: arch1-2, 1: arch3-4, 2: arch5, 3: arch6-7
 DATASET_PATH = "safety-nas/datasets/combined_all.npz"
-OUTPUT_DIR: str | None = "safety-nas/dnn-output/test-best-runs-150"
+OUTPUT_DIR: str | None = "safety-nas/test-best-runs-tp0"
 
 MODE = "train"  # "train" or "test"
 SKIP_EVAL = False
+
+#
+# ---------- END INPUT ----------
+#
 
 def _resolve_trials_file(arg: str | None) -> str | None:
     if arg is None:

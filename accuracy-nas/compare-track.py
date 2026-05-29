@@ -11,6 +11,7 @@ from pathlib import Path
 # ---------- INPUT ----------
 #
 
+# The inputs here are the .pt files from the test-best run (NN architecture and weights)
 LEFT_WALL_MODEL = "accuracy-nas/dnn-output/test-best-150-combinedall-8020/7307d4/left_wall_dist_arch8_trial70.pt"
 TRACK_WIDTH_MODEL = "accuracy-nas/dnn-output/test-best-150-combinedall-8020/7307d4/track_width_arch8_trial108.pt"
 HEADING_ERROR_MODEL = "accuracy-nas/dnn-output/test-best-150-combinedall-8020/7307d4/heading_error_arch8_trial29.pt"

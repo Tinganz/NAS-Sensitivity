@@ -346,7 +346,7 @@ def objective(
         cfgs[-1]["training"]["optimizer"] = optimizer
 
     trained_runs: list[tuple[dict[str, any], Path]] = []
-    # TODO add specific partition of resources once the specific resource constraints (running on a gpu/cpu) are known
+
     with ThreadPoolExecutor(max_workers=len(cfgs)) as executor:
         futures = []
         for cfg in cfgs:

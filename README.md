@@ -1,18 +1,38 @@
-# Safety-NAS-in-the-Loop
+# NAS-in-the-Loop
 
-Neural architecture search experiments for LiDAR-based F1TENTH reactive planners.
-The Safety-NAS code trains three small 1D CNNs that estimate:
+NAS-in-the-Loop is a tool to facilitate experiments on Neural Architecture Search (NAS) guided by simulation in the F1TENTH environment. 
+
+For purpose of comparison, this repository includes a complementary NAS which is guided by validation loss.
+
+Both of these pathways are found in the following locations:
+- `safety-nas/`
+- `accuracy-nas/`
+
+And both workflows train small 1D CNNs that estimate:
 
 - `left_wall_dist`
 - `track_width`
 - `heading_error`
 
-Those checkpoints are evaluated together in the F1TENTH simulator through the
-DNN reactive planner.
+## Citation
+
+We kindly ask all users of this repository cite the following:
+
+```bibtex
+@inproceedings{TODO,
+  author    = {Zayah Cortright, Prateek Ganguli, Tingan Zhu, and Samarjit Chakraborty},
+  title     = {NAS-in-the-Loop: Trajectory-driven Neural Architecture Search for Safe Autonomous CPS},
+  booktitle = {},
+  year      = {2026},
+  publisher = {},
+  doi       = {}
+}
+```
 
 ## Repository Layout
 
-- `safety-nas/`: Optuna search, best-trial retraining, evaluation, and comparison scripts.
+- `safety-nas/`: simulator-in-the-loop Optuna search, best-trial config export, evaluation helpers, and comparison scripts.
+- `accuracy-nas/`: supervised Optuna search and wrappers for evaluating an accuracy-selected checkpoint triplet.
 - `packages/f110_gym/`: local Gymnasium F1TENTH simulator package.
 - `packages/f110_planning/`: planners, metrics, model utilities, and simulation helpers.
 - `packages/f110_scripts/`: data generation, training, RL, and simulator entry scripts.
@@ -21,7 +41,9 @@ DNN reactive planner.
 
 ## Setup
 
-Use Python 3.12 or newer. Large maps and checkpoints may require Git LFS when cloning.
+To begin, we suggest using Python 3.12.4. Additionally, the LiDAR datasets this repository uses (*.npz files) require Git LFS when cloning.
+
+The following code creates up a .venv and installs the necessary packages for the F1TENTH simulation, NAS, and visualization.
 
 ```bash
 # Clone the repository 
@@ -36,20 +58,26 @@ source .venv/bin/activate
 python -m pip install -e packages/f110_gym
 python -m pip install -e "packages/f110_planning[test]"
 python -m pip install -e "packages/f110_scripts[test]"
-python -m pip install optuna
+python -m pip install optuna matplotlib
 ```
 
-If `python3.12` is not available on your system, install Python 3.12 first or use
-your environment manager of choice. The root `.python-version` file is included
-for tools such as `pyenv`.
+The easiest way to check if these packages were installed correctly is to run:
+
+```bash
+python packages/f110_scripts/src/f110_scripts/sim/reactive_planners.py
+```
+
+Should there be missing imports in this run, the rest of the repository certainly will not work. Most commonly, deleting the .venv and going back through the .venv instantiation process solves problems.
 
 ## Safety-NAS Workflow
 
-Run an Optuna architecture search:
+Now that the environment is set up, we may run an Optuna architecture search. The following command uses the CLI in `control-logic.py` to run a safety-guided NAS of 5 trials whose neural network is tested the F1TENTH track "Melbourne."
 
 ```bash
-python safety-nas/control-logic.py --track MELBOURNE --n-trials 120
+python safety-nas/control-logic.py --track MELBOURNE --n-trials 5
 ```
+
+To run the complete set of NAS using SLURM, run `bash run-safety-nas.sl`
 
 The search writes JSONL results to:
 
@@ -57,82 +85,47 @@ The search writes JSONL results to:
 safety-nas/dnn-output/nas_trials_*.jsonl
 ```
 
-Pick the best trial from a Safety-NAS run and export training configs:
+At this point, the NAS should be complete. The training parameters are now complex, so we no longer work with the CLI.
+
+For staged best-trial retraining, edit the constants near the top of
+`safety-nas/test-best.py`, then call `main()` from inside that file.
+
+After running `test-best.py`, there should now be fully trained .pt files ready for final evaluation on the testing tracks. Once again, edit the parameters at the top of `safety-nas/compare-track.py`, ensuring pathing is correct, then call `main()` from inside that file.
+
+## Accuracy-NAS Workflow
+
+With the safety-guided NAS complete, we now must generate data to compare them to. Accuracy-NAS is a similar NAS framework, but uses validation loss as the feedback component to the NAS.
+
+To get started, we must split the `combined_all.npz` dataset into training and testing partitions. By default, this partition is 80/20, respectively, but this can be edited in the training parameters at the top of the file:
 
 ```bash
-python safety-nas/training.py --trials-file safety-nas/dnn-output/nas_trials_<run>.jsonl
+python accuracy-nas/split-dataset.py
 ```
 
-Export configs and retrain the best trial:
+We may now run the supervised Optuna searches with the following:
 
 ```bash
-python safety-nas/training.py --trials-file safety-nas/dnn-output/nas_trials_<run>.jsonl --train
+python accuracy-nas/control-logic.py
 ```
 
-Evaluate the default checkpoint triple:
+Note: Because we do not get feedback from specific tracks (and instead from the `combined_all.npz` dataset) we only run accuracy-NAS once.
 
-```bash
-python safety-nas/testing.py
-```
-
-Retrain or evaluate the configured best trials in `safety-nas/test-best.py`:
-
-```bash
-python safety-nas/test-best.py
-```
-
-Compare checkpoint triples across selected maps:
-
-```bash
-python safety-nas/compare-track.py
-```
-
-## Data And Artifacts
-
-Expected input dataset path for Safety-NAS training:
+Results are written as per-target JSONL files:
 
 ```text
-safety-nas/datasets/combined_all.npz
+accuracy-nas/dnn-output/standard_trials_<target>_*.jsonl
 ```
 
-Common generated outputs:
+To fully train the best Neural Network (as selected from accuracy-NAS), modify the parameters at the top of `accuracy-nas/test-best.py`, and run that file.
 
-- `safety-nas/dnn-output/`
-- `safety-nas/dnn-output/trial_artifacts/`
-- `safety-nas/dnn-output/test-best-runs*/`
-- `data/models/lightning_logs/`
-- `data/models/checkpoints/`
+When complete, configure the parameters and run `accuracy-nas/compare-track.py` to put Accuracy-NAS to the test.
 
-These generated directories are intentionally ignored by Git. Keep important
-trial JSONL files, final checkpoints, and datasets in a backed-up artifact store
-or Git LFS if another machine needs to reproduce the same run.
+## Visualization
 
-## Quick Verification
+When both Safety-NAS and Accuracy-NAS are done running, we may now visualize our results together. Note: the visualization DOES allow a single input if you would like to do visualization of only Safety-NAS or Accuracy-NAS.
 
-After setup, this should parse the project metadata and import the local packages:
-
-```bash
-python -c "import tomllib; tomllib.load(open('pyproject.toml','rb')); import f110_gym, f110_planning, f110_scripts"
-```
-
-To run tests:
-
-```bash
-pytest packages/f110_gym/tests packages/f110_planning/tests packages/f110_scripts/tests
-```
-
-## Notes
-
-- The Safety-NAS search is computationally expensive because each trial trains three
-  models and evaluates them in simulation.
-- `safety-nas/control-logic.sl`, `safety-nas/test-best.sl`, and `safety-nas/compare-track.sl` are
-  Slurm wrappers for cluster runs.
-- Some scripts contain experiment configuration directly in Python constants.
-  Check the top of `safety-nas/test-best.py` and `safety-nas/compare-track.py` before running
-  large batches.
+To do this, modify the paths at the top of `vis.ipynb` or `shanghai-removed.vis.ipynb` to point to compare-map metrics.jsonl results (see `data/accuracy-nas/compare-map-tp0/metrics.jsonl` for an example) and run all cells.
 
 ## Attribution
 
-The Safety-NAS work in this repository was created by Zayah Cortright in collaboration
-with the Design Automation to X Lab at the University of North Carolina at
-Chapel Hill Department of Computer Science.
+Both Neural Architecture Search architectures in this repository were created by Zayah Cortright and built on previous work by Prateek Ganguli and Tingan Zhu. This work was done within and supported by the Design Automation to X Lab, headed by Dr. Samarjit Chakraborty, at the University of North Carolina at Chapel Hill Department of Computer Science. All inquiries should be email to zayah [at] unc [dot] edu.

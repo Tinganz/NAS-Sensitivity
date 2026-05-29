@@ -60,16 +60,27 @@ TRAINING_PROFILES = {
     },
 }
 
+#
+# ---------- START INPUT ----------
+#
+
+# Input the paths to the .jsonl files outputted from the accuracy-NAS
+# Note that each of these files has the same ID; in this set, that ID is "7307d4"
 TARGET_FILES = {
-    "left_wall_dist": "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_left_wall_dist_20260524T041713_62533_7307d4.jsonl",
-    "track_width": "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_track_width_20260524T041713_62533_7307d4.jsonl",
-    "heading_error": "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_heading_error_20260524T041713_62533_7307d4.jsonl",
+    "left_wall_dist": "", # "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_left_wall_dist_20260524T041713_62533_7307d4.jsonl",
+    "track_width": "", # "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_track_width_20260524T041713_62533_7307d4.jsonl",
+    "heading_error": "" # "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_heading_error_20260524T041713_62533_7307d4.jsonl",
 }
+
+# Adjust output_dir depending on training profile
 TRAINING_PROFILE = 0  # 0: arch1-2, 1: arch3-4, 2: arch5, 3: arch6-7
-TRAIN_PATH = "accuracy-nas/datasets/combined_all.npz"
-OUTPUT_DIR = "accuracy-nas/dnn-output/test-best-150-combinedall-8020"
+TRAIN_PATH = "data/accuracy-nas/datasets/combined_all.npz"
+OUTPUT_DIR = "data/accuracy-nas/dnn-output/test-best-150-tp0"
 SKIP_EVAL = False
 
+#
+# ---------- END INPUT ----------
+#
 
 def _trials_file_id(target: str, trials_file: str | Path) -> str:
     stem = Path(trials_file).stem

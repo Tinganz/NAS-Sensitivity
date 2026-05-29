@@ -7,11 +7,18 @@ from pathlib import Path
 
 import numpy as np
 
+#
+# ---------- START INPUT ----------
+#
+
 INPUT_PATH = "accuracy-nas/datasets/combined_all.npz"
 OUTPUT_DIR = "accuracy-nas/datasets"
 TRAIN_RATIO = 0.8
 SEED = 41
 
+#
+# ---------- END INPUT ----------
+#
 
 def _write_split(path: Path, arrays: dict[str, np.ndarray], indices: np.ndarray) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
