@@ -300,6 +300,12 @@ def _build_training_config(
         }
     return cfg
 
+def _count_model_parameters(model: nn.Module) -> int:
+    """
+    Count the number of trainable parameters in a PyTorch model.
+    """
+    return sum(p.numel() for p in model.parameters() if p.requires_grad)
+
 
 def objective(
     trial: optuna.trial.Trial,
@@ -309,6 +315,7 @@ def objective(
     target_cols: tuple[str, ...] = DEFAULT_TARGET_COLS,
     dataset_pth: str = "safety-nas/datasets/combined_all.npz",
     track_names: Sequence[object] | None = None,
+    max_params: list[int] | None = None, 
 ) -> float:
     """
     Run one Optuna trial that samples a single arch8 config, trains the left/track/heading
@@ -323,10 +330,28 @@ def objective(
 
     optimizer = trial.suggest_categorical("optimizer", ["adam", "adamw"])
     model_blocks = {}
-    for target in target_cols:
+    total_params = 0
+
+    for target, param_budget in zip(target_cols, max_params):
         architecture = DynamicCNN(trial, prefix=target)
+
         block = architecture.to_model_block()
         block["arch_id"] = 8
+
+        # Build temporary model to measure size
+        model = get_architecture(block["arch_id"], block)
+
+        param_count = _count_model_parameters(model)
+
+        # Store parameter count for logging
+        trial.set_user_attr(f"{target}_params", param_count)
+
+        # Per-network parameter constraint
+        if param_count > param_budget:
+            raise optuna.TrialPruned(
+                f"{target} exceeds parameter budget: "
+                f"{param_count} > {param_budget}"
+            )
         model_blocks[target] = block
 
     evaluation_tracks = _select_evaluation_tracks(track_names)
