@@ -191,5 +191,5 @@ def main() -> None:
         _evaluate_models(staged_models)
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
