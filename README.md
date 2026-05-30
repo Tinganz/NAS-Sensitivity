@@ -19,7 +19,7 @@ And both workflows train small 1D CNNs that estimate:
 We kindly ask all users of this repository cite the following:
 
 ```bibtex
-@inproceedings{TODO,
+@inproceedings{
   author    = {Zayah Cortright, Prateek Ganguli, Tingan Zhu, and Samarjit Chakraborty},
   title     = {NAS-in-the-Loop: Trajectory-driven Neural Architecture Search for Safe Autonomous CPS},
   booktitle = {},
