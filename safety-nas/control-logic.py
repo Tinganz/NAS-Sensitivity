@@ -6,6 +6,7 @@ from cnn import EvaluationTrack, objective
 
 
 def main(track: str | None = None, n_trials: int = 120) -> None:
+    """Run the Safety-NAS Optuna search."""
     track_names = None
     if track:
         track_names = [EvaluationTrack[track.strip().upper()]]
@@ -16,7 +17,7 @@ def main(track: str | None = None, n_trials: int = 120) -> None:
     else:
         study.optimize(objective, n_trials=n_trials)
 
-
+# This CLI stuff is specifically for the run-safety-nas.sl call
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--track", type=str, default=None)

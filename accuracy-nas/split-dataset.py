@@ -7,13 +7,21 @@ from pathlib import Path
 
 import numpy as np
 
+#
+# ---------- START INPUT ----------
+#
+
 INPUT_PATH = "accuracy-nas/datasets/combined_all.npz"
 OUTPUT_DIR = "accuracy-nas/datasets"
 TRAIN_RATIO = 0.8
 SEED = 41
 
+#
+# ---------- END INPUT ----------
+#
 
 def _write_split(path: Path, arrays: dict[str, np.ndarray], indices: np.ndarray) -> None:
+    """Write one subset of the dataset arrays."""
     path.parent.mkdir(parents=True, exist_ok=True)
     np.savez_compressed(path, **{key: values[indices] for key, values in arrays.items()})
 
@@ -24,7 +32,7 @@ def split_dataset(
     train_ratio: float = 0.8,
     seed: int = 41,
 ) -> dict[str, Path]:
-    """Write fixed train/test row splits."""
+    """Split a lidar dataset into train.npz and test.npz."""
     if train_ratio <= 0 or train_ratio >= 1:
         raise ValueError("train ratio must leave non-empty train and test splits.")
 
@@ -53,6 +61,7 @@ def split_dataset(
 
 
 def main() -> None:
+    """Split the dataset and print row counts."""
     paths = split_dataset(
         INPUT_PATH,
         OUTPUT_DIR,

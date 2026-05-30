@@ -124,6 +124,8 @@ BASELINE_RUNS = [
 
 @dataclass
 class ModelRun:
+    """One model triplet in a comparison run."""
+
     label: str
     left: str
     track: str
@@ -132,6 +134,8 @@ class ModelRun:
 
 @dataclass
 class MapSpec:
+    """Files needed to run one map."""
+
     name: str
     map_base: str
     map_ext: str
@@ -140,6 +144,8 @@ class MapSpec:
 
 @dataclass
 class CompareArgs:
+    """Comparison settings."""
+
     map: str = DEFAULT_MAP
     map_ext: str = DEFAULT_MAP_EXT
     waypoints: str = DEFAULT_WAYPOINTS
@@ -167,6 +173,7 @@ def _label_for_checkpoint_triple(
     track_path: str,
     heading_path: str,
 ) -> str:
+    """Choose a label for a checkpoint triplet."""
     common_parts = set(Path(left_path).parts) & set(Path(track_path).parts) & set(Path(heading_path).parts)
     for part in reversed(Path(left_path).parts):
         if part in common_parts and part not in {"", ".", "safety-nas", "dnn-output", "test-best-runs"}:
@@ -175,6 +182,7 @@ def _label_for_checkpoint_triple(
 
 
 def _load_map_background(map_path: str, map_ext: str) -> tuple[np.ndarray, tuple[float, float, float, float]]:
+    """Load a map image and compute its world-coordinate extent."""
     with open(map_path + ".yaml", encoding="utf-8") as fh:
         meta = yaml.safe_load(fh)
 
@@ -205,6 +213,7 @@ def _simulate_run(
     waypoints: np.ndarray,
     map_spec: MapSpec,
 ) -> tuple[SimTrace, dict]:
+    """Run one model triplet on one map."""
     args = SimpleNamespace(
         planner="dnn",
         left_wall_model=str(run.left),
@@ -268,6 +277,7 @@ def _write_trace_npz(
 
 
 def _build_runs(run_args: list[tuple[str, str, str, str]]) -> list[ModelRun]:
+    """Create model run records from raw run tuples."""
     runs: list[ModelRun] = []
     for label, left, track, heading in run_args:
         runs.append(
@@ -284,6 +294,7 @@ def _build_runs(run_args: list[tuple[str, str, str, str]]) -> list[ModelRun]:
 def _build_runs_for_checkpoint_triple(
     checkpoint_triple: tuple[str, str, str],
 ) -> tuple[str, list[ModelRun]]:
+    """Create baseline runs plus one arch8 run."""
     left, track, heading = checkpoint_triple
     label = _label_for_checkpoint_triple(left, track, heading)
     runs = _build_runs(
@@ -301,15 +312,18 @@ def _build_runs_for_checkpoint_triple(
 
 
 def _slugify(value: str) -> str:
+    """Make a filesystem-safe label."""
     return "".join(ch if ch.isalnum() or ch in ("-", "_") else "_" for ch in value)
 
 
 def _normalize_map_name(map_path: str) -> str:
+    """Get a track name from a map path."""
     stem = Path(map_path).stem
     return stem[:-4] if stem.endswith("_map") else stem
 
 
 def _extract_track_metrics(metrics: dict[str, object]) -> dict[str, float | None]:
+    """Pull out the metrics written to metrics.jsonl."""
     return {
         key: float(metrics[key]) if metrics.get(key) is not None else None
         for key in TRACK_METRIC_KEYS
@@ -317,11 +331,13 @@ def _extract_track_metrics(metrics: dict[str, object]) -> dict[str, float | None
 
 
 def _is_selected_map(map_spec: MapSpec) -> bool:
+    """Check whether a map is in the comparison set."""
     name = _normalize_map_name(map_spec.map_base).lower()
     return name in SELECTED_TRACKS
 
 
 def _discover_map_specs(root: str | Path) -> list[MapSpec]:
+    """Find maps with centerline waypoints below a root directory."""
     root_path = Path(root).expanduser().resolve()
     if not root_path.exists():
         raise FileNotFoundError(f"Map root {root_path} does not exist.")
@@ -358,6 +374,7 @@ def _discover_map_specs(root: str | Path) -> list[MapSpec]:
 def _prepare_run_directory(
     output_dir: str | Path, run_id: str | None
 ) -> tuple[Path, str]:
+    """Create a unique output directory."""
     base_dir = Path(output_dir).expanduser().resolve()
     base_dir.mkdir(parents=True, exist_ok=True)
     identifier = run_id or uuid.uuid4().hex[:6]
@@ -374,6 +391,7 @@ def _prepare_run_directory(
 
 
 def _build_map_list(args: CompareArgs) -> list[MapSpec]:
+    """Build the list of maps to compare."""
     if args.all_maps:
         specs = _discover_map_specs(args.maps_root)
         specs = [spec for spec in specs if _is_selected_map(spec)]
@@ -400,6 +418,7 @@ def _run_map_comparison(
     run_dir: Path,
     run_identifier: str,
 ) -> dict | None:
+    """Run all models on one map and write outputs."""
     try:
         waypoints = load_waypoints(map_spec.waypoints)
     except FileNotFoundError:
@@ -514,6 +533,7 @@ def _run_comparison_batch(
     map_specs: list[MapSpec],
     run_id: str | None,
 ) -> None:
+    """Run a comparison batch and write metrics.jsonl."""
     run_dir, run_identifier = _prepare_run_directory(args.output_dir, run_id)
     safe_run_id = _slugify(run_identifier)
 
@@ -535,6 +555,7 @@ def _run_comparison_batch(
 
 
 def main() -> None:
+    """Run the comparison batch."""
     args = ARGS
     map_specs = _build_map_list(args)
 

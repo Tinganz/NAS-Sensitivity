@@ -52,7 +52,7 @@ def objective(
     train_path: str = "accuracy-nas/datasets/train.npz",
     validation_path: str = "accuracy-nas/datasets/validation.npz",
 ) -> float:
-    """Train one candidate and score its validation RMSE."""
+    """Train one candidate architecture and return validation RMSE."""
     if target_col not in TARGETS:
         raise ValueError(f"unknown target: {target_col}")
 
@@ -84,7 +84,7 @@ def _log_trial(
     metrics: dict[str, float | int],
     validation_path: str,
 ) -> None:
-    """Write one line shaped for later retraining."""
+    """Write one trial record."""
     model = get_architecture(cfg["model"]["arch_id"], cfg["model"])
     target = cfg["data"]["target_col"]
     entry = {

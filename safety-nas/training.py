@@ -24,7 +24,7 @@ DEFAULT_CONFIG_OUTPUT_ROOT = TRIALS_DIR / "best_configs"
 
 
 def _model_block_from_summary(target_summary: dict[str, Any]) -> dict[str, Any]:
-    """Recreate a ``model`` block from the NAS JSON summary."""
+    """Recreate a model block from the NAS JSON summary."""
     return {
         "arch_id": target_summary["arch_id"],
         "dynamic": {
@@ -120,7 +120,7 @@ def _average_rmse(record: dict[str, Any]) -> float:
 
 
 def _resolve_trials_path(path_arg: str | Path | None) -> Path:
-    """Resolve ``--trials-file``; default to the newest file in dnn-output."""
+    """Resolve a trials path, defaulting to the newest file in dnn-output."""
     if path_arg:
         trials_path = Path(path_arg).expanduser().resolve()
         if not trials_path.exists():
@@ -137,7 +137,7 @@ def _resolve_trials_path(path_arg: str | Path | None) -> Path:
 
 
 def _metadata_from_config(config_path: Path) -> tuple[str, int, Path]:
-    """Extract target column, arch ID, and configured model directory."""
+    """Read target, architecture ID, and model directory from a config."""
     with config_path.open("r", encoding="utf-8") as fh:
         cfg = yaml.safe_load(fh)
     target_col = cfg["data"]["target_col"]
@@ -205,9 +205,7 @@ def orchestrate_best_trial(
     lr_patience: int | None = None,
     optimizer: str | None = None,
 ) -> tuple[dict[str, Any], list[Path]]:
-    """
-    High-level helper to export configs for the top NAS trial.
-    """
+    """Export training configs for the best NAS trial."""
     resolved_trials = _resolve_trials_path(trials_path)
     records = _load_trials(resolved_trials)
     best_trial = _pick_best_trial(records)
@@ -232,6 +230,7 @@ def orchestrate_best_trial(
 
 
 def _build_arg_parser() -> argparse.ArgumentParser:
+    """Create the CLI parser."""
     parser = argparse.ArgumentParser(description="Train the best NAS trial end-to-end.")
     parser.add_argument(
         "--trials-file",
@@ -269,6 +268,7 @@ def _build_arg_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: Sequence[str] | None = None) -> None:
+    """Export configs for the best trial and optionally train them."""
     parser = _build_arg_parser()
     args = parser.parse_args(argv)
 

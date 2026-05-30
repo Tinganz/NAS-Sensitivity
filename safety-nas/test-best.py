@@ -60,30 +60,30 @@ TRAINING_PROFILES = {
     },
 }
 
+#
+# ---------- START INPUT ----------
+#
+
 # Configuration (edit as needed)
 TRIALS_FILES = [
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828022_a8b20f.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828023_3d2630.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828025_f847ab.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T184238_1357002_017f7c.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T193527_1776610_4ec05d.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T193845_2985264_dc559d.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T203158_3307492_60de23.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T203833_1888159_1b391f.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T210412_3311456_e6278a.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T212320_1900172_3cd867.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T213142_3317205_782a1c.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T213240_1902398_08e72b.jsonl",
-    "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T220850_3400979_d24a66.jsonl",
+    # "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828022_a8b20f.jsonl",
+    # "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828023_3d2630.jsonl",
 ]
+
+# Update output_dir according to the training profile
 TRAINING_PROFILE = 0  # 0: arch1-2, 1: arch3-4, 2: arch5, 3: arch6-7
 DATASET_PATH = "safety-nas/datasets/combined_all.npz"
-OUTPUT_DIR: str | None = "safety-nas/dnn-output/test-best-runs-150"
+OUTPUT_DIR: str | None = "safety-nas/test-best-runs-tp0"
 
 MODE = "train"  # "train" or "test"
 SKIP_EVAL = False
 
+#
+# ---------- END INPUT ----------
+#
+
 def _resolve_trials_file(arg: str | None) -> str | None:
+    """Resolve one trials file path."""
     if arg is None:
         return None
     path = Path(arg).expanduser()
@@ -95,6 +95,7 @@ def _resolve_trials_file(arg: str | None) -> str | None:
 
 
 def _resolve_trials_files(args: Iterable[str] | str | None) -> list[str]:
+    """Resolve the trials file list."""
     if args is None:
         return []
     if isinstance(args, str):
@@ -109,6 +110,7 @@ def _resolve_trials_files(args: Iterable[str] | str | None) -> list[str]:
 
 
 def _selected_training_profile() -> dict:
+    """Return the selected training profile."""
     try:
         profile = TRAINING_PROFILES[TRAINING_PROFILE]
     except KeyError as exc:
@@ -120,6 +122,7 @@ def _selected_training_profile() -> dict:
 
 
 def _default_output_dir(trials_file: str | None) -> Path:
+    """Derive the default staging directory for a trials file."""
     if trials_file is None:
         raise ValueError("trials_file must be resolved before deriving output_dir.")
     trial_id = Path(trials_file).stem.rsplit("_", 1)[-1]
@@ -127,11 +130,13 @@ def _default_output_dir(trials_file: str | None) -> Path:
 
 
 def _target_name(config_path: Path) -> str:
+    """Extract the lidar target name from a config or checkpoint path."""
     stem = config_path.stem
     return stem if "_arch" not in stem else stem.rsplit("_arch", 1)[0]
 
 
 def _stage_model(src: Path, dest: Path) -> Path:
+    """Copy a model checkpoint to its staged destination."""
     dest.parent.mkdir(parents=True, exist_ok=True)
     if src.resolve() != dest.resolve():
         shutil.copy2(src, dest)
@@ -141,6 +146,7 @@ def _stage_model(src: Path, dest: Path) -> Path:
 def _stage_trained_models(
     config_paths: list[Path], trained_paths: Iterable[Path]
 ) -> list[Path]:
+    """Copy trained checkpoints next to their config files."""
     staged: list[Path] = []
     for cfg, checkpoint in zip(config_paths, trained_paths, strict=False):
         source = checkpoint if checkpoint.is_absolute() else (REPO_ROOT / checkpoint)
@@ -149,6 +155,7 @@ def _stage_trained_models(
 
 
 def _summary_for_config(best_trial: dict, config_path: Path) -> dict | None:
+    """Find the trial summary for a config path."""
     target = _target_name(config_path)
     for entry in best_trial.get("targets", []):
         if entry.get("target_col") == target:
@@ -157,6 +164,7 @@ def _summary_for_config(best_trial: dict, config_path: Path) -> dict | None:
 
 
 def _locate_model_from_summary(summary: dict | None) -> Path | None:
+    """Return the checkpoint path recorded in a trial summary."""
     if not summary:
         return None
     candidate = Path(summary["model_path"])
@@ -168,6 +176,7 @@ def _locate_model_from_summary(summary: dict | None) -> Path | None:
 def _collect_existing_models(
     config_paths: list[Path], best_trial: dict
 ) -> tuple[list[Path], list[str]]:
+    """Stage checkpoints already recorded by the selected trial."""
     staged: list[Path] = []
     missing: list[str] = []
     for cfg in config_paths:
@@ -190,6 +199,7 @@ def _collect_existing_models(
 
 
 def _evaluate_models(model_paths: list[Path]) -> float | None:
+    """Evaluate a staged model triplet on the training tracks."""
     lookup = {_target_name(path): path for path in model_paths}
     required = {"left_wall_dist", "track_width", "heading_error"}
     missing = sorted(required - set(lookup))
@@ -208,6 +218,7 @@ def _evaluate_models(model_paths: list[Path]) -> float | None:
 
 
 def _run_trials_file(trials_file: str) -> None:
+    """Retrain or stage checkpoints for one trials file."""
     if MODE not in {"train", "test"}:
         raise ValueError("MODE must be 'train' or 'test'")
     output_dir = (
@@ -260,6 +271,7 @@ def _run_trials_file(trials_file: str) -> None:
 
 
 def main() -> None:
+    """Run test-best for every trials file."""
     if MODE not in {"train", "test"}:
         raise ValueError("MODE must be 'train' or 'test'")
     trials_files = _resolve_trials_files(TRIALS_FILES)

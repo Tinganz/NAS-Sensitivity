@@ -16,6 +16,7 @@ TEST_PATH = "accuracy-nas/datasets/test.npz"
 
 
 def _run_search(target: str) -> None:
+    """Run the Optuna search for one target."""
     study = optuna.create_study(direction="minimize")
     study.optimize(
         lambda trial: objective(
@@ -29,6 +30,7 @@ def _run_search(target: str) -> None:
 
 
 def main() -> None:
+    """Run the target searches in parallel."""
     with ThreadPoolExecutor(max_workers=len(TARGETS)) as executor:
         futures = [executor.submit(_run_search, target) for target in TARGETS]
         for future in futures:
