@@ -31,8 +31,11 @@ We kindly ask all users of this repository cite the following:
 
 ## Repository Layout
 
+Newly authored content:
 - `safety-nas/`: simulator-in-the-loop Optuna search, best-trial config export, evaluation helpers, and comparison scripts.
 - `accuracy-nas/`: supervised Optuna search and wrappers for evaluating an accuracy-selected checkpoint triplet.
+
+Previously existing content:
 - `packages/f110_gym/`: local Gymnasium F1TENTH simulator package.
 - `packages/f110_planning/`: planners, metrics, model utilities, and simulation helpers.
 - `packages/f110_scripts/`: data generation, training, RL, and simulator entry scripts.
@@ -128,4 +131,4 @@ To do this, modify the paths at the top of `vis.ipynb` or `shanghai-removed.vis.
 
 ## Attribution
 
-Both Neural Architecture Search architectures in this repository were created by Zayah Cortright and built on previous work by Prateek Ganguli and Tingan Zhu. This work was done within and supported by the Design Automation to X Lab, headed by Dr. Samarjit Chakraborty, at the University of North Carolina at Chapel Hill Department of Computer Science. All inquiries should be email to zayah [at] unc [dot] edu.
+Both Neural Architecture Search architectures in this repository were created by Zayah Cortright and built on previous work by Prateek Ganguli and Tingan Zhu. This work was done within and supported by the Design Automation to X Lab, led by Dr. Samarjit Chakraborty, at the University of North Carolina at Chapel Hill Department of Computer Science. All inquiries should be emailed to zayah [at] unc [dot] edu.
