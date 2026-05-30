@@ -64,16 +64,16 @@ TRAINING_PROFILES = {
 # ---------- START INPUT ----------
 #
 
-# Input the paths to the .jsonl files outputted from the accuracy-NAS
-# Note that each of these files has the same ID; in this set, that ID is "7307d4"
+# Input the paths to the .jsonl files outputted from the accuracy-NAS.
+# Note that each of these files has the same ID; in this set, that ID is 7307d4.
 TARGET_FILES = {
-    "left_wall_dist": "", # "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_left_wall_dist_20260524T041713_62533_7307d4.jsonl",
-    "track_width": "", # "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_track_width_20260524T041713_62533_7307d4.jsonl",
-    "heading_error": "" # "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_heading_error_20260524T041713_62533_7307d4.jsonl",
+    "left_wall_dist": "",   # Ex. "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_left_wall_dist_20260524T041713_62533_7307d4.jsonl",
+    "track_width": "",      # Ex. "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_track_width_20260524T041713_62533_7307d4.jsonl",
+    "heading_error": ""     # Ex. "accuracy-nas/dnn-output/nas-with-train80-test20/standard_trials_heading_error_20260524T041713_62533_7307d4.jsonl",
 }
 
 # Adjust output_dir depending on training profile
-TRAINING_PROFILE = 0  # 0: arch1-2, 1: arch3-4, 2: arch5, 3: arch6-7
+TRAINING_PROFILE = 0    # 0: arch1-2, 1: arch3-4, 2: arch5, 3: arch6-7
 TRAIN_PATH = "data/accuracy-nas/datasets/combined_all.npz"
 OUTPUT_DIR = "data/accuracy-nas/dnn-output/test-best-150-tp0"
 SKIP_EVAL = False
@@ -83,6 +83,7 @@ SKIP_EVAL = False
 #
 
 def _trials_file_id(target: str, trials_file: str | Path) -> str:
+    """Get the run ID from an accuracy-NAS trials filename."""
     stem = Path(trials_file).stem
     prefix = f"standard_trials_{target}_"
     if not stem.startswith(prefix):
@@ -91,6 +92,7 @@ def _trials_file_id(target: str, trials_file: str | Path) -> str:
 
 
 def _composite_id(target_files: dict[str, str]) -> str:
+    """Build the output ID for the selected trials files."""
     source_ids = {
         target: _trials_file_id(target, trials_file)
         for target, trials_file in target_files.items()
@@ -107,6 +109,7 @@ def _composite_id(target_files: dict[str, str]) -> str:
 
 
 def _load_best(path: str | Path) -> dict[str, Any]:
+    """Load the trial with the lowest validation objective."""
     with Path(path).open("r", encoding="utf-8") as handle:
         entries = [json.loads(line) for line in handle if line.strip()]
     if not entries:
@@ -115,6 +118,7 @@ def _load_best(path: str | Path) -> dict[str, Any]:
 
 
 def _selected_training_profile() -> dict[str, Any]:
+    """Return the selected training profile."""
     try:
         return TRAINING_PROFILES[TRAINING_PROFILE]
     except KeyError as exc:
@@ -125,6 +129,7 @@ def _selected_training_profile() -> dict[str, Any]:
 
 
 def _stage_model(config_path: Path, model_path: Path) -> Path:
+    """Copy a trained model next to its config file."""
     staged = config_path.with_suffix(".pt")
     if staged.resolve() != model_path.resolve():
         shutil.copy2(model_path, staged)
@@ -132,10 +137,12 @@ def _stage_model(config_path: Path, model_path: Path) -> Path:
 
 
 def _target_name(path: Path) -> str:
+    """Get the target name from a config or model path."""
     return path.stem.split("_arch", 1)[0]
 
 
 def _evaluate_models(model_paths: list[Path]) -> float | None:
+    """Evaluate a staged model triplet on the training tracks."""
     lookup = {_target_name(path): path for path in model_paths}
     required = {"left_wall_dist", "track_width", "heading_error"}
     missing = sorted(required - set(lookup))
@@ -155,6 +162,7 @@ def _evaluate_models(model_paths: list[Path]) -> float | None:
 
 
 def main() -> None:
+    """Retrain the selected accuracy-NAS models."""
     composite_id = _composite_id(TARGET_FILES)
     output_dir = Path(OUTPUT_DIR).expanduser().resolve() / composite_id
     training_profile = _selected_training_profile()

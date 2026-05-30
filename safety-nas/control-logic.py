@@ -6,6 +6,7 @@ from cnn import EvaluationTrack, objective
 
 
 def main(track: str | None = None, n_trials: int = 120) -> None:
+    """Run the Safety-NAS Optuna search."""
     track_names = None
     if track:
         track_names = [EvaluationTrack[track.strip().upper()]]

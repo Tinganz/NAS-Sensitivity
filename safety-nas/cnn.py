@@ -32,6 +32,8 @@ LATEST_MODEL_PATHS = {target: None for target in DEFAULT_TARGET_COLS}
 
 
 class EvaluationTrack(Enum):
+    """Evaluation tracks used by the NAS objective."""
+
     SEPANG = (
         "data/maps/F1/Sepang/Sepang_map",
         "data/maps/F1/Sepang/Sepang_centerline.tsv",
@@ -99,10 +101,12 @@ class EvaluationTrack(Enum):
 
     @property
     def map_path(self) -> str:
+        """Map path for the simulator."""
         return self.value[0]
 
     @property
     def waypoints_path(self) -> str:
+        """Waypoint path for the simulator."""
         return self.value[1]
 
 # Default evaluation tracks if none are specified.
@@ -113,7 +117,7 @@ TRAIN_EVAL_TRACKS = [
 
 def _select_evaluation_tracks(selected: Sequence[object] | None) -> list[EvaluationTrack]:
     """
-    Normalise optional user-provided selectors (enum instances or strings) into a track list.
+    Convert track names or EvaluationTrack values into a track list.
     """
     if not selected:
         return list(TRAIN_EVAL_TRACKS)
@@ -140,13 +144,17 @@ class DynamicCNN:
     """
 
     def __init__(self, trial: optuna.trial.Trial, prefix: str = "") -> None:
+        """Sample an arch8 CNN from an Optuna trial."""
         def _key(name: str) -> str:
+            """Prefix an Optuna parameter name."""
             return f"{prefix}_{name}" if prefix else name
 
         def _conv1d_output_length(length: int, kernel: int, stride_value: int, pad: int) -> int:
+            """Compute the output length of one Conv1d layer."""
             return max(1, (length + 2 * pad - kernel) // stride_value + 1)
 
         def _pool1d_output_length(length: int, pool: int) -> int:
+            """Compute the output length after optional MaxPool1d."""
             if pool <= 1:
                 return length
             return max(1, (length - pool) // pool + 1)
@@ -224,6 +232,7 @@ class DynamicCNN:
         }
 
     def to_model_block(self) -> dict[str, any]:
+        """Return the sampled architecture as a model config block."""
         return self.model_block
 
 
@@ -261,6 +270,7 @@ def _build_training_config(
     dataset_pth: str | None = None,
     artifact_root: Path | None = None,
 ) -> dict[str, any]:
+    """Build the training config for one lidar target."""
     if dataset_pth is None:
         raise ValueError("dataset_path in _build_training_config is not specified.")
 
@@ -311,13 +321,10 @@ def objective(
     track_names: Sequence[object] | None = None,
 ) -> float:
     """
-    Run one Optuna trial that samples a single arch8 config, trains the left/track/heading
-    nets in parallel, waits for all three checkpoints (.pt) to land, then evaluates the trio
-    once via test_cnn_arch and returns that combined RMSE.
+    Train one arch8 triplet and return its track RMSE.
 
-    Args:
-        track_names: Optional iterable of track names (matching EvaluationTrack enums) or
-            EvaluationTrack instances to restrict which maps are evaluated.
+    The same sampled architecture is trained for left_wall_dist, track_width,
+    and heading_error before the three checkpoints are evaluated together.
     """
     del n_epoch, seed, _unused_loader  # unused
 
@@ -399,9 +406,7 @@ def _log_trial_result(
     track_metrics: list[dict[str, float]],
     evaluation_tracks: Sequence[EvaluationTrack],
 ) -> None:
-    """
-    Append a structured summary for each NAS trial to ``output/nas_trials.jsonl``.
-    """
+    """Append one NAS trial summary to the JSONL log."""
     target_summaries: list[dict[str, any]] = []
     for cfg, model_path in trained_runs:
         try:
@@ -470,9 +475,7 @@ def _log_trial_result(
 
 
 def _summarize_layers(model: nn.Module) -> list[dict[str, any]]:
-    """
-    Convert a Sequential model into a structured list of layer dictionaries for logging.
-    """
+    """Summarize model layers for the trial log."""
     layer_summaries: list[dict[str, any]] = []
     for layer in model:
         info: dict[str, any] = {"type": layer.__class__.__name__}
