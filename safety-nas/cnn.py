@@ -349,6 +349,7 @@ def objective(
         model = get_architecture(block["arch_id"], block)
 
         param_count = _count_model_parameters(model)
+        print(param_count)
 
         # Store parameter count for logging
         trial.set_user_attr(f"{target}_params", param_count)
