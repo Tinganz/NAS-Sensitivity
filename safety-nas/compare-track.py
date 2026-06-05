@@ -30,9 +30,9 @@ from f110_scripts.sim import reactive_planners as sim  # noqa: E402
 ARCH_8_CHECKPOINT_TRIPLES = [
     # Example usage (note: order)
     (
-        "safety-nas/dnn-output/test-best-runs-150/017f7c/left_wall_dist_arch8_trial106.pt",
-        "safety-nas/dnn-output/test-best-runs-150/017f7c/track_width_arch8_trial106.pt",
-        "safety-nas/dnn-output/test-best-runs-150/017f7c/heading_error_arch8_trial106.pt",
+        "safety-nas/test-best-runs-tp0/aee7a1/left_wall_dist_arch8_trial6.pt",
+        "safety-nas/test-best-runs-tp0/aee7a1/track_width_arch8_trial6.pt",
+        "safety-nas/test-best-runs-tp0/aee7a1/heading_error_arch8_trial6.pt",
     ),
 ]
 DEFAULT_MAP = None # Ex. "data/maps/F1/Nuerburgring/Nuerburgring_map"
@@ -78,46 +78,10 @@ TRACK_METRIC_KEYS: tuple[str, ...] = (
 )
 BASELINE_RUNS = [
     (
-        "arch1",
+        "comb1",
         "data/models/left_wall_dist_arch1.pt",
         "data/models/track_width_arch1.pt",
         "data/models/heading_error_arch1.pt",
-    ),
-    (
-        "arch2",
-        "data/models/left_wall_dist_arch2.pt",
-        "data/models/track_width_arch2.pt",
-        "data/models/heading_error_arch2.pt",
-    ),
-    (
-        "arch3",
-        "data/models/left_wall_dist_arch3.pt",
-        "data/models/track_width_arch3.pt",
-        "data/models/heading_error_arch3.pt",
-    ),
-    (
-        "arch4",
-        "data/models/left_wall_dist_arch4.pt",
-        "data/models/track_width_arch4.pt",
-        "data/models/heading_error_arch4.pt",
-    ),
-    (
-        "arch5",
-        "data/models/left_wall_dist_arch5.pt",
-        "data/models/track_width_arch5.pt",
-        "data/models/heading_error_arch5.pt",
-    ),
-    (
-        "arch6",
-        "data/models/left_wall_dist_arch6.pt",
-        "data/models/track_width_arch6.pt",
-        "data/models/heading_error_arch6.pt",
-    ),
-    (
-        "arch7",
-        "data/models/left_wall_dist_arch7.pt",
-        "data/models/track_width_arch7.pt",
-        "data/models/heading_error_arch7.pt",
     ),
 ]
 

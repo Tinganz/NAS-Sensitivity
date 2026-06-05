@@ -159,12 +159,10 @@ def _run_training_command(config_path: Path) -> Path:
     ]
     print(f"[train] running {config_path}", flush=True)
     try:
-        subprocess.run(cmd, check=True)
-    except subprocess.CalledProcessError as exc:
-        print(
-            f"Training command {exc.cmd} failed with code {exc.returncode}",
-            file=sys.stderr,
-        )
+        subprocess.run(cmd, check=True, capture_output=True, text=True)
+    except subprocess.CalledProcessError as e:
+        print("STDOUT:\n", e.stdout)
+        print("STDERR:\n", e.stderr)
         raise
 
     target_col, arch_id, model_dir = _metadata_from_config(config_path)
@@ -214,7 +212,7 @@ def orchestrate_best_trial(
         export_dir = DEFAULT_CONFIG_OUTPUT_ROOT / resolved_trials.stem
     else:
         export_dir = Path(output_dir).expanduser().resolve()
-
+    print(export_dir)
     generated_configs = export_trial_configs(
         best_trial,
         export_dir,

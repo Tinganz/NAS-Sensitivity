@@ -246,3 +246,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+*.pt
+*.npz
+*.err
+*.out

@@ -12,11 +12,20 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=tzhu@unc.edu
 cd ~/NAS-Sensitivity || exit 1
+
 export PYTHONPATH="$HOME/NAS-Sensitivity:$PYTHONPATH"
+
 if command -v module &>/dev/null; then
     module purge
     module load python/3.12.4
     module load cuda/12.4
 fi
+
+# activate venv AFTER module load
 source .venv/bin/activate
+
+python -c "import sys; print(sys.executable)"
+python --version
+
+# run experiments
 python safety-nas/test-best.py

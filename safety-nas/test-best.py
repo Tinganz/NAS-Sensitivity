@@ -66,7 +66,7 @@ TRAINING_PROFILES = {
 
 # Configuration (edit as needed)
 TRIALS_FILES = [
-    # "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828022_a8b20f.jsonl",
+    "safety-nas/dnn-output/nas_trials_20260601T222933_1077232_aee7a1.jsonl",
     # "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828023_3d2630.jsonl",
 ]
 
@@ -248,6 +248,7 @@ def _run_trials_file(trials_file: str) -> None:
     )
 
     config_paths = [Path(cfg) for cfg in config_paths]
+    print(config_paths)
     if MODE == "train":
         print("[mode] retraining configs...")
         trained = train_from_configs(config_paths)
@@ -282,5 +283,5 @@ def main() -> None:
         _run_trials_file(trials_file)
 
 # Example usage (with default parameters)
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
