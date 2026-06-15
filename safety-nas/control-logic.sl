@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=f1_safety_nas
-#SBATCH -p volta-gpu
-#SBATCH --qos=hp_volta_gpu
+#SBATCH --partition=a100-gpu
+#SBATCH --qos=gpu_access
 #SBATCH --gres=gpu:1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8

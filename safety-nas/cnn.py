@@ -337,7 +337,7 @@ def objective(
 
     optimizer = trial.suggest_categorical("optimizer", ["adam", "adamw"])
     model_blocks = {}
-    total_params = 0
+    total_overflow = 0
 
     for target, param_budget in zip(target_cols, max_params):
         architecture = DynamicCNN(trial, prefix=target)
@@ -349,17 +349,13 @@ def objective(
         model = get_architecture(block["arch_id"], block)
 
         param_count = _count_model_parameters(model)
-        print(param_count)
 
         # Store parameter count for logging
         trial.set_user_attr(f"{target}_params", param_count)
 
-        # Per-network parameter constraint
-        if param_count > param_budget:
-            raise optuna.TrialPruned(
-                f"{target} exceeds parameter budget: "
-                f"{param_count} > {param_budget}"
-            )
+        overflow = abs(param_count-param_budget)/param_budget
+        total_overflow += overflow
+
         model_blocks[target] = block
 
     evaluation_tracks = _select_evaluation_tracks(track_names)
@@ -413,6 +409,7 @@ def objective(
 
     _log_trial_result(
         trial=trial,
+        total_overflow = total_overflow,
         trained_runs=trained_runs,
         average_rmse=average_rmse,
         track_rmses=track_rmses,
@@ -420,12 +417,13 @@ def objective(
         track_metrics=track_metrics,
         evaluation_tracks=evaluation_tracks,
     )
-    return average_rmse
+    return average_rmse + total_overflow
 
 
 def _log_trial_result(
     trial: optuna.trial.Trial,
     trained_runs: list[tuple[dict[str, any], Path]],
+    total_overflow: float,
     average_rmse: float,
     track_rmses: list[float],
     average_metrics: dict[str, float],
@@ -484,9 +482,10 @@ def _log_trial_result(
         )
 
     entry = {
+        "total_overflow": total_overflow,
+        "rmse": rmse_entries,
         "timestamp": datetime.utcnow().isoformat(timespec="seconds") + "Z",
         "trial_number": trial.number,
-        "rmse": rmse_entries,
         "metrics": {
             "average": average_metrics,
             "per_track": per_track_metrics,
