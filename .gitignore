@@ -252,3 +252,6 @@ __marimo__/
 *.npz
 *.err
 *.out
+
+safety-nas/dnn-output/trial_artifacts/
+safety-nas/test-best-runs-tp0

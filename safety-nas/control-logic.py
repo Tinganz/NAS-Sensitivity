@@ -3,6 +3,13 @@ import argparse
 import optuna
 
 from cnn import EvaluationTrack, objective
+import torch
+
+print("CUDA available:", torch.cuda.is_available())
+print("CUDA device count:", torch.cuda.device_count())
+
+if torch.cuda.is_available():
+    print("GPU:", torch.cuda.get_device_name(0))
 
 
 def main(track: str | None = None, n_trials: int = 120) -> None:
