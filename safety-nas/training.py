@@ -106,8 +106,18 @@ def _load_trials(trials_path: Path) -> list[dict[str, Any]]:
 
 
 def _pick_best_trial(records: list[dict[str, Any]]) -> dict[str, Any]:
-    """Return the trial dict with the lowest RMSE."""
-    return min(records, key=_average_rmse)
+    """Return the trial with lowest RMSE among those with overflow < 0.1."""
+
+    feasible = [
+        r for r in records
+        if float(r.get("total_overflow", float("inf"))) < 0.1
+        and float(r.get("abs_overflow", float("inf"))) < 1.0
+    ]
+
+    if not feasible:
+        raise ValueError("No trials found with total_overflow < 0.1")
+
+    return min(feasible, key=_average_rmse)
 
 
 def _average_rmse(record: dict[str, Any]) -> float:

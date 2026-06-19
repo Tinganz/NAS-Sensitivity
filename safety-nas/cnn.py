@@ -337,7 +337,10 @@ def objective(
 
     optimizer = trial.suggest_categorical("optimizer", ["adam", "adamw"])
     model_blocks = {}
+    param_counts = {}
+    abs_overflow = 0
     total_overflow = 0
+    lower_bound = 5000
 
     for target, param_budget in zip(target_cols, max_params):
         architecture = DynamicCNN(trial, prefix=target)
@@ -349,12 +352,18 @@ def objective(
         model = get_architecture(block["arch_id"], block)
 
         param_count = _count_model_parameters(model)
+        param_counts[target] = param_count
 
         # Store parameter count for logging
         trial.set_user_attr(f"{target}_params", param_count)
 
-        overflow = abs(param_count-param_budget)/param_budget
-        total_overflow += overflow
+        overflow = 10*(param_count-param_budget)/sum(max_params)
+        if param_count>param_budget:
+            abs_overflow += abs(overflow)    
+            total_overflow += overflow           
+        elif (param_budget - param_count > lower_bound) and param_count<param_budget:
+            abs_overflow += abs(overflow)
+            total_overflow += overflow 
 
         model_blocks[target] = block
 
@@ -410,20 +419,24 @@ def objective(
     _log_trial_result(
         trial=trial,
         total_overflow = total_overflow,
+        abs_overflow = abs_overflow,
         trained_runs=trained_runs,
+        param_counts=param_counts,
         average_rmse=average_rmse,
         track_rmses=track_rmses,
         average_metrics=average_metrics,
         track_metrics=track_metrics,
         evaluation_tracks=evaluation_tracks,
     )
-    return average_rmse + total_overflow
+    return average_rmse + abs_overflow
 
 
 def _log_trial_result(
     trial: optuna.trial.Trial,
     trained_runs: list[tuple[dict[str, any], Path]],
     total_overflow: float,
+    abs_overflow: float,
+    param_counts: dict[int],
     average_rmse: float,
     track_rmses: list[float],
     average_metrics: dict[str, float],
@@ -483,6 +496,8 @@ def _log_trial_result(
 
     entry = {
         "total_overflow": total_overflow,
+        "abs_overflow": abs_overflow,
+        "param_counts": param_counts,
         "rmse": rmse_entries,
         "timestamp": datetime.utcnow().isoformat(timespec="seconds") + "Z",
         "trial_number": trial.number,
