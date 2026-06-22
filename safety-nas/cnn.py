@@ -340,7 +340,7 @@ def objective(
     param_counts = {}
     abs_overflow = 0
     total_overflow = 0
-    lower_bound = 5000
+    lower_bound = 10000
 
     for target, param_budget in zip(target_cols, max_params):
         architecture = DynamicCNN(trial, prefix=target)
@@ -357,7 +357,7 @@ def objective(
         # Store parameter count for logging
         trial.set_user_attr(f"{target}_params", param_count)
 
-        overflow = 10*(param_count-param_budget)/sum(max_params)
+        overflow = (param_count-param_budget)/sum(max_params)
         if param_count>param_budget:
             abs_overflow += abs(overflow)    
             total_overflow += overflow           
@@ -428,7 +428,10 @@ def objective(
         track_metrics=track_metrics,
         evaluation_tracks=evaluation_tracks,
     )
-    return average_rmse + abs_overflow
+    if abs_overflow > 0.1:
+        return 100.0 + 10*abs_overflow
+
+    return average_rmse
 
 
 def _log_trial_result(
