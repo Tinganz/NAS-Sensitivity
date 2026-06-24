@@ -17,9 +17,13 @@ BASE_DIR = Path(__file__).resolve().parent        # safety-nas/mier/
 SAFETY_NAS_DIR = BASE_DIR.parent                  # safety-nas/
 REPO_ROOT = SAFETY_NAS_DIR.parent                 # NAS-Sensitivity/
 
-for _p in [str(BASE_DIR), str(SAFETY_NAS_DIR), str(REPO_ROOT)]:
-    if _p not in sys.path:
-        sys.path.insert(0, _p)
+# Force mier/ to be first in sys.path so mier/cnn.py takes priority over
+# safety-nas/cnn.py. We remove any existing occurrences first because Python
+# auto-inserts the script's own directory at position 0, which would otherwise
+# push SAFETY_NAS_DIR ahead of BASE_DIR when we prepend.
+_priority = [str(BASE_DIR), str(SAFETY_NAS_DIR), str(REPO_ROOT)]
+sys.path = [p for p in sys.path if p not in set(_priority)]
+sys.path[:0] = _priority
 
 
 NAS_MAX_PARAMS = [34405, 34405, 137777]   # baseline

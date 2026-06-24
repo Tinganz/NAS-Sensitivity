@@ -19,9 +19,9 @@ BASE_DIR = Path(__file__).resolve().parent        # safety-nas/mier/
 SAFETY_NAS_DIR = BASE_DIR.parent                  # safety-nas/
 REPO_ROOT = SAFETY_NAS_DIR.parent                 # NAS-Sensitivity/
 
-for _p in [str(BASE_DIR), str(SAFETY_NAS_DIR), str(REPO_ROOT)]:
-    if _p not in sys.path:
-        sys.path.insert(0, _p)
+_priority = [str(BASE_DIR), str(SAFETY_NAS_DIR), str(REPO_ROOT)]
+sys.path = [p for p in sys.path if p not in set(_priority)]
+sys.path[:0] = _priority
 
 from f110_planning.utils.nn_models import get_architecture
 from testing import test_cnn_arch
