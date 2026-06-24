@@ -110,7 +110,7 @@ def _pick_best_trial(records: list[dict[str, Any]]) -> dict[str, Any]:
 
     feasible = [
         r for r in records
-        if float(r.get("total_overflow", float("inf"))) < 1.0
+        if float(r.get("total_overflow", float("inf"))) < 0.0
         and float(r.get("abs_overflow", float("inf"))) < 0.1
     ]
 
