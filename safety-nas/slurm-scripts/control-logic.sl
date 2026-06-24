@@ -23,4 +23,4 @@ source .venv/bin/activate
 echo "PYTHONPATH: $PYTHONPATH"
 python --version
 which python
-python safety-nas/control-logic.py "$@"
+python safety-nas/mier/pipeline.py search "$@"

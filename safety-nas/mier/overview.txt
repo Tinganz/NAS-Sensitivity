@@ -1,0 +1,29 @@
+Quick summary for me to remember/understand the pipeline:
+1. We have a car with 1-D lidar, and three cnns:
+    a. left_wall_dist: how far from left wall 
+    b. track_width: how wide the track is
+    c. heading_error: misorientation from track center
+2. We previously hard coded five architectures (using only 3 here bc size too small)
+    a. We run a NAS to find three better CNNs than the baseline with a size constraint.
+
+Pipeline:
+1. Search in 120 candidates:
+    a. Train 3 CNN models for 60 epochs each
+    b. Evaluate these 3 models on 3 tracks (Sepang, Austin, Melbourne) and averages RMSE
+    c. Penalize architecture that has parameter number way far from size constraint
+    d. I will put trials to safety-nas/mier/output/search/nas_trials_session_id.jsonl
+
+2. Retrain
+    a. Reads the .jsonl, get trails that fits our budget (abs_overflow < 0.1), pick lowest RMSE, and retrain:
+        i. 150 epochs
+    b. Save three .pt checkpoint files to safety-nas/mier/output/retrain/<hash>/
+        i. safety-nas/mier/output/retrain/<hash>/left_wall_dist_arch8_trailN.pt
+        ii. safety-nas/mier/output/retrain/<hash>/track_width_arch8_trialN.pt
+        iii. safety-nas/mier/output/retrain/<hash>/heading_error_arch8_trial.pt
+
+3. Compare
+    a. Run the simulator on 7 race tracks, for each track it drives one lap with:
+        i. NAS results
+        ii. baseline
+    b. Records RMSE, heading error, wall clearance
+    c. output: safety-nas/mier/output/compare/<hash>/metrics.jsonl
