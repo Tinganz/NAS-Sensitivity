@@ -79,9 +79,9 @@ TRACK_METRIC_KEYS: tuple[str, ...] = (
 BASELINE_RUNS = [
     (
         "comb1",
-        "data/models/left_wall_dist_arch3.pt",
-        "data/models/track_width_arch5.pt",
-        "data/models/heading_error_arch5.pt",
+        "safety-nas/new_baseline/models/left_wall_dist_arch3.pt",
+        "safety-nas/new_baseline/models/track_width_arch5.pt",
+        "safety-nas/new_baseline/models/heading_error_arch5.pt",
     ),
 ]
 
