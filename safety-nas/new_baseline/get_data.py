@@ -11,7 +11,7 @@ import torch
 # Configuration
 # -------------------------------------------------
 
-MODEL_DIR = Path("./models")          # change this
+MODEL_DIR = Path("safety-nas/new_baseline/models")          # change this
 DATASET = Path("safety-nas/datasets/combined_all.npz")
 OUTPUT_CSV = "model_summary.csv"
 

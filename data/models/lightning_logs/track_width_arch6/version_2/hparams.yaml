@@ -1,0 +1,10 @@
+arch_id: 6
+lr: 0.005
+lr_patience: 3
+lr_scheduler_factor: 0.1
+max_epochs: 50
+model_cfg:
+  arch_id: 6
+optimizer: sgd
+scheduler: reduce_on_plateau
+weight_decay: 0.0001

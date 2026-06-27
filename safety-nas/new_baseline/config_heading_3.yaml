@@ -16,7 +16,7 @@ training:
   early_stopping_patience: 5
   lr_patience: 3
   auto_lr_find: false
-  resume: true
+  resume: false
   precision: "32"
   gradient_clip_val: 1.0
   profiler: null

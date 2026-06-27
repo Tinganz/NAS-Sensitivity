@@ -1,7 +1,7 @@
 # Left Wall prediction -- arch 4
 data:
   train_path: "safety-nas/datasets/combined_all.npz"
-  target_col: "heading_error"
+  target_col: "left_wall_dist"
   batch_size: 128
   num_workers: 8
   val_split: 0.1
@@ -16,7 +16,7 @@ training:
   early_stopping_patience: 5
   lr_patience: 3
   auto_lr_find: false
-  resume: true
+  resume: false
   precision: "32"
   gradient_clip_val: 1.0
   profiler: null

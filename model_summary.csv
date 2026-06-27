@@ -1,0 +1,16 @@
+file,target,params,trainable_params,rmse
+heading_error_arch3.pt,heading_error,34405,34405,0.039031982421875
+heading_error_arch4.pt,heading_error,69105,69105,0.03659837320446968
+heading_error_arch5.pt,heading_error,137537,137537,0.03366294130682945
+heading_error_arch6.pt,heading_error,274513,274513,0.036614302545785904
+heading_error_arch7.pt,heading_error,552737,552737,0.04018339887261391
+left_wall_dist_arch3.pt,left_wall_dist,34405,34405,0.019984683021903038
+left_wall_dist_arch4.pt,left_wall_dist,69105,69105,0.018407225608825684
+left_wall_dist_arch5.pt,left_wall_dist,137537,137537,0.017509587109088898
+left_wall_dist_arch6.pt,left_wall_dist,274513,274513,0.016779880970716476
+left_wall_dist_arch7.pt,left_wall_dist,552737,552737,0.01524601224809885
+track_width_arch3.pt,track_width,34405,34405,0.03986089304089546
+track_width_arch4.pt,track_width,69105,69105,0.03926318511366844
+track_width_arch5.pt,track_width,137537,137537,0.03466558828949928
+track_width_arch6.pt,track_width,274513,274513,0.04041581228375435
+track_width_arch7.pt,track_width,552737,552737,0.043213747441768646

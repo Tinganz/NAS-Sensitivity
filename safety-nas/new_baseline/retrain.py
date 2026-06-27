@@ -30,18 +30,18 @@ def train_model(config_path):
         cwd=REPO_ROOT,
     )
 
-config_dir = (
-    REPO_ROOT
-    / "safety-nas/new_baseline/"
-)
-yaml_files = sorted(config_dir.glob("*.yaml"))
-
-for yaml_file in yaml_files:
-    train_model(yaml_file)
-
-# config_path = (
+# config_dir = (
 #     REPO_ROOT
-#     / "safety-nas/new_baseline/config_track_width_3.yaml"
+#     / "safety-nas/new_baseline/"
 # )
+# yaml_files = sorted(config_dir.glob("*.yaml"))
 
-# train_model(config_path)
+# for yaml_file in yaml_files:
+#     train_model(yaml_file)
+
+config_path = (
+    REPO_ROOT
+    / "safety-nas/new_baseline/config_track_width_4.yaml"
+)
+
+train_model(config_path)
