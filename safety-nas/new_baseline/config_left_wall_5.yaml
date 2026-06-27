@@ -9,7 +9,7 @@ data:
   prefetch_factor: 2
 
 training:
-  max_epochs: 50
+  max_epochs: 150
   lr: 5e-3
   optimizer: sgd
   weight_decay: 1e-4

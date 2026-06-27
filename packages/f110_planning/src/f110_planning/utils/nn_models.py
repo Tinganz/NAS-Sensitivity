@@ -104,12 +104,36 @@ def get_architecture(arch_id: int, model_cfg: dict[str, Any] | None = None) -> n
         ValueError: If ``arch_id`` is not in the supported set.
     """
     factories = {
+        # 1: lambda: nn.Sequential(
+        #     nn.Conv1d(1, 1, kernel_size=3),
+        #     nn.ELU(),
+        #     nn.MaxPool1d(kernel_size=8),
+        #     nn.Flatten(),
+        #     nn.Linear(134, 1),
+        # ),
+        # 2: lambda: nn.Sequential(
+        #     nn.Conv1d(1, 1, kernel_size=3),
+        #     nn.ELU(),
+        #     nn.MaxPool1d(kernel_size=4),
+        #     nn.Conv1d(1, 1, kernel_size=3),
+        #     nn.ELU(),
+        #     nn.MaxPool1d(kernel_size=2),
+        #     nn.Conv1d(1, 1, kernel_size=3),
+        #     nn.ELU(),
+        #     nn.MaxPool1d(kernel_size=4),
+        #     nn.Flatten(),
+        #     nn.Linear(32, 8),
+        #     nn.ELU(),
+        #     nn.Linear(8, 1),
+        # ),
         1: lambda: nn.Sequential(
             nn.Conv1d(1, 1, kernel_size=3),
             nn.ELU(),
             nn.MaxPool1d(kernel_size=8),
             nn.Flatten(),
-            nn.Linear(134, 1),
+            nn.Linear(134, 72),
+            nn.ELU(),
+            nn.Linear(72, 1),
         ),
         2: lambda: nn.Sequential(
             nn.Conv1d(1, 1, kernel_size=3),
@@ -122,9 +146,11 @@ def get_architecture(arch_id: int, model_cfg: dict[str, Any] | None = None) -> n
             nn.ELU(),
             nn.MaxPool1d(kernel_size=4),
             nn.Flatten(),
-            nn.Linear(32, 8),
+            nn.Linear(32, 448),
             nn.ELU(),
-            nn.Linear(8, 1),
+            nn.Linear(448, 16),
+            nn.ELU(),
+            nn.Linear(16, 1),
         ),
         3: lambda: nn.Sequential(
             nn.Conv1d(1, 1, kernel_size=3),
@@ -176,22 +202,43 @@ def get_architecture(arch_id: int, model_cfg: dict[str, Any] | None = None) -> n
         #     nn.ELU(),
         #     nn.Linear(64, 1),
         # ),
+        # 5: lambda: nn.Sequential(
+        #     nn.Conv1d(1, 8, kernel_size=3),
+        #     nn.ELU(),
+        #     nn.MaxPool1d(kernel_size=2),
+
+        #     nn.Conv1d(8, 16, kernel_size=3),
+        #     nn.ELU(),
+        #     nn.MaxPool1d(kernel_size=2),
+
+        #     nn.Conv1d(16, 16, kernel_size=3),
+        #     nn.ELU(),
+        #     nn.MaxPool1d(kernel_size=2),
+
+        #     nn.Flatten(),
+        #     nn.Linear(2128, 64),
+        #     nn.ELU(),
+        #     nn.Linear(64, 1),
+        # ),
         5: lambda: nn.Sequential(
-            nn.Conv1d(1, 8, kernel_size=3),
+
+            nn.Conv1d(1, 7, kernel_size=3),
             nn.ELU(),
             nn.MaxPool1d(kernel_size=2),
 
-            nn.Conv1d(8, 16, kernel_size=3),
+            nn.Conv1d(7, 14, kernel_size=3),
             nn.ELU(),
             nn.MaxPool1d(kernel_size=2),
 
-            nn.Conv1d(16, 16, kernel_size=3),
+            nn.Conv1d(14, 14, kernel_size=3),
             nn.ELU(),
             nn.MaxPool1d(kernel_size=2),
 
             nn.Flatten(),
-            nn.Linear(2128, 64),
+
+            nn.Linear(1862, 64),
             nn.ELU(),
+
             nn.Linear(64, 1),
         ),
         # 6: lambda: nn.Sequential(

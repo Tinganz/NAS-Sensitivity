@@ -39,9 +39,10 @@ def train_model(config_path):
 # for yaml_file in yaml_files:
 #     train_model(yaml_file)
 
+
 config_path = (
     REPO_ROOT
-    / "safety-nas/new_baseline/config_track_width_4.yaml"
+    / "safety-nas/new_baseline/config_track_width_5.yaml"
 )
 
 train_model(config_path)

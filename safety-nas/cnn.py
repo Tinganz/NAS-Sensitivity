@@ -340,7 +340,7 @@ def objective(
     param_counts = {}
     abs_overflow = 0
     total_overflow = 0
-    lower_bound = 10000
+    lower_bound = 3000
 
     for target, param_budget in zip(target_cols, max_params):
         architecture = DynamicCNN(trial, prefix=target)

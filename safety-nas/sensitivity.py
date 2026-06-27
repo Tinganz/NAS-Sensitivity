@@ -2,7 +2,7 @@ import numpy as np
 import pulp
 
 
-def heuristic3(sensitivity, budget, tradeoff_map):
+def heuristic(sensitivity, budget, tradeoff_map):
     """
     sensitivity : list or np.array, shape (n_states,)
     budget      : float
@@ -31,18 +31,30 @@ def heuristic3(sensitivity, budget, tradeoff_map):
     )
 
     # Objective
+    # model += pulp.lpSum(
+    #     a[(i,l)] *
+    #     np.dot(sensitivity[i], tradeoff_map[l,:0])
+    #     for i in range(n_states)
+    #     for l in range(n_levels)
+    # )
+    weighted_error = np.zeros((n_states, n_levels))
+
+    for i in range(n_states):
+        for l in range(n_levels):
+            weighted_error[i, l] = (
+                sensitivity @ tradeoff_map[l, :3]
+            )
+
+
     model += pulp.lpSum(
-        a[(i, l)]
-        * tradeoff_map[l, 0]
-        * sensitivity[i]
+        a[(i,l)] * weighted_error[i,l]
         for i in range(n_states)
         for l in range(n_levels)
     )
 
     # Budget constraint
     model += pulp.lpSum(
-        a[(i, l)]
-        * tradeoff_map[l, 1]
+        a[(i,l)] * tradeoff_map[l,3]
         for i in range(n_states)
         for l in range(n_levels)
     ) <= budget
