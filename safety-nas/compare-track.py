@@ -30,9 +30,9 @@ from f110_scripts.sim import reactive_planners as sim  # noqa: E402
 ARCH_8_CHECKPOINT_TRIPLES = [
     # Example usage (note: order)
     (
-        "safety-nas/test-best-runs-tp0/2fc311/left_wall_dist_arch8_trial175.pt",
-        "safety-nas/test-best-runs-tp0/2fc311/track_width_arch8_trial175.pt",
-        "safety-nas/test-best-runs-tp0/2fc311/heading_error_arch8_trial175.pt",
+        "safety-nas/test-best-runs-tp0/b481df/left_wall_dist_arch8_trial297.pt",
+        "safety-nas/test-best-runs-tp0/b481df/track_width_arch8_trial297.pt",
+        "safety-nas/test-best-runs-tp0/b481df/heading_error_arch8_trial297.pt",
     ),
 ]
 DEFAULT_MAP = None # Ex. "data/maps/F1/Nuerburgring/Nuerburgring_map"
@@ -79,8 +79,8 @@ TRACK_METRIC_KEYS: tuple[str, ...] = (
 BASELINE_RUNS = [
     (
         "comb1",
-        "safety-nas/new_baseline/models/left_wall_dist_arch3.pt",
-        "safety-nas/new_baseline/models/track_width_arch3.pt",
+        "safety-nas/new_baseline/models/left_wall_dist_arch5.pt",
+        "safety-nas/new_baseline/models/track_width_arch5.pt",
         "safety-nas/new_baseline/models/heading_error_arch5.pt",
     ),
 ]
