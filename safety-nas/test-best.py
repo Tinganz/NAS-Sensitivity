@@ -66,7 +66,7 @@ TRAINING_PROFILES = {
 
 # Configuration (edit as needed)
 TRIALS_FILES = [
-    "safety-nas/dnn-output/nas_trials_20260628T045209_3617822_b481df.jsonl",
+    "safety-nas/dnn-output/nas_trials_20260628T172057_3929354_ace7d3.jsonl",
     # "safety-nas/dnn-output/all-nas-runs/nas_trials_20260508T172706_1828023_3d2630.jsonl",
 ]
 
